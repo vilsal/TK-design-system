@@ -2,11 +2,17 @@
 # Stat.fi Beta Design System
 
 Sisällysluettelo:
+
 [Typografia](#typografia)
+
 [Kuvat](#kuvat)
+
 [Ikonit](#ikonit)
+
 [Värit](#värit)
+
 [Sivupohjat](#sivupohjat)
+
 [Komponentit](#komponentit)
 
 ## Typografia
@@ -39,7 +45,7 @@ Nimi: Source Sans Pro regular, 18px
 Puhelinnumero: leipätekstin tyyli
 
 ## Kuvat
-### Herokuvat
+### Hero-kuvat
 Mobiilissa näytön laidasta laitaan, tietty kohta (määritellään tarkemmin) kuvasta rajattu näkymään. 
 
 Desktopissa näytön laidasta laitaan kunnes kuvan koko tulee vastaan. Kuva-alueen korkeus pysyy samana koko ajan ja kuva rajautuu korkeudesta näytön koon kasvaessa. 
