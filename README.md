@@ -99,13 +99,13 @@ Pikseleistä lasketaan rem-arvot tai %-osuudet.
 		
 Sisältöalueen sisältö on tasattu vasemmalle. 
 	
-Desktop: 
+**Desktop:**
 
 Sisältöalueen leveys: 1200px
 
 Sisältöalue on jaettu desktopissa maksimissaan kolmeen palstaan. 
 		
-Mobiili:
+**Mobiili:**
 
 Mobiilissa on vain yksi palsta. Desktopin kolme palstaa asettuvat responsiivisesti allekkain näytön/selainikkunan pienentyessä. 
 
@@ -113,22 +113,22 @@ Mobiilissa on vain yksi palsta. Desktopin kolme palstaa asettuvat responsiivises
 Koko sivuston background: valkoinen, 2% musta
 	
 ### Tekstipalsta
-Desktop: 
+**Desktop:**
 
 Tekstipalstan leveys: 555px
 
-Mobiili: 
+**Mobiili:**
 
 ### Blokit
 Taustaväri: valkoinen, 2% musta
 
-Desktop:
+**Desktop:**
 
 Marginaali: 40px; 2.5rem
 
 Padding: 40px; 2.5rem
 
-Mobiili:
+**Mobiili:**
 
 Marginaali: noudattaa toistaiseksi desktopin marginaaleja. 
 
@@ -171,13 +171,13 @@ Murupolun viimeinen kohta ei ole linkki. Muut kohdat ovat ja ne ovat siksi allev
 	
 Fontti: H5-tyylit. Semanttisesti ei H5-tason otsikko vaan navigaatio-elementti. 
 	
-Desktop: 
+**Desktop:** 
 
 Kaikki tasot näkyvissä: 
 
 Etusivu >  Liikenne ja matkailu >  Suomalaisten matkailu > Tilastojulkistus
 	
-Mobiili: 
+**Mobiili:**
 
 Korkealla sivuston hierarkian tasolla näytetään normaali murupolku: 
 
