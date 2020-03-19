@@ -1,65 +1,59 @@
 
-# Stat.fi Beta Design System
+# Stat.fi Beta Design System <!-- omit in toc -->
 
-Sisällysluettelo:
-
-[Typografia](#typografia)
-
-[Kuvat](#kuvat)
-
-[Ikonit](#ikonit)
-
-[Värit](#värit)
-
-[Sivupohja](#sivupohja)
-
-[Komponentit](#komponentit)
+## Sisällysluettelo <!-- omit in toc -->
+- [Typografia](#typografia)
+- [Kuvat](#kuvat)
+  - [Hero-kuvat](#hero-kuvat)
+- [Ikonit](#ikonit)
+- [Värit](#v%c3%a4rit)
+- [Sivupohja](#sivupohja)
+  - [Navigaatio-palkki](#navigaatio-palkki)
+  - [Megamenu](#megamenu)
+  - [Sisältöalue](#sis%c3%a4lt%c3%b6alue)
+  - [Sivuston tausta](#sivuston-tausta)
+  - [Tekstipalsta](#tekstipalsta)
+  - [Blokit](#blokit)
+  - [Footer](#footer)
+- [Komponentit](#komponentit)
+  - [Jakoviiva](#jakoviiva)
+  - [Haitari](#haitari)
+    - [Haitarin ikonien tyylit](#haitarin-ikonien-tyylit)
+  - [Kuviot](#kuviot)
+  - [Laajennuspaneeli](#laajennuspaneeli)
+  - [Linkit](#linkit)
+    - [Tavallinen linkki](#tavallinen-linkki)
+    - [Negatiivi](#negatiivi)
+    - [Linkki tekstin seassa](#linkki-tekstin-seassa)
+    - [Linkit ikonilla](#linkit-ikonilla)
+    - [Navigaatiolinkit](#navigaatiolinkit)
+    - [Ulkoinen linkki:](#ulkoinen-linkki)
+  - [Murupolku](#murupolku)
+  - [Painikkeet](#painikkeet)
+  - [Pudotusvalikot](#pudotusvalikot)
+    - [Yhden valinnan](#yhden-valinnan)
+    - [Useamman valinnan (multi select)](#useamman-valinnan-multi-select)
+  - [Pääkohdat](#p%c3%a4%c3%a4kohdat)
+  - [Tagit](#tagit)
+    - [Tyyppi-tagi](#tyyppi-tagi)
+  - [Taulukot](#taulukot)
+  - [Videot](#videot)
 
 ## Typografia
-Fontteina käytetään Googlen ilmaisia fontteja. 
+Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista on tässä ilmoitettu pikseleinä, ne tulee toteuttaa suhteellisina arvoina (em tai rem). 
 
-[Otsikot](#otsikot)
+| Taso             | Font                     | Font-size     | Font-family                                                    |
+| ---------------- | ------------------------ | ------------- | -------------------------------------------------------------- |
+| Leipäteksti      | Source Sans Pro, regular | 16px/1rem     | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif |
+| Leipäteksti, iso | Source Sans Pro, regular | 18px          |
+| H1               | Barlow, regular          | 34px          |
+| H2               | Barlow, regular          | 28px          |
+| H3               | Barlow, regular          | 22px          |
+| H4               | Barlow, medium           | 16px          |
+| H5               | Barlow, medium           | 14px          |
+| Ingressi         | Barlow regular           | 17px/1.255rem |
+| Introteksti      | Barlow, medium           | 14px          |
 
-[Leipäteksti](#leipäteksti)
-
-[Ingressi](#ingressi)
-
-[Introteksti](#introteksti)
-
-[Yhteystiedot](#yhteystiedot)
-
-### Otsikot
-Fontti: Barlow
-
-H1 Barlow, regular 34px
-
-H2 Barlow, regular 28px
-
-H3 Barlow, regular 22px
-
-H4 Barlow, medium 16px
-
-H5 Barlow, medium 14px
-	
-### Leipäteksti
-Fontti: Source Sans Pro, regular 16px = 1rem
-
-Font-family: Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif;
-	
-### Ingressi
-Fontti: Barlow regular, 17px/1.255rem
-
-### Introteksti
-Aihe- ja ilmiö-sivuilla
-
-Fontti: Barlow regular, 17px/1.255rem
-	
-### Yhteystiedot
-Titteli: leipätekstin tyyli
-
-Nimi: Source Sans Pro regular, 18px
-
-Puhelinnumero: leipätekstin tyyli
 
 ## Kuvat
 ### Hero-kuvat
@@ -77,133 +71,84 @@ Ikoneina käytetään (jo aiemmin käytössä olleita) Font Awesomen ja IcoMooni
 Väreinä käytetään Tilastokeskuksen väripalettia. (Värien kontrastitarkistusta pitää tehdä ja palettia päivittää!) 
 
 ## Sivupohja
-
-[Navigaatiopalkki](#navigaatiopalkki)
-
-[Megamenu](#megamenu)
-
-[Sisältöalue](#sisältöalue)
-
-[Tausta](#tausta)
-
-[Blokit](#blokit)
-
-[Footer](#footer)
 	
 ### Navigaatio-palkki
-#### Navigaatio-palkin tausta
-Taustan väri: #0073b0
-			
-Navigaatio-palkin taustan leveys on näytön/selainikkunan laidasta laitaan 2500px asti. Siitä ylöspäin oikealle ja vasemmalle tulee marginaalit. 
+| max-width | sisältöalueen leveys | background-color |
+| --------- | -------------------- | ---------------- |
+| 2500px    | 1200px               | #0073b0          |
+
+Navigaatio-palkin taustan leveys on näytön/selainikkunan laidasta laitaan 2500px asti. Siitä ylöspäin navipalkin oikealle ja vasemmalle puolelle tulee marginaalit. 
 *Poikkeus:* 
 Jos ollaan sivulla, jossa on bannerikuva (aiheen ja tarkennetun aiheen sivuilla): navipalkin tausta on näytön laidasta laitaan kunnes bannerikuvan rajat tulevat vastaan: navipalkki loppuu siinä missä bannerikuvakin. 
-			
-#### Navigaatio-palkin sisältö
-Fontti: Barlow medium, 1.1rem, valkoinen, pienaakkoset, ei alleviivausta 
 
-Fontin padding-left ja padding-right: 1.5rem 
-
-Fontin padding-top ja padding-bottom: 1.2rem 
-			
-Navigaatiopalkin painikkeiden välissä on ohuet 1px #338fc0 pystyviivat, viivojen korkeus sama kuin navipalkin korkeus. 
-			
 Navipalkin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Navipalkin sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Navipalkin sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. 
 
-Navipalkin sisällön tasaus: vasen. Sisältö ei levity tasaisesti koko navipalkin alueelle vaan pysyy vasemmassa laidassa. 
+| font          | font-size | color     | font-variant | text-decoration | padding                                                                      |
+| ------------- | --------- | --------- | ------------ | --------------- | ---------------------------------------------------------------------------- |
+| Barlow medium | 1.1rem    | valkoinen | normal       | none            | padding-left ja padding-right: 1.5rem, padding-top ja padding-bottom: 1.2rem |
+			
+Navigaatiopalkin painikkeiden välissä on ohuet pystyviivat, viivojen korkeus sama kuin navipalkin korkeus: 
+| width | color   |
+| ----- | ------- |
+| 1px   | #338fc0 |
+
+Navipalkin sisällön tasaus: vasen. Sisältö ei levity tasaisesti koko navipalkin alueelle vaan on tasattu sisältöalueen vasempaan laitaan. 
 
 ### Megamenu
-Megamenun sisältö keskitetty vasempaan laitaan. 
-Megamenujen sisällöissä (linkeissä) alleviivaus. 
+Megamenun sisältö keskitetty vasempaan laitaan.  
 
 ### Sisältöalue
 Pikseleistä lasketaan rem-arvot tai %-osuudet. 
-		
-Sisältöalueen sisältö on tasattu vasemmalle. 
-	
-**Desktop:**
 
-Sisältöalueen leveys: 1200px
+|             | leveys | palstoja max | sisällön tasaus |
+| ----------- | ------ | ------------ | --------------- |
+| **desktop** | 1200px | 3            | vasen           |
+| **mobiili** |        | 1            | vasen           |
 
-Sisältöalue on jaettu desktopissa maksimissaan kolmeen palstaan. 
-		
-**Mobiili:**
+Sisältöalueen maksimileveys desktopissa on 1200px. Sisältöalueen sisältö on tasattu vasemmalle. Sisältöalue on jaettu desktopissa maksimissaan kolmeen palstaan ja mobiilissa yhteen palstaan. Desktopin kolme palstaa asettuvat responsiivisesti allekkain näytön/selainikkunan pienentyessä. 
 
-Mobiilissa on vain yksi palsta. Desktopin kolme palstaa asettuvat responsiivisesti allekkain näytön/selainikkunan pienentyessä. 
+### Sivuston tausta
+| background|
+| ----- |
+| valkoinen, 2% musta |
 
-### Tausta
-Koko sivuston background: valkoinen, 2% musta
+
 	
 ### Tekstipalsta
-**Desktop:**
-
-Tekstipalstan leveys: 555px
-
-**Mobiili:**
+|             | Width |
+| ----------- | ----- |
+| **Desktop** | 555px |
+| **Mobiili** |       |
 
 ### Blokit
-Taustaväri: valkoinen, 2% musta
+|             | background-color    | margin        | padding                                                                                                                                |
+| ----------- | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **desktop** | valkoinen, 2% musta | 2.5rem (40px) | 2.5rem (40px)                                                                                                                          |
+| **mobiili** | valkoinen, 2% musta | 2.5rem (40px) | **Padding-top** ja **padding-bottom**: puolet desktopin paddingista. **Padding-left** ja **padding-right**: 1/4 desktopin paddingista. |
 
-**Desktop:**
+### Footer 
 
-Marginaali: 40px; 2.5rem
-
-Padding: 40px; 2.5rem
-
-**Mobiili:**
-
-Marginaali: noudattaa toistaiseksi desktopin marginaaleja. 
-
-Padding-top ja padding-bottom: puolet desktopin paddingista. 
-
-Padding-left ja padding-right: 1/4 desktopin paddingista. 
-
-### Footer
+| max-width | sisältöalueen leveys | background-color |
+| --------- | -------------------- | ---------------- |
+| 2500px    | 1200px               | #0073b0          |
+		
 Footerin tausta ulottuu aina laidasta laitaan, sekä isoissa että pienissä näytöissä/selainikkunoissa. 
 Isoissa desktop-näytöissä 2500px leveyteen asti koko näytön levyinen, siitä ylöspäin tulee marginaalit. Eli footerin tausta käyttäytyy deskarissa kuten yläpalkin ja navipalkin tausta. 
 	
-Footerin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. 
-	
-Footerin tausta: #0073b0 
+Footerin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue.
 
-Footerin linkit noudattavat linkkityylejä. 
-		
 Neljä palstaa: ensimmäisessä Tilastokeskuksen logo, kolme muuta linkkipalstoja. Tarvittaessa näytön/selainikkunan pienentyessä palstat hyppäävät kokonaan toiselle riville ensimmäisen rivin palstojen alle. 
 
 ## Komponentit
-
-[Jakoviiva](#jakoviiva)
-
-[Haitari](#haitari)
-
-[Kuviot](#kuviot)
-
-[Laajennuspaneeli](#laajennuspaneeli)
-
-[Linkit](#linkit)
-
-[Murupolku](#murupolku)
-
-[Painikkeet](#painikkeet)
-
-[Pudotusvalikot](#pudotusvalikot)
-
-[Pääkohdat](#pääkohdat)
-
-[Tagit](#tagit)
-
-[Taulukot](#taulukot)
-
-[Videot](#videot)
-
 
 ### Jakoviiva
 Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää tilaa. Niissä tilasteissa, joissa tyhjää tilaa ei voida käyttää, käytetään jakoviivoja.  
 
 ![Jakoviiva](images/divider.png)
 
-Leveys: 1px
-
-Väri: #aaaaaa
+| Height | Color   |
+| ------ | ------- |
+| 1px    | #aaaaaa |
 
 Jakoviivoja voidaan käyttää asioiden ryhmittelyyn asettamalla niitä eri ryhmien väliin, esim menuissa. 
 
@@ -221,92 +166,87 @@ Haitari on enintään kaksi tasoa syvä. Sisempi taso on sisennetty ensimmäisen
 
 Plus-ja miinus-ikonit ovat suurempia ja tummempia ensimmäisellä tasolla ja pienempiä ja vaaleampia syvemmällä tasolla. Myös tällä kerrotaan visuaalisesti hierarkiasta. 
 
-**Ensimmäisen tason ikonit:**
+#### Haitarin ikonien tyylit
 
-Korkeus: 15px 
-
-Leveys: 15px
-
-Väri: #0073b0
-
-**Toisen tason ikonit**
-
-Korkeus: 11px
-
-Leveys: 11px
-
-Väri: #338FC0
+| Hierarkiataso | Height | Width | Color    |
+| ------------- | ------ | ----- | -------- |
+| Ensimmäinen   | 15px   | 15px  | #0073b0  |
+| Toinen        | 11px   | 11px  | #338FC0F |
 
 ### Kuviot
-Otsikon fontti: H4-tyyli
+
+|             | font |
+| ----------- | ---- |
+| **Otsikko** | H4   |
 
 ### Laajennuspaneeli 
 (Eng. expansion panel)
 
 Esim. Videon käsikirjoitus -laajennuspaneeli
 
-Fontti: Source Sans Pro, regular 16px
+| Font | 
+| ---------- | 
+| Leipäteksti    | 
 	
 ### Linkit
 
 Kaikki linkit toimivat näppäimistökäytössä vain enterillä. 
 
-**Tavallinen linkki**
+#### Tavallinen linkki
 
+| Tila           | Font        | Text-decoration | Color   | Muuta                                 |
+| -------------- | ----------- | --------------- | ------- | ------------------------------------- |
+| **Tavallinen** | Leipäteksti | none            | #006CA5 |                                       |
+| **Hover**      |             | underline       | #0039a6 | Kursori muuttuu kädeksi linkin päällä |
+| **Focus**      |             | underline       | #0039a6 | Reunus: 2px, #0073b0                  |
+| **Vierailtu**  |             | none            | #551A8B |                                       |
+
+Tavallinen-tila:
 ![Tavallinen linkki.](images/link.png)
 
-Fontti: leipätekstin tyyli, ei alleviivausta (paitsi tekstin seassa olevilla linkeillä!). 
+Hover-tila:
+![Linkin hover-tila.](images/hover_link.png)
 
-Fontin väri: #006CA5;
+Focus-tila:
+![Kohdistettuna oleva linkki.](images/focus_link.png)
 
-**Negatiivi**
+Vierailtu-tila:
+![Vierailtu linkki.](images/visited_link.png)
+
+#### Negatiivi
 
 Negatiivinen linkki on linkki tummalla taustalla. 
 
-![Tavallinen linkki.](images/negative_link.png)
+| Tila           | Font        | Text-decoration | Color     | Muuta                                 |
+| -------------- | ----------- | --------------- | --------- | ------------------------------------- |
+| **Tavallinen** | Leipäteksti | none            | valkoinen |                                       |
+| **Hover**      |             | underline       | valkoinen | Kursori muuttuu kädeksi linkin päällä |
+| **Focus**      |             | underline       | valkoinen | Reunus: 2px, valkoinen                |
+| **Vierailtu**  |             | none            | valkoinen |                                       |
 
-Fontin väri: valkoinen
+Tavallinen-tila:
+![Tavallinen negatiivinen linkki.](images/negative_link.png)
 
-Ikonien väri: valkoinen
+Hover-tila:
+![Negatiivinen linkki hover-tilassa.](images/negative_hover_link.png)
 
-**Hover-tila**
+Focus-tila:
+![Negatiivinen linkki kohdistettuna.](images/focus_negative_link.png)
 
-![Linkin hover-tila.](images/hover_link.png)
-
-Fontin väri: #0039a6;
-
-Fontti: alleviivattu
-
-Kursori muuttuu kädeksi linkin päällä. 
-
-**Visited-tila**
-
-![Vierailtu linkki.](images/visited_link.png)
-
-Fontin väri: #551A8B;
-
-![Linkki tummalla taustalla, ei visited-väriä.](images/negative_link.png)
-
-Negatiivisella linkillä ei ole visited-väriä. 
-
-**Focus-tila**
-
-![Kohdistettuna oleva linkki.](images/focus_link.png)
-
-Fontin väri: #0039a6;
-
-Fontti: alleviivattu
-
-Reunus: 2px #0073b0;
+Vierailtu-tila:
+![Vierailtu negatiivinen linkki.](images/negative_link.png)
 
 
+#### Linkki tekstin seassa
+
+Tekstin seassa, eli p-elementin sisällä, olevat linkit alleviivataan aina. Muissa linkeissä ei ole alleviivausta. 
+
+| Tila           | Font        | Text-decoration |
+| -------------- | ----------- | --------------- |
+| **Tavallinen** | Leipäteksti | underline       |
 
 
-#### Tekstin seassa
-
-Tekstin seassa, eli p-elementin sisällä, olevat linkit alleviivataan aina. Muissa linkeissä ei ole alleviivausta.  
-
-![Linkit tekstin seassa alleviivataan.](images/linkkip.png)
+![Tekstin seassa olevat linkit alleviivataan.](images/linkkip.png)
 
 Fontti: leipätekstin tyyli, alleviivattu. 
 
@@ -316,9 +256,9 @@ Fontti: leipätekstin tyyli, alleviivattu.
 
 Ikoni tulee tavallisesti linkin eteen ja on samanvärinen kuin linkin teksti (paitsi brändätyt ikonit? StatFin? to-be-updated). Ikoni on osa linkkiä. 
 
-![Nuoli linkin perässä kertoo, että linkistä tapahtuu jotain.](images/linkki_nuoli.png)
+![Nuoli linkin perässä korostaa sitä, että linkistä tapahtuu jotain.](images/linkki_nuoli.png)
 
-![Nuoli linkin perässä, negatiiviinen linkki.](images/negative_link_icon.png)
+![Nuoli linkin perässä, negatiivinen linkki.](images/negative_link_icon.png)
 
 Yksittäisessä erillään olevassa linkissä linkin perässä oleva nuoli korostaa, että linkistä tapahtuu jotain. Nuoli on aina linkin perässä. Nuoli-ikoni ei ole osa linkkiä, siitä klikkaamalla ei tapahdu mitään. 
 
@@ -368,9 +308,9 @@ Syvän hierarkian tasolla murupolussa näytetään vain linkki edelliselle tasol
 
 Pudotusvalikoilla on aina label. 
 
-#### Yhden valinnan:
+#### Yhden valinnan
 
-#### Useamman valinnan (multi select):	
+#### Useamman valinnan (multi select)	
 
 ### Pääkohdat
 
