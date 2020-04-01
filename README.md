@@ -4,7 +4,7 @@
 ## Sisällysluettelo <!-- omit in toc -->
 - [Typografia](#typografia)
 - [Kuvat](#kuvat)
-  - [Hero-kuvat](#hero-kuvat)
+  - [Hero-kuva](#hero-kuva)
 - [Ikonit](#ikonit)
 - [Värit](#v%c3%a4rit)
 - [Sivupohja](#sivupohja)
@@ -19,29 +19,30 @@
   - [Jakoviiva](#jakoviiva)
   - [Haitari](#haitari)
     - [Haitarin ikonien tyylit](#haitarin-ikonien-tyylit)
-  - [Kuviot](#kuviot)
+  - [Tilastokuvio](#tilastokuvio)
   - [Laajennuspaneeli](#laajennuspaneeli)
-  - [Linkit](#linkit)
-    - [Sisäiset linkit](#sis%c3%a4iset-linkit)
-    - [Negatiivi](#negatiivi)
-    - [Linkki tekstin seassa](#linkki-tekstin-seassa)
-    - [Linkit ikonilla](#linkit-ikonilla)
+  - [Linkki](#linkki)
+    - [Sisäinen linkki](#sis%c3%a4inen-linkki)
+      - [Tavallinen linkki](#tavallinen-linkki)
+      - [Negatiivi-linkki](#negatiivi-linkki)
+      - [Linkki tekstin seassa](#linkki-tekstin-seassa)
+      - [Linkki ikonilla](#linkki-ikonilla)
     - [Ulkoinen linkki](#ulkoinen-linkki)
   - [Murupolku](#murupolku)
-  - [Painikkeet](#painikkeet)
+  - [Painike](#painike)
+    - [Koko](#koko)
     - [Ensisijainen painike](#ensisijainen-painike)
     - [Toisijainen painike](#toisijainen-painike)
     - [Kolmassijainen painike](#kolmassijainen-painike)
     - [Negatiivi-painike](#negatiivi-painike)
-    - [Painikkeet mobiilissa](#painikkeet-mobiilissa)
-  - [Pudotusvalikot](#pudotusvalikot)
+  - [Pudotusvalikko](#pudotusvalikko)
     - [Yhden valinnan](#yhden-valinnan)
     - [Useamman valinnan (multi select)](#useamman-valinnan-multi-select)
   - [Pääkohdat](#p%c3%a4%c3%a4kohdat)
-  - [Tagit](#tagit)
+  - [Tagi](#tagi)
     - [Tyyppi-tagi](#tyyppi-tagi)
-  - [Taulukot](#taulukot)
-  - [Videot](#videot)
+  - [Tilastotaulukko](#tilastotaulukko)
+  - [Video](#video)
 
 ## Typografia
 Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista on tässä ilmoitettu pikseleinä, ne tulee toteuttaa suhteellisina arvoina (em tai rem). 
@@ -60,7 +61,7 @@ Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista o
 
 
 ## Kuvat
-### Hero-kuvat
+### Hero-kuva
 Mobiilissa hero-kuva ulottuu näytön laidasta laitaan. Mobiilinäytöllä näkyy täysikokoisesta kuvasta rajattu tietty kohta. (Kohta määritellään myöhemmin tarkemmin.)
 
 Desktopissa hero-kuva ulottuu näytön laidasta laitaan kunnes kuvan koko tulee vastaan. Sen jälkeen kuvan vasemmalle ja oikealle puolelle tulee marginaalit. Kuva-alueen korkeus pysyy samana koko ajan ja kuva rajautuu korkeudesta näytön koon kasvaessa. 
@@ -177,7 +178,7 @@ Plus-ja miinus-ikonit ovat suurempia ja tummempia ensimmäisellä tasolla ja pie
 | Ensimmäinen   | 15px   | 15px  | #0073b0  |
 | Toinen        | 11px   | 11px  | #338FC0F |
 
-### Kuviot
+### Tilastokuvio
 
 |             | Font |
 | ----------- | ---- |
@@ -192,11 +193,13 @@ Esim. Videon käsikirjoitus -laajennuspaneeli
 | ---------- | 
 | Leipäteksti    | 
 	
-### Linkit
+### Linkki
 
 Kaikki linkit toimivat näppäimistökäytössä vain enterillä. 
 
-#### Sisäiset linkit
+#### Sisäinen linkki
+
+##### Tavallinen linkki
 
 | Tila           | Font        | Text-decoration | Color   | Muuta                                 |
 | -------------- | ----------- | --------------- | ------- | ------------------------------------- |
@@ -217,9 +220,9 @@ Focus-tila:
 Vierailtu-tila:
 ![Vierailtu linkki.](images/visited_link.png)
 
-#### Negatiivi
+##### Negatiivi-linkki
 
-Negatiivinen linkki on linkki tummalla taustalla. 
+Negatiivi-linkki on linkki tummalla taustalla. Tumman taustan vuoksi sen tyylit eri tiloissa eroavat tavallisesta linkistä hieman. 
 
 | Tila           | Font        | Text-decoration | Color     | Muuta                                 |
 | -------------- | ----------- | --------------- | --------- | ------------------------------------- |
@@ -240,8 +243,7 @@ Focus-tila:
 Vierailtu-tila:
 ![Vierailtu negatiivinen linkki.](images/negative_link.png)
 
-
-#### Linkki tekstin seassa
+##### Linkki tekstin seassa
 
 Tekstin seassa, eli p-elementin sisällä, olevat linkit alleviivataan aina. Muissa linkeissä ei ole alleviivausta. 
 
@@ -252,7 +254,7 @@ Tekstin seassa, eli p-elementin sisällä, olevat linkit alleviivataan aina. Mui
 
 ![Tekstin seassa olevat linkit alleviivataan.](images/linkkip.png)
 
-#### Linkit ikonilla
+##### Linkki ikonilla
 
 ![Linkkejä ikonien kanssa.](images/icons_link.png)
 
@@ -266,7 +268,7 @@ Yksittäisessä erillään olevassa linkissä linkin perässä oleva nuoli koros
 
 ![Linkillä voi olla kaksi ikonia.](images/link_kaksi_ikonia.png)
 
-Linkeillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin joko linkkitekstin molemmille puolille tai peräkkäin tekstin jälkeen (ks. ulkoinen linkki). 
+Linkeillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin joko linkkitekstin molemmille puolille. 
 
 | Ikoni                | Color     |
 | -------------------- | --------- |
@@ -281,10 +283,6 @@ Linkeillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin joko linkkiteks
 
 Ulkoiseen palveluun vievän linkin perässä on ulkoisen linkin ikoni. Tämä ikoni on osa linkkiä. Linkin tekstissä tulee kertoa, että linkki vie toiseen palveluun. 
 
-![Ulkoiseen palveluun vievä linkki.](images/ulkoinen_link_kaksi_ikonia.png)
-
-Ulkoisella linkillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin peräkkäin. 
-
 ### Murupolku
 
  Murupolun osat viimeistä lukuunottamatta ovat linkkejä ja ne noudattavat H5-otsikkotason fonttia sekä tavallisen linkin tyyliä. Murupolun viimeinen kohta ei ole linkki. 
@@ -298,7 +296,9 @@ Vaikka murupolku noudattaa H5-tason fonttia, se ei ole semanttisesti H5-tason ot
 | Linkki        | Barlow, medium | 14px      | #006ca5 | none            |
 | Viimeinen     | Barlow, medium | 14px      | musta   | none            |
 
-**Murupolku desktopissa** 
+Murupolku käyttäytyy desktopissa ja mobiilissa hieman eri tavoin. 
+
+**Murupolku desktopissa**
 
 Desktopissa näytetään murupolussa kaikki tasot: 
 
@@ -320,11 +320,17 @@ Syvämmällä hierarkian tasoilla murupolussa näytetään vain linkki yhtä tas
 | **Mobiili (matalilla hierarkian tasoilla)** | Tilastotieto / Suomalaisten matkailu                               |
 | **Mobiili (syvillä hierarkian tasoilla)**   | < Tilastojulkistus                                                 |
 
-### Painikkeet
+### Painike
 
-![Painikkeiden eri tilat.](images/buttons.png)
+#### Koko
 
-**Yhteiset ominaisuudet**
+![Painikkeet ovat mobiilissa täysleveitä.](images/buttons_mobile.png)
+
+Mobiilissa painikkeet ovat täysleveitä lukuunottamatta niiden oikealle ja vasemmalle puolelle jääviä marginaaleja. Isoilla näytöillä eli desktopissa painikkeiden leveys taas skaalautuu sisällön mukaan. Minimi-leveys painikkeille on kuitenkin 80px. 
+
+![Painikkeiden koko ja eri tilat desktopissa.](images/buttons.png)
+
+**Painikkeiden yhteiset ominaisuudet**
 |Font|Border-radius|Min-width|Min-height|Focus-kehys|
 |-|-|-|-|-|
 |Source Sans Pro, regular, 16px/1rem|5px|80px|40px|2px, #0073b0|
@@ -377,13 +383,7 @@ Syvämmällä hierarkian tasoilla murupolussa näytetään vain linkki yhtä tas
 |**Hover**|#0073b0|#f2f2f2|#0073b0|4px, 4px, 5px, rgba(85,85,85,0.35)|
 |**Focus**|?|?|?|?|
 
-#### Painikkeet mobiilissa
-
-![Painikkeet mobiilissa.](images/buttons_mobile.png)
-
-Mobiilissa painikkeet ovat lähes täysleveitä lukuunottamatta niiden oikealle ja vasemmalle puolelle jääviä marginaaleja. 
-
-### Pudotusvalikot 
+### Pudotusvalikko
 
 (Eng. dropdown)
 
@@ -405,14 +405,14 @@ Pallon väri: #00B2A9
 
 Vasen pystyviiva: #00B2A9. Pystyviivaa ei ole mobiilissa.
 
-### Tagit
+### Tagi
 
 #### Tyyppi-tagi
 = Tyyppitagi Tilasto-, Tilastojulkistus- ja Muutoksia tässä tilastossa -sivujen yläosassa. 
 
 Fontti: Barlow medium 14px, #333333
 
-### Taulukot
+### Tilastotaulukko
 Otsikon fontti: H4-tyyli
 Fontti: Barlow Semi Condensed regular
 
@@ -422,7 +422,7 @@ Solun padding-left ja padding-right: 10px
 
 Solun padding-top ja padding-bottom: 8px
 
-### Videot
+### Video
 Otsikon fontti: H4-tyyli
 
 
