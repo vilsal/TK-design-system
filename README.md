@@ -22,14 +22,18 @@
   - [Kuviot](#kuviot)
   - [Laajennuspaneeli](#laajennuspaneeli)
   - [Linkit](#linkit)
-    - [Tavallinen linkki](#tavallinen-linkki)
+    - [Sisäiset linkit](#sis%c3%a4iset-linkit)
     - [Negatiivi](#negatiivi)
     - [Linkki tekstin seassa](#linkki-tekstin-seassa)
     - [Linkit ikonilla](#linkit-ikonilla)
-    - [Navigaatiolinkit](#navigaatiolinkit)
-    - [Ulkoinen linkki:](#ulkoinen-linkki)
+    - [Ulkoinen linkki](#ulkoinen-linkki)
   - [Murupolku](#murupolku)
   - [Painikkeet](#painikkeet)
+    - [Ensisijainen painike](#ensisijainen-painike)
+    - [Toisijainen painike](#toisijainen-painike)
+    - [Kolmassijainen painike](#kolmassijainen-painike)
+    - [Negatiivi-painike](#negatiivi-painike)
+    - [Painikkeet mobiilissa](#painikkeet-mobiilissa)
   - [Pudotusvalikot](#pudotusvalikot)
     - [Yhden valinnan](#yhden-valinnan)
     - [Useamman valinnan (multi select)](#useamman-valinnan-multi-select)
@@ -73,7 +77,7 @@ Väreinä käytetään Tilastokeskuksen väripalettia. (Värien kontrastitarkist
 ## Sivupohja
 	
 ### Navigaatio-palkki
-| max-width | sisältöalueen leveys | background-color |
+| Max-width | Sisältöalueen leveys | Background-color |
 | --------- | -------------------- | ---------------- |
 | 2500px    | 1200px               | #0073b0          |
 
@@ -83,12 +87,12 @@ Jos ollaan sivulla, jossa on bannerikuva (aiheen ja tarkennetun aiheen sivuilla)
 
 Navipalkin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Navipalkin sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Navipalkin sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. 
 
-| font          | font-size | color     | font-variant | text-decoration | padding                                                                      |
+| Font          | Font-size | Color     | Font-variant | Text-decoration | Padding                                                                      |
 | ------------- | --------- | --------- | ------------ | --------------- | ---------------------------------------------------------------------------- |
 | Barlow medium | 1.1rem    | valkoinen | normal       | none            | padding-left ja padding-right: 1.5rem, padding-top ja padding-bottom: 1.2rem |
 			
 Navigaatiopalkin painikkeiden välissä on ohuet pystyviivat, viivojen korkeus sama kuin navipalkin korkeus: 
-| width | color   |
+| Width | Color   |
 | ----- | ------- |
 | 1px   | #338fc0 |
 
@@ -100,15 +104,15 @@ Megamenun sisältö keskitetty vasempaan laitaan.
 ### Sisältöalue
 Pikseleistä lasketaan rem-arvot tai %-osuudet. 
 
-|             | leveys | palstoja max | sisällön tasaus |
+|             | Leveys | Palstoja max | Sisällön tasaus |
 | ----------- | ------ | ------------ | --------------- |
-| **desktop** | 1200px | 3            | vasen           |
-| **mobiili** |        | 1            | vasen           |
+| **Desktop** | 1200px | 3            | vasen           |
+| **Mobiili** |        | 1            | vasen           |
 
 Sisältöalueen maksimileveys desktopissa on 1200px. Sisältöalueen sisältö on tasattu vasemmalle. Sisältöalue on jaettu desktopissa maksimissaan kolmeen palstaan ja mobiilissa yhteen palstaan. Desktopin kolme palstaa asettuvat responsiivisesti allekkain näytön/selainikkunan pienentyessä. 
 
 ### Sivuston tausta
-| background|
+| Background|
 | ----- |
 | valkoinen, 2% musta |
 
@@ -121,14 +125,14 @@ Sisältöalueen maksimileveys desktopissa on 1200px. Sisältöalueen sisältö o
 | **Mobiili** |       |
 
 ### Blokit
-|             | background-color    | margin        | padding                                                                                                                                |
+|             | Background-color    | Margin        | Padding                                                                                                                                |
 | ----------- | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **desktop** | valkoinen, 2% musta | 2.5rem (40px) | 2.5rem (40px)                                                                                                                          |
-| **mobiili** | valkoinen, 2% musta | 2.5rem (40px) | **Padding-top** ja **padding-bottom**: puolet desktopin paddingista. **Padding-left** ja **padding-right**: 1/4 desktopin paddingista. |
+| **Desktop** | valkoinen, 2% musta | 2.5rem (40px) | 2.5rem (40px)                                                                                                                          |
+| **Mobiili** | valkoinen, 2% musta | 2.5rem (40px) | **Padding-top** ja **padding-bottom**: puolet desktopin paddingista. **Padding-left** ja **padding-right**: 1/4 desktopin paddingista. |
 
 ### Footer 
 
-| max-width | sisältöalueen leveys | background-color |
+| Max-width | Sisältöalueen leveys | Background-color |
 | --------- | -------------------- | ---------------- |
 | 2500px    | 1200px               | #0073b0          |
 		
@@ -175,7 +179,7 @@ Plus-ja miinus-ikonit ovat suurempia ja tummempia ensimmäisellä tasolla ja pie
 
 ### Kuviot
 
-|             | font |
+|             | Font |
 | ----------- | ---- |
 | **Otsikko** | H4   |
 
@@ -192,7 +196,7 @@ Esim. Videon käsikirjoitus -laajennuspaneeli
 
 Kaikki linkit toimivat näppäimistökäytössä vain enterillä. 
 
-#### Tavallinen linkki
+#### Sisäiset linkit
 
 | Tila           | Font        | Text-decoration | Color   | Muuta                                 |
 | -------------- | ----------- | --------------- | ------- | ------------------------------------- |
@@ -248,13 +252,11 @@ Tekstin seassa, eli p-elementin sisällä, olevat linkit alleviivataan aina. Mui
 
 ![Tekstin seassa olevat linkit alleviivataan.](images/linkkip.png)
 
-Fontti: leipätekstin tyyli, alleviivattu. 
-
 #### Linkit ikonilla
 
 ![Linkkejä ikonien kanssa.](images/icons_link.png)
 
-Ikoni tulee tavallisesti linkin eteen ja on samanvärinen kuin linkin teksti (paitsi brändätyt ikonit? StatFin? to-be-updated). Ikoni on osa linkkiä. 
+Ikoni tulee linkin eteen (poikkeuksena ulkoinen linkki, jossa ikoni tulee tekstin jälkeen) ja on samanvärinen kuin linkin teksti. Ikoni on osa linkkiä. 
 
 ![Nuoli linkin perässä korostaa sitä, että linkistä tapahtuu jotain.](images/linkki_nuoli.png)
 
@@ -262,45 +264,124 @@ Ikoni tulee tavallisesti linkin eteen ja on samanvärinen kuin linkin teksti (pa
 
 Yksittäisessä erillään olevassa linkissä linkin perässä oleva nuoli korostaa, että linkistä tapahtuu jotain. Nuoli on aina linkin perässä. Nuoli-ikoni ei ole osa linkkiä, siitä klikkaamalla ei tapahdu mitään. 
 
-Nuoli-ikonin väri: musta. 
+![Linkillä voi olla kaksi ikonia.](images/link_kaksi_ikonia.png)
 
-![Linkillä voi olla kaksi ikonia.](images/two_icons_link.png)
+Linkeillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin joko linkkitekstin molemmille puolille tai peräkkäin tekstin jälkeen (ks. ulkoinen linkki). 
 
-Linkeillä voi olla myös kaksi ikonia. Ikonit ovat silloin omilla paikoillaan ja ne saattavat asettua linkkitekstin molemmille puolille tai peräkkäin. 
+| Ikoni                | Color     |
+| -------------------- | --------- |
+| **Nuoli**            | #0073b0   |
+| **StatFin/database** | #f59a23   |
+| **Muu**              | musta     |
+| **Negatiivi**        | valkoinen |
 
-#### Navigaatiolinkit
-
-(Navigaatiolinkit esim. menussa, navipalkissa, footerissa ym.: ei alleviivausta eikä nuolta/bulletia.)
-
-#### Ulkoinen linkki:
+#### Ulkoinen linkki
 
 ![Ulkoiseen palveluun vievä linkki.](images/ulkoinen_link.png)
 
-Linkin perässä on ulkoisen linkin ikoni. Ikoni on osa linkkiä. Linkin tekstissä tulee kertoa, että linkki vie toiseen palveluun. 
+Ulkoiseen palveluun vievän linkin perässä on ulkoisen linkin ikoni. Tämä ikoni on osa linkkiä. Linkin tekstissä tulee kertoa, että linkki vie toiseen palveluun. 
+
+![Ulkoiseen palveluun vievä linkki.](images/ulkoinen_link_kaksi_ikonia.png)
+
+Ulkoisella linkillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin peräkkäin. 
 
 ### Murupolku
-Murupolun viimeinen kohta ei ole linkki. Muut kohdat ovat ja ne noudattavat tavallisen linkin tyylejä.  
+
+ Murupolun osat viimeistä lukuunottamatta ovat linkkejä ja ne noudattavat H5-otsikkotason fonttia sekä tavallisen linkin tyyliä. Murupolun viimeinen kohta ei ole linkki. 
+ 
+ Osiot erotetaan toisistaan /-merkillä. 
 	
-Fontti: H5-tyylit. Semanttisesti ei H5-tason otsikko vaan navigaatio-elementti. 
+Vaikka murupolku noudattaa H5-tason fonttia, se ei ole semanttisesti H5-tason otsikko vaan navigaatio-elementti. 
+
+| Murupolun osa | Font           | Font-size | Color   | Text-decoration |
+| ------------- | -------------- | --------- | ------- | --------------- |
+| Linkki        | Barlow, medium | 14px      | #006ca5 | none            |
+| Viimeinen     | Barlow, medium | 14px      | musta   | none            |
+
+**Murupolku desktopissa** 
+
+Desktopissa näytetään murupolussa kaikki tasot: 
+
+![Murupolku desktopissa.](images/murupolku.png)
 	
-**Desktop:** 
+**Murupolku mobiilissa**
 
-Kaikki tasot näkyvissä: 
+Mobiilissa matalilla sivuston hierarkian tasoilla (n. kaksi ensimmäistä tasoa) näytetään normaali murupolku: 
 
-Etusivu >  Liikenne ja matkailu >  Suomalaisten matkailu > Tilastojulkistus
-	
-**Mobiili:**
+![Murupolku mobiilissa ylemmillä hierarkian tasoilla.](images/murupolku_mobiili1.png)
 
-Korkealla sivuston hierarkian tasolla näytetään normaali murupolku: 
+Syvämmällä hierarkian tasoilla murupolussa näytetään vain linkki yhtä tasoa hierarkiassa ylemmäs. Näin estetään murupolun rivittyminen mobiilissa. Esim. tilastojulkistus-sivun murupolussa näkyy vain linkki tilaston sivulle:
 
-Etusivu > Liikenne ja matkailu
+![Murupolku mobiilissa syvemmillä hierarkian tasoilla.](images/murupolku_mobiili2.png)
 
-Syvän hierarkian tasolla murupolussa näytetään vain linkki edelliselle tasolle. Esim. tilastojulkistus-sivun murupolussa näkyy linkki tilaston sivulle: 
-
-< Suomalaisten matkailu
+|                                             | Murupolun muoto                                                              |
+| ------------------------------------------- | ------------------------------------------------------------------ |
+| **Desktop**                                 | Tilastotieto / Suomalaisten matkailu / Tilastojulkistus / Taulukko |
+| **Mobiili (matalilla hierarkian tasoilla)** | Tilastotieto / Suomalaisten matkailu                               |
+| **Mobiili (syvillä hierarkian tasoilla)**   | < Tilastojulkistus                                                 |
 
 ### Painikkeet
-![Primary button](images/primary_button.png)
+
+![Painikkeiden eri tilat.](images/buttons.png)
+
+**Yhteiset ominaisuudet**
+|Font|Border-radius|Min-width|Min-height|Focus-kehys|
+|-|-|-|-|-|
+|Source Sans Pro, regular, 16px/1rem|5px|80px|40px|2px, #0073b0|
+
+#### Ensisijainen painike
+
+![Ensisijaisen painikkeen eri tilat.](images/primary_buttons.png)
+
+|Tila|Color|Background-color|Border|Box-shadow|
+|-|-|-|-|-|
+|**Tavallinen**|valkoinen|#0073b0|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
+|**Selected/pressed**|valkoinen|#0073b0|-|2px, 2px, 5px, rgba(5,3,112,0.35) inset|
+|**Disabled**|#666666|#f2f2f2|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
+|**Hover**|valkoinen|#338fc0|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
+|**Focus**|valkoinen|#338fc0|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
+
+#### Toisijainen painike
+
+![Toissijaisen painikkeen eri tilat.](images/secondary_buttons.png)
+
+|Tila|Color|Background-color|Border|Box-shadow|
+|-|-|-|-|-|
+|**Tavallinen**|#0073b0|valkoinen|#0073b0|2px, 2px, 5px, rgba(102,102,102,0.35)|
+|**Selected/pressed**|#0073b0|valkoinen|#0073b0|2px, 2px, 5px, rgba(102,102,102,0.35) inset|
+|**Disabled**|#7f7f7f|valkoinen|#aaaaaa|2px, 2px, 5px, rgba(102,102,102,0.35)|
+|**Hover**|#0073b0|#f2f2f2|#0073b0|2px, 2px, 5px, rgba(102,102,102,0.35)|
+|**Focus**|#0073b0|#f2f2f2|#0073b0|2px, 2px, 5px, rgba(102,102,102,0.35)|
+
+#### Kolmassijainen painike
+
+![Kolmassijaisen painikkeen eri tilat.](images/tertiary_buttons.png)
+
+|Tila|Color|Background-color|Border|Box-shadow|
+|-|-|-|-|-|
+|**Tavallinen**|#0073b0|#f2f8fb|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
+|**Selected/pressed**|#0073b0|#f2f8fb|-|2px, 2px, 5px, rgba(102,102,102,0.35) inset|
+|**Disabled**|#666666|#f2f2f2|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
+|**Hover**|musta|#f2f8fb|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
+|**Focus**|musta|#f2f8fb|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
+
+#### Negatiivi-painike
+
+![Negatiivi-painikkeen eri tilat.](images/negative_buttons.png)
+
+|Tila|Color|Background-color|Border|Box-shadow|
+|-|-|-|-|-|
+|**Tavallinen**|#0073b0|valkoinen|#0073b0|4px, 4px, 5px, rgba(85,85,85,0.35)|
+|**Selected/pressed**|#0073b0|valkoinen|#0073b0|2px, 2px, 5px, rgba(102,102,102,0.35) inset|
+|**Disabled**|#7f7f7f|valkoinen|#aaaaaa|4px, 4px, 5px, rgba(85,85,85,0.35)|
+|**Hover**|#0073b0|#f2f2f2|#0073b0|4px, 4px, 5px, rgba(85,85,85,0.35)|
+|**Focus**|?|?|?|?|
+
+#### Painikkeet mobiilissa
+
+![Painikkeet mobiilissa.](images/buttons_mobile.png)
+
+Mobiilissa painikkeet ovat lähes täysleveitä lukuunottamatta niiden oikealle ja vasemmalle puolelle jääviä marginaaleja. 
 
 ### Pudotusvalikot 
 
