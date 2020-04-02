@@ -19,7 +19,6 @@
   - [Jakoviiva](#jakoviiva)
   - [Haitari](#haitari)
     - [Haitarin ikonien tyylit](#haitarin-ikonien-tyylit)
-  - [Tilastokuvio](#tilastokuvio)
   - [Laajennuspaneeli](#laajennuspaneeli)
   - [Linkki](#linkki)
     - [Sisäinen linkki](#sis%c3%a4inen-linkki)
@@ -41,7 +40,15 @@
   - [Pääkohdat](#p%c3%a4%c3%a4kohdat)
   - [Tagi](#tagi)
     - [Tyyppi-tagi](#tyyppi-tagi)
+  - [Tilastokuviot](#tilastokuviot)
+    - [Kaikille kuviotyypeille yhteiset tyylit](#kaikille-kuviotyypeille-yhteiset-tyylit)
+    - [Kuvioiden saavutettavuus](#kuvioiden-saavutettavuus)
+    - [Viivakuvio](#viivakuvio)
+    - [Piirakkakuvio](#piirakkakuvio)
+    - [Pylväskuvio](#pylv%c3%a4skuvio)
+    - [Kuvion tooltip](#kuvion-tooltip)
   - [Tilastotaulukko](#tilastotaulukko)
+    - [Taulukon saavutettavuus](#taulukon-saavutettavuus)
   - [Video](#video)
 
 ## Typografia
@@ -88,9 +95,9 @@ Jos ollaan sivulla, jossa on bannerikuva (aiheen ja tarkennetun aiheen sivuilla)
 
 Navipalkin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Navipalkin sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Navipalkin sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. 
 
-| Font          | Font-size | Color     | Font-variant | Text-decoration | Padding                                                                      |
-| ------------- | --------- | --------- | ------------ | --------------- | ---------------------------------------------------------------------------- |
-| Barlow medium | 1.1rem    | valkoinen | normal       | none            | padding-left ja padding-right: 1.5rem, padding-top ja padding-bottom: 1.2rem |
+| Font          | Font-size | Color   | Font-variant | Text-decoration | Padding                                                                      |
+| ------------- | --------- | ------- | ------------ | --------------- | ---------------------------------------------------------------------------- |
+| Barlow medium | 1.1rem    | #ffffff | normal       | none            | padding-left ja padding-right: 1.5rem, padding-top ja padding-bottom: 1.2rem |
 			
 Navigaatiopalkin painikkeiden välissä on ohuet pystyviivat, viivojen korkeus sama kuin navipalkin korkeus: 
 | Width | Color   |
@@ -178,12 +185,6 @@ Plus-ja miinus-ikonit ovat suurempia ja tummempia ensimmäisellä tasolla ja pie
 | Ensimmäinen   | 15px   | 15px  | #0073b0  |
 | Toinen        | 11px   | 11px  | #338FC0F |
 
-### Tilastokuvio
-
-|             | Font |
-| ----------- | ---- |
-| **Otsikko** | H4   |
-
 ### Laajennuspaneeli 
 (Eng. expansion panel)
 
@@ -224,12 +225,12 @@ Vierailtu-tila:
 
 Negatiivi-linkki on linkki tummalla taustalla. Tumman taustan vuoksi sen tyylit eri tiloissa eroavat tavallisesta linkistä hieman. 
 
-| Tila           | Font        | Text-decoration | Color     | Muuta                                 |
-| -------------- | ----------- | --------------- | --------- | ------------------------------------- |
-| **Tavallinen** | Leipäteksti | none            | valkoinen |                                       |
-| **Hover**      |             | underline       | valkoinen | Kursori muuttuu kädeksi linkin päällä |
-| **Focus**      |             | underline       | valkoinen | Reunus: 2px, valkoinen                |
-| **Vierailtu**  |             | none            | valkoinen |                                       |
+| Tila           | Font        | Text-decoration | Color   | Muuta                                 |
+| -------------- | ----------- | --------------- | ------- | ------------------------------------- |
+| **Tavallinen** | Leipäteksti | none            | #ffffff |                                       |
+| **Hover**      |             | underline       | #ffffff | Kursori muuttuu kädeksi linkin päällä |
+| **Focus**      |             | underline       | #ffffff | Reunus: 2px, #ffffff                  |
+| **Vierailtu**  |             | none            | #ffffff |                                       |
 
 Tavallinen-tila:
 ![Tavallinen negatiivinen linkki.](images/negative_link.png)
@@ -270,12 +271,12 @@ Yksittäisessä erillään olevassa linkissä linkin perässä oleva nuoli koros
 
 Linkeillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin joko linkkitekstin molemmille puolille. 
 
-| Ikoni                | Color     |
-| -------------------- | --------- |
-| **Nuoli**            | #0073b0   |
-| **StatFin/database** | #f59a23   |
-| **Muu**              | musta     |
-| **Negatiivi**        | valkoinen |
+| Ikoni                | Color   |
+| -------------------- | ------- |
+| **Nuoli**            | #0073b0 |
+| **StatFin/database** | #f59a23 |
+| **Muu**              | #000000 |
+| **Negatiivi**        | #ffffff |
 
 #### Ulkoinen linkki
 
@@ -294,7 +295,7 @@ Vaikka murupolku noudattaa H5-tason fonttia, se ei ole semanttisesti H5-tason ot
 | Murupolun osa | Font           | Font-size | Color   | Text-decoration |
 | ------------- | -------------- | --------- | ------- | --------------- |
 | Linkki        | Barlow, medium | 14px      | #006ca5 | none            |
-| Viimeinen     | Barlow, medium | 14px      | musta   | none            |
+| Viimeinen     | Barlow, medium | 14px      | #000000 | none            |
 
 Murupolku käyttäytyy desktopissa ja mobiilissa hieman eri tavoin. 
 
@@ -314,7 +315,7 @@ Syvämmällä hierarkian tasoilla murupolussa näytetään vain linkki yhtä tas
 
 ![Murupolku mobiilissa syvemmillä hierarkian tasoilla.](images/murupolku_mobiili2.png)
 
-|                                             | Murupolun muoto                                                              |
+|                                             | Murupolun muoto                                                    |
 | ------------------------------------------- | ------------------------------------------------------------------ |
 | **Desktop**                                 | Tilastotieto / Suomalaisten matkailu / Tilastojulkistus / Taulukko |
 | **Mobiili (matalilla hierarkian tasoilla)** | Tilastotieto / Suomalaisten matkailu                               |
@@ -331,57 +332,57 @@ Mobiilissa painikkeet ovat täysleveitä lukuunottamatta niiden oikealle ja vase
 ![Painikkeiden koko ja eri tilat desktopissa.](images/buttons.png)
 
 **Painikkeiden yhteiset ominaisuudet**
-|Font|Border-radius|Min-width|Min-height|Focus-kehys|
-|-|-|-|-|-|
-|Source Sans Pro, regular, 16px/1rem|5px|80px|40px|2px, #0073b0|
+| Font                     | Font-size | Border-radius | Min-width | Min-height | Focus-kehys  |
+| ------------------------ | --------- | ------------- | --------- | ---------- | ------------ |
+| Source Sans Pro, regular | 16px/1rem | 5px           | 80px      | 40px       | 2px, #0073b0 |
 
 #### Ensisijainen painike
 
 ![Ensisijaisen painikkeen eri tilat.](images/primary_buttons.png)
 
-|Tila|Color|Background-color|Border|Box-shadow|
-|-|-|-|-|-|
-|**Tavallinen**|valkoinen|#0073b0|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
-|**Selected/pressed**|valkoinen|#0073b0|-|2px, 2px, 5px, rgba(5,3,112,0.35) inset|
-|**Disabled**|#666666|#f2f2f2|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
-|**Hover**|valkoinen|#338fc0|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
-|**Focus**|valkoinen|#338fc0|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
+| Tila                 | Color   | Background-color | Border | Box-shadow                              |
+| -------------------- | ------- | ---------------- | ------ | --------------------------------------- |
+| **Tavallinen**       | #ffffff | #0073b0          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |
+| **Selected/pressed** | #ffffff | #0073b0          | -      | 2px, 2px, 5px, rgba(5,3,112,0.35) inset |
+| **Disabled**         | #666666 | #f2f2f2          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |
+| **Hover**            | #ffffff | #338fc0          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |
+| **Focus**            | #ffffff | #338fc0          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |
 
 #### Toisijainen painike
 
 ![Toissijaisen painikkeen eri tilat.](images/secondary_buttons.png)
 
-|Tila|Color|Background-color|Border|Box-shadow|
-|-|-|-|-|-|
-|**Tavallinen**|#0073b0|valkoinen|#0073b0|2px, 2px, 5px, rgba(102,102,102,0.35)|
-|**Selected/pressed**|#0073b0|valkoinen|#0073b0|2px, 2px, 5px, rgba(102,102,102,0.35) inset|
-|**Disabled**|#7f7f7f|valkoinen|#aaaaaa|2px, 2px, 5px, rgba(102,102,102,0.35)|
-|**Hover**|#0073b0|#f2f2f2|#0073b0|2px, 2px, 5px, rgba(102,102,102,0.35)|
-|**Focus**|#0073b0|#f2f2f2|#0073b0|2px, 2px, 5px, rgba(102,102,102,0.35)|
+| Tila                 | Color   | Background-color | Border  | Box-shadow                                  |
+| -------------------- | ------- | ---------------- | ------- | ------------------------------------------- |
+| **Tavallinen**       | #0073b0 | #ffffff          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
+| **Selected/pressed** | #0073b0 | #ffffff          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35) inset |
+| **Disabled**         | #7f7f7f | #ffffff          | #aaaaaa | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
+| **Hover**            | #0073b0 | #f2f2f2          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
+| **Focus**            | #0073b0 | #f2f2f2          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
 
 #### Kolmassijainen painike
 
 ![Kolmassijaisen painikkeen eri tilat.](images/tertiary_buttons.png)
 
-|Tila|Color|Background-color|Border|Box-shadow|
-|-|-|-|-|-|
-|**Tavallinen**|#0073b0|#f2f8fb|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
-|**Selected/pressed**|#0073b0|#f2f8fb|-|2px, 2px, 5px, rgba(102,102,102,0.35) inset|
-|**Disabled**|#666666|#f2f2f2|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
-|**Hover**|musta|#f2f8fb|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
-|**Focus**|musta|#f2f8fb|-|2px, 2px, 5px, rgba(102,102,102,0.35)|
+| Tila                 | Color   | Background-color | Border | Box-shadow                                  |
+| -------------------- | ------- | ---------------- | ------ | ------------------------------------------- |
+| **Tavallinen**       | #0073b0 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
+| **Selected/pressed** | #0073b0 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35) inset |
+| **Disabled**         | #666666 | #f2f2f2          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
+| **Hover**            | #000000 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
+| **Focus**            | #000000 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
 
 #### Negatiivi-painike
 
 ![Negatiivi-painikkeen eri tilat.](images/negative_buttons.png)
 
-|Tila|Color|Background-color|Border|Box-shadow|
-|-|-|-|-|-|
-|**Tavallinen**|#0073b0|valkoinen|#0073b0|4px, 4px, 5px, rgba(85,85,85,0.35)|
-|**Selected/pressed**|#0073b0|valkoinen|#0073b0|2px, 2px, 5px, rgba(102,102,102,0.35) inset|
-|**Disabled**|#7f7f7f|valkoinen|#aaaaaa|4px, 4px, 5px, rgba(85,85,85,0.35)|
-|**Hover**|#0073b0|#f2f2f2|#0073b0|4px, 4px, 5px, rgba(85,85,85,0.35)|
-|**Focus**|?|?|?|?|
+| Tila                 | Color   | Background-color | Border  | Box-shadow                                  |
+| -------------------- | ------- | ---------------- | ------- | ------------------------------------------- |
+| **Tavallinen**       | #0073b0 | #ffffff          | #0073b0 | 4px, 4px, 5px, rgba(85,85,85,0.35)          |
+| **Selected/pressed** | #0073b0 | #ffffff          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35) inset |
+| **Disabled**         | #7f7f7f | #ffffff          | #aaaaaa | 4px, 4px, 5px, rgba(85,85,85,0.35)          |
+| **Hover**            | #0073b0 | #f2f2f2          | #0073b0 | 4px, 4px, 5px, rgba(85,85,85,0.35)          |
+| **Focus**            | ?       | ?                | ?       | ?                                           |
 
 ### Pudotusvalikko
 
@@ -412,15 +413,111 @@ Vasen pystyviiva: #00B2A9. Pystyviivaa ei ole mobiilissa.
 
 Fontti: Barlow medium 14px, #333333
 
+### Tilastokuviot
+
+#### Kaikille kuviotyypeille yhteiset tyylit
+
+**Fontit**
+
+|                | Font                          | Font-size   | Text-align |
+| -------------- | ----------------------------- | ----------- | ---------- |
+| **Otsikko**    | Barlow Semi Condensed medium  | 1rem (16px) | center     |
+| **Alaotsikko** | Barlow Semi Condensed regular | 1rem (16px) | center     |
+| **Muu teksti** | Barlow Semi Condensed regular | 1rem (16px) |            |
+
+**Hilaviivat**
+
+| Color   | Width  |
+| ------- | ------ |
+| #666666 | 0.25px |
+
+**Akselit**
+
+|              | Color   | Width | Akselin otsikon sijainti                   |
+| ------------ | ------- | ----- | ------------------------------------------ |
+| **y-akseli** | #666666 | 0.5px | Akseliviivan keskellä, eli nykyinen paikka |
+| **x-akseli** | #666666 | 0.5px | Akseliviivan keskellä, eli nykyinen paikka |
+
+#### Kuvioiden saavutettavuus
+
+Suositus on, että kuvioon ei laiteta liikaa sisältöä. Tällöin kuvio pysyy helpommin ymmärrettävänä ja värisävyjen kontrastit riittävät harmaan sävyisinäkin (täyden värisokeuden tapaus). Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri kuvioon. 
+
+Tekstivastineita (alt-tekstiä) ei ole mahdollista tehdä kaikille kuvioille, koska niitä on niin paljon. Tämän vuoksi kuviot piilotetaan ruudunlukijalta. Tällöin ruudunlukija ei lue kuvioiden otsikoitakaan. Kuvioiden sisältö tulee kuitenkin tarjota sivulla tekstimuodossa, jotta myös ruudunlukijaa käyttävät saavat kuvioiden sisältämän informaation. 
+
+Tilastokuvioissa viivat/pylväät/ym. osat erotetaan toisistaan väreillä. Tämä saavutettavuusrajoite tulee mainita saavutettavuusselosteessa. Tilastokuvioissa ei siis käytetä reunaviivoja, paksuuseroja, eri muotoja tai pintakuviointeja osioiden erottamiseksi toisistaan. 
+
+#### Viivakuvio
+
+![Viivakuvio.](images/viivakuvio.png)
+
+Viivojen selitteet sijaitsevat kuvion alla. Näin saadaan niille enemmän tilaa, sillä selitetekstit voivat olla pitkiä. 
+
+|            | Width |
+| ---------- | ----- |
+| **Viivat** | 3px   |
+
+#### Piirakkakuvio
+
+(Tähän kuva piirakkakuviosta.)
+
+Piirakkakuvioissa lukuarvot sijaitsevat piirakan ulkopuolella ja on luku yhdistetty viivalla piirakan viipaleeseen (tämä on jo ennestään käytössä oleva malli). 
+
+Piirakoissa selitetekstien järjestys on laskeva suuruusjärjestys. 
+
+#### Pylväskuvio
+
+(Tähän kuva pylväskuviosta.)
+
+Pylväskuvioissa selitetekstit ovat järjestyksessä palkkien mukaan eli alhaalta ylös. 
+
+#### Kuvion tooltip
+
+![Viivakuvion tooltip.](images/viivakuvio_tooltip.png)
+
+Kuvion tooltip on pieni laatikko, joka tulee näkyviin kuvion päälle ja kertoo tietyn datapisteen arvon. Tooltip ilmestyy näkyviin hover-toiminnolla eli kursorin osuessa kuvion kohtaan, josta datapisteen arvo on saatavissa. Tooltip kertoo muuttujan nimen, arvon labelin ja lopullisen datapisteen arvon. 
+
+| Font                          | Font-size   | Background-color | Border  | Box-shadow                            |
+| ----------------------------- | ----------- | ---------------- | ------- | ------------------------------------- |
+| Barlow Semi Condensed regular | 1rem (16px) | #f2f8fb          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35) |
+
+
 ### Tilastotaulukko
-Otsikon fontti: H4-tyyli
-Fontti: Barlow Semi Condensed regular
 
-Sarake- ja riviotsikoiden fonttityyli: Barlow Semi Condensed SemiBold
+![Taulukko mobiilissa.](images/taulukko_mobile_tyylit.png)
 
-Solun padding-left ja padding-right: 10px
+![Taulukko desktop-koossa.](images/taulukko_desktop_tyylit.png)
 
-Solun padding-top ja padding-bottom: 8px
+**Taulukko**
+ | Border-width                         | Padding                          |
+ | ------------------------------------ | -------------------------------- |
+ | top/bottom: 0,5px left/right: 0,25px | top/bottom: 8px left/right: 10px |
+
+|                            | Background-color | Border  | Border-width |
+| -------------------------- | ---------------- | ------- | ------------ |
+| **Rivi- ja sarakeotsikot** | #f2f8fb          | #0073b0 | 0,5px        |
+| **Solu**                   | #ffffff          | #0073b0 | 0,25px       |
+
+**Fontit**
+|                        | Font                           | Font-size                         | Text-align | Vertical-align |
+| ---------------------- | ------------------------------ | --------------------------------- | ---------- | -------------- |
+| Otsikko                | Barlow Semi Condensed regular  | 1rem (16px)                       |            |                |
+| Sarake- ja riviotsikot | Barlow Semi Condensed SemiBold | 1rem (16px)                       | left       |                |
+| Solut                  | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | right      | bottom         |
+
+**Rivin hover**
+|Background-color|
+|-|
+|#cce3fe|
+
+
+#### Taulukon saavutettavuus
+Suositus on, että taulukkoon ei laiteta liikaa sisältöä. On myös hyvä välttää tekemästä taulukoita, joissa on todella paljon sarakkeita ja/tai rivejä. Näin taulukot pysyvät helpommin ymmärrettävinä ja vertailtavina ja taulukoita on myös helpompi käyttää mobiililaitteilla. Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri taulukkoon. 
+
+Sarake- ja riviotsikkojen tulee olla mahdollisimman lyhyitä ja ytimekkäitä. Liian pitkiä sarake- ja riviotsikoita tulee välttää. 
+
+Jos on tarpeen tehdä hierarkisia taulukoita, on suositeltavaa käyttää korkeintaan kahta hierarkian tasoa. Myös tämä auttaa taulukon ymmärrettävyyttä. 
+
+
 
 ### Video
 Otsikon fontti: H4-tyyli
