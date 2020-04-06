@@ -483,9 +483,37 @@ Kuvion tooltip on pieni laatikko, joka tulee näkyviin kuvion päälle ja kertoo
 
 ### Tilastotaulukko
 
-![Taulukko mobiilissa.](images/taulukko_mobile_tyylit.png)
+#### Taulukon saavutettavuus
+Suositus on, että yhteen taulukkoon ei laiteta liikaa sisältöä. On myös hyvä välttää tekemästä taulukoita, joissa on todella paljon sarakkeita ja/tai rivejä. 
+Näin taulukot pysyvät helpommin ymmärrettävinä ja vertailtavina ja taulukoita on myös helpompi käyttää mobiililaitteilla. Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri taulukkoon. 
+
+Sarake- ja riviotsikkojen tulee olla mahdollisimman lyhyitä ja ytimekkäitä. Liian pitkiä sarake- ja riviotsikoita tulee välttää. Tämä tekee taulukot ymmärrettävämmiksi ja käytettävämmiksi ja myös auttaa taulukoita asettumaan paremmin mobiililaitteissa. 
+
+Jos on tarpeen tehdä hierarkisia taulukoita, on suositeltavaa käyttää korkeintaan kahta hierarkian tasoa. Myös tämä auttaa taulukon ymmärrettävyyttä. 
+
+**Taulukko pienillä näytöillä**
+
+![Taulukko mobiilissa, riviotsikot jäädytetty paikoilleen.](images/taulukko_mobile_tyylit.png)
+
+Vaikka taulukot yritetään pitää järkevän kokoisina, voi silti käydä niin, että taulukosta tulee niin leveä tai pitkä, että se ei mahdu pienille näytöille kokonaan. Tällöin taulukon rivi- tai sarakeotsikot voidaan "jäädyttää" paikoilleen. 
+
+Jos taulukko on näyttöä leveämpi, taulukon riviotsikot "jäädytetään" paikalleen ja muu taulukko on liikuteltavissa oikealle ja vasemmalle. Riviotsikot vievät n. 30% näytön leveydestä. Scrollbarit taulukon liikutettavan osan yllä ja alla vihjaavat tästä liikuteltavuudesta. Taulukkoa voi liikutella scrollbarien lisäksi myös itse taulukon liikuteltavaan osaan (muu kuin riviotsikot-sarake) koskemalla.
+ 
+Jos taulukko on näyttöä pidempi, taulukon sarakeotsikot voidaan jäädyttää paikoilleen. Kun sivua vieritetään taulukon kohdalta alaspäin, taulukon sarakeotsikot jäävät näkyviin näytön yläreunaan ja muuta taulukkoa voidaan liikuttaa pystysuunnassa. Kun on päästy taulukon loppuun ja jatketaan sivun vieritystä edelleen alaspäin, sarakeotsikot katoavat näytön yläreunasta näkyvistä muun taulukon mukana. 
+
+Sekä rivi- että sarakeotsikot eivät voi olla samaan aikaan jäädytetyt. Riippuu taulukosta, kummat otsikot kannattaa jäädyttää mobiililaitteissa ja pienissä näytöissä. 
+
+**Taulukko isoilla näytöillä**
 
 ![Taulukko desktop-koossa.](images/taulukko_desktop_tyylit.png)
+
+Taulukoiden tulee desktop-laitteilla mahtua leveydeltään sivuston sisältöalueeseen, joka on leveydeltään 1200px. 
+
+![Leveä taulukko desktop-koossa, riviotsikot jäädytetty paikoilleen.](images/taulukko_desktop_levea.png)
+
+Vain hyvin poikkeuksellisissa tilanteissa, joissa tämä ei onnistu eikä taulukkoa saada muokattua sisältöalueeseen mahtuvaksi, taulukko käyttäytyy desktop-laitteilla kuten mobiilissa. Näissä tapauksissa siis taulukon riviotsikot jäädytetään ja taulukon muuta osaa pystyy liikuttamaan vaakasuunnassa scrollbareja liikuttamalla. Taulukon liikutettavan osan ylä- ja alapuolelle tulevat scrollbarit.
+
+Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena auttaa taulukoita myös pysymään sisältöalueen (1200px leveys) sisällä desktop-koossa. Tällöin ne eivät tarvitse desktop-laitteilla jäädytettyjä riviotsikoita ja vaakasuuntaista vieritysominaisuutta.  
 
 **Taulukko**
  | Border-width                         | Padding                          |
@@ -509,13 +537,6 @@ Kuvion tooltip on pieni laatikko, joka tulee näkyviin kuvion päälle ja kertoo
 |-|
 |#cce3fe|
 
-
-#### Taulukon saavutettavuus
-Suositus on, että taulukkoon ei laiteta liikaa sisältöä. On myös hyvä välttää tekemästä taulukoita, joissa on todella paljon sarakkeita ja/tai rivejä. Näin taulukot pysyvät helpommin ymmärrettävinä ja vertailtavina ja taulukoita on myös helpompi käyttää mobiililaitteilla. Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri taulukkoon. 
-
-Sarake- ja riviotsikkojen tulee olla mahdollisimman lyhyitä ja ytimekkäitä. Liian pitkiä sarake- ja riviotsikoita tulee välttää. 
-
-Jos on tarpeen tehdä hierarkisia taulukoita, on suositeltavaa käyttää korkeintaan kahta hierarkian tasoa. Myös tämä auttaa taulukon ymmärrettävyyttä. 
 
 
 
