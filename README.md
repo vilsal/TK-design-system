@@ -38,8 +38,7 @@
     - [Yhden valinnan](#yhden-valinnan)
     - [Useamman valinnan (multi select)](#useamman-valinnan-multi-select)
   - [Pääkohdat](#p%c3%a4%c3%a4kohdat)
-  - [Tagi](#tagi)
-    - [Tyyppi-tagi](#tyyppi-tagi)
+  - [Tagit](#tagit)
   - [Tilastokuviot](#tilastokuviot)
     - [Kaikille kuviotyypeille yhteiset tyylit](#kaikille-kuviotyypeille-yhteiset-tyylit)
     - [Kuvioiden saavutettavuus](#kuvioiden-saavutettavuus)
@@ -49,22 +48,29 @@
     - [Kuvion tooltip](#kuvion-tooltip)
   - [Tilastotaulukko](#tilastotaulukko)
     - [Taulukon saavutettavuus](#taulukon-saavutettavuus)
+    - [Taulukko pienillä näytöillä](#taulukko-pienill%c3%a4-n%c3%a4yt%c3%b6ill%c3%a4)
+    - [Taulukko isoilla näytöillä](#taulukko-isoilla-n%c3%a4yt%c3%b6ill%c3%a4)
+    - [Taulukon tyylit](#taulukon-tyylit)
   - [Video](#video)
+    - [Koko](#koko-1)
+    - [Videoiden saavutettavuus](#videoiden-saavutettavuus)
 
 ## Typografia
 Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista on tässä ilmoitettu pikseleinä, ne tulee toteuttaa suhteellisina arvoina (em tai rem). 
 
-| Taso             | Font                     | Font-size     | Font-family                                                    |
-| ---------------- | ------------------------ | ------------- | -------------------------------------------------------------- |
-| Leipäteksti      | Source Sans Pro, regular | 16px/1rem     | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif |
-| Leipäteksti, iso | Source Sans Pro, regular | 18px          |
-| H1               | Barlow, regular          | 34px          |
-| H2               | Barlow, regular          | 28px          |
-| H3               | Barlow, regular          | 22px          |
-| H4               | Barlow, medium           | 16px          |
-| H5               | Barlow, medium           | 14px          |
-| Ingressi         | Barlow regular           | 17px/1.255rem |
-| Introteksti      | Barlow, medium           | 14px          |
+| Taso                | Font                     | Font-size     | Font-family                                                    | Color   |
+| ------------------- | ------------------------ | ------------- | -------------------------------------------------------------- | ------- |
+| Leipäteksti         | Source Sans Pro, regular | 16px/1rem     | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif |         |
+| Leipäteksti, iso    | Source Sans Pro, regular | 18px          |                                                                |         |
+| H1                  | Barlow, regular          | 34px          |                                                                |         |
+| H2                  | Barlow, regular          | 28px          |                                                                |         |
+| H3                  | Barlow, regular          | 22px          |                                                                |         |
+| H4                  | Barlow, medium           | 16px          |                                                                |         |
+| H5                  | Barlow, medium           | 14px          |                                                                |         |
+| Ingressi            | Barlow regular           | 17px/1.255rem |                                                                |         |
+| Introteksti         | Barlow, medium           | 14px          |                                                                |         |
+| Päiväys/kirjoittaja | Barlow, regular          | 14px          |                                                                |         |
+| Tyyppitagit         | Barlow, semibold         | 14px          |                                                                | #333333 |
 
 
 ## Kuvat
@@ -406,12 +412,39 @@ Pallon väri: #00B2A9
 
 Vasen pystyviiva: #00B2A9. Pystyviivaa ei ole mobiilissa.
 
-### Tagi
+### Tagit
 
-#### Tyyppi-tagi
-= Tyyppitagi Tilasto-, Tilastojulkistus- ja Muutoksia tässä tilastossa -sivujen yläosassa. 
+![Tagien paikka on otsikon yläpuolella. ](images/tagin_paikka.png)
 
-Fontti: Barlow medium 14px, #333333
+Tageja käytetään antamaan julkaisuista lisää tietoa. Ne sijaitsevat otsikon yläpuolella tilastojen ja julkaisujen sivuilla sekä julkaisujen nostoelementeissä. 
+
+Tagit antavat lisätietoa julkaisun ja sivun: 
+* sisältötyypistä: tilasto, tilastojulkistus, taulukko, kuvio, indikaattori, artikkeli, blogi, video, katsaus, muutoksia tässä tilastossa, jne.   
+* mihin tilastoon julkaisu kuuluu,
+* mitä viiteajankohtaa tilastojulkistus käsittelee, 
+* mikä on tilastojulkistuksen status: ennakko, pikaennakko, lopullinen jne. 
+* mihin domainiin/palveluun julkaisu kuuluu, jos se kuuluu muuhun kuin stat.fi-domainiin: Findikaattori, Tieto&trendit. 
+ 
+Huom! Tageilla ei merkitä julkaisupäivämäärää, sitä varten on oma elementtinsä. 
+
+![Julkaisujen nostoelementeissä tageja on useita. ](images/tagi_tilasto.png)
+
+Tageja voi olla julkaisujen nostoelementeissä useampi peräkkäin. Esimerkiksi tilastojulkistuksen nostoelementissä on julkaisun tyyppi, tilasto, viiteajankohta ja julkaisun status. Julkaisun sisältötyyppi erotetaan muista tageista |-merkillä. 
+
+![Tagi tilastojulkistuksen sivulla. Tagin paikka on otsikon yläpuolella.](images/tagi_tilastojulkistus.png)
+
+Julkaisujen sivuilla on vain sivun sisältötyyppi-tagi, esimerkiksi tilastojulkistuksen sivulla Tilastojulkistus. Muita tageja ei ole tarpeen toistaa, sillä niiden tiedot esitetään sivulla muissa kohdissa. 
+
+![Tieto&trendit-blogin tagi.](images/tagi_blogi.png)
+
+Silloin kun nostoelementtien linkki vie ulkoiseen palveluun, käytetään ulkoisen linkin ikonia tagissa mukana. Ulkoisen linkin ikoni laitetaan domainin nimen perään. 
+
+**Tagien tyyli** 
+
+|                        | Font             | Font-size | Color   |
+| ---------------------- | ---------------- | --------- | ------- |
+| Tagit            | Barlow, semibold | 14px      | #333333 |
+| Ulkoinen linkki -ikoni |                  |           | #333333 |
 
 ### Tilastokuviot
 
@@ -491,7 +524,7 @@ Sarake- ja riviotsikkojen tulee olla mahdollisimman lyhyitä ja ytimekkäitä. L
 
 Jos on tarpeen tehdä hierarkisia taulukoita, on suositeltavaa käyttää korkeintaan kahta hierarkian tasoa. Myös tämä auttaa taulukon ymmärrettävyyttä. 
 
-**Taulukko pienillä näytöillä**
+#### Taulukko pienillä näytöillä
 
 ![Taulukko mobiilissa, riviotsikot jäädytetty paikoilleen.](images/taulukko_mobile_tyylit.png)
 
@@ -503,7 +536,7 @@ Jos taulukko on näyttöä pidempi, taulukon sarakeotsikot voidaan jäädyttää
 
 Sekä rivi- että sarakeotsikot eivät voi olla samaan aikaan jäädytetyt. Riippuu taulukosta, kummat otsikot kannattaa jäädyttää mobiililaitteissa ja pienissä näytöissä. 
 
-**Taulukko isoilla näytöillä**
+#### Taulukko isoilla näytöillä
 
 ![Taulukko desktop-koossa.](images/taulukko_desktop_tyylit.png)
 
@@ -515,15 +548,16 @@ Vain hyvin poikkeuksellisissa tilanteissa, joissa tämä ei onnistu eikä tauluk
 
 Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena auttaa taulukoita myös pysymään sisältöalueen (1200px leveys) sisällä desktop-koossa. Tällöin ne eivät tarvitse desktop-laitteilla jäädytettyjä riviotsikoita ja vaakasuuntaista vieritysominaisuutta.  
 
-**Taulukko**
- | Border-width                         | Padding                          |
- | ------------------------------------ | -------------------------------- |
- | top/bottom: 0,5px left/right: 0,25px | top/bottom: 8px left/right: 10px |
+#### Taulukon tyylit
 
-|                            | Background-color | Border  | Border-width |
-| -------------------------- | ---------------- | ------- | ------------ |
-| **Rivi- ja sarakeotsikot** | #f2f8fb          | #0073b0 | 0,5px        |
-| **Solu**                   | #ffffff          | #0073b0 | 0,25px       |
+**Taulukko**
+
+|                            | Background-color | Border  | Border-width                         | Padding                          |
+| -------------------------- | ---------------- | ------- | ------------------------------------ | -------------------------------- |
+| **Taulukko**               |                  | #0073b0 | top/bottom: 0,5px left/right: 0,25px | top/bottom: 8px left/right: 10px |
+| **Rivi- ja sarakeotsikot** | #f2f8fb          | #0073b0 | 0,5px                                | top/bottom: 8px left/right: 10px |
+| **Solu**                   | #ffffff          | #0073b0 | 0,25px                               | top/bottom: 8px left/right: 10px |
+| **Rivin hover**            | #cce3fe          |         |                                      |                                  |
 
 **Fontit**
 |                        | Font                           | Font-size                         | Text-align | Vertical-align |
@@ -532,16 +566,38 @@ Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena 
 | Sarake- ja riviotsikot | Barlow Semi Condensed SemiBold | 1rem (16px)                       | left       |                |
 | Solut                  | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | right      | bottom         |
 
-**Rivin hover**
-|Background-color|
-|-|
-|#cce3fe|
-
-
-
-
 ### Video
-Otsikon fontti: H4-tyyli
+
+Tilastojulkistuksiin voidaan liittää videoelementti. Videoelementti on erotettu muusta sisällöstä harmaalla taustalla. Elementti koostuu sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tageista, videon otsikosta, videon julkaisupäivämäärästä, linkistä Youtube-palveluun, itse videosta ja videon käsikirjoituksesta. Videon käsikirjoitus on saatavilla videon alla laajennuspaneelissa. 
+
+
+| Background-color |
+| ---------------- |
+|  #f2f2f2         |
+
+| Teksti-elementti   | Noudattaa tyyliä        |
+| ------------------ | ----------------------- |
+| Tagi               | tagin tyyli             |
+| Otsikko            | H3                      |
+| Julkaisupäivämäärä | päiväyksen tyyli        |
+| Youtube-linkki     | linkin tyyli            |
+| Käsikirjoitus      | laajennuspaneelin tyyli |
+
+
+#### Koko
+
+![Video mobiili-koossa.](images/video_mobiili.png)
+
+ Pienillä näytöillä videoelementin osat asettuvat allekkain. Järjestys ylhäältä alas on: sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tagit, videon otsikko, videon julkaisupäivämäärä, linkki Youtube-palveluun, videosta ja videon käsikirjoitus.
+
+![Video desktop-koossa.](images/video_desktop.png)
+
+Isoilla näytöillä elementit asettuvat vierekkäin. Tagit, otsikko, julkaisupäivämäärä ja linkki Youtubeen ovat vasemmalla, video oikealla ja käsikirjoitus-laajennuspaneeli näiden alla. Elementtien järjestys sama kuin mobiilissa kun sivua käytetään ruudunlukijalla tai näppäimistöllä. 
+
+#### Videoiden saavutettavuus
+
+Videoissa tulee olla tekstitys. (Kuvailutulkkaus?) Videon yhteydessä on tarjottava linkki Youtube-palveluun, jossa videon voi myös katsoa. Videon käsikirjoitus tulee myös tarjota videon yhteydessä. 
+
 
 
 
