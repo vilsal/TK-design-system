@@ -1,5 +1,5 @@
 
-# Stat.fi Beta Design System <!-- omit in toc -->
+# Beta Design System <!-- omit in toc -->
 
 ## Sisällysluettelo <!-- omit in toc -->
 - [Typografia](#typografia)
@@ -35,8 +35,9 @@
     - [Kolmassijainen painike](#kolmassijainen-painike)
     - [Negatiivi-painike](#negatiivi-painike)
   - [Pudotusvalikko](#pudotusvalikko)
-    - [Yhden valinnan](#yhden-valinnan)
-    - [Useamman valinnan (multi select)](#useamman-valinnan-multi-select)
+    - [Yhden valinnan pudotusvalikko](#yhden-valinnan-pudotusvalikko)
+    - [Useamman valinnan (multi select)	pudotusvalikko](#useamman-valinnan-multi-select-pudotusvalikko)
+    - [Pudotusvalikoiden saavutettavuus](#pudotusvalikoiden-saavutettavuus)
   - [Pääkohdat](#p%c3%a4%c3%a4kohdat)
   - [Tagit](#tagit)
   - [Tilastokuviot](#tilastokuviot)
@@ -391,14 +392,36 @@ Mobiilissa painikkeet ovat täysleveitä lukuunottamatta niiden oikealle ja vase
 | **Focus**            | ?       | ?                | ?       | ?                                           |
 
 ### Pudotusvalikko
-
 (Eng. dropdown)
 
-Pudotusvalikoilla on aina label. 
+Mobiili-käyttöliittymissä käytetään käyttöjärjestelmien valmiita pudotusvalikkojen toteutusratkaisuja. 
 
-#### Yhden valinnan
+Pudotusvalikoita on kahdenlaisia, niitä mistä valitaan valikon vaihtoehdoista yksi ja niitä, joissa voidaan valita useampi. 
 
-#### Useamman valinnan (multi select)	
+#### Yhden valinnan pudotusvalikko
+![Pudotusvalikko kiinni.](images/pudotusvalikko.png)
+
+Pudotusvalikon kentässä näkyy mikä valikon valinnoista on valittuna. Valikon kenttää klikkaamalla valikko avautuu. 
+
+![Pudotusvalikko avattuna.](images/pudotusvalikko_auki.png)
+
+Tavallisessa pudotusvalikossa voi tehdä vain yhden valinnan. Vaihtoehdon valinta sulkee valikon. Tehty valinta tulee näkyviin pudotusvalikon kenttään. 
+
+![Pudotusvalikkoon, jossa on paljon sisältöä tulee hakukenttä ja vieritysominaisuus.](images/pudotusvalikko_iso.png)
+
+Jos pudotusvalikossa valintavaihtoehtoja on yli 14, valikko ei veny pituutta vaan valikosta tulee pystysuunnassa vieritettävä. Valikon oikeaan laitaan tulee näkyviin scrollbar. 
+
+Jos valintavaihtoehtoja on yli 20, valikon sisään on hyvä lisätä hakutoiminnallisuus ja hakukenttä. Näin käyttäjät voivat hakea valikosta haluamaansa vaihtoehtoa nopeasti. 
+
+#### Useamman valinnan (multi select)	pudotusvalikko
+
+![Pudotusvalikko avattuna.](images/pudotusvalikko_multi.png)
+
+![Pudotusvalikko avattuna.](images/pudotusvalikko_multi_auki.png)
+
+#### Pudotusvalikoiden saavutettavuus
+
+Pudotusvalikon yläpuolella on sen nimike eli label. Label kertoo lyhyesti mitä pudotusvalikko sisältää. Ruudunlukijaa käyttäville kerrotaan pudotusvalikon status eli onko valikko kiinni vai auki. Ruudunlukijaa käyttäville kerrotaan myös mikä tai mitkä valikon valinnoista on valittuna.
 
 ### Pääkohdat
 
