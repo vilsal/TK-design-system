@@ -3,13 +3,16 @@
 
 ## Sisällysluettelo <!-- omit in toc -->
 - [Typografia](#typografia)
+  - [Typografian saavutettavuus](#typografian-saavutettavuus)
 - [Kuvat](#kuvat)
   - [Hero-kuva](#hero-kuva)
 - [Ikonit](#ikonit)
 - [Värit](#v%c3%a4rit)
 - [Sivupohja](#sivupohja)
-  - [Navigaatio-palkki](#navigaatio-palkki)
-  - [Megamenu](#megamenu)
+  - [Navigaatio-palkki mobiili](#navigaatio-palkki-mobiili)
+    - [Menu mobiili](#menu-mobiili)
+  - [Navigaatio-palkki desktop](#navigaatio-palkki-desktop)
+    - [Menut desktop](#menut-desktop)
   - [Sisältöalue](#sis%c3%a4lt%c3%b6alue)
   - [Sivuston tausta](#sivuston-tausta)
   - [Tekstipalsta](#tekstipalsta)
@@ -19,8 +22,10 @@
   - [Jakoviiva](#jakoviiva)
   - [Haitari](#haitari)
     - [Haitarin ikonien tyylit](#haitarin-ikonien-tyylit)
+    - [Haitarin saavutettavuus](#haitarin-saavutettavuus)
   - [Laajennuspaneeli](#laajennuspaneeli)
   - [Linkki](#linkki)
+    - [Linkkien saavutettavuus](#linkkien-saavutettavuus)
     - [Sisäinen linkki](#sis%c3%a4inen-linkki)
       - [Tavallinen linkki](#tavallinen-linkki)
       - [Negatiivi-linkki](#negatiivi-linkki)
@@ -41,8 +46,8 @@
   - [Pääkohdat](#p%c3%a4%c3%a4kohdat)
   - [Tagit](#tagit)
   - [Tilastokuviot](#tilastokuviot)
-    - [Kaikille kuviotyypeille yhteiset tyylit](#kaikille-kuviotyypeille-yhteiset-tyylit)
     - [Kuvioiden saavutettavuus](#kuvioiden-saavutettavuus)
+    - [Kaikille kuviotyypeille yhteiset tyylit](#kaikille-kuviotyypeille-yhteiset-tyylit)
     - [Viivakuvio](#viivakuvio)
     - [Piirakkakuvio](#piirakkakuvio)
     - [Pylväskuvio](#pylv%c3%a4skuvio)
@@ -53,8 +58,9 @@
     - [Taulukko isoilla näytöillä](#taulukko-isoilla-n%c3%a4yt%c3%b6ill%c3%a4)
     - [Taulukon tyylit](#taulukon-tyylit)
   - [Video](#video)
-    - [Koko](#koko-1)
     - [Videoiden saavutettavuus](#videoiden-saavutettavuus)
+    - [Koko](#koko-1)
+    - [Videoelementin tyylit](#videoelementin-tyylit)
 
 ## Typografia
 Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista on tässä ilmoitettu pikseleinä, ne tulee toteuttaa suhteellisina arvoina (em tai rem). 
@@ -73,73 +79,91 @@ Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista o
 | Päiväys/kirjoittaja | Barlow, regular          | 14px          |                                                                |         |
 | Tyyppitagit         | Barlow, semibold         | 14px          |                                                                | #333333 |
 
+### Typografian saavutettavuus
+* Fonttien koot tulee toteuttaa suhteellisina arvoina (em tai rem), jolloin käyttäjät pystyvät suurentamaan niitä halutessaan. 
+
 
 ## Kuvat
 ### Hero-kuva
-Mobiilissa hero-kuva ulottuu näytön laidasta laitaan. Mobiilinäytöllä näkyy täysikokoisesta kuvasta rajattu tietty kohta. (Kohta määritellään myöhemmin tarkemmin.)
 
-Desktopissa hero-kuva ulottuu näytön laidasta laitaan kunnes kuvan koko tulee vastaan. Sen jälkeen kuvan vasemmalle ja oikealle puolelle tulee marginaalit. Kuva-alueen korkeus pysyy samana koko ajan ja kuva rajautuu korkeudesta näytön koon kasvaessa. 
-	
-Hero-kuviksi valitaan sellaisia, jotka toimivat monessa koossa. 
+Hero-kuvia käytetään aihe- ja tarkka aihe -sivujen yläosassa. Jokaisella aiheella ja tarkalla aiheella on oma kuvansa. Hero-kuviksi valitaan sellaisia, jotka toimivat monessa koossa. 
+
+![Hero-kuva aihe-sivun mobiili-version yläosassa.](images/herokuva_mobiili.png)
+
+Mobiilissa hero-kuva ulottuu näytön laidasta laitaan. Mobiilinäytöllä näkyy täysikokoisesta kuvasta rajattu tietty kohta. (Kohta määritellään myöhemmin tarkemmin.) Mobiilissa sivun otsikko ja sen sininen tausta tulevat hero-kuvan alle. 
+
+![Hero-kuva aihe-sivun desktop-version yläosassa.](images/herokuva.png)
+
+Desktopissa hero-kuva ulottuu näytön laidasta laitaan kunnes kuvan koko tulee vastaan. Sen jälkeen kuvan vasemmalle ja oikealle puolelle tulee marginaalit. Kuva-alueen korkeus pysyy samana koko ajan ja kuva rajautuu korkeudesta näytön koon kasvaessa. Desktopissa sivun otsikko ja otsikon alla oleva sininen palkki tulee kuvan päälle. 
 
 ## Ikonit
 
-Ikoneina käytetään (jo aiemmin käytössä olleita) Font Awesomen ja IcoMoonin ilmaisia ikonikirjastoja. 
+Ikoneina käytetään (jo aiemmin käytössä olleita) Font Awesomen ja IcoMoonin ilmaisia ikonikirjastoja. Linkki ikonikirjastoihin lisätään myöhemmin. 
 
 ## Värit
-Väreinä käytetään Tilastokeskuksen väripalettia. (Värien kontrastitarkistusta pitää tehdä ja palettia päivittää!) 
+Väreinä käytetään Tilastokeskuksen väripalettia. Värit täydennetään tänne tai linkki niihin lisätään myöhemmin. 
 
 ## Sivupohja
+
+### Navigaatio-palkki mobiili
+
+Kuvaus lisätään suunnitelman valmistuttua. 
+
+#### Menu mobiili
 	
-### Navigaatio-palkki
-| Max-width | Sisältöalueen leveys | Background-color |
-| --------- | -------------------- | ---------------- |
-| 2500px    | 1200px               | #0073b0          |
+### Navigaatio-palkki desktop
+
+![Navigaatio-palkki](images/navipalkki.png)
+
+| Max-width | Background-color | Sisältöalueen leveys | Sisällön tasaus |
+| --------- | ---------------- | -------------------- | --------------- |
+| 2500px    | #0073b0          | 1200px               | left            |
 
 Navigaatio-palkin taustan leveys on näytön/selainikkunan laidasta laitaan 2500px asti. Siitä ylöspäin navipalkin oikealle ja vasemmalle puolelle tulee marginaalit. 
 *Poikkeus:* 
 Jos ollaan sivulla, jossa on bannerikuva (aiheen ja tarkennetun aiheen sivuilla): navipalkin tausta on näytön laidasta laitaan kunnes bannerikuvan rajat tulevat vastaan: navipalkki loppuu siinä missä bannerikuvakin. 
 
-Navipalkin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Navipalkin sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Navipalkin sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. 
+Navipalkin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Navipalkin sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Navipalkin sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. Navipalkin sisältö on tasattu vasempaan laitaan eikä siis levity tasaisesti koko navipalkin alueelle. 
 
 | Font          | Font-size | Color   | Font-variant | Text-decoration | Padding                                                                      |
 | ------------- | --------- | ------- | ------------ | --------------- | ---------------------------------------------------------------------------- |
 | Barlow medium | 1.1rem    | #ffffff | normal       | none            | padding-left ja padding-right: 1.5rem, padding-top ja padding-bottom: 1.2rem |
 			
-Navigaatiopalkin painikkeiden välissä on ohuet pystyviivat, viivojen korkeus sama kuin navipalkin korkeus: 
+Navigaatiopalkin linkkien välissä on ohuet pystyviivat. Viivojen korkeus sama kuin navipalkin korkeus: 
 | Width | Color   |
 | ----- | ------- |
 | 1px   | #338fc0 |
 
-Navipalkin sisällön tasaus: vasen. Sisältö ei levity tasaisesti koko navipalkin alueelle vaan on tasattu sisältöalueen vasempaan laitaan. 
+Se sivuston osio, jossa kulloinkin ollaan, näkyy navigaatiopalkissa korostettuna. Korostuksen tyyli määritellään myöhemmin tarkemmin. 
 
-### Megamenu
-Megamenun sisältö keskitetty vasempaan laitaan.  
+#### Menut desktop
+Navigaatiopalkista avautuvien menujen sisältö on tasattu vasempaan laitaan.  
 
 ### Sisältöalue
-Pikseleistä lasketaan rem-arvot tai %-osuudet. 
 
-|             | Leveys | Palstoja max | Sisällön tasaus |
-| ----------- | ------ | ------------ | --------------- |
-| **Desktop** | 1200px | 3            | vasen           |
-| **Mobiili** |        | 1            | vasen           |
+|             | Leveys | Palstoja max |
+| ----------- | ------ | ------------ |
+| **Desktop** | 1200px | 3            |
+| **Mobiili** |        | 1            |
 
-Sisältöalueen maksimileveys desktopissa on 1200px. Sisältöalueen sisältö on tasattu vasemmalle. Sisältöalue on jaettu desktopissa maksimissaan kolmeen palstaan ja mobiilissa yhteen palstaan. Desktopin kolme palstaa asettuvat responsiivisesti allekkain näytön/selainikkunan pienentyessä. 
+Sisältöalueen maksimileveys desktopissa on 1200px. Sisältöalue on jaettu desktopissa maksimissaan kolmeen palstaan ja mobiilissa yhteen palstaan. Desktopin kolme palstaa asettuvat responsiivisesti allekkain näytön/selainikkunan pienentyessä. 
 
 ### Sivuston tausta
+
 | Background|
 | ----- |
 | valkoinen, 2% musta |
 
-
 	
 ### Tekstipalsta
-|             | Width |
-| ----------- | ----- |
-| **Desktop** | 555px |
-| **Mobiili** |       |
+
+|             | Width | Text-align |
+| ----------- | ----- | ---------- |
+| **Desktop** | 555px | left       |
+| **Mobiili** |       | left       |
 
 ### Blokit
+
 |             | Background-color    | Margin        | Padding                                                                                                                                |
 | ----------- | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | **Desktop** | valkoinen, 2% musta | 2.5rem (40px) | 2.5rem (40px)                                                                                                                          |
@@ -147,21 +171,22 @@ Sisältöalueen maksimileveys desktopissa on 1200px. Sisältöalueen sisältö o
 
 ### Footer 
 
-| Max-width | Sisältöalueen leveys | Background-color |
-| --------- | -------------------- | ---------------- |
-| 2500px    | 1200px               | #0073b0          |
+| Max-width | Sisältöalueen leveys | Background-color | Palstoja max |
+| --------- | -------------------- | ---------------- | ------------ |
+| 2500px    | 1200px               | #0073b0          | 4            |
 		
 Footerin tausta ulottuu aina laidasta laitaan, sekä isoissa että pienissä näytöissä/selainikkunoissa. 
 Isoissa desktop-näytöissä 2500px leveyteen asti koko näytön levyinen, siitä ylöspäin tulee marginaalit. Eli footerin tausta käyttäytyy deskarissa kuten yläpalkin ja navipalkin tausta. 
 	
 Footerin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue.
 
-Neljä palstaa: ensimmäisessä Tilastokeskuksen logo, kolme muuta linkkipalstoja. Tarvittaessa näytön/selainikkunan pienentyessä palstat hyppäävät kokonaan toiselle riville ensimmäisen rivin palstojen alle. 
+Footerissa on neljä palstaa: ensimmäisessä Tilastokeskuksen logo, kolmessa muussa on linkkejä. Palstat käyttäytyvät responsiivisesti eli näytön/selainikkunan pienentyessä palstat hyppäävät allekkain: ensin kahteen riviin siten että kaksi ensimmäistä palstaa on samalla rivillä ja loput toisella, sitten neljään riviin eli jokainen palsta omalle rivilleen. 
 
 ## Komponentit
 
 ### Jakoviiva
-Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää tilaa. Niissä tilasteissa, joissa tyhjää tilaa ei voida käyttää, käytetään jakoviivoja.  
+
+Jakoviiva on kapea harmaa viiva, joka erottaa sisältöjä toisistaan. Jakoviivoja voidaan käyttää myös asioiden ryhmittelyyn asettamalla niitä eri ryhmien väliin, esim menuissa. 
 
 ![Jakoviiva](images/divider.png)
 
@@ -169,52 +194,66 @@ Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää ti
 | ------ | ------- |
 | 1px    | #aaaaaa |
 
-Jakoviivoja voidaan käyttää asioiden ryhmittelyyn asettamalla niitä eri ryhmien väliin, esim menuissa. 
-
-Jakoviivoilla voidaan myös erottaa saman kokonaisuuden/toisiinsa liittyviä asioita toisistaan. 
+Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää tilaa. Niissä tilasteissa, joissa tyhjää tilaa ei voida käyttää tai se ei ole riittävä tapa, käytetään jakoviivoja.  
 
 ![Jakoviiva erottamassa toisiinsa liittyviä asioita.](images/divider_example1.png)
 
+Jakoviivoilla voidaan myös erottaa saman kokonaisuuden/toisiinsa liittyviä asioita toisistaan. 
+
 ### Haitari 
 
-Haitari-rakenteella saadaan lyhennetty sivun pituutta. Haitarin sisällön tulee muodostaa yhtenäinen kokonaisuus. 
+Haitari-elementissä piilotetaan sisältöä otsikoiden alle. Haitarit auttavat hahmottamaan laajoja kokonaisuuksia ja niillä saadaan lyhennetty sivun pituutta. Otsikoita klikkaamalla piilotettua sisältöä saa näkyviin ja taas pois näkyvistä. 
 
 ![Avattu haitari-elementti, mobiiliversio.](images/haitari.png)
 
-Haitari on enintään kaksi tasoa syvä. Sisempi taso on sisennetty ensimmäisen alle, tällä ilmaistaan haitarin hierarkinen rakenne. Suljettujen kohtien kohdalla on plus-ikoni, joka muuttuu miinus-ikoniksi kun kohta avataan. Avatun kohdan alle tulee jakoviiva. 
+Haitarit ovat oletusarvoisesti suljettuja. Käyttäjä voi avata ja sulkea niiden osioita haluamassaan järjestyksessä. Useita haitarin osia voi olla avattuna auki samaan aikaan. 
 
-Plus-ja miinus-ikonit ovat suurempia ja tummempia ensimmäisellä tasolla ja pienempiä ja vaaleampia syvemmällä tasolla. Myös tällä kerrotaan visuaalisesti hierarkiasta. 
+Haitari on enintään kaksi tasoa syvä. Sisempi taso on sisennetty ensimmäisen alle, tällä viestitään haitarin hierarkista rakennetta. Suljettujen osien otsikoiden vasemmalla puolella on plus-ikoni. Kun osio avataan, plus-ikoni muuttuu miinus-ikoniksi. Avatun osion alle tulee jakoviiva. 
 
 #### Haitarin ikonien tyylit
+Plus-ja miinus-ikonit ovat suurempia ja tummempia ensimmäisellä tasolla ja pienempiä ja vaaleampia syvemmällä tasolla. Myös tällä kerrotaan visuaalisesti hierarkiasta. 
 
 | Hierarkiataso | Height | Width | Color    |
 | ------------- | ------ | ----- | -------- |
 | Ensimmäinen   | 15px   | 15px  | #0073b0  |
 | Toinen        | 11px   | 11px  | #338FC0F |
 
+#### Haitarin saavutettavuus
+* Kaikki käyttäjät eivät välttämättä huomaa haitari-elementtiä tai ymmärrä miten se toimii. Siksi haitariin ei pidä laittaa sellaista sisältöä, joka on käyttäjälle tärkeää huomata tai löytää. 
+* Haitarin sisällön tulee muodostaa yhtenäinen kokonaisuus. 
+
+
+
 ### Laajennuspaneeli 
 (Eng. expansion panel)
 
 Esim. Videon käsikirjoitus -laajennuspaneeli
 
-| Font | 
-| ---------- | 
-| Leipäteksti    | 
+Tyylit täydennetään kun elementti on saatu käsiteltyä. 
 	
 ### Linkki
 
-Kaikki linkit toimivat näppäimistökäytössä vain enterillä. 
+Linkkejä käytetään navigaatiossa sivuston sisällä sekä navigoinnissa ulkoisiin sivustoihin ja palveluihin. 
+
+#### Linkkien saavutettavuus
+* Yleisiä Katso lisää -tyylisiä linkkejä on hyvä välttää. Linkin tekstin tulee olla mahdollisimman tarkoitustaan tai kohdesivuaan kuvaava. 
+* Linkkien tekstien tulee olla mahdollisimman paljon kohdesivun otsikkoa vastaavia. 
+* Jos linkki vie toiselle sivustolle tai avaa tiedoston, on tämä käytävä linkistä ilmi sekä ruudunlukijaa käyttäville että näkeville käyttäjille. Näkeviä käyttäjiä varten linkin yhteyteen lisätään myös ulkoisen linkin ikoni ja ruudunlukijaa varten (mikä?). 
+* Linkkien tyylit on pidettävä yhtenäisinä. Navigaatiolinkit ovat poikkeus tästä, niillä on omat tyylinsä. 
+* Kaikki linkit toimivat näppäimistökäytössä vain enterillä. 
 
 #### Sisäinen linkki
 
 ##### Tavallinen linkki
 
+ Tavallisissa tekstistä erillään olevissa linkeissä on alleviivaus vain hover-tilassa. 
+
 | Tila           | Font        | Text-decoration | Color   | Muuta                                 |
 | -------------- | ----------- | --------------- | ------- | ------------------------------------- |
-| **Tavallinen** | Leipäteksti | none            | #006CA5 |                                       |
+| **Tavallinen** | Leipäteksti | none            | #006ca5 |                                       |
 | **Hover**      |             | underline       | #0039a6 | Kursori muuttuu kädeksi linkin päällä |
 | **Focus**      |             | underline       | #0039a6 | Reunus: 2px, #0073b0                  |
-| **Vierailtu**  |             | none            | #551A8B |                                       |
+| **Vierailtu**  |             | none            | #551a8b |                                       |
 
 Tavallinen-tila:
 ![Tavallinen linkki.](images/link.png)
@@ -230,7 +269,7 @@ Vierailtu-tila:
 
 ##### Negatiivi-linkki
 
-Negatiivi-linkki on linkki tummalla taustalla. Tumman taustan vuoksi sen tyylit eri tiloissa eroavat tavallisesta linkistä hieman. 
+Negatiivi-linkki on linkki tummalla taustalla. Tumman taustan vuoksi sen tyylit eri tiloissa hieman eroavat tavallisesta linkistä. 
 
 | Tila           | Font        | Text-decoration | Color   | Muuta                                 |
 | -------------- | ----------- | --------------- | ------- | ------------------------------------- |
@@ -253,16 +292,21 @@ Vierailtu-tila:
 
 ##### Linkki tekstin seassa
 
-Tekstin seassa, eli p-elementin sisällä, olevat linkit alleviivataan aina. Muissa linkeissä ei ole alleviivausta. 
-
-| Tila           | Font        | Text-decoration |
-| -------------- | ----------- | --------------- |
-| **Tavallinen** | Leipäteksti | underline       |
-
+Tekstin seassa, eli p-elementin sisällä, olevat linkit alleviivataan aina. Muissa linkeissä on alleviivaus vain hover-tilassa. 
 
 ![Tekstin seassa olevat linkit alleviivataan.](images/linkkip.png)
 
+| Tila           | Font        | Text-decoration |Color|Muuta|
+| -------------- | ----------- | --------------- |-|-|
+| **Tavallinen** | Leipäteksti | underline       |#006ca5||
+| **Hover**      |             | underline       |#0039a6|Kursori muuttuu kädeksi linkin päällä|
+| **Focus**      |             | underline       |#0039a6|Reunus: 2px, #0073b0|
+| **Vierailtu**  |             | underline       |#551a8b||
+
+
 ##### Linkki ikonilla
+
+Ikoneja voidaan käyttää linkkien osana helpottamaan linkin tunnistamista tai huomaamista. 
 
 ![Linkkejä ikonien kanssa.](images/icons_link.png)
 
@@ -276,7 +320,7 @@ Yksittäisessä erillään olevassa linkissä linkin perässä oleva nuoli koros
 
 ![Linkillä voi olla kaksi ikonia.](images/link_kaksi_ikonia.png)
 
-Linkeillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin joko linkkitekstin molemmille puolille. 
+Linkeillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin linkkitekstin molemmille puolille. 
 
 | Ikoni                | Color   |
 | -------------------- | ------- |
@@ -289,7 +333,7 @@ Linkeillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin joko linkkiteks
 
 ![Ulkoiseen palveluun vievä linkki.](images/ulkoinen_link.png)
 
-Ulkoiseen palveluun vievän linkin perässä on ulkoisen linkin ikoni. Tämä ikoni on osa linkkiä. Linkin tekstissä tulee kertoa, että linkki vie toiseen palveluun. 
+Ulkoisen linkin tekstissä tulee käydä ilmi, että linkki vie toiseen sivustoon tai palveluun. Linkkitekstin perässä on ulkoisen linkin ikoni, joka on osa linkkiä. 
 
 ### Murupolku
 
@@ -421,7 +465,9 @@ Jos valintavaihtoehtoja on yli 20, valikon sisään on hyvä lisätä hakutoimin
 
 #### Pudotusvalikoiden saavutettavuus
 
-Pudotusvalikon yläpuolella on sen nimike eli label. Label kertoo lyhyesti mitä pudotusvalikko sisältää. Ruudunlukijaa käyttäville kerrotaan pudotusvalikon status eli onko valikko kiinni vai auki. Ruudunlukijaa käyttäville kerrotaan myös mikä tai mitkä valikon valinnoista on valittuna.
+* Pudotusvalikon yläpuolella on sen nimike eli label. Label kertoo lyhyesti mitä pudotusvalikko sisältää. 
+* Ruudunlukijaa käyttäville kerrotaan pudotusvalikon status eli onko valikko kiinni vai auki. 
+* Ruudunlukijaa käyttäville kerrotaan myös mikä tai mitkä valikon valinnoista on valittuna.
 
 ### Pääkohdat
 
@@ -466,10 +512,18 @@ Silloin kun nostoelementtien linkki vie ulkoiseen palveluun, käytetään ulkois
 
 |                        | Font             | Font-size | Color   |
 | ---------------------- | ---------------- | --------- | ------- |
-| Tagit            | Barlow, semibold | 14px      | #333333 |
+| Tagit                  | Barlow, semibold | 14px      | #333333 |
 | Ulkoinen linkki -ikoni |                  |           | #333333 |
 
 ### Tilastokuviot
+
+#### Kuvioiden saavutettavuus
+
+* Suositus on, että kuvioon ei laiteta liikaa sisältöä. Tällöin kuvio pysyy helpommin ymmärrettävänä ja värisävyjen kontrastit riittävät harmaan sävyisinäkin (täyden värisokeuden tapaus). Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri kuvioon. 
+
+* Tilastokuviot piilotetaan ruudunlukijalta. Tällöin ruudunlukija ei lue kuvioiden otsikoitakaan. Näin toimitaan, koska kuvioita on niin paljon, että tekstivastineita (alt-tekstiä) ei ole mahdollista tehdä niille kaikille. Kuvioiden sisältö tulee kuitenkin tarjota sivulla tekstimuodossa, jotta myös ruudunlukijaa käyttävät saavat kuvioiden sisältämän informaation. 
+
+* Tilastokuvioissa viivat, pylväät ja piirakan siivut erotetaan toisistaan väreillä. Tämä saavutettavuusrajoite tulee mainita saavutettavuusselosteessa. Tilastokuvioissa ei siis käytetä reunaviivoja, paksuuseroja, eri muotoja tai pintakuviointeja osioiden erottamiseksi toisistaan. 
 
 #### Kaikille kuviotyypeille yhteiset tyylit
 
@@ -493,14 +547,6 @@ Silloin kun nostoelementtien linkki vie ulkoiseen palveluun, käytetään ulkois
 | ------------ | ------- | ----- | ------------------------------------------ |
 | **y-akseli** | #666666 | 0.5px | Akseliviivan keskellä, eli nykyinen paikka |
 | **x-akseli** | #666666 | 0.5px | Akseliviivan keskellä, eli nykyinen paikka |
-
-#### Kuvioiden saavutettavuus
-
-Suositus on, että kuvioon ei laiteta liikaa sisältöä. Tällöin kuvio pysyy helpommin ymmärrettävänä ja värisävyjen kontrastit riittävät harmaan sävyisinäkin (täyden värisokeuden tapaus). Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri kuvioon. 
-
-Tekstivastineita (alt-tekstiä) ei ole mahdollista tehdä kaikille kuvioille, koska niitä on niin paljon. Tämän vuoksi kuviot piilotetaan ruudunlukijalta. Tällöin ruudunlukija ei lue kuvioiden otsikoitakaan. Kuvioiden sisältö tulee kuitenkin tarjota sivulla tekstimuodossa, jotta myös ruudunlukijaa käyttävät saavat kuvioiden sisältämän informaation. 
-
-Tilastokuvioissa viivat/pylväät/ym. osat erotetaan toisistaan väreillä. Tämä saavutettavuusrajoite tulee mainita saavutettavuusselosteessa. Tilastokuvioissa ei siis käytetä reunaviivoja, paksuuseroja, eri muotoja tai pintakuviointeja osioiden erottamiseksi toisistaan. 
 
 #### Viivakuvio
 
@@ -540,12 +586,10 @@ Kuvion tooltip on pieni laatikko, joka tulee näkyviin kuvion päälle ja kertoo
 ### Tilastotaulukko
 
 #### Taulukon saavutettavuus
-Suositus on, että yhteen taulukkoon ei laiteta liikaa sisältöä. On myös hyvä välttää tekemästä taulukoita, joissa on todella paljon sarakkeita ja/tai rivejä. 
-Näin taulukot pysyvät helpommin ymmärrettävinä ja vertailtavina ja taulukoita on myös helpompi käyttää mobiililaitteilla. Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri taulukkoon. 
-
-Sarake- ja riviotsikkojen tulee olla mahdollisimman lyhyitä ja ytimekkäitä. Liian pitkiä sarake- ja riviotsikoita tulee välttää. Tämä tekee taulukot ymmärrettävämmiksi ja käytettävämmiksi ja myös auttaa taulukoita asettumaan paremmin mobiililaitteissa. 
-
-Jos on tarpeen tehdä hierarkisia taulukoita, on suositeltavaa käyttää korkeintaan kahta hierarkian tasoa. Myös tämä auttaa taulukon ymmärrettävyyttä. 
+* Taulukkoon ei tule laittaa liikaa sisältöä. Näin taulukot pysyvät helpommin ymmärrettävinä ja vertailtavina. Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri taulukkoon. 
+* Taulukoissa ei tulisi olla todella paljon sarakkeita ja/tai rivejä. Tämä helpottaa taulukoiden käyttöä ja ymmärrettävyyttä, erityisesti mobiililaitteilla. 
+* Sarake- ja riviotsikkojen tulee olla mahdollisimman lyhyitä ja ytimekkäitä. Liian pitkiä sarake- ja riviotsikoita tulee välttää. Tämä auttaa taulukoita asettumaan paremmin mobiililaitteissa. 
+* Jos on tarpeen tehdä hierarkisia taulukoita, on suositeltavaa käyttää korkeintaan kahta hierarkian tasoa. Myös tämä auttaa taulukon ymmärrettävyyttä. 
 
 #### Taulukko pienillä näytöillä
 
@@ -591,21 +635,14 @@ Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena 
 
 ### Video
 
-Tilastojulkistuksiin voidaan liittää videoelementti. Videoelementti on erotettu muusta sisällöstä harmaalla taustalla. Elementti koostuu sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tageista, videon otsikosta, videon julkaisupäivämäärästä, linkistä Youtube-palveluun, itse videosta ja videon käsikirjoituksesta. Videon käsikirjoitus on saatavilla videon alla laajennuspaneelissa. 
+Tilastojulkistuksiin voidaan liittää videoelementti. Videoelementti on erotettu muusta sisällöstä harmaalla taustalla. Elementti koostuu taustan lisäksi sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tageista, videon otsikosta, videon julkaisupäivämäärästä, linkistä Youtube-palveluun, itse videosta ja videon käsikirjoituksesta. Videon käsikirjoitus on saatavilla videon alla laajennuspaneelissa. 
 
+#### Videoiden saavutettavuus
 
-| Background-color |
-| ---------------- |
-|  #f2f2f2         |
-
-| Teksti-elementti   | Noudattaa tyyliä        |
-| ------------------ | ----------------------- |
-| Tagi               | tagin tyyli             |
-| Otsikko            | H3                      |
-| Julkaisupäivämäärä | päiväyksen tyyli        |
-| Youtube-linkki     | linkin tyyli            |
-| Käsikirjoitus      | laajennuspaneelin tyyli |
-
+* Videoissa, joissa on puhetta tulee olla tekstitys. 
+* (Kuvailutulkkaus ja sen tekstitys?) 
+* Videon yhteydessä on tarjottava linkki Youtube-palveluun, jossa videon voi myös katsoa. 
+* Videon käsikirjoitus tulee olla saatavissa. Sille on paikka videon alla käsikirjoitus-laajennuspaneelissa. 
 
 #### Koko
 
@@ -615,11 +652,21 @@ Tilastojulkistuksiin voidaan liittää videoelementti. Videoelementti on erotett
 
 ![Video desktop-koossa.](images/video_desktop.png)
 
-Isoilla näytöillä elementit asettuvat vierekkäin. Tagit, otsikko, julkaisupäivämäärä ja linkki Youtubeen ovat vasemmalla, video oikealla ja käsikirjoitus-laajennuspaneeli näiden alla. Elementtien järjestys sama kuin mobiilissa kun sivua käytetään ruudunlukijalla tai näppäimistöllä. 
+Isoilla näytöillä tekstiosat ja video asettuvat vierekkäin. Tagit, otsikko, julkaisupäivämäärä ja linkki Youtubeen ovat vasemmalla ja vievät 50% koko elementin leveydestä, video oikealla ja vie 50% leveydestä. Käsikirjoitus-laajennuspaneeli näiden alla 100% leveänä. Kun sivua käytetään ruudunlukijalla tai näppäimistöllä, elementtien järjestys (ts. fokuksen ja ruudunlukijan etenemisjärjestys) on sama kuin mobiilissa eli Youtube-linkin jälkeen tulee video ja videon jälkeen käsikirjoitus-laajennuspaneeli. 
 
-#### Videoiden saavutettavuus
+#### Videoelementin tyylit
 
-Videoissa tulee olla tekstitys. (Kuvailutulkkaus?) Videon yhteydessä on tarjottava linkki Youtube-palveluun, jossa videon voi myös katsoa. Videon käsikirjoitus tulee myös tarjota videon yhteydessä. 
+| Background-color |
+| ---------------- |
+|  #f2f2f2         |
+
+| Videoelementin osa | Noudattaa tyyliä        |
+| ------------------ | ----------------------- |
+| Tagi               | tagin tyyli             |
+| Otsikko            | H3                      |
+| Julkaisupäivämäärä | päiväyksen tyyli        |
+| Youtube-linkki     | linkin tyyli            |
+| Käsikirjoitus      | laajennuspaneelin tyyli |
 
 
 
