@@ -40,8 +40,8 @@
     - [Kolmassijainen painike](#kolmassijainen-painike)
     - [Negatiivi-painike](#negatiivi-painike)
   - [Pudotusvalikko](#pudotusvalikko)
-    - [Yhden valinnan pudotusvalikko](#yhden-valinnan-pudotusvalikko)
-    - [Useamman valinnan (multi select)	pudotusvalikko](#useamman-valinnan-multi-select-pudotusvalikko)
+    - [Tavallinen pudotusvalikko](#tavallinen-pudotusvalikko)
+    - [Multi select (monen valinnan)	pudotusvalikko](#multi-select-monen-valinnan-pudotusvalikko)
     - [Pudotusvalikoiden saavutettavuus](#pudotusvalikoiden-saavutettavuus)
   - [Pääkohdat](#p%c3%a4%c3%a4kohdat)
   - [Tagit](#tagit)
@@ -150,8 +150,8 @@ Sisältöalueen maksimileveys desktopissa on 1200px. Sisältöalue on jaettu des
 
 ### Sivuston tausta
 
-| Background|
-| ----- |
+| Background          |
+| ------------------- |
 | valkoinen, 2% musta |
 
 	
@@ -186,7 +186,7 @@ Footerissa on neljä palstaa: ensimmäisessä Tilastokeskuksen logo, kolmessa mu
 
 ### Jakoviiva
 
-Jakoviiva on kapea harmaa viiva, joka erottaa sisältöjä toisistaan. Jakoviivoja voidaan käyttää myös asioiden ryhmittelyyn asettamalla niitä eri ryhmien väliin, esim menuissa. 
+Jakoviiva on kapea harmaa viiva, joka erottaa sisältöjä toisistaan. Jakoviivoja voidaan käyttää myös asioiden ryhmittelyyn asettamalla niitä eri ryhmien väliin, esim. menuissa. 
 
 ![Jakoviiva](images/divider.png)
 
@@ -196,9 +196,9 @@ Jakoviiva on kapea harmaa viiva, joka erottaa sisältöjä toisistaan. Jakoviivo
 
 Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää tilaa. Niissä tilasteissa, joissa tyhjää tilaa ei voida käyttää tai se ei ole riittävä tapa, käytetään jakoviivoja.  
 
-![Jakoviiva erottamassa toisiinsa liittyviä asioita.](images/divider_example1.png)
+![Jakoviiva erottamassa toisiinsa julkaisu-elementtejä.](images/divider_example1.png)
 
-Jakoviivoilla voidaan myös erottaa saman kokonaisuuden/toisiinsa liittyviä asioita toisistaan. 
+Jakoviivoilla voidaan myös erottaa saman kokonaisuuden tai toisiinsa liittyviä elementtejä toisistaan. 
 
 ### Haitari 
 
@@ -208,10 +208,12 @@ Haitari-elementissä piilotetaan sisältöä otsikoiden alle. Haitarit auttavat 
 
 Haitarit ovat oletusarvoisesti suljettuja. Käyttäjä voi avata ja sulkea niiden osioita haluamassaan järjestyksessä. Useita haitarin osia voi olla avattuna auki samaan aikaan. 
 
-Haitari on enintään kaksi tasoa syvä. Sisempi taso on sisennetty ensimmäisen alle, tällä viestitään haitarin hierarkista rakennetta. Suljettujen osien otsikoiden vasemmalla puolella on plus-ikoni. Kun osio avataan, plus-ikoni muuttuu miinus-ikoniksi. Avatun osion alle tulee jakoviiva. 
+Haitari on enintään kaksi tasoa syvä. Sisempi taso on sisennetty ensimmäisen tason alla, tällä viestitään haitarin hierarkista rakennetta. 
+
+Suljettujen osien otsikoiden vasemmalla puolella on plus-ikoni. Kun osio avataan, plus-ikoni muuttuu miinus-ikoniksi. Avatun osion alle tulee jakoviiva. 
 
 #### Haitarin ikonien tyylit
-Plus-ja miinus-ikonit ovat suurempia ja tummempia ensimmäisellä tasolla ja pienempiä ja vaaleampia syvemmällä tasolla. Myös tällä kerrotaan visuaalisesti hierarkiasta. 
+Haitarin ensimmäisellä tasolla plus- ja miinus-ikonit ovat suurempia ja tummempia kuin syvemmällä tasolla, jossa ne ovat pienempiä ja vaaleampia. Myös tällä kerrotaan visuaalisesti hierarkiasta. 
 
 | Hierarkiataso | Height | Width | Color    |
 | ------------- | ------ | ----- | -------- |
@@ -221,7 +223,7 @@ Plus-ja miinus-ikonit ovat suurempia ja tummempia ensimmäisellä tasolla ja pie
 #### Haitarin saavutettavuus
 * Kaikki käyttäjät eivät välttämättä huomaa haitari-elementtiä tai ymmärrä miten se toimii. Siksi haitariin ei pidä laittaa sellaista sisältöä, joka on käyttäjälle tärkeää huomata tai löytää. 
 * Haitarin sisällön tulee muodostaa yhtenäinen kokonaisuus. 
-
+* Ruudunlukijalle tulee kertoa onko haitarin kohta auki vai kiinni. 
 
 
 ### Laajennuspaneeli 
@@ -246,7 +248,7 @@ Linkkejä käytetään navigaatiossa sivuston sisällä sekä navigoinnissa ulko
 
 ##### Tavallinen linkki
 
- Tavallisissa tekstistä erillään olevissa linkeissä on alleviivaus vain hover-tilassa. 
+ Tavallisissa tekstistä erillään olevissa linkeissä on alleviivaus vain hover- ja focus-tilassa. 
 
 | Tila           | Font        | Text-decoration | Color   | Muuta                                 |
 | -------------- | ----------- | --------------- | ------- | ------------------------------------- |
@@ -292,16 +294,16 @@ Vierailtu-tila:
 
 ##### Linkki tekstin seassa
 
-Tekstin seassa, eli p-elementin sisällä, olevat linkit alleviivataan aina. Muissa linkeissä on alleviivaus vain hover-tilassa. 
+Tekstin seassa, eli p-elementin sisällä, olevat linkit alleviivataan aina. Muissa linkeissä on alleviivaus vain hover- ja focus-tilassa. 
 
 ![Tekstin seassa olevat linkit alleviivataan.](images/linkkip.png)
 
-| Tila           | Font        | Text-decoration |Color|Muuta|
-| -------------- | ----------- | --------------- |-|-|
-| **Tavallinen** | Leipäteksti | underline       |#006ca5||
-| **Hover**      |             | underline       |#0039a6|Kursori muuttuu kädeksi linkin päällä|
-| **Focus**      |             | underline       |#0039a6|Reunus: 2px, #0073b0|
-| **Vierailtu**  |             | underline       |#551a8b||
+| Tila           | Font        | Text-decoration | Color   | Muuta                                 |
+| -------------- | ----------- | --------------- | ------- | ------------------------------------- |
+| **Tavallinen** | Leipäteksti | underline       | #006ca5 |                                       |
+| **Hover**      |             | underline       | #0039a6 | Kursori muuttuu kädeksi linkin päällä |
+| **Focus**      |             | underline       | #0039a6 | Reunus: 2px, #0073b0                  |
+| **Vierailtu**  |             | underline       | #551a8b |                                       |
 
 
 ##### Linkki ikonilla
@@ -322,12 +324,14 @@ Yksittäisessä erillään olevassa linkissä linkin perässä oleva nuoli koros
 
 Linkeillä voi olla myös kaksi ikonia. Ikonit asettuvat silloin linkkitekstin molemmille puolille. 
 
-| Ikoni                | Color   |
-| -------------------- | ------- |
-| **Nuoli**            | #0073b0 |
-| **StatFin/database** | #f59a23 |
-| **Muu**              | #000000 |
-| **Negatiivi**        | #ffffff |
+Linkkien ikonien tyylit:
+
+| Ikoni                         | Color   |
+| ----------------------------- | ------- |
+| **Nuoli**                     | #000000 |
+| **StatFin/database**          | #f59a23 |
+| **Muut ikonit**               | #0073b0 |
+| **Negatiivi-linkkien ikonit** | #ffffff |
 
 #### Ulkoinen linkki
 
@@ -337,16 +341,14 @@ Ulkoisen linkin tekstissä tulee käydä ilmi, että linkki vie toiseen sivustoo
 
 ### Murupolku
 
- Murupolun osat viimeistä lukuunottamatta ovat linkkejä ja ne noudattavat H5-otsikkotason fonttia sekä tavallisen linkin tyyliä. Murupolun viimeinen kohta ei ole linkki. 
- 
- Osiot erotetaan toisistaan /-merkillä. 
-	
-Vaikka murupolku noudattaa H5-tason fonttia, se ei ole semanttisesti H5-tason otsikko vaan navigaatio-elementti. 
+ Viimeistä osaa lukuunottamatta murupolun osat ovat linkkejä. Murupolkun linkkiosat käyttäytyvät kuten tavalliset linkit kaikkine eri tiloineen. Murupolun fonttina on H5-otsikkotason fontti. Vaikka murupolku noudattaa H5-tason fonttia, se ei ole semanttisesti H5-tason otsikko vaan navigaatio-elementti. 
 
-| Murupolun osa | Font           | Font-size | Color   | Text-decoration |
-| ------------- | -------------- | --------- | ------- | --------------- |
-| Linkki        | Barlow, medium | 14px      | #006ca5 | none            |
-| Viimeinen     | Barlow, medium | 14px      | #000000 | none            |
+ Osiot erotetaan toisistaan /-merkillä. 
+
+| Murupolun osa | Font           | Font-size | Color   | Muuta                                  |
+| ------------- | -------------- | --------- | ------- | -------------------------------------- |
+| Linkki        | Barlow, medium | 14px      | #006ca5 | samat tilat kuin tavallisella linkillä |
+| Viimeinen     | Barlow, medium | 14px      | #000000 | ei linkki                              |
 
 Murupolku käyttäytyy desktopissa ja mobiilissa hieman eri tavoin. 
 
@@ -355,6 +357,8 @@ Murupolku käyttäytyy desktopissa ja mobiilissa hieman eri tavoin.
 Desktopissa näytetään murupolussa kaikki tasot: 
 
 ![Murupolku desktopissa.](images/murupolku.png)
+
+Murupolun viimeinen kohta ei ole linkki. 
 	
 **Murupolku mobiilissa**
 
@@ -438,30 +442,47 @@ Mobiilissa painikkeet ovat täysleveitä lukuunottamatta niiden oikealle ja vase
 ### Pudotusvalikko
 (Eng. dropdown)
 
-Mobiili-käyttöliittymissä käytetään käyttöjärjestelmien valmiita pudotusvalikkojen toteutusratkaisuja. 
+Pudotusvalikko on elementti, jonka tarjoamista vaihtoehdoista valitaan yksi tai useampi. 
 
-Pudotusvalikoita on kahdenlaisia, niitä mistä valitaan valikon vaihtoehdoista yksi ja niitä, joissa voidaan valita useampi. 
 
-#### Yhden valinnan pudotusvalikko
+
+Pudotusvalikoita on kahdenlaisia:
+1.  tavallinen pudotusvalikko: pudotusvalikon vaihtoehdoista valitaan yksi. 
+2.  multi select: pudotusvalikon vaihtoehdoista voidaan valita useita. 
+
+Mobiili-käyttöliittymissä käytetään käyttöjärjestelmien valmiita pudotusvalikkojen toteutusratkaisuja. Desktop-käyttöliittymiin pudotusvalikot toteutetaan itse. Seuraavaksi käydään läpi pudotusvalikkojen design desktop-käyttöliittymissä. 
+
+#### Tavallinen pudotusvalikko
+
+Tavallisessa pudotusvalikossa voi tehdä vain yhden valinnan. 
+
 ![Pudotusvalikko kiinni.](images/pudotusvalikko.png)
 
-Pudotusvalikon kentässä näkyy mikä valikon valinnoista on valittuna. Valikon kenttää klikkaamalla valikko avautuu. 
+Jokaisen pudotusvalikon yllä on valikon nimike eli label, joka kertoo lyhyesti mitä pudotusvalikko sisältää. Pudotusvalikon kentässä näkyy mikä valikon vaihtoehdoista on valittuna. Valikon kenttää klikkaamalla valikko avautuu ja vaihtoehdot tulevat näkyviin. 
 
 ![Pudotusvalikko avattuna.](images/pudotusvalikko_auki.png)
 
-Tavallisessa pudotusvalikossa voi tehdä vain yhden valinnan. Vaihtoehdon valinta sulkee valikon. Tehty valinta tulee näkyviin pudotusvalikon kenttään. 
+Valittu vaihtoehto näkyy paitsi pudotusvalikon kentässä myös  valikossa korostettuna. Oletuksena tavallisessa pudotusvalikossa on valittuna Kaikki xxx -valinta, joka on listassa heti ensimmäisenä (tekstin muoto riippuu pudotusvalikon sisällöstä ja labelista). Valintatoiminto sulkee valikon. 
 
 ![Pudotusvalikkoon, jossa on paljon sisältöä tulee hakukenttä ja vieritysominaisuus.](images/pudotusvalikko_iso.png)
 
-Jos pudotusvalikossa valintavaihtoehtoja on yli 14, valikko ei veny pituutta vaan valikosta tulee pystysuunnassa vieritettävä. Valikon oikeaan laitaan tulee näkyviin scrollbar. 
+Jos pudotusvalikossa vaihtoehtoja on yli 14, valikko ei veny pituutta vaan siitä tulee pystysuunnassa vieritettävä. Valikon oikeaan laitaan tulee näkyviin scrollbar. 
 
-Jos valintavaihtoehtoja on yli 20, valikon sisään on hyvä lisätä hakutoiminnallisuus ja hakukenttä. Näin käyttäjät voivat hakea valikosta haluamaansa vaihtoehtoa nopeasti. 
+Jos vaihtoehtoja on yli 20, valikon sisään on hyvä lisätä hakutoiminnallisuus ja hakukenttä. Näin käyttäjät voivat hakea pitkästäkin valikosta haluamaansa vaihtoehtoa nopeasti. Hakukentän paikka avatussa valikossa on heti ylhäällä ennen valikon vaihtoehtoja. 
 
-#### Useamman valinnan (multi select)	pudotusvalikko
+#### Multi select (monen valinnan)	pudotusvalikko
 
-![Pudotusvalikko avattuna.](images/pudotusvalikko_multi.png)
+Multi select -pudotusvalikosta voidaan valita yksi tai useampi tarjolla olevista vaihtoehdoista.
 
-![Pudotusvalikko avattuna.](images/pudotusvalikko_multi_auki.png)
+![Multi select -pudotusvalikosta voidaan valita useita vaihtoehtoja.](images/pudotusvalikko_multi_auki.png)
+
+ Avatussa valikossa vaihtoehtojen vasemmalla puolella on checkbox-valintaruutu. Kun vaihtoehto on valittu, valintaruutuun ilmestyy täppä ja valitun vaihtoehdon tausta korostetaan. Valinnan voi poistaa klikkaamalla vaihtoehtoa uudestaan. 
+
+Kun vain yksi vaihtoehto on valittuna, pudotusvalikon kentässä näkyy kyseinen valinta, esim. Kaikki aiheet. Kun on valittu useampia vaihtoehtoja, kentässä näkyy valintojen lukumäärä, esim. 2 valittu. 
+
+![Multi select -pudotusvalikossa oletuksena on valittuna Kaikki xxx -vaihtoehto.](images/pudotusvalikko_multi.png)
+
+Pudotusvalikossa on oletuksena valittuna ensimmäisenä oleva Kaikki xxx eli esim. Kaikki aiheet (teksti riippuu pudotusvalikon sisällöstä ja labelista). Kun jokin muu vaihtoehto valitaan, poistuu Kaikki xxx -valinta. Jos valinnat otetaan pois kaikista muista vaihtoehdoista, Kaikki xxx -valinta menee automaattisesti päälle. 
 
 #### Pudotusvalikoiden saavutettavuus
 
@@ -471,15 +492,21 @@ Jos valintavaihtoehtoja on yli 20, valikon sisään on hyvä lisätä hakutoimin
 
 ### Pääkohdat
 
-Pääkohdat, esim. tilastojulkistuksen sivulla. 
+Pääkohdat-elementissä kerrotaan tiiviisti tilastojulkistuksen tärkeimmät asiat. Elementtiin kerätään max 5 asiaa. Pääkohdat-elementti sijaitsee tilastojulkistuksessa ingressin alla. 
 
-Fontti: ingressi-tyyli, #00B2A9
+![Pääkohdat kertovat tiiviisti tilastojulkistuksen tärkeimmät asiat.](images/paakohdat.png)
 
-Sisennys: riippuva sisennys eli teksti sisentyy palleron oikealle puolelle, kaikki rivit samassa linjassa. 
+|                   | Font            | Font-size     | Color   |
+| ----------------- | --------------- | ------------- | ------- |
+| Otsikko (H2)      | Barlow, regular | 28px          | #00B2A9 |
+| Teksti (Ingressi) | Barlow, regular | 17px/1.255rem | #000000 |
 
-Pallon väri: #00B2A9
+Tekstin sisennys: riippuva sisennys eli teksti sisentyy palleron oikealle puolelle, kaikki tekstirivit samassa linjassa. 
 
-Vasen pystyviiva: #00B2A9. Pystyviivaa ei ole mobiilissa.
+|                  | Color   | Muuta             |
+| ---------------- | ------- | ----------------- |
+| Pallot           | #00B2A9 |                   |
+| Vasen pystyviiva | #00B2A9 | ei ole mobiilissa |
 
 ### Tagit
 
@@ -658,7 +685,7 @@ Isoilla näytöillä tekstiosat ja video asettuvat vierekkäin. Tagit, otsikko, 
 
 | Background-color |
 | ---------------- |
-|  #f2f2f2         |
+| #f2f2f2          |
 
 | Videoelementin osa | Noudattaa tyyliä        |
 | ------------------ | ----------------------- |
