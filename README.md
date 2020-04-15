@@ -34,6 +34,8 @@
     - [Ulkoinen linkki](#ulkoinen-linkki)
   - [Murupolku](#murupolku)
   - [Painike](#painike)
+    - [Painikkeiden saavutettavuus](#painikkeiden-saavutettavuus)
+    - [Painikkeiden yhteiset ominaisuudet](#painikkeiden-yhteiset-ominaisuudet)
     - [Koko](#koko)
     - [Ensisijainen painike](#ensisijainen-painike)
     - [Toisijainen painike](#toisijainen-painike)
@@ -81,6 +83,7 @@ Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista o
 
 ### Typografian saavutettavuus
 * Fonttien koot tulee toteuttaa suhteellisina arvoina (em tai rem), jolloin käyttäjät pystyvät suurentamaan niitä halutessaan. 
+* Fontteja ei saa muotoilla itse vaan on käytettävä yllä esitettyjä fonttitasoja. Näin ruudunlukijaa käyttävät saavat sivujen rakenteesta oikean käsityksen ja myös fonttityylien yhtenäisyys säilyy. 
 
 
 ## Kuvat
@@ -107,7 +110,7 @@ Väreinä käytetään Tilastokeskuksen väripalettia. Värit täydennetään t�
 
 ### Navigaatio-palkki mobiili
 
-Kuvaus lisätään suunnitelman valmistuttua. 
+Kuvaus lisätään ui-designin valmistuttua. 
 
 #### Menu mobiili
 	
@@ -137,7 +140,7 @@ Navigaatiopalkin linkkien välissä on ohuet pystyviivat. Viivojen korkeus sama 
 Se sivuston osio, jossa kulloinkin ollaan, näkyy navigaatiopalkissa korostettuna. Korostuksen tyyli määritellään myöhemmin tarkemmin. 
 
 #### Menut desktop
-Navigaatiopalkista avautuvien menujen sisältö on tasattu vasempaan laitaan.  
+Navigaatiopalkista avautuvien menujen sisältö on tasattu vasempaan laitaan. Kuvat ja kuvaus lisätään ui-designin valmistuttua. 
 
 ### Sisältöalue
 
@@ -149,6 +152,8 @@ Navigaatiopalkista avautuvien menujen sisältö on tasattu vasempaan laitaan.
 Sisältöalueen maksimileveys desktopissa on 1200px. Sisältöalue on jaettu desktopissa maksimissaan kolmeen palstaan ja mobiilissa yhteen palstaan. Desktopin kolme palstaa asettuvat responsiivisesti allekkain näytön/selainikkunan pienentyessä. 
 
 ### Sivuston tausta
+
+Saavutettavuuden parantamiseksi sivuston tausta ei ole puhtaan valkoinen vaan 2% musta. 
 
 | Background          |
 | ------------------- |
@@ -186,7 +191,7 @@ Footerissa on neljä palstaa: ensimmäisessä Tilastokeskuksen logo, kolmessa mu
 
 ### Jakoviiva
 
-Jakoviiva on kapea harmaa viiva, joka erottaa sisältöjä toisistaan. Jakoviivoja voidaan käyttää myös asioiden ryhmittelyyn asettamalla niitä eri ryhmien väliin, esim. menuissa. 
+Jakoviiva on kapea harmaa vaakaviiva, joka erottaa sisältöjä toisistaan. Jakoviivoja voidaan käyttää myös asioiden ryhmittelyyn asettamalla niitä eri ryhmien väliin, esim. menuissa. 
 
 ![Jakoviiva](images/divider.png)
 
@@ -261,7 +266,7 @@ Tavallinen-tila:
 ![Tavallinen linkki.](images/link.png)
 
 Hover-tila:
-![Linkin hover-tila.](images/hover_link.png)
+![Linkki hover-tilassa.](images/hover_link.png)
 
 Focus-tila:
 ![Kohdistettuna oleva linkki.](images/focus_link.png)
@@ -378,18 +383,37 @@ Syvämmällä hierarkian tasoilla murupolussa näytetään vain linkki yhtä tas
 
 ### Painike
 
-#### Koko
+Painike käynnistää toiminnon. Painikkeita on neljää eri tyyliä ja niiden koko vaihtelee laitteen tai selainikkunan koosta riippuen. 
 
-![Painikkeet ovat mobiilissa täysleveitä.](images/buttons_mobile.png)
+#### Painikkeiden saavutettavuus
 
-Mobiilissa painikkeet ovat täysleveitä lukuunottamatta niiden oikealle ja vasemmalle puolelle jääviä marginaaleja. Isoilla näytöillä eli desktopissa painikkeiden leveys taas skaalautuu sisällön mukaan. Minimi-leveys painikkeille on kuitenkin 80px. 
+* Painike käynnistää jonkin toiminnon. 
+* Painikkeen tekstissä kerrotaan lyhyesti ja ytimekkäästi minkä toiminnon painike käynnistää. 
+* Painikkeet, etenkin ensisijaiset painikkeet erottuvat muusta käyttöliittymästä helposti, joten on suositeltavaa käyttää niitä vain rajattu määrä.
+* Painiketyylejä ei käytetä linkeissä linkkityylien asemasta.
 
-![Painikkeiden koko ja eri tilat desktopissa.](images/buttons.png)
 
-**Painikkeiden yhteiset ominaisuudet**
+#### Painikkeiden yhteiset ominaisuudet
+
+Nämä ominaisuudet pätevät kaikille painikkeille painikkeen tyypistä tai laitteen/selainikkunan koosta riippumatta. 
+
 | Font                     | Font-size | Border-radius | Min-width | Min-height | Focus-kehys  |
 | ------------------------ | --------- | ------------- | --------- | ---------- | ------------ |
 | Source Sans Pro, regular | 16px/1rem | 5px           | 80px      | 40px       | 2px, #0073b0 |
+
+#### Koko
+
+**Painikkeiden koko mobiilissa**
+
+![Painikkeet ovat mobiilissa täysleveitä.](images/buttons_mobile.png)
+
+Mobiilissa tai pienessä selainikkunassa painikkeet ovat täysleveitä lukuunottamatta niiden oikealle ja vasemmalle puolelle jääviä marginaaleja. 
+
+**Painikkeiden koko desktopissa**
+
+![Painikkeiden koko ja eri tilat desktopissa.](images/buttons.png)
+
+Isoilla näytöillä eli desktopissa painikkeiden leveys skaalautuu painikkeen tekstin mukaan. Minimi-leveys painikkeille on kuitenkin 80px. 
 
 #### Ensisijainen painike
 
@@ -429,6 +453,8 @@ Mobiilissa painikkeet ovat täysleveitä lukuunottamatta niiden oikealle ja vase
 
 #### Negatiivi-painike
 
+Negatiivi-painike on painike tummalla taustalla. Tumman taustan vuoksi sen tyylit eri tiloissa hieman eroavat muista painikkeista. 
+
 ![Negatiivi-painikkeen eri tilat.](images/negative_buttons.png)
 
 | Tila                 | Color   | Background-color | Border  | Box-shadow                                  |
@@ -450,39 +476,39 @@ Pudotusvalikoita on kahdenlaisia:
 1.  tavallinen pudotusvalikko: pudotusvalikon vaihtoehdoista valitaan yksi. 
 2.  multi select: pudotusvalikon vaihtoehdoista voidaan valita useita. 
 
-Mobiili-käyttöliittymissä käytetään käyttöjärjestelmien valmiita pudotusvalikkojen toteutusratkaisuja. Desktop-käyttöliittymiin pudotusvalikot toteutetaan itse. Seuraavaksi käydään läpi pudotusvalikkojen design desktop-käyttöliittymissä. 
+Mobiili-käyttöliittymissä käytetään käyttöjärjestelmien valmiita pudotusvalikkojen toteutusratkaisuja. Desktop-käyttöliittymiin pudotusvalikot toteutetaan itse. Seuraavaksi käydään läpi pudotusvalikkojen design ja toiminnallisuus desktop-käyttöliittymissä. 
 
 #### Tavallinen pudotusvalikko
 
 Tavallisessa pudotusvalikossa voi tehdä vain yhden valinnan. 
 
-![Pudotusvalikko kiinni.](images/pudotusvalikko.png)
+![Tavallinen pudotusvalikko kiinni.](images/pudotusvalikko.png)
 
 Jokaisen pudotusvalikon yllä on valikon nimike eli label, joka kertoo lyhyesti mitä pudotusvalikko sisältää. Pudotusvalikon kentässä näkyy mikä valikon vaihtoehdoista on valittuna. Valikon kenttää klikkaamalla valikko avautuu ja vaihtoehdot tulevat näkyviin. 
 
-![Pudotusvalikko avattuna.](images/pudotusvalikko_auki.png)
+![Tavallinen pudotusvalikko avattuna.](images/pudotusvalikko_auki.png)
 
-Valittu vaihtoehto näkyy paitsi pudotusvalikon kentässä myös  valikossa korostettuna. Oletuksena tavallisessa pudotusvalikossa on valittuna Kaikki xxx -valinta, joka on listassa heti ensimmäisenä (tekstin muoto riippuu pudotusvalikon sisällöstä ja labelista). Valintatoiminto sulkee valikon. 
+Valittu vaihtoehto näkyy paitsi pudotusvalikon kentässä myös  valikon listassa korostettuna. Oletuksena tavallisessa pudotusvalikossa on valittuna Kaikki xxx -valinta, joka on listassa heti ensimmäisenä (tekstin muoto riippuu pudotusvalikon sisällöstä ja labelista). Valintatoiminto sulkee valikon. 
 
 ![Pudotusvalikkoon, jossa on paljon sisältöä tulee hakukenttä ja vieritysominaisuus.](images/pudotusvalikko_iso.png)
 
-Jos pudotusvalikossa vaihtoehtoja on yli 14, valikko ei veny pituutta vaan siitä tulee pystysuunnassa vieritettävä. Valikon oikeaan laitaan tulee näkyviin scrollbar. 
+Jos pudotusvalikossa vaihtoehtoja on yli 14, valikko ei veny pituutta vaan siitä tulee pystysuunnassa vieritettävä. Valikon oikeaan laitaan tulee näkyviin ohut scrollbar. 
 
-Jos vaihtoehtoja on yli 20, valikon sisään on hyvä lisätä hakutoiminnallisuus ja hakukenttä. Näin käyttäjät voivat hakea pitkästäkin valikosta haluamaansa vaihtoehtoa nopeasti. Hakukentän paikka avatussa valikossa on heti ylhäällä ennen valikon vaihtoehtoja. 
+Jos vaihtoehtoja on yli 20, valikon sisään on hyvä lisätä hakutoiminnallisuus ja hakukenttä. Näin käyttäjät voivat hakea pitkästäkin listasta haluamaansa vaihtoehtoa nopeasti. Hakukentän paikka avatussa valikossa on heti ylhäällä ennen listaa. 
 
 #### Multi select (monen valinnan)	pudotusvalikko
 
-Multi select -pudotusvalikosta voidaan valita yksi tai useampi tarjolla olevista vaihtoehdoista.
+Multi select -pudotusvalikosta voi tehdä yhden tai useamman valinnan.
 
 ![Multi select -pudotusvalikosta voidaan valita useita vaihtoehtoja.](images/pudotusvalikko_multi_auki.png)
 
- Avatussa valikossa vaihtoehtojen vasemmalla puolella on checkbox-valintaruutu. Kun vaihtoehto on valittu, valintaruutuun ilmestyy täppä ja valitun vaihtoehdon tausta korostetaan. Valinnan voi poistaa klikkaamalla vaihtoehtoa uudestaan. 
+ Avatussa multi select -pudotusvalikossa vaihtoehtojen vasemmalla puolella on checkbox-valintaruutu. Kun vaihtoehto on valittu, valintaruutuun ilmestyy täppä ja valitun vaihtoehdon tausta korostetaan. Valinnan voi poistaa klikkaamalla vaihtoehtoa tai valintaruutua uudestaan. 
 
-Kun vain yksi vaihtoehto on valittuna, pudotusvalikon kentässä näkyy kyseinen valinta, esim. Kaikki aiheet. Kun on valittu useampia vaihtoehtoja, kentässä näkyy valintojen lukumäärä, esim. 2 valittu. 
+Kun vain yksi vaihtoehto on valittuna, pudotusvalikon kentässä näkyy kyseinen valinnan teksti, esim. Kaikki aiheet. Kun on valittu useampia vaihtoehtoja, kentässä näkyy valintojen lukumäärä, esim. 2 valittu. 
 
 ![Multi select -pudotusvalikossa oletuksena on valittuna Kaikki xxx -vaihtoehto.](images/pudotusvalikko_multi.png)
 
-Pudotusvalikossa on oletuksena valittuna ensimmäisenä oleva Kaikki xxx eli esim. Kaikki aiheet (teksti riippuu pudotusvalikon sisällöstä ja labelista). Kun jokin muu vaihtoehto valitaan, poistuu Kaikki xxx -valinta. Jos valinnat otetaan pois kaikista muista vaihtoehdoista, Kaikki xxx -valinta menee automaattisesti päälle. 
+Multi select -pudotusvalikossa on oletuksena valittuna ensimmäisenä oleva Kaikki xxx eli esim. Kaikki aiheet (teksti riippuu pudotusvalikon sisällöstä ja labelista). Kun jokin muu vaihtoehto valitaan, poistuu Kaikki xxx -valinta. Jos valinnat otetaan pois kaikista muista vaihtoehdoista, Kaikki xxx -valinta menee automaattisesti päälle. 
 
 #### Pudotusvalikoiden saavutettavuus
 
@@ -492,21 +518,25 @@ Pudotusvalikossa on oletuksena valittuna ensimmäisenä oleva Kaikki xxx eli esi
 
 ### Pääkohdat
 
-Pääkohdat-elementissä kerrotaan tiiviisti tilastojulkistuksen tärkeimmät asiat. Elementtiin kerätään max 5 asiaa. Pääkohdat-elementti sijaitsee tilastojulkistuksessa ingressin alla. 
+Pääkohdat-elementissä kerrotaan tiiviisti tilastojulkistuksen tärkeimmät asiat. Elementissä voi olla 2-5 kohtaa, jokainen kerrottuna yhdellä lauseella. Kohdat esitetään listana ja erotetaan toisistaan pienillä pallo-listamerkeillä.  Pääkohdat-elementti sijaitsee tilastojulkistuksessa ingressin alla. 
 
 ![Pääkohdat kertovat tiiviisti tilastojulkistuksen tärkeimmät asiat.](images/paakohdat.png)
+
+
 
 |                   | Font            | Font-size     | Color   |
 | ----------------- | --------------- | ------------- | ------- |
 | Otsikko (H2)      | Barlow, regular | 28px          | #00B2A9 |
 | Teksti (Ingressi) | Barlow, regular | 17px/1.255rem | #000000 |
 
-Tekstin sisennys: riippuva sisennys eli teksti sisentyy palleron oikealle puolelle, kaikki tekstirivit samassa linjassa. 
+Tekstissä on riippuva sisennys eli kaikki tekstirivit ovat samassa linjassa pallo-listamerkkien oikealla puolella. Tekstit eivät siis mene pallo-listamerkkien alle (ts. css-listan normaali toiminnallisuus). 
 
-|                  | Color   | Muuta             |
-| ---------------- | ------- | ----------------- |
-| Pallot           | #00B2A9 |                   |
-| Vasen pystyviiva | #00B2A9 | ei ole mobiilissa |
+Desktop-koossa elementin vasemmalla puolella on ohut elementin kanssa samankorkuinen pystyviiva korostamassa elementtiä muusta sivun sisällöstä. Mobiili-koossa tätä pystyviivaa ei ole. 
+
+|                  | Color   | Height           | Width     | Muuta             |
+| ---------------- | ------- | ---------------- | --------- | ----------------- |
+| Pallot           | #00B2A9 | (default)        | (default) |                   |
+| Vasen pystyviiva | #00B2A9 | elementin pituus | 1px       | ei ole mobiilissa |
 
 ### Tagit
 
@@ -527,13 +557,13 @@ Huom! Tageilla ei merkitä julkaisupäivämäärää, sitä varten on oma elemen
 
 Tageja voi olla julkaisujen nostoelementeissä useampi peräkkäin. Esimerkiksi tilastojulkistuksen nostoelementissä on julkaisun tyyppi, tilasto, viiteajankohta ja julkaisun status. Julkaisun sisältötyyppi erotetaan muista tageista |-merkillä. 
 
-![Tagi tilastojulkistuksen sivulla. Tagin paikka on otsikon yläpuolella.](images/tagi_tilastojulkistus.png)
+![Sisältötyyppi-tagi tilastojulkistuksen sivulla. Tagin paikka on otsikon yläpuolella.](images/tagi_tilastojulkistus.png)
 
-Julkaisujen sivuilla on vain sivun sisältötyyppi-tagi, esimerkiksi tilastojulkistuksen sivulla Tilastojulkistus. Muita tageja ei ole tarpeen toistaa, sillä niiden tiedot esitetään sivulla muissa kohdissa. 
+Julkaisujen sivuilla on vain sivun sisältötyyppi-tagi, esimerkiksi tilastojulkistuksen sivulla Tilastojulkistus. Muille tageille ei ole julkaisujen sivuilla tarvetta, sillä niiden tiedot esitetään sivulla muissa kohdissa. 
 
 ![Tieto&trendit-blogin tagi.](images/tagi_blogi.png)
 
-Silloin kun nostoelementtien linkki vie ulkoiseen palveluun, käytetään ulkoisen linkin ikonia tagissa mukana. Ulkoisen linkin ikoni laitetaan domainin nimen perään. 
+Silloin kun nostoelementtien linkki vie ulkoiseen palveluun, käytetään ulkoisen linkin ikonia tagissa mukana. Ulkoisen linkin ikoni laitetaan domain-tagin perään. 
 
 **Tagien tyyli** 
 
@@ -675,7 +705,7 @@ Tilastojulkistuksiin voidaan liittää videoelementti. Videoelementti on erotett
 
 ![Video mobiili-koossa.](images/video_mobiili.png)
 
- Pienillä näytöillä videoelementin osat asettuvat allekkain. Järjestys ylhäältä alas on: sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tagit, videon otsikko, videon julkaisupäivämäärä, linkki Youtube-palveluun, videosta ja videon käsikirjoitus.
+ Pienillä näytöillä videoelementin osat asettuvat allekkain. Järjestys ylhäältä alas: sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tagit, videon otsikko, videon julkaisupäivämäärä, linkki Youtube-palveluun, videosta ja videon käsikirjoitus.
 
 ![Video desktop-koossa.](images/video_desktop.png)
 
