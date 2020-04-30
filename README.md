@@ -44,6 +44,7 @@
   - [Pudotusvalikko](#pudotusvalikko)
     - [Tavallinen pudotusvalikko](#tavallinen-pudotusvalikko)
     - [Multi select (monen valinnan)	pudotusvalikko](#multi-select-monen-valinnan-pudotusvalikko)
+    - [Pudotusvalikkojen tyylit](#pudotusvalikkojen-tyylit)
     - [Pudotusvalikoiden saavutettavuus](#pudotusvalikoiden-saavutettavuus)
   - [Pääkohdat](#p%c3%a4%c3%a4kohdat)
   - [Tagit](#tagit)
@@ -59,6 +60,8 @@
     - [Taulukko pienillä näytöillä](#taulukko-pienill%c3%a4-n%c3%a4yt%c3%b6ill%c3%a4)
     - [Taulukko isoilla näytöillä](#taulukko-isoilla-n%c3%a4yt%c3%b6ill%c3%a4)
     - [Taulukon tyylit](#taulukon-tyylit)
+  - [Tooltip](#tooltip)
+    - [Tooltipin saavutettavuus](#tooltipin-saavutettavuus)
   - [Video](#video)
     - [Videoiden saavutettavuus](#videoiden-saavutettavuus)
     - [Koko](#koko-1)
@@ -69,17 +72,18 @@ Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista o
 
 | Taso                | Font                     | Font-size     | Font-family                                                    | Color   |
 | ------------------- | ------------------------ | ------------- | -------------------------------------------------------------- | ------- |
-| Leipäteksti         | Source Sans Pro, regular | 16px/1rem     | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif |         |
-| Leipäteksti, iso    | Source Sans Pro, regular | 18px          |                                                                |         |
-| H1                  | Barlow, regular          | 34px          |                                                                |         |
-| H2                  | Barlow, regular          | 28px          |                                                                |         |
-| H3                  | Barlow, regular          | 22px          |                                                                |         |
-| H4                  | Barlow, medium           | 16px          |                                                                |         |
-| H5                  | Barlow, medium           | 14px          |                                                                |         |
-| Ingressi            | Barlow regular           | 17px/1.255rem |                                                                |         |
-| Introteksti         | Barlow, medium           | 14px          |                                                                |         |
-| Päiväys/kirjoittaja | Barlow, regular          | 14px          |                                                                |         |
+| Leipäteksti         | Source Sans Pro, regular | 16px/1rem     | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |
+| Leipäteksti, iso    | Source Sans Pro, regular | 18px          |                                                                | #000000 |
+| H1                  | Barlow, regular          | 34px          |                                                                | #000000 |
+| H2                  | Barlow, regular          | 28px          |                                                                | #000000 |
+| H3                  | Barlow, regular          | 22px          |                                                                | #000000 |
+| H4                  | Barlow, medium           | 16px          |                                                                | #000000 |
+| H5                  | Barlow, medium           | 14px          |                                                                | #000000 |
+| Ingressi            | Barlow regular           | 17px/1.255rem |                                                                | #000000 |
+| Introteksti         | Barlow, medium           | 14px          |                                                                | #000000 |
+| Päiväys/kirjoittaja | Barlow, regular          | 14px          |                                                                | #000000 |
 | Tyyppitagit         | Barlow, semibold         | 14px          |                                                                | #333333 |
+| Label-teksti        | Source Sans Pro          | 17px          |                                                                | #000000 |
 
 ### Typografian saavutettavuus
 * Fonttien koot tulee toteuttaa suhteellisina arvoina (em tai rem), jolloin käyttäjät pystyvät suurentamaan niitä halutessaan. 
@@ -342,7 +346,7 @@ Linkkien ikonien tyylit:
 
 ![Ulkoiseen palveluun vievä linkki.](images/ulkoinen_link.png)
 
-Ulkoisen linkin tekstissä tulee käydä ilmi, että linkki vie toiseen sivustoon tai palveluun. Linkkitekstin perässä on ulkoisen linkin ikoni, joka on osa linkkiä. 
+Ulkoisen linkin tekstissä tulee käydä ilmi, että linkki vie toiseen sivustoon tai palveluun. Linkkitekstin perässä on ulkoisen linkin ikoni, joka on osa linkkiä. Alt-tekstissä lukee: Siirryt toiseen verkkopalveluun. 
 
 ### Murupolku
 
@@ -484,7 +488,7 @@ Tavallisessa pudotusvalikossa voi tehdä vain yhden valinnan.
 
 ![Tavallinen pudotusvalikko kiinni.](images/pudotusvalikko.png)
 
-Jokaisen pudotusvalikon yllä on valikon nimike eli label, joka kertoo lyhyesti mitä pudotusvalikko sisältää. Pudotusvalikon kentässä näkyy mikä valikon vaihtoehdoista on valittuna. Valikon kenttää klikkaamalla valikko avautuu ja vaihtoehdot tulevat näkyviin. 
+Jokaisen pudotusvalikon yllä on valikon nimike eli label, joka kertoo lyhyesti mitä pudotusvalikko sisältää. Label noudattaa label-tekstin tyylejä, ks. Typografia. Pudotusvalikon kentässä näkyy mikä valikon vaihtoehdoista on valittuna. Valikon kenttää klikkaamalla valikko avautuu ja vaihtoehdot tulevat näkyviin. 
 
 ![Tavallinen pudotusvalikko avattuna.](images/pudotusvalikko_auki.png)
 
@@ -509,6 +513,26 @@ Kun vain yksi vaihtoehto on valittuna, pudotusvalikon kentässä näkyy kyseinen
 ![Multi select -pudotusvalikossa oletuksena on valittuna Kaikki xxx -vaihtoehto.](images/pudotusvalikko_multi.png)
 
 Multi select -pudotusvalikossa on oletuksena valittuna ensimmäisenä oleva Kaikki xxx eli esim. Kaikki aiheet (teksti riippuu pudotusvalikon sisällöstä ja labelista). Kun jokin muu vaihtoehto valitaan, poistuu Kaikki xxx -valinta. Jos valinnat otetaan pois kaikista muista vaihtoehdoista, Kaikki xxx -valinta menee automaattisesti päälle. 
+
+#### Pudotusvalikkojen tyylit
+
+**Fontit**
+|                       | Font                     | Font-size | Color   |
+| --------------------- | ------------------------ | --------- | ------- |
+| Label                 | Source Sans Pro Semibold | 17px      | #000000 |
+| Vaihtoehtojen tekstit | Source Sans Pro regular  | 16px/1rem | #000000 |
+
+**Valintaruutu**
+| Color   |
+| ------- |
+| #ffffff |
+
+**Valittu vaihtoehto**
+|                           | Color   | Background-color |
+| ------------------------- | ------- | ---------------- |
+| Vaihtoehtojen tekstit     | #000000 | #f2f2f2          |
+| Valintaruutu              | #0073b0 |                  |
+| Valintaruudun check-ikoni | #ffffff |                  |
 
 #### Pudotusvalikoiden saavutettavuus
 
@@ -689,6 +713,20 @@ Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena 
 | Otsikko                | Barlow Semi Condensed regular  | 1rem (16px)                       |            |                |
 | Sarake- ja riviotsikot | Barlow Semi Condensed SemiBold | 1rem (16px)                       | left       |                |
 | Solut                  | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | right      | bottom         |
+
+### Tooltip
+
+Tooltip on pieni laatikko, joka tulee näkyviin käyttäjän toiminnon käynnistämänä. Tooltip kertoo lisätietoa elementistä tai kontekstista, johon se liittyy. (Miten tooltip tulee näkyviin: klikkauksella vai hover-toiminnolla kuten kuvioiden tooltipit? Miten tooltip sulkeutuu?)
+
+![Viivakuvion tooltip.](images/viivakuvio_tooltip.png)
+
+| Font                          | Font-size   | Background-color | Border  | Box-shadow                            |
+| ----------------------------- | ----------- | ---------------- | ------- | ------------------------------------- |
+| Barlow Semi Condensed regular | 1rem (16px) | #f2f8fb          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35) |
+
+#### Tooltipin saavutettavuus
+
+* Tooltipiin ei tule laittaa sellaista sisältöä, joka käyttäjän on tärkeää löytää tai nähdä. Kaikki käyttäjät eivät välttämättä huomaa elementtiä, josta tooltip on saatavissa tai ymmärrä miten tooltipin saa näkyviin. 
 
 ### Video
 
