@@ -7,13 +7,13 @@
 - [Kuvat](#kuvat)
   - [Hero-kuva](#hero-kuva)
 - [Ikonit](#ikonit)
-- [Värit](#v%c3%a4rit)
+- [Värit](#värit)
 - [Sivupohja](#sivupohja)
   - [Navigaatio-palkki mobiili](#navigaatio-palkki-mobiili)
     - [Menu mobiili](#menu-mobiili)
   - [Navigaatio-palkki desktop](#navigaatio-palkki-desktop)
     - [Menut desktop](#menut-desktop)
-  - [Sisältöalue](#sis%c3%a4lt%c3%b6alue)
+  - [Sisältöalue](#sisältöalue)
   - [Sivuston tausta](#sivuston-tausta)
   - [Tekstipalsta](#tekstipalsta)
   - [Blokit](#blokit)
@@ -26,7 +26,7 @@
   - [Laajennuspaneeli](#laajennuspaneeli)
   - [Linkki](#linkki)
     - [Linkkien saavutettavuus](#linkkien-saavutettavuus)
-    - [Sisäinen linkki](#sis%c3%a4inen-linkki)
+    - [Sisäinen linkki](#sisäinen-linkki)
       - [Tavallinen linkki](#tavallinen-linkki)
       - [Negatiivi-linkki](#negatiivi-linkki)
       - [Linkki tekstin seassa](#linkki-tekstin-seassa)
@@ -42,23 +42,21 @@
     - [Kolmassijainen painike](#kolmassijainen-painike)
     - [Negatiivi-painike](#negatiivi-painike)
   - [Pudotusvalikko](#pudotusvalikko)
-    - [Tavallinen pudotusvalikko](#tavallinen-pudotusvalikko)
-    - [Multi select (monen valinnan)	pudotusvalikko](#multi-select-monen-valinnan-pudotusvalikko)
-    - [Pudotusvalikkojen tyylit](#pudotusvalikkojen-tyylit)
-    - [Pudotusvalikoiden saavutettavuus](#pudotusvalikoiden-saavutettavuus)
-  - [Pääkohdat](#p%c3%a4%c3%a4kohdat)
+    - [Pudotusvalikon tyylit](#pudotusvalikon-tyylit)
+    - [Pudotusvalikon saavutettavuus](#pudotusvalikon-saavutettavuus)
+  - [Pääkohdat](#pääkohdat)
   - [Tagit](#tagit)
   - [Tilastokuviot](#tilastokuviot)
     - [Kuvioiden saavutettavuus](#kuvioiden-saavutettavuus)
     - [Kaikille kuviotyypeille yhteiset tyylit](#kaikille-kuviotyypeille-yhteiset-tyylit)
     - [Viivakuvio](#viivakuvio)
     - [Piirakkakuvio](#piirakkakuvio)
-    - [Pylväskuvio](#pylv%c3%a4skuvio)
+    - [Pylväskuvio](#pylväskuvio)
     - [Kuvion tooltip](#kuvion-tooltip)
   - [Tilastotaulukko](#tilastotaulukko)
     - [Taulukon saavutettavuus](#taulukon-saavutettavuus)
-    - [Taulukko pienillä näytöillä](#taulukko-pienill%c3%a4-n%c3%a4yt%c3%b6ill%c3%a4)
-    - [Taulukko isoilla näytöillä](#taulukko-isoilla-n%c3%a4yt%c3%b6ill%c3%a4)
+    - [Taulukko pienillä näytöillä](#taulukko-pienillä-näytöillä)
+    - [Taulukko isoilla näytöillä](#taulukko-isoilla-näytöillä)
     - [Taulukon tyylit](#taulukon-tyylit)
   - [Tooltip](#tooltip)
     - [Tooltipin saavutettavuus](#tooltipin-saavutettavuus)
@@ -472,25 +470,15 @@ Negatiivi-painike on painike tummalla taustalla. Tumman taustan vuoksi sen tyyli
 ### Pudotusvalikko
 (Eng. dropdown)
 
-Pudotusvalikko on elementti, jonka tarjoamista vaihtoehdoista valitaan yksi tai useampi. 
-
-
-
-Pudotusvalikoita on kahdenlaisia:
-1.  tavallinen pudotusvalikko: pudotusvalikon vaihtoehdoista valitaan yksi. 
-2.  multi select: pudotusvalikon vaihtoehdoista voidaan valita useita. 
+Pudotusvalikko on elementti, jonka tarjoamista vaihtoehdoista valitaan yksi. 
 
 Mobiili-käyttöliittymissä käytetään käyttöjärjestelmien valmiita pudotusvalikkojen toteutusratkaisuja. Desktop-käyttöliittymiin pudotusvalikot toteutetaan itse. Seuraavaksi käydään läpi pudotusvalikkojen design ja toiminnallisuus desktop-käyttöliittymissä. 
 
-#### Tavallinen pudotusvalikko
-
-Tavallisessa pudotusvalikossa voi tehdä vain yhden valinnan. 
-
-![Tavallinen pudotusvalikko kiinni.](images/pudotusvalikko.png)
+![Kiinni oleva pudotusvalikko.](images/pudotusvalikko.png)
 
 Jokaisen pudotusvalikon yllä on valikon nimike eli label, joka kertoo lyhyesti mitä pudotusvalikko sisältää. Label noudattaa label-tekstin tyylejä, ks. Typografia. Pudotusvalikon kentässä näkyy mikä valikon vaihtoehdoista on valittuna. Valikon kenttää klikkaamalla valikko avautuu ja vaihtoehdot tulevat näkyviin. 
 
-![Tavallinen pudotusvalikko avattuna.](images/pudotusvalikko_auki.png)
+![Avattu pudotusvalikko.](images/pudotusvalikko_auki.png)
 
 Valittu vaihtoehto näkyy paitsi pudotusvalikon kentässä myös  valikon listassa korostettuna. Oletuksena tavallisessa pudotusvalikossa on valittuna Kaikki xxx -valinta, joka on listassa heti ensimmäisenä (tekstin muoto riippuu pudotusvalikon sisällöstä ja labelista). Valintatoiminto sulkee valikon. 
 
@@ -500,21 +488,7 @@ Jos pudotusvalikossa vaihtoehtoja on yli 14, valikko ei veny pituutta vaan siit�
 
 Jos vaihtoehtoja on yli 20, valikon sisään on hyvä lisätä hakutoiminnallisuus ja hakukenttä. Näin käyttäjät voivat hakea pitkästäkin listasta haluamaansa vaihtoehtoa nopeasti. Hakukentän paikka avatussa valikossa on heti ylhäällä ennen listaa. 
 
-#### Multi select (monen valinnan)	pudotusvalikko
-
-Multi select -pudotusvalikosta voi tehdä yhden tai useamman valinnan.
-
-![Multi select -pudotusvalikosta voidaan valita useita vaihtoehtoja.](images/pudotusvalikko_multi_auki.png)
-
- Avatussa multi select -pudotusvalikossa vaihtoehtojen vasemmalla puolella on checkbox-valintaruutu. Kun vaihtoehto on valittu, valintaruutuun ilmestyy täppä ja valitun vaihtoehdon tausta korostetaan. Valinnan voi poistaa klikkaamalla vaihtoehtoa tai valintaruutua uudestaan. 
-
-Kun vain yksi vaihtoehto on valittuna, pudotusvalikon kentässä näkyy kyseinen valinnan teksti, esim. Kaikki aiheet. Kun on valittu useampia vaihtoehtoja, kentässä näkyy valintojen lukumäärä, esim. 2 valittu. 
-
-![Multi select -pudotusvalikossa oletuksena on valittuna Kaikki xxx -vaihtoehto.](images/pudotusvalikko_multi.png)
-
-Multi select -pudotusvalikossa on oletuksena valittuna ensimmäisenä oleva Kaikki xxx eli esim. Kaikki aiheet (teksti riippuu pudotusvalikon sisällöstä ja labelista). Kun jokin muu vaihtoehto valitaan, poistuu Kaikki xxx -valinta. Jos valinnat otetaan pois kaikista muista vaihtoehdoista, Kaikki xxx -valinta menee automaattisesti päälle. 
-
-#### Pudotusvalikkojen tyylit
+#### Pudotusvalikon tyylit
 
 **Fontit**
 |                       | Font                     | Font-size | Color   |
@@ -522,23 +496,17 @@ Multi select -pudotusvalikossa on oletuksena valittuna ensimmäisenä oleva Kaik
 | Label                 | Source Sans Pro Semibold | 17px      | #000000 |
 | Vaihtoehtojen tekstit | Source Sans Pro regular  | 16px/1rem | #000000 |
 
-**Valintaruutu**
-| Color   |
-| ------- |
-| #ffffff |
 
 **Valittu vaihtoehto**
-|                           | Color   | Background-color |
-| ------------------------- | ------- | ---------------- |
-| Vaihtoehtojen tekstit     | #000000 | #f2f2f2          |
-| Valintaruutu              | #0073b0 |                  |
-| Valintaruudun check-ikoni | #ffffff |                  |
+|                    | Color   | Background-color |
+| ------------------ | ------- | ---------------- |
+| Vaihtoehdon teksti | #000000 | #f2f2f2          |
 
-#### Pudotusvalikoiden saavutettavuus
+#### Pudotusvalikon saavutettavuus
 
 * Pudotusvalikon yläpuolella on sen nimike eli label. Label kertoo lyhyesti mitä pudotusvalikko sisältää. 
 * Ruudunlukijaa käyttäville kerrotaan pudotusvalikon status eli onko valikko kiinni vai auki. 
-* Ruudunlukijaa käyttäville kerrotaan myös mikä tai mitkä valikon valinnoista on valittuna.
+* Ruudunlukijaa käyttäville kerrotaan myös mikä valikon valinnoista on valittuna.
 
 ### Pääkohdat
 
@@ -550,7 +518,7 @@ Pääkohdat-elementissä kerrotaan tiiviisti tilastojulkistuksen tärkeimmät as
 
 |                   | Font            | Font-size     | Color   |
 | ----------------- | --------------- | ------------- | ------- |
-| Otsikko (H2)      | Barlow, regular | 28px          | #00B2A9 |
+| Otsikko (H2)      | Barlow, regular | 28px          | #000000|
 | Teksti (Ingressi) | Barlow, regular | 17px/1.255rem | #000000 |
 
 Tekstissä on riippuva sisennys eli kaikki tekstirivit ovat samassa linjassa pallo-listamerkkien oikealla puolella. Tekstit eivät siis mene pallo-listamerkkien alle (ts. css-listan normaali toiminnallisuus). 
@@ -559,8 +527,8 @@ Desktop-koossa elementin vasemmalla puolella on ohut elementin kanssa samankorku
 
 |                  | Color   | Height           | Width     | Muuta             |
 | ---------------- | ------- | ---------------- | --------- | ----------------- |
-| Pallot           | #00B2A9 | (default)        | (default) |                   |
-| Vasen pystyviiva | #00B2A9 | elementin pituus | 1px       | ei ole mobiilissa |
+| Pallot           | #000000 | (default)        | (default) |                   |
+| Vasen pystyviiva | #000000 | elementin pituus | 1px       | ei ole mobiilissa |
 
 ### Tagit
 
