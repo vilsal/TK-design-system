@@ -698,7 +698,9 @@ Tooltip on pieni laatikko, joka tulee näkyviin käyttäjän toiminnon käynnist
 
 ### Video
 
-Tilastojulkistuksiin voidaan liittää videoelementti. Videoelementti on erotettu muusta sisällöstä harmaalla taustalla. Elementti koostuu taustan lisäksi sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tageista, videon otsikosta, videon julkaisupäivämäärästä, linkistä Youtube-palveluun, itse videosta ja videon käsikirjoituksesta. Videon käsikirjoitus on saatavilla videon alla laajennuspaneelissa. 
+Tiedotteisiin voidaan liittää videoelementti. Video sijaitsee tiedotteissa tiedotteen tekstiosuuden jälkeen. Videoelementti koostuu useasta pienemmästä elementistä: sisältötyyppi-, tilaston nimi- ja viiteajankohta -tageista, videon otsikosta, videon julkaisupäivämäärästä, linkistä Youtube-palveluun, itse videosta ja videon käsikirjoituksesta. Videon käsikirjoitus on saatavilla videon alla laajennuspaneelissa. 
+
+![Video desktop-koossa. Käsikirjoitus-laajennuspaneeli on avattu. ](images/video_desktop_avattu.png)
 
 #### Videoiden saavutettavuus
 
@@ -709,19 +711,15 @@ Tilastojulkistuksiin voidaan liittää videoelementti. Videoelementti on erotett
 
 #### Koko
 
-![Video mobiili-koossa.](images/video_mobiili.png)
+ Videoelementin osat asettuvat allekkain sekä mobiili- että desktop-koossa. Järjestys ylhäältä alas: sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tagit, videon otsikko, videon julkaisupäivämäärä, linkki Youtube-palveluun, itse video ja videon käsikirjoitus -laajennuspaneeli.
 
- Pienillä näytöillä videoelementin osat asettuvat allekkain. Järjestys ylhäältä alas: sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tagit, videon otsikko, videon julkaisupäivämäärä, linkki Youtube-palveluun, videosta ja videon käsikirjoitus.
-
-![Video desktop-koossa.](images/video_desktop.png)
-
-Isoilla näytöillä tekstiosat ja video asettuvat vierekkäin. Tagit, otsikko, julkaisupäivämäärä ja linkki Youtubeen ovat vasemmalla ja vievät 50% koko elementin leveydestä, video oikealla ja vie 50% leveydestä. Käsikirjoitus-laajennuspaneeli näiden alla 100% leveänä. Kun sivua käytetään ruudunlukijalla tai näppäimistöllä, elementtien järjestys (ts. fokuksen ja ruudunlukijan etenemisjärjestys) on sama kuin mobiilissa eli Youtube-linkin jälkeen tulee video ja videon jälkeen käsikirjoitus-laajennuspaneeli. 
+![Video mobiili-koossa. ](images/video_mobiili.png)
 
 #### Videoelementin tyylit
 
 | Background-color |
 | ---------------- |
-| #f2f2f2          |
+| #ffffff          |
 
 | Videoelementin osa | Noudattaa tyyliä        |
 | ------------------ | ----------------------- |
