@@ -48,7 +48,9 @@
   - [Tagit](#tagit)
   - [Tilastokuviot](#tilastokuviot)
     - [Kuvioiden saavutettavuus](#kuvioiden-saavutettavuus)
-    - [Kaikille kuviotyypeille yhteiset tyylit](#kaikille-kuviotyypeille-yhteiset-tyylit)
+    - [Tilastokuvioiden fontit](#tilastokuvioiden-fontit)
+    - [Tilastokuvioiden hilaviivat](#tilastokuvioiden-hilaviivat)
+    - [Tilastokuvioiden akselit](#tilastokuvioiden-akselit)
     - [Viivakuvio](#viivakuvio)
     - [Piirakkakuvio](#piirakkakuvio)
     - [Pylväskuvio](#pylväskuvio)
@@ -58,6 +60,8 @@
     - [Taulukko pienillä näytöillä](#taulukko-pienillä-näytöillä)
     - [Taulukko isoilla näytöillä](#taulukko-isoilla-näytöillä)
     - [Taulukon tyylit](#taulukon-tyylit)
+    - [Taulukon fontit](#taulukon-fontit)
+    - [Taulukon vierityspalkki](#taulukon-vierityspalkki)
   - [Tooltip](#tooltip)
     - [Tooltipin saavutettavuus](#tooltipin-saavutettavuus)
   - [Video](#video)
@@ -68,20 +72,26 @@
 ## Typografia
 Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista on tässä ilmoitettu pikseleinä, ne tulee toteuttaa suhteellisina arvoina (em tai rem). 
 
-| Taso                | Font                     | Font-size     | Font-family                                                    | Color   |
-| ------------------- | ------------------------ | ------------- | -------------------------------------------------------------- | ------- |
-| Leipäteksti         | Source Sans Pro, regular | 16px/1rem     | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |
-| Leipäteksti, iso    | Source Sans Pro, regular | 18px          |                                                                | #000000 |
-| H1                  | Barlow, regular          | 34px          |                                                                | #000000 |
-| H2                  | Barlow, regular          | 28px          |                                                                | #000000 |
-| H3                  | Barlow, regular          | 22px          |                                                                | #000000 |
-| H4                  | Barlow, medium           | 16px          |                                                                | #000000 |
-| H5                  | Barlow, medium           | 14px          |                                                                | #000000 |
-| Ingressi            | Barlow regular           | 17px/1.255rem |                                                                | #000000 |
-| Introteksti         | Barlow, medium           | 14px          |                                                                | #000000 |
-| Päiväys/kirjoittaja | Barlow, regular          | 14px          |                                                                | #000000 |
-| Tyyppitagit         | Barlow, semibold         | 14px          |                                                                | #333333 |
-| Label-teksti        | Source Sans Pro          | 17px          |                                                                | #000000 |
+| Taso                                                    | Font                           | Font-size                         | Font-family                                                    | Color   | Text-align | Vertical-align |
+| ------------------------------------------------------- | ------------------------------ | --------------------------------- | -------------------------------------------------------------- | ------- | ---------- | -------------- |
+| **Leipäteksti**                                         | Source Sans Pro, regular       | 16px/1rem                         | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |            |                |
+| **H1**                                                  | Barlow, regular                | 34px                              |                                                                | #000000 |            |                |
+| **H2**                                                  | Barlow, regular                | 28px                              |                                                                | #000000 |            |                |
+| **H3**                                                  | Barlow, regular                | 22px                              |                                                                | #000000 |            |                |
+| **H4**                                                  | Barlow, medium                 | 16px                              |                                                                | #000000 |            |                |
+| **H5**                                                  | Barlow, medium                 | 14px                              |                                                                | #000000 |            |                |
+| **Introteksti** (aiheessa/tarkan aiheessa)              | Barlow, medium                 | 14px                              |                                                                | #000000 |            |                |
+| **Tagit**  (tyyppitagit)                                | Barlow, semibold               | 14px                              |                                                                | #333333 |            |                |
+| **Päiväys ja kirjoittaja** (blokkien nostoelementeissä) | Barlow, regular                | 14px                              |                                                                | #000000 |            |                |
+| **Ingressi**                                            | Barlow regular                 | 17px/1.255rem                     |                                                                | #000000 |
+| **Asiantuntijan nimi** (iso leipäteksti)                | Source Sans Pro, regular       | 18px                              |                                                                | #000000 |            |                |
+| **Pudotusvalikon label**                                | Source Sans Pro                | 17px                              |                                                                | #000000 |            |                |
+| **Taulukon otsikko**                                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |            |                |
+| **Taulukon sarake- ja riviotsikot**                     | Barlow Semi Condensed SemiBold | 1rem (16px)                       |                                                                | #000000 | left       |                |
+| **Taulukon solut**                                      | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) |                                                                | #000000 | right      | bottom         |
+| **Tilastokuvion otsikko**                               | Barlow Semi Condensed medium   | 1rem (16px)                       |                                                                | #000000 | center     |                |
+| **Tilastokuvion alaotsikko**                            | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 | center     |                |
+| **Tilastokuvion muut tekstit**                          | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |            |                |
 
 ### Typografian saavutettavuus
 * Fonttien koot tulee toteuttaa suhteellisina arvoina (em tai rem), jolloin käyttäjät pystyvät suurentamaan niitä halutessaan. 
@@ -222,10 +232,10 @@ Suljettujen osien otsikoiden vasemmalla puolella on plus-ikoni. Kun osio avataan
 #### Haitarin ikonien tyylit
 Haitarin ensimmäisellä tasolla plus- ja miinus-ikonit ovat suurempia ja tummempia kuin syvemmällä tasolla, jossa ne ovat pienempiä ja vaaleampia. Myös tällä kerrotaan visuaalisesti hierarkiasta. 
 
-| Hierarkiataso | Height | Width | Color    |
-| ------------- | ------ | ----- | -------- |
-| Ensimmäinen   | 15px   | 15px  | #0073b0  |
-| Toinen        | 11px   | 11px  | #338FC0F |
+| Hierarkiataso   | Height | Width | Color    |
+| --------------- | ------ | ----- | -------- |
+| **Ensimmäinen** | 15px   | 15px  | #0073b0  |
+| **Toinen**      | 11px   | 11px  | #338FC0F |
 
 #### Haitarin saavutettavuus
 * Kaikki käyttäjät eivät välttämättä huomaa haitari-elementtiä tai ymmärrä miten se toimii. Siksi haitariin ei pidä laittaa sellaista sisältöä, joka on käyttäjälle tärkeää huomata tai löytää. 
@@ -247,7 +257,9 @@ Linkkejä käytetään navigaatiossa sivuston sisällä sekä navigoinnissa ulko
 #### Linkkien saavutettavuus
 * Yleisiä Katso lisää -tyylisiä linkkejä on hyvä välttää. Linkin tekstin tulee olla mahdollisimman tarkoitustaan tai kohdesivuaan kuvaava. 
 * Linkkien tekstien tulee olla mahdollisimman paljon kohdesivun otsikkoa vastaavia. 
-* Jos linkki vie toiselle sivustolle tai avaa tiedoston, on tämä käytävä linkistä ilmi sekä ruudunlukijaa käyttäville että näkeville käyttäjille. Näkeviä käyttäjiä varten linkin yhteyteen lisätään myös ulkoisen linkin ikoni ja ruudunlukijaa varten (mikä?). 
+* Jos linkissä on ikoni, ikoni piilotetaan ruudunlukijalta ja sille ei tehdä alt-tekstiä. Poikkeuksena ulkoiselle sivustolle vievien linkkien ikoni. 
+* Jos linkki vie ulkoiselle sivustolle, on tämä käytävä linkistä ilmi sekä ruudunlukijaa käyttäville että näkeville käyttäjille. Jo linkin tekstissä olisi hyvä ilmaista, että linkki vie toiseen palveluun. Näkeviä käyttäjiä varten linkin yhteyteen lisätään myös ulkoisen linkin ikoni. Ruudunlukijaa varten ikoniin lisätään alt-teksti, joka kertoo, että linkki vie ulkoiselle sivustolle. 
+* Jos linkki avaa tiedoston, on tämä käytävä ilmi sekä näkeville että ruudunlukijaa käyttäville käyttäjille. Linkin loppuun laitetaan esimerkiksi sulkuihin tiedoston muoto: (pdf).
 * Linkkien tyylit on pidettävä yhtenäisinä. Navigaatiolinkit ovat poikkeus tästä, niillä on omat tyylinsä. 
 * Kaikki linkit toimivat näppäimistökäytössä vain enterillä. 
 
@@ -344,7 +356,7 @@ Linkkien ikonien tyylit:
 
 ![Ulkoiseen palveluun vievä linkki.](images/ulkoinen_link.png)
 
-Ulkoisen linkin tekstissä tulee käydä ilmi, että linkki vie toiseen sivustoon tai palveluun. Linkkitekstin perässä on ulkoisen linkin ikoni, joka on osa linkkiä. Alt-tekstissä lukee: Siirryt toiseen verkkopalveluun. 
+Ulkoisen linkin tekstissä pyritään kertomaan, että linkki vie toiseen sivustoon tai palveluun. Linkkitekstin perässä on ulkoisen linkin ikoni, joka on osa linkkiä. Ruudunlukijaa varten ikoniin lisätään alt-teksti, joka kertoo, että linkki vie ulkoiselle sivustolle. Ikonin alt-tekstissä lukee: Siirryt toiseen verkkopalveluun. 
 
 ### Murupolku
 
@@ -354,8 +366,8 @@ Ulkoisen linkin tekstissä tulee käydä ilmi, että linkki vie toiseen sivustoo
 
 | Murupolun osa | Font           | Font-size | Color   | Muuta                                  |
 | ------------- | -------------- | --------- | ------- | -------------------------------------- |
-| Linkki        | Barlow, medium | 14px      | #006ca5 | samat tilat kuin tavallisella linkillä |
-| Viimeinen     | Barlow, medium | 14px      | #000000 | ei linkki                              |
+| **Linkki**    | Barlow, medium | 14px      | #006ca5 | samat tilat kuin tavallisella linkillä |
+| **Viimeinen** | Barlow, medium | 14px      | #000000 | ei linkki                              |
 
 Murupolku käyttäytyy desktopissa ja mobiilissa hieman eri tavoin. 
 
@@ -399,9 +411,9 @@ Painike käynnistää toiminnon. Painikkeita on neljää eri tyyliä ja niiden k
 
 Nämä ominaisuudet pätevät kaikille painikkeille painikkeen tyypistä tai laitteen/selainikkunan koosta riippumatta. 
 
-| Font                     | Font-size | Border-radius | Min-width | Min-height | Focus-kehys  |
-| ------------------------ | --------- | ------------- | --------- | ---------- | ------------ |
-| Source Sans Pro, regular | 16px/1rem | 5px           | 80px      | 40px       | 2px, #0073b0 |
+| Font                     | Font-size | Border-radius | Min-width | Min-height | Focus-kehys |
+| ------------------------ | --------- | ------------- | --------- | ---------- | ----------- |
+| Source Sans Pro, regular | 16px/1rem | 5px           | 80px      | 40px       | 2px         |
 
 #### Koko
 
@@ -421,51 +433,52 @@ Isoilla näytöillä eli desktopissa painikkeiden leveys skaalautuu painikkeen t
 
 ![Ensisijaisen painikkeen eri tilat.](images/primary_buttons.png)
 
-| Tila                 | Color   | Background-color | Border | Box-shadow                              |
-| -------------------- | ------- | ---------------- | ------ | --------------------------------------- |
-| **Tavallinen**       | #ffffff | #0073b0          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |
-| **Selected/pressed** | #ffffff | #0073b0          | -      | 2px, 2px, 5px, rgba(5,3,112,0.35) inset |
-| **Disabled**         | #666666 | #f2f2f2          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |
-| **Hover**            | #ffffff | #338fc0          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |
-| **Focus**            | #ffffff | #338fc0          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |
+| Tila                 | Color   | Background-color | Border | Box-shadow                              | Focus-kehys color |
+| -------------------- | ------- | ---------------- | ------ | --------------------------------------- | ----------------- |
+| **Tavallinen**       | #ffffff | #0073b0          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |                   |
+| **Selected/pressed** | #ffffff | #0073b0          | -      | 2px, 2px, 5px, rgba(5,3,112,0.35) inset |                   |
+| **Disabled**         | #666666 | #f2f2f2          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |                   |
+| **Hover**            | #ffffff | #338fc0          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   |                   |
+| **Focus**            | #ffffff | #338fc0          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)   | #0073b0           |
+
 
 #### Toisijainen painike
 
 ![Toissijaisen painikkeen eri tilat.](images/secondary_buttons.png)
 
-| Tila                 | Color   | Background-color | Border  | Box-shadow                                  |
-| -------------------- | ------- | ---------------- | ------- | ------------------------------------------- |
-| **Tavallinen**       | #0073b0 | #ffffff          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
-| **Selected/pressed** | #0073b0 | #ffffff          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35) inset |
-| **Disabled**         | #7f7f7f | #ffffff          | #aaaaaa | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
-| **Hover**            | #0073b0 | #f2f2f2          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
-| **Focus**            | #0073b0 | #f2f2f2          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
+| Tila                 | Color   | Background-color | Border  | Box-shadow                                  | Focus-kehys color |
+| -------------------- | ------- | ---------------- | ------- | ------------------------------------------- | ----------------- |
+| **Tavallinen**       | #0073b0 | #ffffff          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       |                   |
+| **Selected/pressed** | #0073b0 | #ffffff          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35) inset |                   |
+| **Disabled**         | #7f7f7f | #ffffff          | #aaaaaa | 2px, 2px, 5px, rgba(102,102,102,0.35)       |                   |
+| **Hover**            | #0073b0 | #f2f2f2          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       |                   |
+| **Focus**            | #0073b0 | #f2f2f2          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       | #0073b0           |
 
 #### Kolmassijainen painike
 
 ![Kolmassijaisen painikkeen eri tilat.](images/tertiary_buttons.png)
 
-| Tila                 | Color   | Background-color | Border | Box-shadow                                  |
-| -------------------- | ------- | ---------------- | ------ | ------------------------------------------- |
-| **Tavallinen**       | #0073b0 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
-| **Selected/pressed** | #0073b0 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35) inset |
-| **Disabled**         | #666666 | #f2f2f2          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
-| **Hover**            | #000000 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
-| **Focus**            | #000000 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |
+| Tila                 | Color   | Background-color | Border | Box-shadow                                  | Focus-kehys color |
+| -------------------- | ------- | ---------------- | ------ | ------------------------------------------- | ----------------- |
+| **Tavallinen**       | #0073b0 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |                   |
+| **Selected/pressed** | #0073b0 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35) inset |                   |
+| **Disabled**         | #666666 | #f2f2f2          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |                   |
+| **Hover**            | #000000 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       |                   |
+| **Focus**            | #000000 | #f2f8fb          | -      | 2px, 2px, 5px, rgba(102,102,102,0.35)       | #0073b0           |
 
 #### Negatiivi-painike
 
-Negatiivi-painike on painike tummalla taustalla. Tumman taustan vuoksi sen tyylit eri tiloissa hieman eroavat muista painikkeista. 
+Negatiivi-painike on painike tummalla taustalla. Negatiivi-painikkeen tyylit ovat pitkälti samanlaiset kuin toissijaisen painikkeen tyylit, varjostuksia ja focus-kehyksen väriä lukuunottamatta. Negatiivi-painikkeen ulkoinen varjostus on hieman isompi ja tummempi kuin toissijaisen painikkeen. Tämä johtuu siitä, että negatiivi-painiketta käytetään tumman taustan päällä. Isompi ja tummempi varjostus erottuu tummasta taustasta paremmin. Negatiivi-painikkeen focus-kehyksen väri on valkoinen. 
 
 ![Negatiivi-painikkeen eri tilat.](images/negative_buttons.png)
 
-| Tila                 | Color   | Background-color | Border  | Box-shadow                                  |
-| -------------------- | ------- | ---------------- | ------- | ------------------------------------------- |
-| **Tavallinen**       | #0073b0 | #ffffff          | #0073b0 | 4px, 4px, 5px, rgba(85,85,85,0.35)          |
-| **Selected/pressed** | #0073b0 | #ffffff          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35) inset |
-| **Disabled**         | #7f7f7f | #ffffff          | #aaaaaa | 4px, 4px, 5px, rgba(85,85,85,0.35)          |
-| **Hover**            | #0073b0 | #f2f2f2          | #0073b0 | 4px, 4px, 5px, rgba(85,85,85,0.35)          |
-| **Focus**            | ?       | ?                | ?       | ?                                           |
+| Tila                 | Color   | Background-color | Border  | Box-shadow                                  | Focus-kehys color |
+| -------------------- | ------- | ---------------- | ------- | ------------------------------------------- | ----------------- |
+| **Tavallinen**       | #0073b0 | #ffffff          | #0073b0 | 4px, 4px, 5px, rgba(85,85,85,0.35)          |                   |
+| **Selected/pressed** | #0073b0 | #ffffff          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35) inset |                   |
+| **Disabled**         | #7f7f7f | #ffffff          | #aaaaaa | 4px, 4px, 5px, rgba(85,85,85,0.35)          |                   |
+| **Hover**            | #0073b0 | #f2f2f2          | #0073b0 | 4px, 4px, 5px, rgba(85,85,85,0.35)          |                   |
+| **Focus**            | #0073b0 | #f2f2f2          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       | #ffffff           |
 
 ### Pudotusvalikko
 (Eng. dropdown)
@@ -491,16 +504,16 @@ Jos vaihtoehtoja on yli 20, valikon sisään on hyvä lisätä hakutoiminnallisu
 #### Pudotusvalikon tyylit
 
 **Fontit**
-|                       | Font                     | Font-size | Color   |
-| --------------------- | ------------------------ | --------- | ------- |
-| Label                 | Source Sans Pro Semibold | 17px      | #000000 |
-| Vaihtoehtojen tekstit | Source Sans Pro regular  | 16px/1rem | #000000 |
+|                           | Font                     | Font-size | Color   |
+| ------------------------- | ------------------------ | --------- | ------- |
+| **Pudotusvalikon label**  | Source Sans Pro Semibold | 17px      | #000000 |
+| **Vaihtoehtojen tekstit** | Source Sans Pro regular  | 16px/1rem | #000000 |
 
 
 **Valittu vaihtoehto**
-|                    | Color   | Background-color |
-| ------------------ | ------- | ---------------- |
-| Vaihtoehdon teksti | #000000 | #f2f2f2          |
+|                        | Color   | Background-color |
+| ---------------------- | ------- | ---------------- |
+| **Vaihtoehdon teksti** | #000000 | #f2f2f2          |
 
 #### Pudotusvalikon saavutettavuus
 
@@ -514,21 +527,19 @@ Pääkohdat-elementissä kerrotaan tiiviisti tilastojulkistuksen tärkeimmät as
 
 ![Pääkohdat kertovat tiiviisti tilastojulkistuksen tärkeimmät asiat.](images/paakohdat.png)
 
+|                                        | Font            | Font-size     | Color   |
+| -------------------------------------- | --------------- | ------------- | ------- |
+| **Pääkohdat-otsikko (H2-fontti)**      | Barlow, regular | 28px          | #000000 |
+| **Pääkohtien lista (Ingressi-fontti)** | Barlow, regular | 17px/1.255rem | #000000 |
 
-
-|                   | Font            | Font-size     | Color   |
-| ----------------- | --------------- | ------------- | ------- |
-| Otsikko (H2)      | Barlow, regular | 28px          | #000000|
-| Teksti (Ingressi) | Barlow, regular | 17px/1.255rem | #000000 |
-
-Tekstissä on riippuva sisennys eli kaikki tekstirivit ovat samassa linjassa pallo-listamerkkien oikealla puolella. Tekstit eivät siis mene pallo-listamerkkien alle (ts. css-listan normaali toiminnallisuus). 
+Tekstissä on riippuva sisennys eli kaikki tekstirivit ovat samassa linjassa pallo-listamerkkien oikealla puolella. Tekstit eivät siis mene pallo-listamerkkien alle ts. pääkohdat-listassa käytetään css-listan normaalia toiminnallisuutta. (Yllä oleva kuva ei vastaa tältä osin visuaalisesti haluttua toteutusta.)
 
 Desktop-koossa elementin vasemmalla puolella on ohut elementin kanssa samankorkuinen pystyviiva korostamassa elementtiä muusta sivun sisällöstä. Mobiili-koossa tätä pystyviivaa ei ole. 
 
-|                  | Color   | Height           | Width     | Muuta             |
-| ---------------- | ------- | ---------------- | --------- | ----------------- |
-| Pallot           | #000000 | (default)        | (default) |                   |
-| Vasen pystyviiva | #000000 | elementin pituus | 1px       | ei ole mobiilissa |
+|                      | Color   | Height           | Width     | Muuta             |
+| -------------------- | ------- | ---------------- | --------- | ----------------- |
+| **Pallot**           | #000000 | (default)        | (default) |                   |
+| **Vasen pystyviiva** | #000000 | elementin pituus | 1px       | ei ole mobiilissa |
 
 ### Tagit
 
@@ -537,25 +548,21 @@ Desktop-koossa elementin vasemmalla puolella on ohut elementin kanssa samankorku
 Tageja käytetään antamaan julkaisuista lisää tietoa. Ne sijaitsevat otsikon yläpuolella tilastojen ja julkaisujen sivuilla sekä julkaisujen nostoelementeissä. 
 
 Tagit antavat lisätietoa julkaisun ja sivun: 
-* sisältötyypistä: tilasto, tilastojulkistus, taulukko, kuvio, indikaattori, artikkeli, blogi, video, katsaus, muutoksia tässä tilastossa, jne.   
+* sisältötyypistä: tilasto, tiedote, taulukko, kuvio, indikaattori, artikkeli, blogi, video, katsaus, muutoksia tässä tilastossa, jne.   
 * mihin tilastoon julkaisu kuuluu,
-* mitä viiteajankohtaa tilastojulkistus käsittelee, 
-* mikä on tilastojulkistuksen status: ennakko, pikaennakko, lopullinen jne. 
+* mitä viiteajankohtaa tiedote käsittelee, 
+* mikä on tiedotteen status: ennakko, pikaennakko, lopullinen jne. 
 * mihin domainiin/palveluun julkaisu kuuluu, jos se kuuluu muuhun kuin stat.fi-domainiin: Findikaattori, Tieto&trendit. 
  
 Huom! Tageilla ei merkitä julkaisupäivämäärää, sitä varten on oma elementtinsä. 
 
 ![Julkaisujen nostoelementeissä tageja on useita. ](images/tagi_tilasto.png)
 
-Tageja voi olla julkaisujen nostoelementeissä useampi peräkkäin. Esimerkiksi tilastojulkistuksen nostoelementissä on julkaisun tyyppi, tilasto, viiteajankohta ja julkaisun status. Julkaisun sisältötyyppi erotetaan muista tageista |-merkillä. 
+Tageja voi olla julkaisujen nostoelementeissä useampi peräkkäin. Esimerkiksi tiedotteen nostoelementissä on julkaisun tyyppi, tilasto, viiteajankohta ja julkaisun status. Julkaisun sisältötyyppi erotetaan muista tageista |-merkillä. 
 
-![Sisältötyyppi-tagi tilastojulkistuksen sivulla. Tagin paikka on otsikon yläpuolella.](images/tagi_tilastojulkistus.png)
+![Sisältötyyppi-tagi tiedotteen sivulla. Tagin paikka on otsikon yläpuolella.](images/tagi_tiedote.png)
 
-Julkaisujen sivuilla on vain sivun sisältötyyppi-tagi, esimerkiksi tilastojulkistuksen sivulla Tilastojulkistus. Muille tageille ei ole julkaisujen sivuilla tarvetta, sillä niiden tiedot esitetään sivulla muissa kohdissa. 
-
-![Tieto&trendit-blogin tagi.](images/tagi_blogi.png)
-
-Silloin kun nostoelementtien linkki vie ulkoiseen palveluun, käytetään ulkoisen linkin ikonia tagissa mukana. Ulkoisen linkin ikoni laitetaan domain-tagin perään. 
+Julkaisujen sivuilla on vain sivun sisältötyyppi-tagi, esimerkiksi tiedotteen sivulla Tiedote. Muille tageille ei ole julkaisujen sivuilla tarvetta, sillä niiden tiedot esitetään sivulla muissa kohdissa. 
 
 **Tagien tyyli** 
 
@@ -574,23 +581,21 @@ Silloin kun nostoelementtien linkki vie ulkoiseen palveluun, käytetään ulkois
 
 * Tilastokuvioissa viivat, pylväät ja piirakan siivut erotetaan toisistaan väreillä. Tämä saavutettavuusrajoite tulee mainita saavutettavuusselosteessa. Tilastokuvioissa ei siis käytetä reunaviivoja, paksuuseroja, eri muotoja tai pintakuviointeja osioiden erottamiseksi toisistaan. 
 
-#### Kaikille kuviotyypeille yhteiset tyylit
+#### Tilastokuvioiden fontit
 
-**Fontit**
+|                         | Font                          | Font-size   | Text-align |
+| ----------------------- | ----------------------------- | ----------- | ---------- |
+| **Kuvion otsikko**      | Barlow Semi Condensed medium  | 1rem (16px) | center     |
+| **Kuvion alaotsikko**   | Barlow Semi Condensed regular | 1rem (16px) | center     |
+| **Kuvion muut tekstit** | Barlow Semi Condensed regular | 1rem (16px) |            |
 
-|                | Font                          | Font-size   | Text-align |
-| -------------- | ----------------------------- | ----------- | ---------- |
-| **Otsikko**    | Barlow Semi Condensed medium  | 1rem (16px) | center     |
-| **Alaotsikko** | Barlow Semi Condensed regular | 1rem (16px) | center     |
-| **Muu teksti** | Barlow Semi Condensed regular | 1rem (16px) |            |
-
-**Hilaviivat**
+#### Tilastokuvioiden hilaviivat
 
 | Color   | Width  |
 | ------- | ------ |
 | #666666 | 0.25px |
 
-**Akselit**
+#### Tilastokuvioiden akselit
 
 |              | Color   | Width | Akselin otsikon sijainti                   |
 | ------------ | ------- | ----- | ------------------------------------------ |
@@ -646,7 +651,7 @@ Kuvion tooltip on pieni laatikko, joka tulee näkyviin kuvion päälle ja kertoo
 
 Vaikka taulukot yritetään pitää järkevän kokoisina, voi silti käydä niin, että taulukosta tulee niin leveä tai pitkä, että se ei mahdu pienille näytöille kokonaan. Tällöin taulukon rivi- tai sarakeotsikot voidaan "jäädyttää" paikoilleen. 
 
-Jos taulukko on näyttöä leveämpi, taulukon riviotsikot "jäädytetään" paikalleen ja muu taulukko on liikuteltavissa oikealle ja vasemmalle. Riviotsikot vievät n. 30% näytön leveydestä. Scrollbarit taulukon liikutettavan osan yllä ja alla vihjaavat tästä liikuteltavuudesta. Taulukkoa voi liikutella scrollbarien lisäksi myös itse taulukon liikuteltavaan osaan (muu kuin riviotsikot-sarake) koskemalla.
+Jos taulukko on näyttöä leveämpi, taulukon riviotsikot "jäädytetään" paikalleen ja muu taulukko on liikuteltavissa oikealle ja vasemmalle. Riviotsikot vievät n. 30% näytön leveydestä. Vierityspalkit taulukon liikutettavan osan yllä ja alla vihjaavat tästä liikuteltavuudesta. Vierityspalkin tyylit löytyvät alempaa kohdasta Taulukon vierityspalkki. Taulukkoa voi liikutella vierityspalkkien lisäksi myös itse taulukon liikuteltavaan osaan (muu kuin riviotsikot-sarake) koskemalla.
  
 Jos taulukko on näyttöä pidempi, taulukon sarakeotsikot voidaan jäädyttää paikoilleen. Kun sivua vieritetään taulukon kohdalta alaspäin, taulukon sarakeotsikot jäävät näkyviin näytön yläreunaan ja muuta taulukkoa voidaan liikuttaa pystysuunnassa. Kun on päästy taulukon loppuun ja jatketaan sivun vieritystä edelleen alaspäin, sarakeotsikot katoavat näytön yläreunasta näkyvistä muun taulukon mukana. 
 
@@ -660,13 +665,11 @@ Taulukoiden tulee desktop-laitteilla mahtua leveydeltään sivuston sisältöalu
 
 ![Leveä taulukko desktop-koossa, riviotsikot jäädytetty paikoilleen.](images/taulukko_desktop_levea.png)
 
-Vain hyvin poikkeuksellisissa tilanteissa, joissa tämä ei onnistu eikä taulukkoa saada muokattua sisältöalueeseen mahtuvaksi, taulukko käyttäytyy desktop-laitteilla kuten mobiilissa. Näissä tapauksissa siis taulukon riviotsikot jäädytetään ja taulukon muuta osaa pystyy liikuttamaan vaakasuunnassa scrollbareja liikuttamalla. Taulukon liikutettavan osan ylä- ja alapuolelle tulevat scrollbarit.
+Vain hyvin poikkeuksellisissa tilanteissa, joissa tämä ei onnistu eikä taulukkoa saada muokattua sisältöalueeseen mahtuvaksi, taulukko käyttäytyy desktop-laitteilla kuten mobiilissa. Näissä tapauksissa siis taulukon riviotsikot jäädytetään ja taulukon muuta osaa pystyy liikuttamaan vaakasuunnassa vierityspalkkeja liikuttamalla. Taulukon liikutettavan osan ylä- ja alapuolelle tulevat vierityspalkit. Vierityspalkin tyylit löytyvät alempaa kohdasta Taulukon vierityspalkki. 
 
 Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena auttaa taulukoita myös pysymään sisältöalueen (1200px leveys) sisällä desktop-koossa. Tällöin ne eivät tarvitse desktop-laitteilla jäädytettyjä riviotsikoita ja vaakasuuntaista vieritysominaisuutta.  
 
 #### Taulukon tyylit
-
-**Taulukko**
 
 |                            | Background-color | Border  | Border-width                         | Padding                          |
 | -------------------------- | ---------------- | ------- | ------------------------------------ | -------------------------------- |
@@ -675,12 +678,24 @@ Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena 
 | **Solu**                   | #ffffff          | #0073b0 | 0,25px                               | top/bottom: 8px left/right: 10px |
 | **Rivin hover**            | #cce3fe          |         |                                      |                                  |
 
-**Fontit**
-|                        | Font                           | Font-size                         | Text-align | Vertical-align |
-| ---------------------- | ------------------------------ | --------------------------------- | ---------- | -------------- |
-| Otsikko                | Barlow Semi Condensed regular  | 1rem (16px)                       |            |                |
-| Sarake- ja riviotsikot | Barlow Semi Condensed SemiBold | 1rem (16px)                       | left       |                |
-| Solut                  | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | right      | bottom         |
+#### Taulukon fontit
+|                                     | Font                           | Font-size                         | Text-align | Vertical-align |
+| ----------------------------------- | ------------------------------ | --------------------------------- | ---------- | -------------- |
+| **Taulukon otsikko**                | Barlow Semi Condensed regular  | 1rem (16px)                       |            |                |
+| **Taulukon sarake- ja riviotsikot** | Barlow Semi Condensed SemiBold | 1rem (16px)                       | left       |                |
+| **Taulukon solut**                  | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | right      | bottom         |
+
+#### Taulukon vierityspalkki
+
+![Taulukon vierityspalkki vihjaa taulukon liikuteltavuudesta.](images/vierityspalkki.png)
+
+Vierityspalkit vihjaavat taulukon liikuteltavuudesta. Vierityspalkit sijaitsevat taulukon liikutettavan osan sekä ylä- että alapuolella. 
+
+|                         | Color   | Border-radius | Height |
+| ----------------------- | ------- | ------------- | ------ |
+| **Vieritettävä palkki** | #0073b0 | 10px          | 15px   |
+| **Tausta**              | #e6e6e6 |               | 19px   |
+
 
 ### Tooltip
 
