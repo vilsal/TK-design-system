@@ -47,6 +47,8 @@
   - [Pääkohdat](#pääkohdat)
   - [Tagit](#tagit)
   - [Tilastokuviot](#tilastokuviot)
+    - [Kuviot pienillä näytöillä](#kuviot-pienillä-näytöillä)
+    - [Kuviot isoilla näytöillä](#kuviot-isoilla-näytöillä)
     - [Kuvioiden saavutettavuus](#kuvioiden-saavutettavuus)
     - [Tilastokuvioiden fontit](#tilastokuvioiden-fontit)
     - [Tilastokuvioiden hilaviivat](#tilastokuvioiden-hilaviivat)
@@ -61,13 +63,15 @@
     - [Taulukko isoilla näytöillä](#taulukko-isoilla-näytöillä)
     - [Taulukon tyylit](#taulukon-tyylit)
     - [Taulukon fontit](#taulukon-fontit)
-    - [Taulukon vierityspalkki](#taulukon-vierityspalkki)
   - [Tooltip](#tooltip)
     - [Tooltipin saavutettavuus](#tooltipin-saavutettavuus)
   - [Video](#video)
     - [Videoiden saavutettavuus](#videoiden-saavutettavuus)
     - [Koko](#koko-1)
     - [Videoelementin tyylit](#videoelementin-tyylit)
+  - [Vierityspalkki](#vierityspalkki)
+    - [Pystysuuntainen vierityspalkki](#pystysuuntainen-vierityspalkki)
+    - [Vaakasuuntainen vierityspalkki](#vaakasuuntainen-vierityspalkki)
 
 ## Typografia
 Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista on tässä ilmoitettu pikseleinä, ne tulee toteuttaa suhteellisina arvoina (em tai rem). 
@@ -483,7 +487,7 @@ Negatiivi-painike on painike tummalla taustalla. Negatiivi-painikkeen tyylit ova
 ### Pudotusvalikko
 (Eng. dropdown)
 
-Pudotusvalikko on elementti, jonka tarjoamista vaihtoehdoista valitaan yksi. 
+Pudotusvalikko on elementti, jonka tarjoamista vaihtoehdoista valitaan yksi. VAlittu vaihtoehto tulee näkyviin pudotusvalikon kenttään. 
 
 Mobiili-käyttöliittymissä käytetään käyttöjärjestelmien valmiita pudotusvalikkojen toteutusratkaisuja. Desktop-käyttöliittymiin pudotusvalikot toteutetaan itse. Seuraavaksi käydään läpi pudotusvalikkojen design ja toiminnallisuus desktop-käyttöliittymissä. 
 
@@ -493,27 +497,23 @@ Jokaisen pudotusvalikon yllä on valikon nimike eli label, joka kertoo lyhyesti 
 
 ![Avattu pudotusvalikko.](images/pudotusvalikko_auki.png)
 
-Valittu vaihtoehto näkyy paitsi pudotusvalikon kentässä myös  valikon listassa korostettuna. Oletuksena tavallisessa pudotusvalikossa on valittuna Kaikki xxx -valinta, joka on listassa heti ensimmäisenä (tekstin muoto riippuu pudotusvalikon sisällöstä ja labelista). Valintatoiminto sulkee valikon. 
+Valittu vaihtoehto näkyy paitsi pudotusvalikon kentässä myös valikon listassa korostettuna.Valintatoiminto sulkee valikon. 
 
 ![Pudotusvalikkoon, jossa on paljon sisältöä tulee hakukenttä ja vieritysominaisuus.](images/pudotusvalikko_iso.png)
 
-Jos pudotusvalikossa vaihtoehtoja on yli 14, valikko ei veny pituutta vaan siitä tulee pystysuunnassa vieritettävä. Valikon oikeaan laitaan tulee näkyviin ohut scrollbar. 
+Jos pudotusvalikossa vaihtoehtoja on yli 14, valikko ei veny pituutta vaan siitä tulee pystysuunnassa vieritettävä. Valikon oikeaan laitaan tulee näkyviin vierityspalkki. Vierityspalkin tyyli löytyvät alempaa kohdasta Vierityspalkki. 
 
-Jos vaihtoehtoja on yli 20, valikon sisään on hyvä lisätä hakutoiminnallisuus ja hakukenttä. Näin käyttäjät voivat hakea pitkästäkin listasta haluamaansa vaihtoehtoa nopeasti. Hakukentän paikka avatussa valikossa on heti ylhäällä ennen listaa. 
+Jos pudotusvalikko sisältää yli 20 vaihtoehtoa, valikon sisään on hyvä lisätä hakutoiminnallisuus ja hakukenttä. Näin käyttäjät voivat hakea pitkästäkin listasta haluamaansa vaihtoehtoa nopeasti. Hakukentän paikka avatussa valikossa on heti ylhäällä ennen listaa. 
 
 #### Pudotusvalikon tyylit
 
-**Fontit**
-|                           | Font                     | Font-size | Color   |
-| ------------------------- | ------------------------ | --------- | ------- |
-| **Pudotusvalikon label**  | Source Sans Pro Semibold | 17px      | #000000 |
-| **Vaihtoehtojen tekstit** | Source Sans Pro regular  | 16px/1rem | #000000 |
-
-
-**Valittu vaihtoehto**
-|                        | Color   | Background-color |
-| ---------------------- | ------- | ---------------- |
-| **Vaihtoehdon teksti** | #000000 | #f2f2f2          |
+|                           | Font                     | Font-size | Color   | Background-color | Border  |
+| ------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- |
+| **Pudotusvalikon label**  | Source Sans Pro Semibold | 17px      | #000000 |                  |         |
+| **Vaihtoehtojen tekstit** | Source Sans Pro regular  | 16px/1rem | #000000 | #ffffff          |         |
+| **Pudotusvalikko**        |                          |           | #ffffff |                  | #c9c9c9 |
+| **Nuoli**                 |                          |           | #0073b0 |                  |         |
+| **Valittu vaihtoehto**    | Source Sans Pro regular  | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
 
 #### Pudotusvalikon saavutettavuus
 
@@ -572,6 +572,22 @@ Julkaisujen sivuilla on vain sivun sisältötyyppi-tagi, esimerkiksi tiedotteen 
 | Ulkoinen linkki -ikoni |                  |           | #333333 |
 
 ### Tilastokuviot
+
+#### Kuviot pienillä näytöillä
+
+Mobiilinäytöillä kuva mahdutetaan näytölle eli se **näytetään kokonaan**. Kuvioita ei suurenneta valmiiksi ja päästetä osaksi näytön ulkopuolelle. Kuvioissa ei ole vieritysominaisuutta. Käyttäjä voi itse tarvittaessa suurentaa kuviota. 
+
+#### Kuviot isoilla näytöillä
+
+Desktop-näytöillä kuvioita on kahta kokoa: palstan levyinen ja täysileveä. 
+
+![Kuvio desktop-koossa palstan sisällä noudattaa palstan leveyttä.](images/kuvio_palstan_sisalla.png)
+
+ Tekstipalstan sisällä olevat kuviot noudattavat tekstipalstan leveyttä. Näin ne asettuvat kauniimmin samaan linjaan muun palstan sisällön kanssa. 
+
+![Muualla kuin palstan sisällä oleva sisältöalueen levyinen kuvio.](images/kuvio_levea.png)
+
+Muualle kuin tekstipalstan sisälle tulevat kuviot (esim. Kuviot-blokin kuviot) ottavat tavallisen blokin sisältöalueen leveyden. Kuviot asettuvat sivustolla kauniimmin kun ne ovat samanlevyisiä keskenään ja linjassa muun sisällön kanssa. 
 
 #### Kuvioiden saavutettavuus
 
@@ -651,7 +667,7 @@ Kuvion tooltip on pieni laatikko, joka tulee näkyviin kuvion päälle ja kertoo
 
 Vaikka taulukot yritetään pitää järkevän kokoisina, voi silti käydä niin, että taulukosta tulee niin leveä tai pitkä, että se ei mahdu pienille näytöille kokonaan. Tällöin taulukon rivi- tai sarakeotsikot voidaan "jäädyttää" paikoilleen. 
 
-Jos taulukko on näyttöä leveämpi, taulukon riviotsikot "jäädytetään" paikalleen ja muu taulukko on liikuteltavissa oikealle ja vasemmalle. Riviotsikot vievät n. 30% näytön leveydestä. Vierityspalkit taulukon liikutettavan osan yllä ja alla vihjaavat tästä liikuteltavuudesta. Vierityspalkin tyylit löytyvät alempaa kohdasta Taulukon vierityspalkki. Taulukkoa voi liikutella vierityspalkkien lisäksi myös itse taulukon liikuteltavaan osaan (muu kuin riviotsikot-sarake) koskemalla.
+Jos taulukko on näyttöä leveämpi, taulukon riviotsikot "jäädytetään" paikalleen ja muu taulukko on liikuteltavissa oikealle ja vasemmalle. Riviotsikot vievät n. 30% näytön leveydestä. Vierityspalkit taulukon liikutettavan osan yllä ja alla vihjaavat tästä liikuteltavuudesta. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki. Taulukkoa voi liikutella vierityspalkkien lisäksi myös itse taulukon liikuteltavaan osaan (muu kuin riviotsikot-sarake) koskemalla.
  
 Jos taulukko on näyttöä pidempi, taulukon sarakeotsikot voidaan jäädyttää paikoilleen. Kun sivua vieritetään taulukon kohdalta alaspäin, taulukon sarakeotsikot jäävät näkyviin näytön yläreunaan ja muuta taulukkoa voidaan liikuttaa pystysuunnassa. Kun on päästy taulukon loppuun ja jatketaan sivun vieritystä edelleen alaspäin, sarakeotsikot katoavat näytön yläreunasta näkyvistä muun taulukon mukana. 
 
@@ -659,15 +675,21 @@ Sekä rivi- että sarakeotsikot eivät voi olla samaan aikaan jäädytetyt. Riip
 
 #### Taulukko isoilla näytöillä
 
-![Taulukko desktop-koossa.](images/taulukko_desktop_tyylit.png)
+Desktop-näytöillä taulukoita on kahta kokoa: palstan levyinen ja täysileveä.
 
-Taulukoiden tulee desktop-laitteilla mahtua leveydeltään sivuston sisältöalueeseen, joka on leveydeltään 1200px. 
+![Desktop-koossa palstan sisällä taulukko noudattaa palstan leveyttä.](images/taulukko_palstan_sisalla.png)
 
-![Leveä taulukko desktop-koossa, riviotsikot jäädytetty paikoilleen.](images/taulukko_desktop_levea.png)
+ Tekstipalstan sisällä olevat taulukot noudattavat tekstipalstan leveyttä. Näin ne asetteuvat kauniimmin samaan linjaan muun palstan sisällön kanssa. Jos taulukon sisältö ei mahdu palstan leveydessä kokonaan näkyville, niistä tulee sivusuunnassa vieritettäviä. Tällöin niiden sarakeotsikot jäädytetään paikalleen ja taulukoiden ylä- ja alapuolelle tulee vierityspalkit vihjaamaan vieritysominaisuudesta kuten taulukoissa pienillä näytöillä. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki.
 
-Vain hyvin poikkeuksellisissa tilanteissa, joissa tämä ei onnistu eikä taulukkoa saada muokattua sisältöalueeseen mahtuvaksi, taulukko käyttäytyy desktop-laitteilla kuten mobiilissa. Näissä tapauksissa siis taulukon riviotsikot jäädytetään ja taulukon muuta osaa pystyy liikuttamaan vaakasuunnassa vierityspalkkeja liikuttamalla. Taulukon liikutettavan osan ylä- ja alapuolelle tulevat vierityspalkit. Vierityspalkin tyylit löytyvät alempaa kohdasta Taulukon vierityspalkki. 
+![Blokin sisältöalueeseen mahdutettu taulukko.](images/taulukko_desktop_levea.png)
 
-Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena auttaa taulukoita myös pysymään sisältöalueen (1200px leveys) sisällä desktop-koossa. Tällöin ne eivät tarvitse desktop-laitteilla jäädytettyjä riviotsikoita ja vaakasuuntaista vieritysominaisuutta.  
+Muualle kuin tekstipalstan sisälle tulevat taulukot (esim. Taulukot-blokin taulukot) ottavat tavallisen blokin sisältöalueen leveyden. Taulukot sisältöineen tulee mahduttaa tähän kokoon. Sisältöaluetta kapeammat taulukot venytetään blokin sisältöalueen levyisiksi. Tällöin taulukon soluihin jää enemmän tyhjää tilaa, mutta kun kaikki taulukon ovat samanlevyisiä keskenään ja linjassa muun sisällön kanssa, ne asettuvat sivustolla kauniimmin. 
+
+![Blokin sisältöalueen ylimenevään taulukkoon tulee vierityspalkit.](images/taulukko_desktop_ylilevea.png)
+
+Vain hyvin poikkeuksellisissa tilanteissa, joissa taulukon mahduttaminen blokin sisältöalueeseen ei onnistu eikä taulukkoa saada muokattua blokin sisältöalueeseen mahtuvaksi, taulukkoon tulee vieritysominaisuus kuten mobiilissa ja palstan sisällä olevissa taulukoissa. Taulukon riviotsikot jäädytetään ja taulukon muuta osaa pystyy liikuttamaan vaakasuunnassa vierityspalkkeja liikuttamalla. Vierityspalkit tulevat taulukon liikutettavan osan ylä- ja alapuolelle. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki. 
+
+Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena auttaa taulukoita myös pysymään blokkien sisältöalueen sisällä desktop-koossa. Tällöin ne eivät tarvitse desktop-laitteilla jäädytettyjä riviotsikoita ja vaakasuuntaista vieritysominaisuutta.  
 
 #### Taulukon tyylit
 
@@ -684,18 +706,6 @@ Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena 
 | **Taulukon otsikko**                | Barlow Semi Condensed regular  | 1rem (16px)                       |            |                |
 | **Taulukon sarake- ja riviotsikot** | Barlow Semi Condensed SemiBold | 1rem (16px)                       | left       |                |
 | **Taulukon solut**                  | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | right      | bottom         |
-
-#### Taulukon vierityspalkki
-
-![Taulukon vierityspalkki vihjaa taulukon liikuteltavuudesta.](images/vierityspalkki.png)
-
-Vierityspalkit vihjaavat taulukon liikuteltavuudesta. Vierityspalkit sijaitsevat taulukon liikutettavan osan sekä ylä- että alapuolella. 
-
-|                         | Color   | Border-radius | Height |
-| ----------------------- | ------- | ------------- | ------ |
-| **Vieritettävä palkki** | #0073b0 | 10px          | 15px   |
-| **Tausta**              | #e6e6e6 |               | 19px   |
-
 
 ### Tooltip
 
@@ -744,7 +754,25 @@ Tiedotteisiin voidaan liittää videoelementti. Video sijaitsee tiedotteissa tie
 | Youtube-linkki     | linkin tyyli            |
 | Käsikirjoitus      | laajennuspaneelin tyyli |
 
+### Vierityspalkki
 
+Vierityspalkki vihjaa elementissä olevasta vieritys-ominaisuudesta silloin kun elementin koko sisältö ei mahdu sivulle tai elementin sisään kokonaan näkyviin. Vierityspalkki voi olla vaaka- tai pystysuuntainen. 
+
+![Vaakasuuntainen vierityspalkki.](images/vierityspalkki.png)
+
+#### Pystysuuntainen vierityspalkki
+
+|                         | Color   | Border-radius | Height                     | Width |
+| ----------------------- | ------- | ------------- | -------------------------- | ----- |
+| **Vieritettävä palkki** | #0073b0 | 10px          | määräytyy elementin mukaan | 10px  |
+| **Tausta**              | #e6e6e6 |               | määräytyy elementin mukaan | 10px  |
+
+#### Vaakasuuntainen vierityspalkki
+
+|                         | Color   | Border-radius | Height | Width                      |
+| ----------------------- | ------- | ------------- | ------ | -------------------------- |
+| **Vieritettävä palkki** | #0073b0 | 10px          | 10px   | määräytyy elementin mukaan |
+| **Tausta**              | #e6e6e6 |               | 10px   | määräytyy elementin mukaan |
 
 
 	
