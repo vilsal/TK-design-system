@@ -19,11 +19,19 @@
   - [Blokit](#blokit)
   - [Footer](#footer)
 - [Komponentit](#komponentit)
+  - [Info-laatikko](#info-laatikko)
+    - [Info-laatikon tyylit](#info-laatikon-tyylit)
   - [Jakoviiva](#jakoviiva)
   - [Haitari](#haitari)
     - [Haitarin ikonien tyylit](#haitarin-ikonien-tyylit)
     - [Haitarin saavutettavuus](#haitarin-saavutettavuus)
   - [Laajennuspaneeli](#laajennuspaneeli)
+    - [Yksittäinen laajennuspaneeli](#yksittäinen-laajennuspaneeli)
+    - [Laajennuspaneeliryhmä](#laajennuspaneeliryhmä)
+    - [Laajennuspaneeleiden koko](#laajennuspaneeleiden-koko)
+    - [Hierarkinen laajennuspaneelit](#hierarkinen-laajennuspaneelit)
+    - [Laajennuspaneelin tyylit](#laajennuspaneelin-tyylit)
+    - [Laajennuspaneelin saavutettavuus](#laajennuspaneelin-saavutettavuus)
   - [Linkki](#linkki)
     - [Linkkien saavutettavuus](#linkkien-saavutettavuus)
     - [Sisäinen linkki](#sisäinen-linkki)
@@ -117,7 +125,7 @@ Desktopissa hero-kuva ulottuu näytön laidasta laitaan kunnes kuvan koko tulee 
 
 ## Ikonit
 
-Ikoneina käytetään (jo aiemmin käytössä olleita) Font Awesomen ja IcoMoonin ilmaisia ikonikirjastoja. Linkki ikonikirjastoihin lisätään myöhemmin. 
+Ikoneina käytetään (jo aiemmin käytössä olleita) Font Awesomen ja IcoMoonin ilmaisia perus ikonikirjastoja. Linkki ikonikirjastoihin lisätään myöhemmin. 
 
 ## Värit
 Väreinä käytetään Tilastokeskuksen väripalettia. Värit täydennetään tänne tai linkki niihin lisätään myöhemmin. 
@@ -205,6 +213,27 @@ Footerissa on neljä palstaa: ensimmäisessä Tilastokeskuksen logo, kolmessa mu
 
 ## Komponentit
 
+### Info-laatikko
+
+Info-laatikko on väritaustainen muusta sisällöstä erottuva elementti. Sen sisältö liittyy sivun muuhun sisältöön, mutta sen halutaan erottautuvan muusta sisällöstä.  
+
+![Info-laatikko](images/infobox.png)
+
+![Info-laatikko](images/infobox_levea.png)
+
+Mobiilissa Info-laatikko on aina täysilevyinen. Desktop-koossa info-laatikko voi olla tavallisen blokin sisältöalueen levyinen tai puolet siitä. Info-laatikkoa voidaan käyttää myös oikeassa palstassa. 
+
+![Info-laatikko](images/infobox_valkoinen.png)
+
+Taustaväriltään info-laatikko on joko vaaleansininen tai valkoinen. Tarkemmat tyylit löytyvät kohdasta Info-laatikon tyylit. 
+
+#### Info-laatikon tyylit
+
+|            | Color   | Background-color    | Width                                |
+| ---------- | ------- | ------------------- | ------------------------------------ |
+| Tausta     |         | #f2f8fb tai #ffffff | mobiili: 100%, desktop: 100% tai 50% |
+| Reunaviiva | #0073b0 |                     | 3px                                  |
+
 ### Jakoviiva
 
 Jakoviiva on kapea harmaa vaakaviiva, joka erottaa sisältöjä toisistaan. Jakoviivoja voidaan käyttää myös asioiden ryhmittelyyn asettamalla niitä eri ryhmien väliin, esim. menuissa. 
@@ -250,9 +279,48 @@ Haitarin ensimmäisellä tasolla plus- ja miinus-ikonit ovat suurempia ja tummem
 ### Laajennuspaneeli 
 (Eng. expansion panel)
 
-Esim. Videon käsikirjoitus -laajennuspaneeli
+Laajennuspaneeli on elementti, jonka otsikon alle on piilotettu sisältöä. Laajennuspaneelia klikkaamalla sisällön saa esiin ja taas piiloon. Laajennuspaneelilla on aina jokin nimi tai otsikko, joka näkyy paneelin sinisellä taustalla. Laajennuspaneeleilla saadaan lyhennetty sivun pituutta ja kun niitä käytetään ryhmänä, ne auttavat hahmottamaan laajoja kokonaisuuksia.
 
-Tyylit täydennetään kun elementti on saatu käsiteltyä. 
+#### Yksittäinen laajennuspaneeli
+
+![Kiinni oleva laajennuspaneeli.](images/laajennuspaneeli_kiinni.png)
+
+Laajennuspaneelit ovat oletusarvoisesti suljettuja. Laajennuspaneelia klikkaamalla sisällön saa esiin ja taas piiloon. Suljetun laajennuspaneelin oikean laidan nuoli osoittaa alas.
+
+![Avattu laajennuspaneeli.](images/laajennuspaneeli_auki.png)
+
+Avatun laajennuspaneelin oikean laidan nuoli kääntyy osoittamaan ylös. Ruudunlukijakäyttäjälle tulee kertoa onko laajennuspaneeli auki vai kiinni. 
+
+#### Laajennuspaneeliryhmä
+
+![Laajennuspaneeleita ryhmässä.](images/laajennuspaneeli_ryhmä.png)
+
+Laajennuspaneeleita voidaan käyttää yksittäin tai ryhmässä. Ryhmässä olevien laajennuspaneeleiden sisältöjen tulee muodostaa yhtenäinen kokonaisuus. Useita laajennuspaneeliryhmän osia voi olla avattuna auki samaan aikaan. 
+
+#### Laajennuspaneeleiden koko
+
+![Vierekkäin asettuvat kapeat laajennuspaneelit.](images/laajennuspaneeli_vierekkain.png)
+
+Laajennuspaneeleiden korkeus on vähintään 60px, mutta se venyy tarvittaessa korkeammaksi otsikon tekstin mukaan. Leveydeltään laajennuspaneelit voivat olla koko sisältöalueen levyisiä tai vain puolet siitä. Samassa ryhmässä olevat laajennuspaneelit, jotka eivät tarvitse koko sisältöalueen leveyttä ja joilla ei ole tarkkaa keskenäistä järjestystä (esim. UKK-blokin laajennuspaneelit), voivat isoilla näytöillä asettua vierekkäin. 
+
+#### Hierarkinen laajennuspaneelit
+
+![Sisäkkäin asettuvat hierarkiset laajennuspaneelit.](images/laajennuspaneeli_hierarkinen.png)
+
+Laajennuspaneelit voivat olla hierarkisia. Hierakia on enintään kaksi tasoa syvä. Sisempi taso on sisennetty ensimmäisen tason alle. Tällä sisennyksellä viestitään visuaalisesti laajennuspaneelien hierarkista rakennetta. Ruudunlukijakäyttäjille on myös välitettävä tieto hierarkiasta. 
+
+#### Laajennuspaneelin tyylit
+
+|                  | Font                                   | Font-size | Color   | Background-color | Min-height |
+| ---------------- | -------------------------------------- | --------- | ------- | ---------------- | ---------- |
+| Paneeli          | (leipäteksti) Source Sans Pro, regular | 16px/1rem | #000000 | #F2F8FB          | 60px       |
+| Nuoli            |                                        |           | #0073B0 |                  |            |
+| Paneelin sisältö | (leipäteksti) Source Sans Pro, regular | 16px/1rem | #000000 | #ffffff          |            |
+
+#### Laajennuspaneelin saavutettavuus
+* Kaikki käyttäjät eivät välttämättä huomaa laajennuspaneeli-elementtiä tai ymmärrä miten se toimii. Siksi laajennuspaneeliin ei pidä laittaa sellaista sisältöä, joka on käyttäjälle tärkeää huomata tai löytää. 
+* Laajennuspaneeliryhmän sisällön tulee muodostaa yhtenäinen kokonaisuus. 
+* Ruudunlukijalle tulee kertoa onko laajennuspaneeli auki vai kiinni. 
 	
 ### Linkki
 
