@@ -69,6 +69,8 @@
     - [Taulukon saavutettavuus](#taulukon-saavutettavuus)
     - [Taulukko pienillä näytöillä](#taulukko-pienillä-näytöillä)
     - [Taulukko isoilla näytöillä](#taulukko-isoilla-näytöillä)
+      - [Taulukot tekstipalstan sisällä](#taulukot-tekstipalstan-sisällä)
+      - [Taulukot muuala kuin tekstipalstan sisällä](#taulukot-muuala-kuin-tekstipalstan-sisällä)
     - [Taulukon tyylit](#taulukon-tyylit)
     - [Taulukon fontit](#taulukon-fontit)
   - [Tooltip](#tooltip)
@@ -728,14 +730,15 @@ Kuvion tooltip on pieni laatikko, joka tulee näkyviin kuvion päälle ja kertoo
 * Taulukoissa ei tulisi olla todella paljon sarakkeita ja/tai rivejä. Tämä helpottaa taulukoiden käyttöä ja ymmärrettävyyttä, erityisesti mobiililaitteilla. 
 * Sarake- ja riviotsikkojen tulee olla mahdollisimman lyhyitä ja ytimekkäitä. Liian pitkiä sarake- ja riviotsikoita tulee välttää. Tämä auttaa taulukoita asettumaan paremmin mobiililaitteissa. 
 * Jos on tarpeen tehdä hierarkisia taulukoita, on suositeltavaa käyttää korkeintaan kahta hierarkian tasoa. Myös tämä auttaa taulukon ymmärrettävyyttä. 
+* Se taulukon rivi, jonka päälle kursori osuu, korostetaan erottuvalla värillä (tyyli löytyy kohdasta Taulukon tyylit). Kosketuskäyttöliittymissä sama taulukon rivin hover-efekti toimii kun käyttäjä klikkaa taulukon riviä. Rivin korostaminen  helpottaa käyttäjiä taulukon lukemisessa. 
 
 #### Taulukko pienillä näytöillä
 
 ![Taulukko mobiilissa, riviotsikot jäädytetty paikoilleen.](images/taulukko_mobile_tyylit.png)
 
-Vaikka taulukot yritetään pitää järkevän kokoisina, voi silti käydä niin, että taulukosta tulee niin leveä tai pitkä, että se ei mahdu pienille näytöille kokonaan. Tällöin taulukon rivi- tai sarakeotsikot voidaan "jäädyttää" paikoilleen. 
+Vaikka taulukot yritetään pitää järkevän kokoisina, voi silti käydä niin, että taulukosta tulee niin leveä tai pitkä, että se ei mahdu etenkään pienille näytöille kokonaan. Tällöin taulukon rivi- tai sarakeotsikot voidaan "jäädyttää" paikoilleen. 
 
-Jos taulukko on näyttöä leveämpi, taulukon riviotsikot "jäädytetään" paikalleen ja muu taulukko on liikuteltavissa oikealle ja vasemmalle. Riviotsikot vievät n. 30% näytön leveydestä. Vierityspalkit taulukon liikutettavan osan yllä ja alla vihjaavat tästä liikuteltavuudesta. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki. Taulukkoa voi liikutella vierityspalkkien lisäksi myös itse taulukon liikuteltavaan osaan (muu kuin riviotsikot-sarake) koskemalla.
+Jos taulukko on näyttöä leveämpi, taulukon riviotsikot "jäädytetään" paikalleen ja muu taulukko on liikuteltavissa oikealle ja vasemmalle. Riviotsikot vievät korkeintaan n. 30% näytön leveydestä. Vierityspalkit taulukon liikutettavan osan yllä ja alla vihjaavat tästä liikuteltavuudesta. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki. Taulukkoa voi mobiililaitteissa liikutella vierityspalkkien lisäksi myös itse taulukon liikuteltavaan osaan (muu kuin riviotsikot-sarake) koskemalla.
  
 Jos taulukko on näyttöä pidempi, taulukon sarakeotsikot voidaan jäädyttää paikoilleen. Kun sivua vieritetään taulukon kohdalta alaspäin, taulukon sarakeotsikot jäävät näkyviin näytön yläreunaan ja muuta taulukkoa voidaan liikuttaa pystysuunnassa. Kun on päästy taulukon loppuun ja jatketaan sivun vieritystä edelleen alaspäin, sarakeotsikot katoavat näytön yläreunasta näkyvistä muun taulukon mukana. 
 
@@ -743,15 +746,19 @@ Sekä rivi- että sarakeotsikot eivät voi olla samaan aikaan jäädytetyt. Riip
 
 #### Taulukko isoilla näytöillä
 
+##### Taulukot tekstipalstan sisällä
+
 Desktop-näytöillä taulukoita on kahta kokoa: palstan levyinen ja täysileveä.
 
 ![Desktop-koossa palstan sisällä taulukko noudattaa palstan leveyttä.](images/taulukko_palstan_sisalla.png)
 
- Tekstipalstan sisällä olevat taulukot noudattavat tekstipalstan leveyttä. Näin ne asetteuvat kauniimmin samaan linjaan muun palstan sisällön kanssa. Jos taulukon sisältö ei mahdu palstan leveydessä kokonaan näkyville, niistä tulee sivusuunnassa vieritettäviä. Tällöin niiden sarakeotsikot jäädytetään paikalleen ja taulukoiden ylä- ja alapuolelle tulee vierityspalkit vihjaamaan vieritysominaisuudesta kuten taulukoissa pienillä näytöillä. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki.
+ Tekstipalstan sisällä olevat taulukot noudattavat tekstipalstan leveyttä. Näin ne asettuvat kauniimmin samaan linjaan muun palstan sisällön kanssa. Jos taulukon sisältö ei mahdu palstan leveydessä kokonaan näkyville, siitä tulee sivusuunnassa vieritettävä. Tällöin taulukon sarakeotsikot jäädytetään paikalleen ja ne vievät korkeintaan n. 30% palstan leveydestä. Taulukon ylä- ja alapuolelle tulee vierityspalkit vihjaamaan vieritysominaisuudesta kuten taulukoissa pienillä näytöillä. Taulukkoa pääsee vierittämään sivusuunnassa vierityspalkeista. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki.
+
+##### Taulukot muuala kuin tekstipalstan sisällä
 
 ![Blokin sisältöalueeseen mahdutettu taulukko.](images/taulukko_desktop_levea.png)
 
-Muualle kuin tekstipalstan sisälle tulevat taulukot (esim. Taulukot-blokin taulukot) ottavat tavallisen blokin sisältöalueen leveyden. Taulukot sisältöineen tulee mahduttaa tähän kokoon. Sisältöaluetta kapeammat taulukot venytetään blokin sisältöalueen levyisiksi. Tällöin taulukon soluihin jää enemmän tyhjää tilaa, mutta kun kaikki taulukon ovat samanlevyisiä keskenään ja linjassa muun sisällön kanssa, ne asettuvat sivustolla kauniimmin. 
+Muualle kuin tekstipalstan sisälle tulevat taulukot (esim. Taulukot-blokin taulukot ja taulukot omilla sivuillaan) ottavat tavallisen blokin sisältöalueen leveyden. Taulukot sisältöineen tulee mahduttaa tähän kokoon. Sisältöaluetta kapeammat taulukot venytetään blokin sisältöalueen levyisiksi. Tällöin taulukon soluihin jää enemmän tyhjää tilaa, mutta kun kaikki taulukon ovat samanlevyisiä keskenään ja linjassa muun sisällön kanssa, ne asettuvat sivustolla kauniimmin. 
 
 ![Blokin sisältöalueen ylimenevään taulukkoon tulee vierityspalkit.](images/taulukko_desktop_ylilevea.png)
 
