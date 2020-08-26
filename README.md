@@ -50,6 +50,8 @@
     - [Kolmassijainen painike](#kolmassijainen-painike)
     - [Negatiivi-painike](#negatiivi-painike)
   - [Pudotusvalikko](#pudotusvalikko)
+    - [Tavallinen pudotusvalikko](#tavallinen-pudotusvalikko)
+    - [Multi select (monen valinnan) pudotusvalikko](#multi-select-monen-valinnan-pudotusvalikko)
     - [Pudotusvalikon tyylit](#pudotusvalikon-tyylit)
     - [Pudotusvalikon saavutettavuus](#pudotusvalikon-saavutettavuus)
   - [Pääkohdat](#pääkohdat)
@@ -557,9 +559,15 @@ Negatiivi-painike on painike tummalla taustalla. Negatiivi-painikkeen tyylit ova
 ### Pudotusvalikko
 (Eng. dropdown)
 
-Pudotusvalikko on elementti, jonka tarjoamista vaihtoehdoista valitaan yksi. VAlittu vaihtoehto tulee näkyviin pudotusvalikon kenttään. 
+Pudotusvalikko on elementti, jonka tarjoamista vaihtoehdoista valitaan yksi tai useampi. Pudotusvalikoita on kahdenlaisia:
+1.  tavallinen pudotusvalikko: pudotusvalikon vaihtoehdoista valitaan yksi. 
+2.  multi select: pudotusvalikon vaihtoehdoista voidaan valita useita. 
+
+Valittu vaihtoehto tai vaihtoehdot tulevat näkyviin pudotusvalikon kenttään. Jokaisen pudotusvalikon yllä on valikon nimike eli label, joka kertoo lyhyesti mitä pudotusvalikko sisältää.
 
 Mobiili-käyttöliittymissä käytetään käyttöjärjestelmien valmiita pudotusvalikkojen toteutusratkaisuja. Desktop-käyttöliittymiin pudotusvalikot toteutetaan itse. Seuraavaksi käydään läpi pudotusvalikkojen design ja toiminnallisuus desktop-käyttöliittymissä. 
+
+#### Tavallinen pudotusvalikko
 
 ![Kiinni oleva pudotusvalikko.](images/pudotusvalikko.png)
 
@@ -573,23 +581,42 @@ Valittu vaihtoehto näkyy paitsi pudotusvalikon kentässä myös valikon listass
 
 Jos pudotusvalikossa vaihtoehtoja on yli 14, valikko ei veny pituutta vaan siitä tulee pystysuunnassa vieritettävä. Valikon oikeaan laitaan tulee näkyviin vierityspalkki. Vierityspalkin tyyli löytyvät alempaa kohdasta Vierityspalkki. 
 
-Jos pudotusvalikko sisältää yli 20 vaihtoehtoa, valikon sisään on hyvä lisätä hakutoiminnallisuus ja hakukenttä. Näin käyttäjät voivat hakea pitkästäkin listasta haluamaansa vaihtoehtoa nopeasti. Hakukentän paikka avatussa valikossa on heti ylhäällä ennen listaa. 
+Jos pudotusvalikko sisältää yli 20 vaihtoehtoa, valikon sisään on hyvä lisätä hakutoiminnallisuus ja hakukenttä, ks. kuva yllä. Näin käyttäjät voivat hakea pitkästäkin listasta haluamaansa vaihtoehtoa nopeasti. Hakukentän paikka avatussa valikossa on heti ylhäällä ennen listaa. 
+
+#### Multi select (monen valinnan) pudotusvalikko
+
+Multi select -pudotusvalikosta voi valita useamman vaihtoehdon.
+
+![Multi select -pudotusvalikosta voidaan valita useita vaihtoehtoja.](images/pudotusvalikko_multi_auki.png)
+
+ Avatussa multi select -pudotusvalikossa jokaisen vaihtoehdon vasemmalla puolella on checkbox-valintaruutu. Vaihtoehdon valinta  tehdään klikkaamalla joko valintaruutua tai tekstiä, samoin  valinnan poisto. Kun vaihtoehto on valittu, sen tausta korostetaan ja valintaruudussa on täppä.
+
+Kun vain yksi vaihtoehto on valittuna, pudotusvalikon kentässä näkyy kyseinen valinnan teksti, esim. Kaikki aiheet. Kun on valittu useampia vaihtoehtoja, kentässä näkyy valintojen lukumäärä, esim. 2 valittu. 
+
+![Multi select -pudotusvalikossa oletuksena on valittuna Kaikki xxx -vaihtoehto.](images/pudotusvalikko_multi.png)
+
+Multi select -pudotusvalikossa on oletuksena valittuna ensimmäisenä oleva Kaikki xxx eli esim. Kaikki aiheet (teksti riippuu pudotusvalikon sisällöstä ja labelista). Kun jokin muu vaihtoehto valitaan, poistuu Kaikki xxx -valinta. Jos valinnat otetaan pois kaikista muista vaihtoehdoista, Kaikki xxx -valinta menee automaattisesti päälle. 
 
 #### Pudotusvalikon tyylit
 
-|                           | Font                     | Font-size | Color   | Background-color | Border  |
-| ------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- |
-| **Pudotusvalikon label**  | Source Sans Pro Semibold | 17px      | #000000 |                  |         |
-| **Vaihtoehtojen tekstit** | Source Sans Pro regular  | 16px/1rem | #000000 | #ffffff          |         |
-| **Pudotusvalikko**        |                          |           | #ffffff |                  | #c9c9c9 |
-| **Nuoli**                 |                          |           | #0073b0 |                  |         |
-| **Valittu vaihtoehto**    | Source Sans Pro regular  | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
+|                                       | Font                     | Font-size | Color   | Background-color | Border  |
+| ------------------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- |
+| **Pudotusvalikon label**              | Source Sans Pro Semibold | 17px      | #000000 |                  |         |
+| **Pudotusvalikko**                    |                          |           | #ffffff |                  | #c9c9c9 |
+| **Nuoli**                             |                          |           | #0073b0 |                  |         |
+| **Pudotusvalikon tekstit**            | Source Sans Pro regular  | 16px/1rem | #000000 | #ffffff          |         |
+| **Valittu vaihtoehto**                | Source Sans Pro regular  | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
+| **Checkbox-valintaruutu, ei valittu** |                          |           |         | #ffffff          | #c9c9c9 |
+| **Checkbox-valintaruutu, valittu**    |                          |           |         | #0073b0          |         |
+| **Valitun checkboxin check-ikoni**    |                          |           | #ffffff |                  |         |
+
+
 
 #### Pudotusvalikon saavutettavuus
 
 * Pudotusvalikon yläpuolella on sen nimike eli label. Label kertoo lyhyesti mitä pudotusvalikko sisältää. 
 * Ruudunlukijaa käyttäville kerrotaan pudotusvalikon status eli onko valikko kiinni vai auki. 
-* Ruudunlukijaa käyttäville kerrotaan myös mikä valikon valinnoista on valittuna.
+* Ruudunlukijaa käyttäville kerrotaan myös mikä tai mitkä valikon valinnoista ovat valittuna.
 
 ### Pääkohdat
 
