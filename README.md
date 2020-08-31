@@ -19,6 +19,11 @@
   - [Blokit](#blokit)
   - [Footer](#footer)
 - [Komponentit](#komponentit)
+  - [Bannerit](#bannerit)
+    - [Neutraali banneri](#neutraali-banneri)
+    - [Huomio-banneri](#huomio-banneri)
+    - [Varoitus-banneri](#varoitus-banneri)
+    - [Bannerien saavutettavuus](#bannerien-saavutettavuus)
   - [Info-laatikko](#info-laatikko)
     - [Info-laatikon tyylit](#info-laatikon-tyylit)
   - [Jakoviiva](#jakoviiva)
@@ -100,7 +105,7 @@ Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista o
 | **Tagit**  (tyyppitagit)                                | Barlow, semibold               | 14px                              |                                                                | #333333 |            |                |
 | **Päiväys ja kirjoittaja** (blokkien nostoelementeissä) | Barlow, regular                | 14px                              |                                                                | #000000 |            |                |
 | **Ingressi**                                            | Barlow regular                 | 17px/1.255rem                     |                                                                | #000000 |
-| **Asiantuntijan nimi** (iso leipäteksti)                | Source Sans Pro, regular       | 18px                              |                                                                | #000000 |            |                |
+| **Iso leipäteksti (esim. asiantuntijan nimi)**          | Source Sans Pro, regular       | 18px                              |                                                                | #000000 |            |                |
 | **Pudotusvalikon label**                                | Source Sans Pro                | 17px                              |                                                                | #000000 |            |                |
 | **Taulukon otsikko**                                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |            |                |
 | **Taulukon sarake- ja riviotsikot**                     | Barlow Semi Condensed SemiBold | 1rem (16px)                       |                                                                | #000000 | left       |                |
@@ -217,6 +222,91 @@ Footerissa on neljä palstaa: ensimmäisessä Tilastokeskuksen logo, kolmessa mu
 
 ## Komponentit
 
+### Bannerit
+Bannerit ovat huomiota herättäviä väliaikaisia elementtejä, joilla viestitään sivuston sisältöön liittyvistä muutoksista ja poikkeustilanteista. Bannereiden tarkoitus on vetää käyttäjien huomio puoleensa erottumalla sivuston muusta sisällöstä. Bannereita on eri tyylisiä, ja se minkä tyylinen banneri valitaan riippuu banneriin tulevasta sisällöstä. 
+
+Banneri ei ole sivuston kiinteä elementti vaan niille määritellään tietty aika, jonka ajan ne ovat verkkosivuilla näkyvissä. Verkkosivuston loppukäyttäjät eivät saa itse poistettua bannereita näkyvistä. Bannereita tulee käyttää harkitusti ja niillä viestitään vain poikkeuksellisista muutoksista ja tilanteista. 
+
+Bannerit sisältävät aina tekstiä ja sen lisäksi niissä voi olla linkki ja ikoni. Tekstin tulee kertoa ilmoitusasia lyhyesti ja ytimekkäästi. On suositeltavaa tarjota myös linkki sivulle, jossa asiasta kerrotaan lisää. 
+
+#### Neutraali banneri
+Neutraalia banneria käytetään ilmoittamaan asiasta, joka käyttäjän on hyvä, mutta ei kriittistä huomata. Neutraali banneri erottuu sivuston muusta sisällöstä hienovaraisesti. Neutraalia banneria voidaan käyttää ilmoittamaan esimerkiksi tilastossa tapahtuneista muutoksista: 
+
+![Neutraali banneri tilaston sivulla, desktop-versio.](images/neutraali_banneri_tilaston_sivulla.png)
+
+Mobiili-näytöillä neutraali-banneri ulottuu näytön laidasta laitaan. Desktop-näytöillä banneri on yhtä leveä kuin se sivun blokki, jonka sisällä banneri on. 
+
+Neutraali banneri, mobiili-versio:
+
+![Neutraali banneri, mobiili-versio.](images/neutraali_banneri_mobiili.png)
+
+Neutraali banneri, desktop-versio:
+![Neutraali banneri, desktop-versio.](images/neutraali_banneri_desktop.png)
+
+Neutraalin bannerin tyylit:
+|                          | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border  |
+| ------------------------ | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------- |
+| **Banneri-laatikko**     |                          |                |         |                 | #ffffff          | #a40084 |
+| **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #000000 |                 |                  |         |
+| **Linkki**               | Source Sans Pro, regular | 1rem (n. 16px) | #006ca5 | underline       |                  |         |
+
+
+#### Huomio-banneri
+
+Huomio-banneria käytetään ilmoittamaan asiasta, joka käyttäjän on tärkeää huomata. Huomio-banneri erottuu sivuston muusta sisällöstä voimakkaasti. Huomio-banneria voidaan käyttää esimerkiksi ilmoittamaan tieto, että käyttäjä ei ole uusimman tiedotteen sivulla vaan vanhalla:
+
+![Huomio-banneri vanhan tiedotteen sivulla.](images/huomio_banneri_tiedote_desktop.png)
+
+Huomio-bannerissa on voimakas taustaväri sekä vasemmassa laidassa iso huutomerkki-ikoni vetämässä käyttäjien huomiota puoleensa ja korostamassa ilmoituksen tärkeyttä. Myös teksti on hieman tavallista leipätekstiä isompaa ison leipätekstin fonttia. 
+
+Mobiili-näytöillä huomio-banneri ulottuu näytön laidasta laitaan. Desktop-näytöillä banneri on yhtä leveä kuin se sivun blokki tai osio, jonka sisällä banneri on. Esimerkiksi tiedotteen sivulla huomio-banneri on tekstipalstan levyinen. 
+
+Huomio-banneri, mobiili-versio:
+
+![Huomio-banneri, mobiili-versio.](images/huomio_banneri_mobiili.png)
+
+Huomio-banneri, desktop-versio:
+![Huomio-banneri, desktop-versio.](images/huomio_banneri_desktop.png)
+
+Huomio-bannerin tyylit:
+|                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border |
+| ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ |
+| **Banneri-laatikko**         |                          |                |         |                 | a40084           |        |
+| **Teksti = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |
+| **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff | underline       |                  |        |
+| **Ikoni**                    |                          |                | #ffffff |                 |                  |        |
+
+
+#### Varoitus-banneri
+
+Varoitus-banneria käytetään kriittisten ilmoitusten ja ongelmia yhteydessä, kuten silloin kun verkkopalvelussa on sen toimintaa haittaava tai estävä häiriö. 
+
+Varoitus-bannerissa on huomio-bannerin tapaan voimakas taustaväri sekä vasemmassa laidassa iso huutomerkki-ikoni vetämässä käyttäjien huomiota puoleensa ja korostamassa ilmoituksen tärkeyttä. Teksti on tavallista leipätekstiä isompaa ison leipätekstin fonttia. 
+
+Varoitus-banneri on desktop-näytöillä koko sisältöalueen levyinen (1200px) ja tulee navigaatiopalkin alle, murupolun yläpuolelle. 
+
+Varoitus-banneri, mobiili-versio:
+
+![Varoitus-banneri, mobiiliversio.](images/varoitus_banneri_mobiili.png)
+
+Varoitus-banneri, desktop-versio:
+![Varoitus-banneri, desktopversio.](images/varoitus_banneri_desktop_paikka.png)
+
+Varoitus-bannerin tyylit
+|                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border |
+| ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ |
+| **Banneri-laatikko**         |                          |                |         |                 | #c30045          |        |
+| **Teksti = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |
+| **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff | underline       |                  |        |
+| **Ikoni**                    |                          |                | #ffffff |                 |                  |        |
+
+
+#### Bannerien saavutettavuus
+* Huomio- ja varoitus-bannerien huutomerkki-ikoni piilotetaan ruudunlukijalta. 
+* Jos banneri sisältää linkin, vain tämä linkki on linkki. Koko banneri ei siis toimi linkkinä eikä semanttisesti ole linkki. 
+
+
+
 ### Info-laatikko
 
 Info-laatikko on väritaustainen muusta sisällöstä erottuva elementti. Sen sisältö liittyy sivun muuhun sisältöön, mutta sen halutaan erottautuvan muusta sisällöstä.  
@@ -278,7 +368,6 @@ Haitarin ensimmäisellä tasolla plus- ja miinus-ikonit ovat suurempia ja tummem
 * Kaikki käyttäjät eivät välttämättä huomaa haitari-elementtiä tai ymmärrä miten se toimii. Siksi haitariin ei pidä laittaa sellaista sisältöä, joka on käyttäjälle tärkeää huomata tai löytää. 
 * Haitarin sisällön tulee muodostaa yhtenäinen kokonaisuus. 
 * Ruudunlukijalle tulee kertoa onko haitarin kohta auki vai kiinni. 
-
 
 ### Laajennuspaneeli 
 (Eng. expansion panel)
