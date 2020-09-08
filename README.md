@@ -665,7 +665,7 @@ Jokaisen pudotusvalikon yllä on valikon nimike eli label, joka kertoo lyhyesti 
 
 ![Avattu pudotusvalikko.](images/pudotusvalikko_auki.png)
 
-Valittu vaihtoehto näkyy pudotusvalikon kentässä sekä valikon listassa korostettuna. Valintatoiminto sulkee valikon. 
+Valittu vaihtoehto näkyy pudotusvalikon kentässä sekä valikon listassa korostettuna. Valintatoiminto sulkee valikon. Komponentin ruudunlukija- ja näppäimistökäyttö on kuvattu kohdassa Pudotusvalikoiden saavutettavuus. 
 
 ![Pudotusvalikkoon, jossa on paljon sisältöä tulee hakukenttä ja vieritysominaisuus.](images/pudotusvalikko_iso.png)
 
@@ -675,13 +675,14 @@ Jos pudotusvalikko sisältää yli 20 vaihtoehtoa, valikon sisään on hyvä lis
 
 ##### Tavallisen pudotusvalikon tyylit
 
-|                            | Font                     | Font-size | Color   | Background-color | Border  |
-| -------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- |
-| **Pudotusvalikon label**   | Source Sans Pro Semibold | 17px      | #000000 |                  |         |
-| **Pudotusvalikko**         |                          |           | #ffffff |                  | #c9c9c9 |
-| **Kentän nuoli**           |                          |           | #0073b0 |                  |         |
-| **Pudotusvalikon tekstit** | Source Sans Pro regular  | 16px/1rem | #000000 |                  |         |
-| **Valittu vaihtoehto**     | Source Sans Pro regular  | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
+|                               | Font                     | Font-size | Color   | Background-color | Border  |
+| ----------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- |
+| **Pudotusvalikon label**      | Source Sans Pro Semibold | 17px      | #000000 |                  |         |
+| **Pudotusvalikko**            |                          |           | #ffffff |                  | #c9c9c9 |
+| **Kentän nuoli**              |                          |           | #0073b0 |                  |         |
+| **Pudotusvalikon tekstit**    | Source Sans Pro regular  | 16px/1rem | #000000 |                  |         |
+| **Valikon vaihtoehdon hover** | Source Sans Pro regular  | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
+| **Valittu vaihtoehto**        | Source Sans Pro regular  | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
 
 #### Multi select (monen valinnan) pudotusvalikko
 
@@ -709,7 +710,7 @@ Kun vain yksi vaihtoehto on valittuna, pudotusvalikon kentässä näkyy kyseinen
 
 ![Multi select -pudotusvalikon kentässä lukee "5 valittu" kun pudotusvalikon listasta on valittu 5 vaihtoehtoa.](images/multi_dropdown_desktop_auki_2.png)
 
-Multi select -pudotusvalikoiden valinnat otetaan käyttöön kun valikko suljetaan. Valikon voi sulkea klikkaamalla valikon kenttää tai valikon ulkopuolelle. Multi select -pudotusvalikko ei siis toimi kuten tavallinen pudotusvalikko, joka sulkeutuu aina kun valintatoiminto tehdään. Ruudunlukijaa käyttävät sekä näppäimistöä käyttävät sulkevat valikon palaamalla valikon kenttään tai tabulaattorilla. 
+Multi select -pudotusvalikoiden valinnat otetaan käyttöön kun valikko suljetaan. Multi select -pudotusvalikon voi sulkea klikkaamalla valikon kenttää tai valikon ulkopuolelle. Multi select -pudotusvalikko ei siis toimi kuten tavallinen pudotusvalikko, joka sulkeutuu aina kun valintatoiminto tehdään. Komponentin ruudunlukija- ja näppäimistökäyttö on kuvattu kohdassa Pudotusvalikoiden saavutettavuus. 
 
 Jos pudotusvalikossa vaihtoehtoja on yli 14, valikko ei veny pituutta vaan siitä tulee pystysuunnassa vieritettävä. Valikon oikeaan laitaan tulee näkyviin vierityspalkki. Vierityspalkin tyyli löytyvät alempaa kohdasta Vierityspalkki. 
 
@@ -728,10 +729,15 @@ Jos pudotusvalikossa vaihtoehtoja on yli 14, valikko ei veny pituutta vaan siit�
 
 * Pudotusvalikon yläpuolella on sen nimike eli label. Label kertoo lyhyesti mitä pudotusvalikko sisältää. 
 * Ruudunlukijaa käyttäville kerrotaan pudotusvalikon status eli onko valikko kiinni vai auki.
-* Pudotusvalikot voi avata klikkaamisen lisäksi enterillä.  
-* Ruudunlukijaa käyttäville kerrotaan mikä tai mitkä valikon valinnoista ovat valittuna.
-* Pudotusvalikoiden sisältöä selataan ylös ja alas nuolinäppäimillä. Nuolinäppäimillä listaa selatessa ei listan loputtua palata automaattisesti listan alkuun tai siirrytä eteenpäin seuraavaan pudotusvalikkoon. 
-* Ruudunlukijakäyttäjä ja näppäimistökäyttäjä voi sulkea pudotusvalikon menemällä takaisin valikon kenttään tai tabulaattorilla. Yksi tabulaattorin painallus sulkee valikon ja toisella tabulaattorin painalluksella siirrytään seuraavaan pudotusvalikkoon. 
+* Ruudunlukijaa käyttäville kerrotaan mikä tai mitkä valikon vaihtoehdoista ovat valittuna.
+* Näppäimistökäytössä noudatetaan html-pudotusvalikoiden oletustoiminnallisuutta: 
+  * Pudotusvalikot avataan enterillä tai välilyönnillä (space). 
+  * Pudotusvalikon suljetaan tabulaattorilla tai enterillä. 
+  * Pudotusvalikoiden sisältöä selataan ylös ja alas nuolinäppäimillä. Kun lista loppuu, focus ei palaa automaattisesti listan alkuun tai siirry eteenpäin seuraavaan pudotusvalikkoon. Ylös on palattava jälleen ylös-nuolinäppäimellä. 
+  * Tavallisessa pudotusvalikossa valinta tehdään joko enterillä tai tabulaattorilla. Kummatkin tavat suorittavat samalla sekä vaihtoehdon valinnan että sulkevat pudotusvalikon. 
+  * Multi select -pudotusvalikossa vaihtoehtojen valinta tapahtuu pitämällä ctrl-näppäintä pohjassa koko ajan listassa liikuttaessa ja tekemällä valinnat välilyönti-painikkeella. 
+  * Tabulaattorilla liikutaan pudotusvalikoiden välillä. Huom! Tabulaattori ei avaa pudotusvalikoita! Yksi tabulaattorin painallus sulkee avatun pudotusvalikon ja toinen painallus siirtää käyttäjän toisen pudotusvalikon kohdalle. 
+ 
 
 ### Pääkohdat
 
