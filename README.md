@@ -27,14 +27,11 @@
   - [Info-laatikko](#info-laatikko)
     - [Info-laatikon tyylit](#info-laatikon-tyylit)
   - [Jakoviiva](#jakoviiva)
-  - [Haitari](#haitari)
-    - [Haitarin ikonien tyylit](#haitarin-ikonien-tyylit)
-    - [Haitarin saavutettavuus](#haitarin-saavutettavuus)
   - [Laajennuspaneeli](#laajennuspaneeli)
     - [Yksittäinen laajennuspaneeli](#yksittäinen-laajennuspaneeli)
     - [Laajennuspaneeliryhmä](#laajennuspaneeliryhmä)
-    - [Laajennuspaneeleiden koko](#laajennuspaneeleiden-koko)
     - [Hierarkinen laajennuspaneelit](#hierarkinen-laajennuspaneelit)
+    - [Laajennuspaneeleiden koko](#laajennuspaneeleiden-koko)
     - [Laajennuspaneelin tyylit](#laajennuspaneelin-tyylit)
     - [Laajennuspaneelin saavutettavuus](#laajennuspaneelin-saavutettavuus)
   - [Linkki](#linkki)
@@ -350,35 +347,10 @@ Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää ti
 
 Jakoviivoilla voidaan myös erottaa saman kokonaisuuden tai toisiinsa liittyviä elementtejä toisistaan. 
 
-### Haitari 
-
-Haitari-elementissä piilotetaan sisältöä otsikoiden alle. Haitarit auttavat hahmottamaan laajoja kokonaisuuksia ja niillä saadaan lyhennetty sivun pituutta. Otsikoita klikkaamalla piilotettua sisältöä saa näkyviin ja taas pois näkyvistä. 
-
-![Avattu haitari-elementti, mobiiliversio.](images/haitari.png)
-
-Haitarit ovat oletusarvoisesti suljettuja. Käyttäjä voi avata ja sulkea niiden osioita haluamassaan järjestyksessä. Useita haitarin osia voi olla avattuna auki samaan aikaan. 
-
-Haitari on enintään kaksi tasoa syvä. Sisempi taso on sisennetty ensimmäisen tason alla, tällä viestitään haitarin hierarkista rakennetta. 
-
-Suljettujen osien otsikoiden vasemmalla puolella on plus-ikoni. Kun osio avataan, plus-ikoni muuttuu miinus-ikoniksi. Avatun osion alle tulee jakoviiva. 
-
-#### Haitarin ikonien tyylit
-Haitarin ensimmäisellä tasolla plus- ja miinus-ikonit ovat suurempia ja tummempia kuin syvemmällä tasolla, jossa ne ovat pienempiä ja vaaleampia. Myös tällä kerrotaan visuaalisesti hierarkiasta. 
-
-| Hierarkiataso   | Height | Width | Color    |
-| --------------- | ------ | ----- | -------- |
-| **Ensimmäinen** | 15px   | 15px  | #0073b0  |
-| **Toinen**      | 11px   | 11px  | #338FC0F |
-
-#### Haitarin saavutettavuus
-* Kaikki käyttäjät eivät välttämättä huomaa haitari-elementtiä tai ymmärrä miten se toimii. Siksi haitariin ei pidä laittaa sellaista sisältöä, joka on käyttäjälle tärkeää huomata tai löytää. 
-* Haitarin sisällön tulee muodostaa yhtenäinen kokonaisuus. 
-* Ruudunlukijalle tulee kertoa onko haitarin kohta auki vai kiinni. 
-
 ### Laajennuspaneeli 
 (Eng. expansion panel)
 
-Laajennuspaneeli on elementti, jonka otsikon alle on piilotettu sisältöä. Laajennuspaneelia klikkaamalla sisällön saa esiin ja taas piiloon. Laajennuspaneelilla on aina jokin nimi tai otsikko, joka näkyy paneelin sinisellä taustalla. Laajennuspaneeleilla saadaan lyhennetty sivun pituutta ja kun niitä käytetään ryhmänä, ne auttavat hahmottamaan laajoja kokonaisuuksia.
+Laajennuspaneeli on elementti, jonka otsikon alle on piilotettu sisältöä. Laajennuspaneelia klikkaamalla sisällön saa esiin ja taas piiloon. Laajennuspaneelilla on aina jokin nimi tai otsikko, joka näkyy paneelin sinisellä taustalla. Laajennuspaneeleilla voidaan lyhentää sivun pituutta.  Kun niitä käytetään ryhmänä, ne auttavat hahmottamaan laajoja kokonaisuuksia.
 
 #### Yksittäinen laajennuspaneeli
 
@@ -394,19 +366,21 @@ Avatun laajennuspaneelin oikean laidan nuoli kääntyy osoittamaan ylös. Ruudun
 
 ![Laajennuspaneeleita ryhmässä.](images/laajennuspaneeli_ryhmä.png)
 
-Laajennuspaneeleita voidaan käyttää yksittäin tai ryhmässä. Ryhmässä olevien laajennuspaneeleiden sisältöjen tulee muodostaa yhtenäinen kokonaisuus. Useita laajennuspaneeliryhmän osia voi olla avattuna auki samaan aikaan. 
+Laajennuspaneeleita voidaan käyttää yksittäin tai ryhmässä. Ryhmässä olevien laajennuspaneeleiden sisältöjen tulee muodostaa yhtenäinen kokonaisuus. Useita laajennuspaneeliryhmän osia voi olla avattuna auki samaan aikaan.
 
-#### Laajennuspaneeleiden koko
+Samaan ryhmään kuuluvat laajennuspaneelit asettuvat yleensä allekkain. Ne voivat asettua isoilla näytöillä myös vierekkäin, jos ne eivät tarvitse koko sisältöalueen leveyttä eikä niillä ei ole tarkkaa keskenäistä järjestystä tai hierarkiaa. Tällainen tapaus on esim. Usein kysytyt kysymykset -blokin laajennuspaneelit:  
 
-![Vierekkäin asettuvat kapeat laajennuspaneelit.](images/laajennuspaneeli_vierekkain.png)
-
-Laajennuspaneeleiden korkeus on vähintään 60px, mutta se venyy tarvittaessa korkeammaksi otsikon tekstin mukaan. Leveydeltään laajennuspaneelit voivat olla koko sisältöalueen levyisiä tai vain puolet siitä. Samassa ryhmässä olevat laajennuspaneelit, jotka eivät tarvitse koko sisältöalueen leveyttä ja joilla ei ole tarkkaa keskenäistä järjestystä (esim. UKK-blokin laajennuspaneelit), voivat isoilla näytöillä asettua vierekkäin. 
+![Vierekkäin asettuvat kapeat laajennuspaneelit Usein kysytyt kysymykset -blokissa.](images/laajennuspaneeli_vierekkain.png)
 
 #### Hierarkinen laajennuspaneelit
 
 ![Sisäkkäin asettuvat hierarkiset laajennuspaneelit.](images/laajennuspaneeli_hierarkinen.png)
 
-Laajennuspaneelit voivat olla hierarkisia. Hierakia on enintään kaksi tasoa syvä. Sisempi taso on sisennetty ensimmäisen tason alle. Tällä sisennyksellä viestitään visuaalisesti laajennuspaneelien hierarkista rakennetta. Ruudunlukijakäyttäjille on myös välitettävä tieto hierarkiasta. 
+Laajennuspaneelit voivat olla hierarkisia. Hierarkia on enintään kaksi tasoa syvä. Sisempi taso on sisennetty ensimmäisen tason alle. Tällä sisennyksellä viestitään visuaalisesti laajennuspaneelien hierarkista rakennetta. Ruudunlukijakäyttäjille on myös välitettävä tieto hierarkiasta. 
+
+#### Laajennuspaneeleiden koko
+
+Laajennuspaneeleiden korkeus on vähintään 60px, mutta ne venyvät tarvittaessa korkeammaksi otsikoidensa tekstien mukaan. Leveydeltään laajennuspaneelit voivat olla blokkinsa koko sisältöalueen levyisiä tai vain puolet siitä. 
 
 #### Laajennuspaneelin tyylit
 
