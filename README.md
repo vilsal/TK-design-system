@@ -49,7 +49,7 @@
   - [Painike](#painike)
     - [Painikkeiden saavutettavuus](#painikkeiden-saavutettavuus)
     - [Painikkeiden yhteiset ominaisuudet](#painikkeiden-yhteiset-ominaisuudet)
-    - [Koko](#koko)
+    - [Painikkeiden koko](#painikkeiden-koko)
     - [Ensisijainen painike](#ensisijainen-painike)
     - [Toisijainen painike](#toisijainen-painike)
     - [Kolmassijainen painike](#kolmassijainen-painike)
@@ -65,27 +65,32 @@
   - [Tilastokuviot](#tilastokuviot)
     - [Kuviot pienillä näytöillä](#kuviot-pienillä-näytöillä)
     - [Kuviot isoilla näytöillä](#kuviot-isoilla-näytöillä)
-    - [Kuvioiden saavutettavuus](#kuvioiden-saavutettavuus)
-    - [Tilastokuvioiden fontit](#tilastokuvioiden-fontit)
-    - [Tilastokuvioiden hilaviivat](#tilastokuvioiden-hilaviivat)
-    - [Tilastokuvioiden akselit](#tilastokuvioiden-akselit)
-    - [Viivakuvio](#viivakuvio)
-    - [Piirakkakuvio](#piirakkakuvio)
-    - [Pylväskuvio](#pylväskuvio)
     - [Kuvion tooltip](#kuvion-tooltip)
-  - [Tilastotaulukko](#tilastotaulukko)
-    - [Taulukon saavutettavuus](#taulukon-saavutettavuus)
-    - [Taulukko pienillä näytöillä](#taulukko-pienillä-näytöillä)
-    - [Taulukko isoilla näytöillä](#taulukko-isoilla-näytöillä)
+    - [Kuvioiden lähdemerkintä](#kuvioiden-lähdemerkintä)
+    - [Kuvioiden saavutettavuus](#kuvioiden-saavutettavuus)
+    - [Kuvioiden tyylit](#kuvioiden-tyylit)
+      - [Kuvioiden fontit](#kuvioiden-fontit)
+      - [Kuvioiden hilaviivat](#kuvioiden-hilaviivat)
+      - [Kuvioiden akselit](#kuvioiden-akselit)
+    - [Kuviotyypit](#kuviotyypit)
+      - [Viivakuvio](#viivakuvio)
+      - [Piirakkakuvio](#piirakkakuvio)
+      - [Pylväskuvio](#pylväskuvio)
+  - [Tilastotaulukot](#tilastotaulukot)
+    - [Taulukot pienillä näytöillä](#taulukot-pienillä-näytöillä)
+    - [Taulukot isoilla näytöillä](#taulukot-isoilla-näytöillä)
       - [Taulukot tekstipalstan sisällä](#taulukot-tekstipalstan-sisällä)
-      - [Taulukot muuala kuin tekstipalstan sisällä](#taulukot-muuala-kuin-tekstipalstan-sisällä)
-    - [Taulukon tyylit](#taulukon-tyylit)
-    - [Taulukon fontit](#taulukon-fontit)
+      - [Taulukot muualla kuin tekstipalstan sisällä](#taulukot-muualla-kuin-tekstipalstan-sisällä)
+    - [Taulukoiden lähdemerkintä](#taulukoiden-lähdemerkintä)
+    - [Taulukoiden saavutettavuus](#taulukoiden-saavutettavuus)
+    - [Taulukoiden tyylit](#taulukoiden-tyylit)
+      - [Taulukkopohjan tyylit](#taulukkopohjan-tyylit)
+      - [Taulukon fontit](#taulukon-fontit)
   - [Tooltip](#tooltip)
     - [Tooltipin saavutettavuus](#tooltipin-saavutettavuus)
   - [Video](#video)
     - [Videoiden saavutettavuus](#videoiden-saavutettavuus)
-    - [Koko](#koko-1)
+    - [Videoelementin koko](#videoelementin-koko)
     - [Videoelementin tyylit](#videoelementin-tyylit)
   - [Vierityspalkki](#vierityspalkki)
     - [Pystysuuntainen vierityspalkki](#pystysuuntainen-vierityspalkki)
@@ -581,7 +586,7 @@ Nämä ominaisuudet pätevät kaikille painikkeille painikkeen tyypistä tai lai
 | ------------------------ | --------- | ------------- | --------- | ---------- | ----------- |
 | Source Sans Pro, regular | 16px/1rem | 5px           | 80px      | 40px       | 2px         |
 
-#### Koko
+#### Painikkeiden koko
 
 **Painikkeiden koko mobiilissa**
 
@@ -807,59 +812,6 @@ Desktop-näytöillä kuvioita on kahta kokoa: palstan levyinen ja täysileveä.
 
 Muualle kuin tekstipalstan sisälle tulevat kuviot (esim. Kuviot-blokin kuviot) ottavat tavallisen blokin sisältöalueen leveyden. Kuviot asettuvat sivustolla kauniimmin kun ne ovat samanlevyisiä keskenään ja linjassa muun sisällön kanssa. 
 
-#### Kuvioiden saavutettavuus
-
-* Suositus on, että kuvioon ei laiteta liikaa sisältöä. Tällöin kuvio pysyy helpommin ymmärrettävänä ja värisävyjen kontrastit riittävät harmaan sävyisinäkin (täyden värisokeuden tapaus). Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri kuvioon. 
-
-* Tilastokuviot piilotetaan ruudunlukijalta. Tällöin ruudunlukija ei lue kuvioiden otsikoitakaan. Näin toimitaan, koska kuvioita on niin paljon, että tekstivastineita (alt-tekstiä) ei ole mahdollista tehdä niille kaikille. Kuvioiden sisältö tulee kuitenkin tarjota sivulla tekstimuodossa, jotta myös ruudunlukijaa käyttävät saavat kuvioiden sisältämän informaation. 
-
-* Tilastokuvioissa viivat, pylväät ja piirakan siivut erotetaan toisistaan väreillä. Tämä saavutettavuusrajoite tulee mainita saavutettavuusselosteessa. Tilastokuvioissa ei siis käytetä reunaviivoja, paksuuseroja, eri muotoja tai pintakuviointeja osioiden erottamiseksi toisistaan. 
-
-#### Tilastokuvioiden fontit
-
-|                         | Font                          | Font-size   | Text-align |
-| ----------------------- | ----------------------------- | ----------- | ---------- |
-| **Kuvion otsikko**      | Barlow Semi Condensed medium  | 1rem (16px) | center     |
-| **Kuvion alaotsikko**   | Barlow Semi Condensed regular | 1rem (16px) | center     |
-| **Kuvion muut tekstit** | Barlow Semi Condensed regular | 1rem (16px) |            |
-
-#### Tilastokuvioiden hilaviivat
-
-| Color   | Width  |
-| ------- | ------ |
-| #666666 | 0.25px |
-
-#### Tilastokuvioiden akselit
-
-|              | Color   | Width | Akselin otsikon sijainti                   |
-| ------------ | ------- | ----- | ------------------------------------------ |
-| **y-akseli** | #666666 | 0.5px | Akseliviivan keskellä, eli nykyinen paikka |
-| **x-akseli** | #666666 | 0.5px | Akseliviivan keskellä, eli nykyinen paikka |
-
-#### Viivakuvio
-
-![Viivakuvio.](images/viivakuvio.png)
-
-Viivojen selitteet sijaitsevat kuvion alla. Näin saadaan niille enemmän tilaa, sillä selitetekstit voivat olla pitkiä. 
-
-|            | Width |
-| ---------- | ----- |
-| **Viivat** | 3px   |
-
-#### Piirakkakuvio
-
-(Tähän kuva piirakkakuviosta.)
-
-Piirakkakuvioissa lukuarvot sijaitsevat piirakan ulkopuolella ja on luku yhdistetty viivalla piirakan viipaleeseen (tämä on jo ennestään käytössä oleva malli). 
-
-Piirakoissa selitetekstien järjestys on laskeva suuruusjärjestys. 
-
-#### Pylväskuvio
-
-(Tähän kuva pylväskuviosta.)
-
-Pylväskuvioissa selitetekstit ovat järjestyksessä palkkien mukaan eli alhaalta ylös. 
-
 #### Kuvion tooltip
 
 ![Viivakuvion tooltip.](images/viivakuvio_tooltip.png)
@@ -870,21 +822,78 @@ Kuvion tooltip on pieni laatikko, joka tulee näkyviin kuvion päälle ja kertoo
 | ----------------------------- | ----------- | ---------------- | ------- | ------------------------------------- |
 | Barlow Semi Condensed regular | 1rem (16px) | #f2f8fb          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35) |
 
+#### Kuvioiden lähdemerkintä
 
-### Tilastotaulukko
+Tilastokuvioihin liitetään lähdemerkintä, josta käy ilmi kuvion tunniste, tilasto, johon kuvio liittyy sekä taulukon tuottaja. Lähdemerkintä tulee kuvion alle oikeaan alareunaan.  Esimerkkilähdemerkintä: 
 
-#### Taulukon saavutettavuus
-* Taulukkoon ei tule laittaa liikaa sisältöä. Näin taulukot pysyvät helpommin ymmärrettävinä ja vertailtavina. Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri taulukkoon. 
-* Taulukoissa ei tulisi olla todella paljon sarakkeita ja/tai rivejä. Tämä helpottaa taulukoiden käyttöä ja ymmärrettävyyttä, erityisesti mobiililaitteilla. 
-* Sarake- ja riviotsikkojen tulee olla mahdollisimman lyhyitä ja ytimekkäitä. Liian pitkiä sarake- ja riviotsikoita tulee välttää. Tämä auttaa taulukoita asettumaan paremmin mobiililaitteissa. 
-* Jos on tarpeen tehdä hierarkisia taulukoita, on suositeltavaa käyttää korkeintaan kahta hierarkian tasoa. Myös tämä auttaa taulukon ymmärrettävyyttä. 
-* Se taulukon rivi, jonka päälle kursori osuu, korostetaan erottuvalla värillä (tyyli löytyy kohdasta Taulukon tyylit). Kosketuskäyttöliittymissä sama taulukon rivin hover-efekti toimii kun käyttäjä klikkaa taulukon riviä. Rivin korostaminen  helpottaa käyttäjiä taulukon lukemisessa. 
+Kuvio 32425, Rakennus- ja asuntotuotanto, Tilastokeskus. 
 
-#### Taulukko pienillä näytöillä
+Kuvioiden lähdemerkinnässä käytetään samaa tyyliä kuin taulukoiden lähdemerkinnöissä, katso kohta Taulukoiden lähdemerkintä. 
+
+#### Kuvioiden saavutettavuus
+
+* Suositus on, että kuvioon ei laiteta liikaa sisältöä. Tällöin kuvio pysyy helpommin ymmärrettävänä ja värisävyjen kontrastit riittävät harmaan sävyisinäkin (täyden värisokeuden tapaus). Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri kuvioon. 
+
+* Tilastokuviot piilotetaan ruudunlukijalta. Tällöin ruudunlukija ei lue kuvioiden otsikoitakaan. Näin toimitaan, koska kuvioita on niin paljon, että tekstivastineita (alt-tekstiä) ei ole mahdollista tehdä niille kaikille. Kuvioiden sisältö tulee kuitenkin tarjota sivulla tekstimuodossa, jotta myös ruudunlukijaa käyttävät saavat kuvioiden sisältämän informaation. 
+
+* Tilastokuvioissa viivat, pylväät ja piirakan siivut erotetaan toisistaan väreillä. Tämä saavutettavuusrajoite tulee mainita saavutettavuusselosteessa. Tilastokuvioissa ei siis käytetä reunaviivoja, paksuuseroja, eri muotoja tai pintakuviointeja osioiden erottamiseksi toisistaan. 
+
+#### Kuvioiden tyylit
+
+##### Kuvioiden fontit
+
+|                         | Font                          | Font-size   | Text-align |
+| ----------------------- | ----------------------------- | ----------- | ---------- |
+| **Kuvion otsikko**      | Barlow Semi Condensed medium  | 1rem (16px) | center     |
+| **Kuvion alaotsikko**   | Barlow Semi Condensed regular | 1rem (16px) | center     |
+| **Kuvion muut tekstit** | Barlow Semi Condensed regular | 1rem (16px) |            |
+
+##### Kuvioiden hilaviivat
+
+| Color   | Width  |
+| ------- | ------ |
+| #666666 | 0.25px |
+
+##### Kuvioiden akselit
+
+|              | Color   | Width | Akselin otsikon sijainti                   |
+| ------------ | ------- | ----- | ------------------------------------------ |
+| **y-akseli** | #666666 | 0.5px | Akseliviivan keskellä, eli nykyinen paikka |
+| **x-akseli** | #666666 | 0.5px | Akseliviivan keskellä, eli nykyinen paikka |
+
+#### Kuviotyypit
+
+##### Viivakuvio
+
+![Viivakuvio.](images/viivakuvio.png)
+
+Viivojen selitteet sijaitsevat kuvion alla. Näin saadaan niille enemmän tilaa, sillä selitetekstit voivat olla pitkiä. 
+
+|            | Width |
+| ---------- | ----- |
+| **Viivat** | 3px   |
+
+##### Piirakkakuvio
+
+(Tähän kuva piirakkakuviosta.)
+
+Piirakkakuvioissa lukuarvot sijaitsevat piirakan ulkopuolella ja on luku yhdistetty viivalla piirakan viipaleeseen (tämä on jo ennestään käytössä oleva malli). 
+
+Piirakoissa selitetekstien järjestys on laskeva suuruusjärjestys. 
+
+##### Pylväskuvio
+
+(Tähän kuva pylväskuviosta.)
+
+Pylväskuvioissa selitetekstit ovat järjestyksessä palkkien mukaan eli alhaalta ylös. 
+
+### Tilastotaulukot
+
+#### Taulukot pienillä näytöillä
 
 ![Taulukko mobiilissa, riviotsikot jäädytetty paikoilleen.](images/taulukko_mobile_tyylit.png)
 
-Vaikka taulukot yritetään pitää järkevän kokoisina, voi silti käydä niin, että taulukosta tulee niin leveä tai pitkä, että se ei mahdu etenkään pienille näytöille kokonaan. Tällöin taulukon rivi- tai sarakeotsikot voidaan "jäädyttää" paikoilleen. 
+Joskus taulukosta tulee niin leveä tai pitkä, että se ei mahdu etenkään pienille näytöille kokonaan. Tällöin taulukon rivi- tai sarakeotsikot voidaan "jäädyttää" paikoilleen. 
 
 Jos taulukko on näyttöä leveämpi, taulukon riviotsikot "jäädytetään" paikalleen ja muu taulukko on liikuteltavissa oikealle ja vasemmalle. Riviotsikot vievät korkeintaan n. 30% näytön leveydestä. Vierityspalkit taulukon liikutettavan osan yllä ja alla vihjaavat tästä liikuteltavuudesta. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki. Taulukkoa voi mobiililaitteissa liikutella vierityspalkkien lisäksi myös itse taulukon liikuteltavaan osaan (muu kuin riviotsikot-sarake) koskemalla.
  
@@ -892,17 +901,17 @@ Jos taulukko on näyttöä pidempi, taulukon sarakeotsikot voidaan jäädyttää
 
 Sekä rivi- että sarakeotsikot eivät voi olla samaan aikaan jäädytetyt. Riippuu taulukosta, kummat otsikot kannattaa jäädyttää mobiililaitteissa ja pienissä näytöissä. 
 
-#### Taulukko isoilla näytöillä
+#### Taulukot isoilla näytöillä
 
 ##### Taulukot tekstipalstan sisällä
 
 Desktop-näytöillä taulukoita on kahta kokoa: palstan levyinen ja täysileveä.
 
-![Desktop-koossa palstan sisällä taulukko noudattaa palstan leveyttä.](images/taulukko_palstan_sisalla.png)
+![Desktop-koossa palstan sisällä taulukko noudattaa palstan leveyttä.](images/taulukko_lahde.jpg)
 
- Tekstipalstan sisällä olevat taulukot noudattavat tekstipalstan leveyttä. Näin ne asettuvat kauniimmin samaan linjaan muun palstan sisällön kanssa. Jos taulukon sisältö ei mahdu palstan leveydessä kokonaan näkyville, siitä tulee sivusuunnassa vieritettävä. Tällöin taulukon sarakeotsikot jäädytetään paikalleen ja ne vievät korkeintaan n. 30% palstan leveydestä. Taulukon ylä- ja alapuolelle tulee vierityspalkit vihjaamaan vieritysominaisuudesta kuten taulukoissa pienillä näytöillä. Taulukkoa pääsee vierittämään sivusuunnassa vierityspalkeista. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki.
+ Tekstipalstan sisällä olevat taulukot noudattavat tekstipalstan leveyttä. Näin ne asettuvat samaan linjaan muun palstan sisällön kanssa. Jos taulukon sisältö ei mahdu palstan leveydessä kokonaan näkyville, siitä tulee sivusuunnassa vieritettävä. Tällöin taulukon sarakeotsikot jäädytetään paikalleen ja ne vievät korkeintaan n. 30% palstan leveydestä. Taulukon ylä- ja alapuolelle tulee vierityspalkit vihjaamaan vieritysominaisuudesta kuten taulukoissa pienillä näytöillä. Taulukkoa pääsee vierittämään sivusuunnassa vierityspalkeista. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki.
 
-##### Taulukot muuala kuin tekstipalstan sisällä
+##### Taulukot muualla kuin tekstipalstan sisällä
 
 ![Blokin sisältöalueeseen mahdutettu taulukko.](images/taulukko_desktop_levea.png)
 
@@ -912,9 +921,34 @@ Muualle kuin tekstipalstan sisälle tulevat taulukot (esim. Taulukot-blokin taul
 
 Vain hyvin poikkeuksellisissa tilanteissa, joissa taulukon mahduttaminen blokin sisältöalueeseen ei onnistu eikä taulukkoa saada muokattua blokin sisältöalueeseen mahtuvaksi, taulukkoon tulee vieritysominaisuus kuten mobiilissa ja palstan sisällä olevissa taulukoissa. Taulukon riviotsikot jäädytetään ja taulukon muuta osaa pystyy liikuttamaan vaakasuunnassa vierityspalkkeja liikuttamalla. Vierityspalkit tulevat taulukon liikutettavan osan ylä- ja alapuolelle. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki. 
 
-Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena auttaa taulukoita myös pysymään blokkien sisältöalueen sisällä desktop-koossa. Tällöin ne eivät tarvitse desktop-laitteilla jäädytettyjä riviotsikoita ja vaakasuuntaista vieritysominaisuutta.  
+Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena auttaa taulukoita myös pysymään blokkien sisältöalueen sisällä desktop-koossa. Tällöin ne eivät tarvitse desktop-laitteilla jäädytettyjä riviotsikoita ja vaakasuuntaista vieritysominaisuutta. 
 
-#### Taulukon tyylit
+#### Taulukoiden lähdemerkintä
+
+Taulukoihin liitetään lähdemerkintä, josta käy ilmi taulukon tunniste, tilasto, johon taulukko liittyy sekä taulukon tuottaja. Esimerkkilähdemerkintä: 
+
+Taulukko 32425, Rakennus- ja asuntotuotanto, Tilastokeskus. 
+
+Lähdemerkintä tulee taulukon ulkopuolelle taulukon alle. Jos taulukon alla esitetään myös taulukkoon liittyviä lisätietoja, lähdemerkintä sijaitsee niiden jälkeen:  
+
+![Tilastotaulukon lähdemerkintä taulukon alla taulukon lisätietojen jälkeen.](images/taulukko_lahde.jpg)
+
+Lähdemerkinnässä käytetään taulukon solujen fonttia: 
+
+|                   | Font                          | Font-size                         |
+| ----------------- | ----------------------------- | --------------------------------- |
+| **Lähdemerkintä** | Barlow Semi Condensed regular | 0.9rem (15px) tai 0.875rem (14px) |
+
+#### Taulukoiden saavutettavuus
+* Taulukkoon ei tule laittaa liikaa sisältöä. Näin taulukot pysyvät helpommin ymmärrettävinä ja vertailtavina. Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri taulukkoon. 
+* Taulukoissa ei tulisi olla todella paljon sarakkeita ja/tai rivejä. Tämä helpottaa taulukoiden käyttöä ja ymmärrettävyyttä, erityisesti mobiililaitteilla. 
+* Sarake- ja riviotsikkojen tulee olla mahdollisimman lyhyitä ja ytimekkäitä. Liian pitkiä sarake- ja riviotsikoita tulee välttää. Tämä auttaa taulukoita asettumaan paremmin mobiililaitteissa. 
+* Jos on tarpeen tehdä hierarkisia taulukoita, on suositeltavaa käyttää korkeintaan kahta hierarkian tasoa. Myös tämä auttaa taulukon ymmärrettävyyttä. 
+* Se taulukon rivi, jonka päälle kursori osuu, korostetaan erottuvalla värillä (tyyli löytyy kohdasta Taulukon tyylit). Kosketuskäyttöliittymissä sama taulukon rivin hover-efekti toimii kun käyttäjä klikkaa taulukon riviä. Rivin korostaminen  helpottaa käyttäjiä taulukon lukemisessa. 
+
+#### Taulukoiden tyylit
+
+##### Taulukkopohjan tyylit
 
 |                            | Background-color | Border  | Border-width                         | Padding                          |
 | -------------------------- | ---------------- | ------- | ------------------------------------ | -------------------------------- |
@@ -923,7 +957,7 @@ Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena 
 | **Solu**                   | #ffffff          | #0073b0 | 0,25px                               | top/bottom: 8px left/right: 10px |
 | **Rivin hover**            | #cce3fe          |         |                                      |                                  |
 
-#### Taulukon fontit
+##### Taulukon fontit
 |                                     | Font                           | Font-size                         | Text-align | Vertical-align |
 | ----------------------------------- | ------------------------------ | --------------------------------- | ---------- | -------------- |
 | **Taulukon otsikko**                | Barlow Semi Condensed regular  | 1rem (16px)                       |            |                |
@@ -957,7 +991,7 @@ Tiedotteisiin voidaan liittää videoelementti. Video sijaitsee tiedotteissa tie
 * Videon yhteydessä on tarjottava linkki Youtube-palveluun, jossa videon voi myös katsoa. 
 * Videon käsikirjoitus tulee olla saatavissa. Sille on paikka videon alla käsikirjoitus-laajennuspaneelissa. 
 
-#### Koko
+#### Videoelementin koko
 
  Videoelementin osat asettuvat allekkain sekä mobiili- että desktop-koossa. Järjestys ylhäältä alas: sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tagit, videon otsikko, videon julkaisupäivämäärä, linkki Youtube-palveluun, itse video ja videon käsikirjoitus -laajennuspaneeli.
 
