@@ -824,7 +824,7 @@ Kuvion tooltip on pieni laatikko, joka tulee näkyviin kuvion päälle ja kertoo
 
 #### Kuvioiden lähdemerkintä
 
-Tilastokuvioihin liitetään lähdemerkintä, josta käy ilmi kuvion tunniste, tilasto, johon kuvio liittyy sekä taulukon tuottaja. Lähdemerkintä tulee kuvion alle oikeaan alareunaan.  Esimerkkilähdemerkintä: 
+Tilastokuvioihin liitetään lähdemerkintä, josta käy ilmi kuvion tunniste, tilasto, johon kuvio liittyy sekä kuvion tuottaja. Lähdemerkintä tulee kuvion alle oikeaan alareunaan. Esimerkkilähdemerkintä: 
 
 Kuvio 32425, Rakennus- ja asuntotuotanto, Tilastokeskus. 
 
