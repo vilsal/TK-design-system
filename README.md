@@ -27,6 +27,9 @@
   - [Info-laatikko](#info-laatikko)
     - [Info-laatikon tyylit](#info-laatikon-tyylit)
   - [Jakoviiva](#jakoviiva)
+  - [Julkaisu-elementtien kuvat](#julkaisu-elementtien-kuvat)
+    - [Place holder -kuvat](#place-holder--kuvat)
+    - [Kuvien koko](#kuvien-koko)
   - [Laajennuspaneeli](#laajennuspaneeli)
     - [Yksittäinen laajennuspaneeli](#yksittäinen-laajennuspaneeli)
     - [Laajennuspaneeliryhmä](#laajennuspaneeliryhmä)
@@ -348,10 +351,35 @@ Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää ti
 
 Jakoviivoilla voidaan myös erottaa saman kokonaisuuden tai toisiinsa liittyviä elementtejä toisistaan. 
 
+### Julkaisu-elementtien kuvat
+Julkaisu-elementeissä artikkelien, blogien ja videoiden kuvina käytetään graafikoiden tekemiä ja valitsemia valokuvia. Kokoomajulkaisujen kuvina käytetään julkaisun omasta kansikuvasta muokattua (graafikoiden tekemää) webiin sopivaa kuvaa. Tiedotteiden, tietokantajulkaisujen ja katsauksien julkaisu-elementeissä kuvina käytetään ns. place holder -kuvia.
+
+![Artikkelien, blogien ja videoiden julkaisu-elementeissä käytetään kuvina valokuvia.](images/julkaisu_blogi.png)
+
+| Julkaisutyyppi                      | Kuvan tyyppi       |
+| ----------------------------------- | ------------------ |
+| Artikkeli                           | Valokuva           |
+| Blogi                               | Valokuva           |
+| Muu julkaisu, esim. kokoomajulkaisu | Valokuva           |
+| Katsaus                             | Place holder -kuva |
+| Tiedote                             | Place holder -kuva |
+| Tietokantajulkistus                 | Place holder -kuva |
+| Video                               | Valokuva           |
+
+#### Place holder -kuvat
+
+![Tiedotteiden, tietokantajulkistuksien ja katsauksien julkaisu-elementteihin tulevassa place holder -kuvassa on valkoinen Tilastokeskuksen logo sinisellä pohjalla.](images/place_holder_tiedote.png)
+
+#### Kuvien koko
+Julkaisut-elementeissä olevat kuvat käyttävät samaa kuvasuhdetta kuin video-elementti. Katso video-elementin kuvasuhde kohdasta Video. 
+
+**Huom!** Julkaisuissa tekstin seassa olevat kuvat ja tilastokuviot eivät välttämättä noudata samaa kuvasuhdetta kuin julkaisu-elementtien kuvat. Etenkin tilastokuvioiden kokoon vaikuttaa niissä oleva data eikä niitä kaikkia voida rajata kooltaan saman kokoisiksi etekään pituudesta. 
+
+
 ### Laajennuspaneeli 
 (Eng. expansion panel)
 
-Laajennuspaneeli on elementti, jonka otsikon alle on piilotettu sisältöä. Laajennuspaneelia klikkaamalla sisällön saa esiin ja taas piiloon. Laajennuspaneelilla on aina jokin nimi tai otsikko, joka näkyy paneelin sinisellä taustalla. Laajennuspaneeleilla voidaan lyhentää sivun pituutta.  Kun niitä käytetään ryhmänä, ne auttavat hahmottamaan laajoja kokonaisuuksia.
+Laajennuspaneeli on elementti, jonka otsikon alle on piilotettu sisältöä. Laajennuspaneelia klikkaamalla sisällön saa esiin ja taas piiloon. Laajennuspaneelilla on aina jokin nimi tai otsikko, joka näkyy paneelin sinisellä taustalla. Laajennuspaneeleilla voidaan lyhentää sivun pituutta. Kun niitä käytetään ryhmänä, ne auttavat hahmottamaan laajoja kokonaisuuksia.
 
 #### Yksittäinen laajennuspaneeli
 
@@ -955,7 +983,7 @@ Tooltip on pieni laatikko, joka tulee näkyviin käyttäjän toiminnon käynnist
 
 ### Video
 #### Videoelementin koko
-Videon kuvasuhde on 16:9, esim. resoluutio 1920x1080. 
+Videon kuvasuhde on **16:9**, esim. **resoluutio 1920x1080**. 
 
 #### Videoiden saavutettavuus
 
