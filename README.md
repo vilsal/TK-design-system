@@ -86,9 +86,10 @@
   - [Tooltip](#tooltip)
     - [Tooltipin saavutettavuus](#tooltipin-saavutettavuus)
   - [Video](#video)
-    - [Videoiden saavutettavuus](#videoiden-saavutettavuus)
     - [Videoelementin koko](#videoelementin-koko)
-    - [Videoelementin tyylit](#videoelementin-tyylit)
+    - [Videoiden saavutettavuus](#videoiden-saavutettavuus)
+  - [Video-blokki](#video-blokki)
+    - [Video-blokin tyylit](#video-blokin-tyylit)
   - [Vierityspalkki](#vierityspalkki)
     - [Pystysuuntainen vierityspalkki](#pystysuuntainen-vierityspalkki)
     - [Vaakasuuntainen vierityspalkki](#vaakasuuntainen-vierityspalkki)
@@ -953,33 +954,37 @@ Tooltip on pieni laatikko, joka tulee näkyviin käyttäjän toiminnon käynnist
 * Tooltipiin ei tule laittaa sellaista sisältöä, joka käyttäjän on tärkeää löytää tai nähdä. Kaikki käyttäjät eivät välttämättä huomaa elementtiä, josta tooltip on saatavissa tai ymmärrä miten tooltipin saa näkyviin. 
 
 ### Video
-
-Tiedotteisiin voidaan liittää videoelementti. Video sijaitsee tiedotteissa tiedotteen tekstiosuuden jälkeen. Videoelementti koostuu useasta pienemmästä elementistä: sisältötyyppi-, tilaston nimi- ja viiteajankohta -tageista, videon otsikosta, videon julkaisupäivämäärästä, linkistä Youtube-palveluun, itse videosta ja videon käsikirjoituksesta. Videon käsikirjoitus on saatavilla videon alla laajennuspaneelissa. 
-
-![Video desktop-koossa. Käsikirjoitus-laajennuspaneeli on avattu. ](images/video_desktop_avattu.png)
+#### Videoelementin koko
+Videon kuvasuhde on 16:9, esim. resoluutio 1920x1080. 
 
 #### Videoiden saavutettavuus
 
 * Videoissa, joissa on puhetta tulee olla tekstitys. 
 * (Kuvailutulkkaus ja sen tekstitys?) 
 * Videon yhteydessä on tarjottava linkki Youtube-palveluun, jossa videon voi myös katsoa. 
-* Videon käsikirjoitus tulee olla saatavissa. Sille on paikka videon alla käsikirjoitus-laajennuspaneelissa. 
+* Videon käsikirjoitus tulee olla saatavissa. Sille on paikka videon alla Videon käsikirjoitus-laajennuspaneelissa. 
 
-#### Videoelementin koko
+### Video-blokki
 
- Videoelementin osat asettuvat allekkain sekä mobiili- että desktop-koossa. Järjestys ylhäältä alas: sisältötyyppi- sekä tilaston nimi ja viiteajankohta -tagit, videon otsikko, videon julkaisupäivämäärä, linkki Youtube-palveluun, itse video ja videon käsikirjoitus -laajennuspaneeli.
+Tiedotteisiin voidaan liittää video-blokki. Video-blokki sijaitsee tiedotteissa tekstiosuuden jälkeen. 
 
-![Video mobiili-koossa. ](images/video_mobiili.png)
+![Video-blokki desktop-koossa. Käsikirjoitus-laajennuspaneeli on avattu. ](images/video_desktop_avattu.png)
 
-#### Videoelementin tyylit
+Video-blokki koostuu useasta pienemmästä elementistä. Blokin sisältämät elementit järjestyksessä ylhäältä alas ovat: sisältötyyppi-, tilaston nimi- ja viiteajankohta -tagit, videon otsikko, videon julkaisupäivämäärä, linkki Youtube-palveluun, itse videoelementti ja laajennuspaneeli, joka sisältää videon käsikirjoituksen. 
+
+Video-blokin osat asettuvat samoin sekä mobiili- että desktop-näytöillä. Blokki mobiili-näytöllä: 
+
+![Video-blokki mobiili-koossa. ](images/video_mobiili.png)
+
+#### Video-blokin tyylit
 
 | Background-color |
 | ---------------- |
 | #ffffff          |
 
-| Videoelementin osa | Noudattaa tyyliä        |
+| Video-blokin osa   | Noudattaa tyyliä        |
 | ------------------ | ----------------------- |
-| Tagi               | tagin tyyli             |
+| Tagit              | tagin tyyli             |
 | Otsikko            | H3                      |
 | Julkaisupäivämäärä | päiväyksen tyyli        |
 | Youtube-linkki     | linkin tyyli            |
