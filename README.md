@@ -19,11 +19,14 @@
   - [Blokit](#blokit)
   - [Footer](#footer)
 - [Komponentit](#komponentit)
+  - [Avainluvut](#avainluvut)
+    - [Avainlukujen tyylit](#avainlukujen-tyylit)
   - [Bannerit](#bannerit)
     - [Neutraali banneri](#neutraali-banneri)
     - [Huomio-banneri](#huomio-banneri)
     - [Varoitus-banneri](#varoitus-banneri)
     - [Bannerien saavutettavuus](#bannerien-saavutettavuus)
+  - [Elementtien menut](#elementtien-menut)
   - [Info-laatikko](#info-laatikko)
     - [Info-laatikon tyylit](#info-laatikon-tyylit)
   - [Jakoviiva](#jakoviiva)
@@ -238,6 +241,49 @@ Footerissa on neljä palstaa: ensimmäisessä Tilastokeskuksen logo, kolmessa mu
 
 ## Komponentit
 
+### Avainluvut
+
+![Avainluku.](images/avainluku_lyhyt.png)
+
+Avainluvussa kerrotaan yksi tilastoluku, mitä ajankohtaa se koskee sekä tarjotaan reitti eteenpäin tietokantaan ja sivulle, josta löytyy lisätietoa aiheesta. Avainluvun tarkoituksena on kiinnittää käyttäjien huomio ja houkutella heidät tutkimaan lukuun liittyvää tietoa enemmän. Avainluvun voi jakaa myös sosiaalisessa mediassa. 
+
+Avainluvut sisältävät seuraavat elementit:
+* otsikko, 
+* menu. Menun sisällöstä kerrotaan kohdassa Elementtien menut. 
+* avainluku, 
+* avainluvun yksikkö, 
+* viiteajankohta, 
+* muu tarkentava teksti, optionaalinen, 
+* linkki avainluvun ensisijaikseksi merkitylle sivulle, ns. "kotisivulle".
+
+![Avainluku kaikkine elementteineen.](images/avainluku_pitka.png)
+
+Avainlukuja on tarkan aiheen, tilaston, tiedotteen ja katsauksen sivuilla. Sama avainluku voi esiintyä useilla eri sivuilla. Avainluku merkitään kuitenkin aina kuuluvaksi ensisijaisesti johonkin tilastoon, tiedotteeseen, katsaukseen tai tarkkaan aiheeseen. Avainluvussa oleva linkki vie tälle avainluvun ensisijaiseksi merkitylle sivulle, ns. avainluvun "kotisivulle". Avainluvussa ei ole linkkiä silloin kun se esiintyy ensisijaikseksi merkityllä sivullaan. 
+
+Avainluvut asettuvat omassa Avainluvut-blokissaan responsiivisesti rinnakkain tai allekkain näytön koosta riippuen. Pienillä näytöillä avainluvut asettuvat allekkain. Isoilla näytöillä avainlukuja on Avainluvut-blokissaan enintään kolme rinnakkain: 
+
+![Avainluku-blokki tilaston sivulla.](images/avainluvut_tilasto_desktop.png)
+
+Avainluku-elementit venyvät tarvittaessa pituutta. Kaikki samalla rivillä olevat avainluvut ovat kuitenkin saman pituisia eli vähemmän sisältöä sisältävät avainluvut venyvät pituutta pisimmän avainluvun mukaan. 
+
+Tiedotteessa avainluvut sijaitsevat ingressin alla ja ennen Pääkohdat-elementtiä kun sivua katsotaan pieneltä näytöltä. Isoilla näytöillä avainluku tai avainluvut asettuvat ingressin oikealle puolelle omaan palstaansa allekkain. **Huom!** Isoilla näytöllä on sama selaus-/lukujärjestys näppäimistökäytössä kuin pienillä näytöillä eli avainlukujen jälkeen siirrytään Pääkohdat-elementtiin. 
+
+![Tiedotteen sivulla olevat avainluvut. Avainluvuissa ei ole linkkiä, koska tiedote on niiden ensisijainen sivu. Ison näytön näkymässä avainluvut asettuvat ingressin oikealle puolelle allekkain.](images/avainluku_tiedote.png)
+
+Avainluvut voivat sijaita katsauksessa tekstin seassa, jolloin ne ottavat tekstipalstan leveyden. 
+
+#### Avainlukujen tyylit
+|                                           | Font                        | Font-size | Color   | Background-color |
+| ----------------------------------------- | --------------------------- | --------- | ------- | ---------------- |
+| Avainluvun laatikko                       |                             |           |         | #f2f2f2          |
+| Avainluvun otsikko                        | Barlow, medium              | 14px      | #000000 |                  |
+| Avainluku                                 | Barlow Semi Condenced, bold | 65px      | #0073b0 |                  |
+| Avainluvun lyhyt yksikkö (max. 2 merkkiä) | Barlow Semi Condenced, bold | 65px      | #0073b0 |                  |
+| Avainluvun pitkä yksikkö                  | Barlow Semi Condenced, bold | 35px      | #0073b0 |                  |
+| Avainluvun viiteajankohta                 | leipäteksti                 |           |         |                  |
+| Avainluvun muu teksti                     | leipäteksti                 |           |         |                  |
+| Avainluvun linkki                         | tavallinen linkki nuolella  |           |         |                  |
+
 ### Bannerit
 Bannerit ovat huomiota herättäviä väliaikaisia elementtejä, joilla viestitään sivuston sisältöön liittyvistä muutoksista ja poikkeustilanteista. Bannereiden tarkoitus on vetää käyttäjien huomio puoleensa erottumalla sivuston muusta sisällöstä. Bannereita on eri tyylisiä, ja se minkä tyylinen banneri valitaan riippuu banneriin tulevasta sisällöstä. 
 
@@ -257,14 +303,15 @@ Neutraali banneri, mobiili-versio:
 ![Neutraali banneri, mobiili-versio.](images/neutraali_banneri_mobiili.png)
 
 Neutraali banneri, desktop-versio:
+
 ![Neutraali banneri, desktop-versio.](images/neutraali_banneri_desktop.png)
 
 Neutraalin bannerin tyylit:
-|                          | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border  |
-| ------------------------ | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------- |
-| **Banneri-laatikko**     |                          |                |         |                 | #ffffff          | #a40084 |
-| **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #000000 |                 |                  |         |
-| **Linkki**               | Source Sans Pro, regular | 1rem (n. 16px) | #006ca5 | underline       |                  |         |
+|                          | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border  | Padding                          |
+| ------------------------ | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------- | -------------------------------- |
+| **Banneri-laatikko**     |                          |                |         |                 | #ffffff          | #a40084 | top/bottom: 2rem left/righ: 1rem |
+| **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #000000 |                 |                  |         |                                  |
+| **Linkki**               | Source Sans Pro, regular | 1rem (n. 16px) | #006ca5 | underline       |                  |         |                                  |
 
 
 #### Huomio-banneri
@@ -285,12 +332,12 @@ Huomio-banneri, desktop-versio:
 ![Huomio-banneri, desktop-versio.](images/huomio_banneri_desktop.png)
 
 Huomio-bannerin tyylit:
-|                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border |
-| ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ |
-| **Banneri-laatikko**         |                          |                |         |                 | a40084           |        |
-| **Teksti = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |
-| **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff | underline       |                  |        |
-| **Ikoni**                    |                          |                | #ffffff |                 |                  |        |
+|                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border | Padding                          |
+| ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ | -------------------------------- |
+| **Banneri-laatikko**         |                          |                |         |                 | a40084           |        | top/bottom: 2rem left/righ: 1rem |
+| **Teksti = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |                                  |
+| **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff | underline       |                  |        |                                  |
+| **Ikoni**                    |                          |                | #ffffff |                 |                  |        |                                  |
 
 
 #### Varoitus-banneri
@@ -309,19 +356,19 @@ Varoitus-banneri, desktop-versio:
 ![Varoitus-banneri, desktopversio.](images/varoitus_banneri_desktop_paikka.png)
 
 Varoitus-bannerin tyylit
-|                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border |
-| ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ |
-| **Banneri-laatikko**         |                          |                |         |                 | #c30045          |        |
-| **Teksti = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |
+|                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border | Padding                          |
+| ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ | -------------------------------- |
+| **Banneri-laatikko**         |                          |                |         |                 | #c30045          |        | top/bottom: 2rem left/righ: 1rem |
+| **Teksti = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |                                  |
 | **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff | underline       |                  |        |
-| **Ikoni**                    |                          |                | #ffffff |                 |                  |        |
+| **Ikoni**                    |                          |                | #ffffff |                 |                  |        |                                  |
 
 
 #### Bannerien saavutettavuus
 * Huomio- ja varoitus-bannerien huutomerkki-ikoni piilotetaan ruudunlukijalta. 
 * Jos banneri sisältää linkin, vain tämä linkki on linkki. Koko banneri ei siis toimi linkkinä eikä semanttisesti ole linkki. 
 
-
+### Elementtien menut
 
 ### Info-laatikko
 
@@ -704,18 +751,19 @@ Leveä pudotusvalikko, jonka label on valikon yläpuolella:
 
 ![Leveämmän sisällön vuoksi leveä pudotusvalikko.](images/pudotusvalikko_iso.png)
 
-* Pudotusvalikoissa käytetään selainten ja mobiilikäyttöjärjestelmien valmiita elementtejä niin pitkälle kuin mahdollista. Tyylit muotoillaan Tilastokeskuksen ilmeeseen sopiviksi. 
+* Pudotusvalikoissa käytetään selainten ja mobiilikäyttöjärjestelmien valmiita elementtejä ja niiden toiminnallisuutta niin pitkälle kuin mahdollista. Esim. pudotusvalikon avautumisen tyylinä pidetään selaimen pudotusvalikossa käytössä oleva avautumistyyli. Elementtien visuaalinen ilme muotoillaan Tilastokeskuksen ilmeeseen sopiviksi. 
+
 
 ##### Pudotusvalikkojen yhteiset tyylit
 
 Nämä tyylit ovat kaikille pudotusvalikoille yhteisiä.
 
-|                               | Font                     | Font-size | Color   | Background-color | Border  |
-| ----------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- |
-| **Pudotusvalikon label**      | Source Sans Pro Semibold | 17px      | #000000 |                  |         |
-| **Pudotusvalikko**            |                          |           | #ffffff |                  | #c9c9c9 |
-| **Kentän nuoli**              |                          |           | #0073b0 |                  |         |
-| **Pudotusvalikon tekstit**    | Source Sans Pro regular  | 16px/1rem | #000000 |                  |         |
+|                            | Font                     | Font-size | Color   | Background-color | Border  |
+| -------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- |
+| **Pudotusvalikon label**   | Source Sans Pro Semibold | 17px      | #000000 |                  |         |
+| **Pudotusvalikko**         |                          |           | #ffffff |                  | #c9c9c9 |
+| **Kentän nuoli**           |                          |           | #0073b0 |                  |         |
+| **Pudotusvalikon tekstit** | Source Sans Pro regular  | 16px/1rem | #000000 |                  |         |
 
 #### Tavallinen pudotusvalikko desktop-käyttöliittymissä
 
@@ -737,10 +785,10 @@ Jos pudotusvalikko sisältää yli 20 vaihtoehtoa, valikon sisään on hyvä lis
 
 Tässä on kerrottu vain tavallisia pudotusvalikkoja koskevat tyylit. Osa tyyleistä on määritetty kohdassa Pudotusvalikkojen yhteiset tyylit. 
 
-|                               | Font                     | Font-size | Color   | Background-color | Border  |
-| ----------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- |
-| **Valikon vaihtoehdon hover** | Source Sans Pro regular  | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
-| **Valittu vaihtoehto**        | Source Sans Pro regular  | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
+|                               | Font                    | Font-size | Color   | Background-color | Border  |
+| ----------------------------- | ----------------------- | --------- | ------- | ---------------- | ------- |
+| **Valikon vaihtoehdon hover** | Source Sans Pro regular | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
+| **Valittu vaihtoehto**        | Source Sans Pro regular | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
 
 #### Multi select (monen valinnan) pudotusvalikko desktop-käyttöliittymissä
 
