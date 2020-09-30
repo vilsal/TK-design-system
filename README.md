@@ -81,6 +81,7 @@
     - [Taulukot isoilla näytöillä](#taulukot-isoilla-näytöillä)
       - [Taulukot tekstipalstan sisällä](#taulukot-tekstipalstan-sisällä)
       - [Taulukot muualla kuin tekstipalstan sisällä](#taulukot-muualla-kuin-tekstipalstan-sisällä)
+    - [Taulukoiden alaviite](#taulukoiden-alaviite)
     - [Taulukoiden lähdemerkintä](#taulukoiden-lähdemerkintä)
     - [Taulukoiden saavutettavuus](#taulukoiden-saavutettavuus)
     - [Taulukoiden tyylit](#taulukoiden-tyylit)
@@ -829,7 +830,7 @@ Kuvion tooltip on pieni laatikko, joka tulee näkyviin kuvion päälle ja kertoo
 
 Tilastokuvioihin liitetään lähdemerkintä, josta käy ilmi kuvion tunniste, tilasto, johon kuvio liittyy sekä kuvion tuottaja. Lähdemerkintä tulee kuvion alle oikeaan alareunaan. Esimerkkilähdemerkintä: 
 
-Kuvio 32425, Rakennus- ja asuntotuotanto, Tilastokeskus. 
+Lähde: Kuvio 32425, Rakennus- ja asuntotuotanto, Tilastokeskus. 
 
 Kuvioiden lähdemerkinnässä käytetään samaa tyyliä kuin taulukoiden lähdemerkinnöissä, katso kohta Taulukoiden lähdemerkintä. 
 
@@ -896,13 +897,23 @@ Pylväskuvioissa selitetekstit ovat järjestyksessä palkkien mukaan eli alhaalt
 
 ![Taulukko mobiilissa, riviotsikot jäädytetty paikoilleen.](images/taulukko_mobile_tyylit.png)
 
-Joskus taulukosta tulee niin leveä tai pitkä, että se ei mahdu etenkään pienille näytöille kokonaan. Tällöin taulukon rivi- tai sarakeotsikot voidaan "jäädyttää" paikoilleen. 
+Joskus taulukosta tulee niin leveä tai pitkä, että se ei mahdu etenkään pienille näytöille kokonaan. Tällöin taulukon rivi- tai sarakeotsikot voidaan lukita paikoilleen. 
 
-Jos taulukko on näyttöä leveämpi, taulukon riviotsikot "jäädytetään" paikalleen ja muu taulukko on liikuteltavissa oikealle ja vasemmalle. Riviotsikot vievät korkeintaan n. 30% näytön leveydestä. Vierityspalkit taulukon liikutettavan osan yllä ja alla vihjaavat tästä liikuteltavuudesta. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki. Taulukkoa voi mobiililaitteissa liikutella vierityspalkkien lisäksi myös itse taulukon liikuteltavaan osaan (muu kuin riviotsikot-sarake) koskemalla.
+Jos taulukko on näyttöä leveämpi, taulukon riviotsikot lukitaan paikalleen ja muu taulukko on liikuteltavissa oikealle ja vasemmalle. Riviotsikot vievät korkeintaan n. 30% näytön leveydestä. Vierityspalkit taulukon liikutettavan osan yllä ja alla vihjaavat taulukon liikuteltavuudesta. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki. Taulukkoa voi mobiililaitteissa liikutella vierityspalkkien lisäksi myös itse taulukon liikuteltavaan osaan (muu kuin rivi- tai sarakeotsikot-sarake) koskemalla. 
  
-Jos taulukko on näyttöä pidempi, taulukon sarakeotsikot voidaan jäädyttää paikoilleen. Kun sivua vieritetään taulukon kohdalta alaspäin, taulukon sarakeotsikot jäävät näkyviin näytön yläreunaan ja muuta taulukkoa voidaan liikuttaa pystysuunnassa. Kun on päästy taulukon loppuun ja jatketaan sivun vieritystä edelleen alaspäin, sarakeotsikot katoavat näytön yläreunasta näkyvistä muun taulukon mukana. 
+Jos taulukko on näyttöä pidempi, taulukon sarakeotsikot voidaan lukita paikoilleen. Kun sivua vieritetään taulukon kohdalta alaspäin, taulukon sarakeotsikot jäävät näkyviin näytön yläreunaan ja muuta taulukkoa voidaan liikuttaa pystysuunnassa. Kun on päästy taulukon loppuun ja jatketaan sivun vieritystä edelleen alaspäin, sarakeotsikot katoavat näytön yläreunasta näkyvistä muun taulukon mukana. 
 
-Sekä rivi- että sarakeotsikot eivät voi olla samaan aikaan jäädytetyt. Riippuu taulukosta, kummat otsikot kannattaa jäädyttää mobiililaitteissa ja pienissä näytöissä. 
+Sekä rivi- että sarakeotsikot eivät voi olla samaan aikaan lukitut. Riippuu taulukosta, kummat otsikot kannattaa lukita mobiililaitteissa ja pienissä näytöissä. 
+
+Kun taulukkoa aletaan vierittää sivu- tai pystysuunnassa, tulee lukitun otsikon reunaan taulukon sisältösolujen puolelle pieni varjostus. Sivusuunnassa taulukkoa vieritettäessä varjostus tulee siis lukittujen riviotsikoiden oikealle puolelle:
+
+![Taulukon riviotsikoiden otsikoiden oikealla puolella oleva varjo kun taulukkoa vieritetään vaakasuunnassa.](images/taulukko_shadow_pysty.png)
+
+Pystysuunnassa vieritettäessä varjo tulee lukittujen sarakeotsikoiden alle: 
+
+![Taulukon sarakeotsikoiden otsikoiden alapuolella oleva varjo kun taulukkoa vieritetään pystysuunnassa.](images/taulukko_shadow_vaaka.png)
+
+Varjostus auttaa käyttäjää hahmottamaan, että osa taulukosta on piilossa rivi- tai sarakeotsikkojen alla. Varjostuksen tyylimääritykset löytyvät kohdasta Taulukkopohjan tyylit. 
 
 #### Taulukot isoilla näytöillä
 
@@ -912,7 +923,7 @@ Desktop-näytöillä taulukoita on kahta kokoa: palstan levyinen ja täysileveä
 
 ![Desktop-koossa palstan sisällä taulukko noudattaa palstan leveyttä.](images/taulukko_lahde.jpg)
 
- Tekstipalstan sisällä olevat taulukot noudattavat tekstipalstan leveyttä. Näin ne asettuvat samaan linjaan muun palstan sisällön kanssa. Jos taulukon sisältö ei mahdu palstan leveydessä kokonaan näkyville, siitä tulee sivusuunnassa vieritettävä. Tällöin taulukon sarakeotsikot jäädytetään paikalleen ja ne vievät korkeintaan n. 30% palstan leveydestä. Taulukon ylä- ja alapuolelle tulee vierityspalkit vihjaamaan vieritysominaisuudesta kuten taulukoissa pienillä näytöillä. Taulukkoa pääsee vierittämään sivusuunnassa vierityspalkeista. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki.
+Tekstipalstan sisällä olevat taulukot noudattavat tekstipalstan leveyttä. Näin ne asettuvat samaan linjaan muun palstan sisällön kanssa. Jos taulukon sisältö ei mahdu palstan leveydessä kokonaan näkyville, siitä tulee sivusuunnassa vieritettävä. Tällöin taulukon sarakeotsikot jäädytetään paikalleen ja ne vievät korkeintaan n. 30% palstan leveydestä. Taulukon ylä- ja alapuolelle tulee vierityspalkit vihjaamaan vieritysominaisuudesta kuten taulukoissa pienillä näytöillä. Taulukkoa pääsee vierittämään sivusuunnassa vierityspalkeista. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki.
 
 ##### Taulukot muualla kuin tekstipalstan sisällä
 
@@ -922,25 +933,31 @@ Muualle kuin tekstipalstan sisälle tulevat taulukot (esim. Taulukot-blokin taul
 
 ![Blokin sisältöalueen ylimenevään taulukkoon tulee vierityspalkit.](images/taulukko_desktop_ylilevea.png)
 
-Vain hyvin poikkeuksellisissa tilanteissa, joissa taulukon mahduttaminen blokin sisältöalueeseen ei onnistu eikä taulukkoa saada muokattua blokin sisältöalueeseen mahtuvaksi, taulukkoon tulee vieritysominaisuus kuten mobiilissa ja palstan sisällä olevissa taulukoissa. Taulukon riviotsikot jäädytetään ja taulukon muuta osaa pystyy liikuttamaan vaakasuunnassa vierityspalkkeja liikuttamalla. Vierityspalkit tulevat taulukon liikutettavan osan ylä- ja alapuolelle. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki. 
+Vain hyvin poikkeuksellisissa tilanteissa, joissa taulukon mahduttaminen blokin sisältöalueeseen ei onnistu eikä taulukkoa saada muokattua blokin sisältöalueeseen mahtuvaksi, taulukkoon tulee vieritysominaisuus kuten mobiilissa ja palstan sisällä olevissa taulukoissa. Taulukon rivi- tai sarakeotsikot lukitaan ja taulukon muuta osaa pystyy liikuttamaan vaakasuunnassa vierityspalkkeja liikuttamalla tai sivua alaspäin skrollaamalla. Vierityspalkit tulevat taulukon liikutettavan osan ylä- ja alapuolelle. Vierityspalkin tyylit löytyvät alempaa kohdasta Vierityspalkki. Taulukkoa vieritettäessä riviotsikoiden oikealle puolelle tai sarakeotsikoiden alapuolelle tulee näkyviin myös varjostus, jonka tyylit löytyvät kohdasta Taulukkopohjan tyylit. 
 
-Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena auttaa taulukoita myös pysymään blokkien sisältöalueen sisällä desktop-koossa. Tällöin ne eivät tarvitse desktop-laitteilla jäädytettyjä riviotsikoita ja vaakasuuntaista vieritysominaisuutta. 
+Taulukoiden sisällön, rivien ja sarakkeiden määrän pitäminen maltillisena auttaa taulukoita myös pysymään blokkien sisältöalueen sisällä desktop-koossa. Tällöin ne eivät tarvitse desktop-laitteilla lukittuja riviotsikoita ja vaaka- tai pystysuuntaista vieritysominaisuutta. 
+
+#### Taulukoiden alaviite
+
+Taulukon alaviitteet sijaitsevat taulukon ulkopuolella heti taulukon alla:
+
+![Tilastotaulukon lähdemerkintä taulukon alla taulukon lisätietojen jälkeen.](images/taulukko_alaviite.jpg)
+
+Taulukon alaviitteen tyylit löytyvät kohdasta Taulukon fontit. 
 
 #### Taulukoiden lähdemerkintä
 
 Taulukoihin liitetään lähdemerkintä, josta käy ilmi taulukon tunniste, tilasto, johon taulukko liittyy sekä taulukon tuottaja. Esimerkkilähdemerkintä: 
 
-Taulukko 32425, Rakennus- ja asuntotuotanto, Tilastokeskus. 
+Lähde: Taulukko 32425, Rakennus- ja asuntotuotanto, Tilastokeskus. 
 
-Lähdemerkintä tulee taulukon ulkopuolelle taulukon alle. Jos taulukon alla esitetään myös taulukkoon liittyviä lisätietoja, lähdemerkintä sijaitsee niiden jälkeen:  
+Lähdemerkintä tulee taulukon ulkopuolelle taulukon alle. Jos taulukon alla esitetään myös taulukkoon liittyviä lisätietoja ts. taulukossa on alaviitteitä, lähdemerkintä sijaitsee niiden jälkeen:
 
-![Tilastotaulukon lähdemerkintä taulukon alla taulukon lisätietojen jälkeen.](images/taulukko_lahde.jpg)
+![Taulukon lähdemerkintä tulee alaviitteen jälkeen.](images/taulukko_lahde.jpg)
 
-Lähdemerkinnässä käytetään taulukon solujen fonttia: 
+Jos taulukon lähdemerkintä tai osa siitä on linkki, linkki alleviivataan. 
 
-|                   | Font                          | Font-size                         |
-| ----------------- | ----------------------------- | --------------------------------- |
-| **Lähdemerkintä** | Barlow Semi Condensed regular | 0.9rem (15px) tai 0.875rem (14px) |
+Taulukon lähdemerkinnän tyylit löytyvät kohdasta Taulukon fontit. 
 
 #### Taulukoiden saavutettavuus
 * Taulukkoon ei tule laittaa liikaa sisältöä. Näin taulukot pysyvät helpommin ymmärrettävinä ja vertailtavina. Jos sisältöä on paljon, on parempi jakaa sisältö useaan eri taulukkoon. 
@@ -953,19 +970,29 @@ Lähdemerkinnässä käytetään taulukon solujen fonttia:
 
 ##### Taulukkopohjan tyylit
 
-|                            | Background-color | Border  | Border-width                         | Padding                          |
-| -------------------------- | ---------------- | ------- | ------------------------------------ | -------------------------------- |
-| **Taulukko**               |                  | #0073b0 | top/bottom: 0,5px left/right: 0,25px | top/bottom: 8px left/right: 10px |
-| **Rivi- ja sarakeotsikot** | #f2f8fb          | #0073b0 | 0,5px                                | top/bottom: 8px left/right: 10px |
-| **Solu**                   | #ffffff          | #0073b0 | 0,25px                               | top/bottom: 8px left/right: 10px |
-| **Rivin hover**            | #cce3fe          |         |                                      |                                  |
+|                              | Background-color | Border  | Border-width                         | Padding                                |
+| ---------------------------- | ---------------- | ------- | ------------------------------------ | -------------------------------------- |
+| **Taulukko**                 |                  | #0073b0 | top/bottom: 0,5px left/right: 0,25px | top/bottom: 8px left/right: 10px       |
+| **Rivi- ja sarakeotsikot**   | #f2f8fb          | #0073b0 | 0,5px                                | top/bottom: 8px left/right: 10px       |
+| **Koko rivin sarakeotsikot** | #f2f8fb          | #0073b0 | 0,5px                                | top: 16px bottom: 8px left/right: 10px |
+| **Solu**                     | #ffffff          | #0073b0 | 0,25px                               | top/bottom: 8px left/right: 10px       |
+| **Rivin hover**              | #cce3fe          |         |                                      |                                        |
+
+Taulukon rivi- ja sarakeotsikoiden varjostuksen tyylit (2px varjo lukitun otsikon sille puolelle minne skrollataan):
+|                                   | Size    | rgba                    |
+| --------------------------------- | ------- | ----------------------- |
+| **Riviotsikoiden Outer shadow**   | 2px 0px | rgba (102,102,102,0.35) |
+| **Sarakeotsikoiden Outer shadow** | 0px 2px | rgba (102,102,102,0.35) |
 
 ##### Taulukon fontit
-|                                     | Font                           | Font-size                         | Text-align | Vertical-align |
-| ----------------------------------- | ------------------------------ | --------------------------------- | ---------- | -------------- |
-| **Taulukon otsikko**                | Barlow Semi Condensed regular  | 1rem (16px)                       |            |                |
-| **Taulukon sarake- ja riviotsikot** | Barlow Semi Condensed SemiBold | 1rem (16px)                       | left       |                |
-| **Taulukon solut**                  | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | right      | bottom         |
+|                                                                                                          | Font                           | Font-size                         | Vertical-align | Text-align                      |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------------------------- | -------------- | ------------------------------- |
+| **Taulukon otsikko**                                                                                     | Barlow Semi Condensed regular  | 1rem (16px)                       |                |                                 |
+| **Taulukon sarake- ja riviotsikot**                                                                      | Barlow Semi Condensed SemiBold | 1rem (16px)                       | bottom         | ks. taulukon solujen text-align |
+| **Taulukon solut: numeroksi merkitty sisältö ja numeron korvikkeena oleva teksti (esim. Puuttuva arvo)** | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | bottom         | right                           |
+| **Taulukon solut: tekstiksi merkitty sisältö**                                                           | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | bottom         | left                            |
+| **Taulukon alaviite**                                                                                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                |                                 |
+| **Taulukon lähdemerkintä**                                                                               | Barlow Semi Condensed regular  | 1rem (16px)                       |                |                                 |
 
 ### Tooltip
 
