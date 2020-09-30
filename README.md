@@ -45,6 +45,7 @@
       - [Linkki tekstin seassa](#linkki-tekstin-seassa)
       - [Linkki ikonilla](#linkki-ikonilla)
     - [Ulkoinen linkki](#ulkoinen-linkki)
+  - [Lyhenteiden selitykset -laatikko](#lyhenteiden-selitykset--laatikko)
   - [Murupolku](#murupolku)
   - [Painike](#painike)
     - [Painikkeiden saavutettavuus](#painikkeiden-saavutettavuus)
@@ -55,9 +56,11 @@
     - [Kolmassijainen painike](#kolmassijainen-painike)
     - [Negatiivi-painike](#negatiivi-painike)
   - [Pudotusvalikko](#pudotusvalikko)
-    - [Tavallinen pudotusvalikko](#tavallinen-pudotusvalikko)
+    - [Yleistä pudotusvalikoista](#yleistä-pudotusvalikoista)
+      - [Pudotusvalikkojen yhteiset tyylit](#pudotusvalikkojen-yhteiset-tyylit)
+    - [Tavallinen pudotusvalikko desktop-käyttöliittymissä](#tavallinen-pudotusvalikko-desktop-käyttöliittymissä)
       - [Tavallisen pudotusvalikon tyylit](#tavallisen-pudotusvalikon-tyylit)
-    - [Multi select (monen valinnan) pudotusvalikko](#multi-select-monen-valinnan-pudotusvalikko)
+    - [Multi select (monen valinnan) pudotusvalikko desktop-käyttöliittymissä](#multi-select-monen-valinnan-pudotusvalikko-desktop-käyttöliittymissä)
       - [Multi select -pudotusvalikon tyylit](#multi-select--pudotusvalikon-tyylit)
     - [Pudotusvalikoiden saavutettavuus](#pudotusvalikoiden-saavutettavuus)
   - [Pääkohdat](#pääkohdat)
@@ -101,26 +104,31 @@
 ## Typografia
 Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista on tässä ilmoitettu pikseleinä, ne tulee toteuttaa suhteellisina arvoina (em tai rem). 
 
-| Taso                                                    | Font                           | Font-size                         | Font-family                                                    | Color   | Text-align | Vertical-align |
-| ------------------------------------------------------- | ------------------------------ | --------------------------------- | -------------------------------------------------------------- | ------- | ---------- | -------------- |
-| **Leipäteksti**                                         | Source Sans Pro, regular       | 16px/1rem                         | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |            |                |
-| **H1**                                                  | Barlow, regular                | 34px                              |                                                                | #000000 |            |                |
-| **H2**                                                  | Barlow, regular                | 28px                              |                                                                | #000000 |            |                |
-| **H3**                                                  | Barlow, regular                | 22px                              |                                                                | #000000 |            |                |
-| **H4**                                                  | Barlow, medium                 | 16px                              |                                                                | #000000 |            |                |
-| **H5**                                                  | Barlow, medium                 | 14px                              |                                                                | #000000 |            |                |
-| **Introteksti** (aiheessa/tarkan aiheessa)              | Barlow, medium                 | 14px                              |                                                                | #000000 |            |                |
-| **Tagit**  (tyyppitagit)                                | Barlow, semibold               | 14px                              |                                                                | #333333 |            |                |
-| **Päiväys ja kirjoittaja** (blokkien nostoelementeissä) | Barlow, regular                | 14px                              |                                                                | #000000 |            |                |
+| Taso                                                    | Font                           | Font-size                         | Font-family                                                    | Color   | Text-align                      | Vertical-align |
+| ------------------------------------------------------- | ------------------------------ | --------------------------------- | -------------------------------------------------------------- | ------- | ------------------------------- | -------------- |
+| **Leipäteksti**                                         | Source Sans Pro, regular       | 16px/1rem                         | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |                                 |                |
+| **H1**                                                  | Barlow, regular                | 34px                              |                                                                | #000000 |                                 |                |
+| **H2**                                                  | Barlow, regular                | 28px                              |                                                                | #000000 |                                 |                |
+| **H3**                                                  | Barlow, regular                | 22px                              |                                                                | #000000 |                                 |                |
+| **H4**                                                  | Barlow, medium                 | 16px                              |                                                                | #000000 |                                 |                |
+| **H5**                                                  | Barlow, medium                 | 14px                              |                                                                | #000000 |                                 |                |
+| **Introteksti** (aiheessa/tarkan aiheessa)              | Barlow, medium                 | 14px                              |                                                                | #000000 |                                 |                |
+| **Tagit**  (tyyppitagit)                                | Barlow, semibold               | 14px                              |                                                                | #333333 |                                 |                |
+| **Päiväys ja kirjoittaja** (blokkien nostoelementeissä) | Barlow, regular                | 14px                              |                                                                | #000000 |                                 |                |
 | **Ingressi**                                            | Barlow regular                 | 17px/1.255rem                     |                                                                | #000000 |
-| **Iso leipäteksti (esim. asiantuntijan nimi)**          | Source Sans Pro, regular       | 18px                              |                                                                | #000000 |            |                |
-| **Pudotusvalikon label**                                | Source Sans Pro                | 17px                              |                                                                | #000000 |            |                |
-| **Taulukon otsikko**                                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |            |                |
-| **Taulukon sarake- ja riviotsikot**                     | Barlow Semi Condensed SemiBold | 1rem (16px)                       |                                                                | #000000 | left       |                |
-| **Taulukon solut**                                      | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) |                                                                | #000000 | right      | bottom         |
-| **Tilastokuvion otsikko**                               | Barlow Semi Condensed medium   | 1rem (16px)                       |                                                                | #000000 | center     |                |
-| **Tilastokuvion alaotsikko**                            | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 | center     |                |
-| **Tilastokuvion muut tekstit**                          | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |            |                |
+| **Iso leipäteksti (esim. asiantuntijan nimi)**          | Source Sans Pro, regular       | 18px                              |                                                                | #000000 |                                 |                |
+| **Label**                                               | Source Sans Pro                | 17px                              |                                                                | #000000 |                                 |                |
+| **Murupolku, linkki**                                   | Barlow medium                  | 14px                              |                                                                | #006ca5 |                                 |                |
+| **Murupolku, ei linkki**                                | Barlow, medium                 | 14px                              |                                                                | #000000 |                                 |                |
+| **Taulukon otsikko**                                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
+| **Taulukon sarake- ja riviotsikot**                     | Barlow Semi Condensed SemiBold | 1rem (16px)                       |                                                                | #000000 | ks. taulukon solujen text-align | bottom         |
+| **Taulukon solut: numero tai numeron korvaava teksti**  | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) |                                                                | #000000 | right                           | bottom         |
+| **Taulukon solut: teksti**                              | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) |                                                                | #000000 | left                            | bottom         |
+| **Taulukon alaviite**                                   | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
+| **Taulukon lähdemerkintä**                              | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
+| **Tilastokuvion otsikko**                               | Barlow Semi Condensed medium   | 1rem (16px)                       |                                                                | #000000 | center                          |                |
+| **Tilastokuvion alaotsikko**                            | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 | center                          |                |
+| **Tilastokuvion muut tekstit**                          | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
 
 ### Typografian saavutettavuus
 * Fonttien koot tulee toteuttaa suhteellisina arvoina (em tai rem), jolloin käyttäjät pystyvät suurentamaan niitä halutessaan. 
@@ -533,6 +541,26 @@ Linkkien ikonien tyylit:
 
 Ulkoisen linkin tekstissä pyritään kertomaan, että linkki vie toiseen sivustoon tai palveluun. Linkkitekstin perässä on ulkoisen linkin ikoni, joka on osa linkkiä. Ruudunlukijaa varten ikoniin lisätään alt-teksti, joka kertoo, että linkki vie ulkoiselle sivustolle. Ikonin alt-tekstissä lukee: Siirryt toiseen verkkopalveluun. 
 
+### Lyhenteiden selitykset -laatikko
+
+Lyhenteiden selitykset -laatikko sisältää lyhenteiden ja merkkien selityksiä siellä missä niitä on tarpeen selittää käytäjille. Laatikko esiintyy esimerkiksi tietokantataulukoiden yhteydessä, jolloin se sisältää selitykset siitä mitä tietokantataulukoiden viiteajankohdissa olevat lyhenteet tarkoittavat. Laatikko sijaitsee sivulla tai blokissa ennen niitä elementtejä, joiden sisältöön se liittyy. 
+
+Mobiilissa ja pienillä näytöillä laatikon sisältö menee allekkain:
+
+![Mobiilissa laatikon sisältö on järjestäytynyt allekkain.](images/lyhenteidenselitykset_laatikko_mobiili.png)
+
+Isoilla näytöillä laatikko ja laatikon sisältö sisältö levittäytyy sivusuunnassa:
+
+![Isolla näytöllä laatikko ja sen sisältö on levittäytynyt sivusuunnassa.](images/lyhenteidenselitykset_laatikko_desktop.png)
+
+|              | Font                          | Font-size   | Border       | Width                                                                 | Padding                           |
+| ------------ | ----------------------------- | ----------- | ------------ | --------------------------------------------------------------------- | --------------------------------- |
+| **Label**    | Pudotusvalikon label:n fontti |             |              |                                                                       |                                   |
+| **Lyhenne**  | Source Sans Pro semibold      | 1rem (16px) |              |                                                                       |                                   |
+| **Teksti**   | Leipätekstin fontti           |             |              |                                                                       |                                   |
+| **Laatikko** |                               |             | #aaaaaa, 1px | Desktopissa: saman levyinen kuin tietokantataulukko-elementin divider | top/bottom: 2rem left/right: 1rem |
+
+
 ### Murupolku
 
  Viimeistä osaa lukuunottamatta murupolun osat ovat linkkejä. Murupolkun linkkiosat käyttäytyvät kuten tavalliset linkit kaikkine eri tiloineen. Murupolun fonttina on H5-otsikkotason fontti. Vaikka murupolku noudattaa H5-tason fonttia, se ei ole semanttisesti H5-tason otsikko vaan navigaatio-elementti. 
@@ -662,15 +690,38 @@ Pudotusvalikko on elementti, jonka tarjoamista vaihtoehdoista valitaan yksi tai 
 1.  tavallinen pudotusvalikko: pudotusvalikon vaihtoehdoista valitaan yksi. 
 2.  multi select: pudotusvalikon vaihtoehdoista voidaan valita useita. 
 
-Valittu vaihtoehto tai vaihtoehdot tulevat näkyviin pudotusvalikon kenttään. Jokaisen pudotusvalikon yllä on valikon nimike eli label, joka kertoo lyhyesti mitä pudotusvalikko sisältää.
+#### Yleistä pudotusvalikoista
 
-Mobiili-käyttöliittymissä käytetään käyttöjärjestelmien valmiita pudotusvalikkojen toteutusratkaisuja. Desktop-käyttöliittymiin pudotusvalikot toteutetaan itse. Seuraavaksi käydään läpi pudotusvalikkojen design ja toiminnallisuus desktop-käyttöliittymissä. 
+* Jokaisella pudotusvalikolla on valikon nimike eli label, joka kertoo lyhyesti mitä pudotusvalikko sisältää. Label on yleensä pudotusvalikon yllä (esim. filttereissä), mutta se voi olla myös pudotusvalikon vieressä (Näytä tuloksia sivulla -pudotusvalikko). Label noudattaa label-tekstin tyylejä, ks. Typografia. 
+* Valittu vaihtoehto tai vaihtoehdot tulevat näkyviin pudotusvalikon kenttään. 
+* Pudotusvalikot venyvät leveyttä sisältönsä mukaan, kaikki eivät siis välttämättä ole samanlevyisiä. 
 
-#### Tavallinen pudotusvalikko
+Kapea pudotusvalikko, jonka label on valikon vieressä:
+
+![Kapean sisällön vuoksi kapea pudotusvaliko.](images/dropdown_pieni.png)
+
+Leveä pudotusvalikko, jonka label on valikon yläpuolella:
+
+![Leveämmän sisällön vuoksi leveä pudotusvalikko.](images/pudotusvalikko_iso.png)
+
+* Pudotusvalikoissa käytetään selainten ja mobiilikäyttöjärjestelmien valmiita elementtejä niin pitkälle kuin mahdollista. Tyylit muotoillaan Tilastokeskuksen ilmeeseen sopiviksi. 
+
+##### Pudotusvalikkojen yhteiset tyylit
+
+Nämä tyylit ovat kaikille pudotusvalikoille yhteisiä.
+
+|                               | Font                     | Font-size | Color   | Background-color | Border  |
+| ----------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- |
+| **Pudotusvalikon label**      | Source Sans Pro Semibold | 17px      | #000000 |                  |         |
+| **Pudotusvalikko**            |                          |           | #ffffff |                  | #c9c9c9 |
+| **Kentän nuoli**              |                          |           | #0073b0 |                  |         |
+| **Pudotusvalikon tekstit**    | Source Sans Pro regular  | 16px/1rem | #000000 |                  |         |
+
+#### Tavallinen pudotusvalikko desktop-käyttöliittymissä
 
 ![Kiinni oleva pudotusvalikko.](images/pudotusvalikko.png)
 
-Jokaisen pudotusvalikon yllä on valikon nimike eli label, joka kertoo lyhyesti mitä pudotusvalikko sisältää. Label noudattaa label-tekstin tyylejä, ks. Typografia. Pudotusvalikon kentässä näkyy mikä valikon vaihtoehdoista on valittuna. Valikon kenttää klikkaamalla valikko avautuu ja vaihtoehdot tulevat näkyviin. Kun valikko on kiinni, kentän nuoli osoittaa alaspäin. Avatun valikon nuoli osoittaa ylöspäin. 
+Tavallisesta pudotusvalikosta voi valita vain yhden listan vaihtoehdoista. Kentässä näkyy mikä valikon vaihtoehdoista on valittuna. Valikon kenttää klikkaamalla valikko avautuu ja vaihtoehdot tulevat näkyviin. Kun valikko on kiinni, kentän nuoli osoittaa alaspäin. Avatun valikon nuoli osoittaa ylöspäin: 
 
 ![Avattu pudotusvalikko.](images/pudotusvalikko_auki.png)
 
@@ -684,16 +735,14 @@ Jos pudotusvalikko sisältää yli 20 vaihtoehtoa, valikon sisään on hyvä lis
 
 ##### Tavallisen pudotusvalikon tyylit
 
+Tässä on kerrottu vain tavallisia pudotusvalikkoja koskevat tyylit. Osa tyyleistä on määritetty kohdassa Pudotusvalikkojen yhteiset tyylit. 
+
 |                               | Font                     | Font-size | Color   | Background-color | Border  |
 | ----------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- |
-| **Pudotusvalikon label**      | Source Sans Pro Semibold | 17px      | #000000 |                  |         |
-| **Pudotusvalikko**            |                          |           | #ffffff |                  | #c9c9c9 |
-| **Kentän nuoli**              |                          |           | #0073b0 |                  |         |
-| **Pudotusvalikon tekstit**    | Source Sans Pro regular  | 16px/1rem | #000000 |                  |         |
 | **Valikon vaihtoehdon hover** | Source Sans Pro regular  | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
 | **Valittu vaihtoehto**        | Source Sans Pro regular  | 16px/1rem | #000000 | #f2f2f2          | #c9c9c9 |
 
-#### Multi select (monen valinnan) pudotusvalikko
+#### Multi select (monen valinnan) pudotusvalikko desktop-käyttöliittymissä
 
 Multi select -pudotusvalikosta voi valita useamman vaihtoehdon.
 
@@ -725,18 +774,16 @@ Jos pudotusvalikossa vaihtoehtoja on yli 14, valikko ei veny pituutta vaan siit�
 
 ##### Multi select -pudotusvalikon tyylit
 
-|                                    | Font                     | Font-size | Color   | Background-color | Border  | Height             | Width              |
-| ---------------------------------- | ------------------------ | --------- | ------- | ---------------- | ------- | ------------------ | ------------------ |
-| **Pudotusvalikon label**           | Source Sans Pro Semibold | 17px      | #000000 |                  |         |                    |                    |
-| **Pudotusvalikko**                 |                          |           | #ffffff |                  | #c9c9c9 |                    |                    |
-| **Kentän nuoli**                   |                          |           | #0073b0 |                  |         |                    |                    |
-| **Pudotusvalikon tekstit**         | Source Sans Pro regular  | 16px/1rem | #000000 |                  |         |                    |                    |
-| **Checkbox-valintaruutu**          |                          |           |         | #ffffff          | #c9c9c9 | 23px               | 23px               |
-| **Valitun checkboxin check-ikoni** |                          |           | #0073b0 |                  |         | (riippuu ikonista) | (riippuu ikonista) |
+Tässä on kerrottu vain Multi select -pudotusvalikkoja koskevat tyylit. Osa tyyleistä on määritetty kohdassa Pudotusvalikkojen yhteiset tyylit.  
+
+|                                    | Color   | Background-color | Border | Height             | Width              |
+| ---------------------------------- | ------- | ---------------- | ------ | ------------------ | ------------------ |
+| **Checkbox-valintaruutu**          | #ffffff | #c9c9c9          | 23px   | 23px               |
+| **Valitun checkboxin check-ikoni** | #0073b0 |                  |        | (riippuu ikonista) | (riippuu ikonista) |
 
 #### Pudotusvalikoiden saavutettavuus
 
-* Pudotusvalikon yläpuolella on sen nimike eli label. Label kertoo lyhyesti mitä pudotusvalikko sisältää. 
+* Pudotusvalikolla on nimike eli label. Label kertoo lyhyesti mitä pudotusvalikko sisältää. 
 * Ruudunlukijaa käyttäville kerrotaan pudotusvalikon status eli onko valikko kiinni vai auki.
 * Ruudunlukijaa käyttäville kerrotaan mikä tai mitkä valikon vaihtoehdoista ovat valittuna.
 * Näppäimistökäytössä noudatetaan html-pudotusvalikoiden oletustoiminnallisuutta: 
