@@ -370,6 +370,31 @@ Varoitus-bannerin tyylit
 
 ### Elementtien menut
 
+![Avainluvun avattu menu.](images/avainluku_menu.png)
+
+Avainlukujen, tilastotaulukoiden ja tilastokuvioiden oikeasta yläkulmasta löytyy menu-ikoni. Menu sisältää linkin tietokantaan siihen tietokantataulukkoon, josta elementin data on peräisin, datan lataamisen eri formaateissa, linkin elementin jakamiseen sosiaalisessa mediassa sekä suosikkeihin lisäämisen toiminnon (tulossa verkkosivustolle myöhemmin). 
+
+Kun menun avaa, menu-ikoni muuttuu ruksiksi. Ruksista menun saa kiinni. Menun sulkeuduttua ikoni palaa jälleen menu-ikoniksi. Näppäimistökäytössä menun avaaminen, sulkeminen, selaaminen ja valintojen tekeminen toimii samalla tavalla kuin tavalliset pudotusvalikot, ks. kohta Pudotusvalikoiden saavutettavuus. Menu aukeaa menu-ikonin alle elementtinsä päälle sekä pienillä että isoilla näytöillä. 
+
+Menussa ensimmäisenä oleva Taulukko tietokannassa -linkki vie tietokantaan siihen tietokantataulukkoon, josta elementin data on peräisin. Koska tietokantataulukko sijaitsee eri verkkopalvelussa, linkki on ulkoinen linkki, ks. kohta Ulkoinen linkki. 
+
+Dataan pohjautuvien elementtien menuissa on tarjolla ainakin datan lataaminen taulukkomuodossa: mm. xlsx- ja csv-formaateissa. Jos elementti on tilastokuvio, tarjolla on myös datan lataaminen kuvamuodossa: mm. svg- ja png-formaateissa. Formaatti ilmoitetaan suluissa Lataa taulukko - tai Lataa kuvio -tekstien perässä. 
+
+![Tilastokuvion menu sisältää datan lataamisen taulukkomuodon lisäksi kuvamuodossa.](images/menu_kuvio.png)
+
+|                                      | Font            | Color   | Background-color | Border  | Height                       | Width                        |
+| ------------------------------------ | --------------- | ------- | ---------------- | ------- | ---------------------------- | ---------------------------- |
+| Menu-ikoni                           |                 | #000000 |                  |         | (riippuu valitusta ikonista) | (riippuu valitusta ikonista) |
+| Ruksi-ikoni                          |                 | #000000 |                  |         | (riippuu valitusta ikonista) | (riippuu valitusta ikonista) |
+| Menun laatikko                       |                 |         | #ffffff          | #c9c9c9 |                              |                              |
+| Menun horisontaalinen divider        |                 |         |                  | #c9c9c9 |                              |                              |
+| Linkki tietokantataulukkoon          | Ulkoinen linkki |         |                  |         |                              |                              |
+| Muiden toimintojen teksti            | Leipäteksti     |         |                  |         |                              |                              |
+| Menun listan kohdan hover                   |                 |         | #f2f2f2          |         |                              |                              |
+| Menun listan kohta selected/pressed-tilassa |                 |         | #f2f2f2          |         |                              |                              |
+
+
+
 ### Info-laatikko
 
 Info-laatikko on väritaustainen muusta sisällöstä erottuva elementti. Sen sisältö liittyy sivun muuhun sisältöön, mutta sen halutaan erottautuvan muusta sisällöstä.  
@@ -596,7 +621,7 @@ Mobiilissa ja pienillä näytöillä laatikon sisältö menee allekkain:
 
 ![Mobiilissa laatikon sisältö on järjestäytynyt allekkain.](images/lyhenteidenselitykset_laatikko_mobiili.png)
 
-Isoilla näytöillä laatikko ja laatikon sisältö sisältö levittäytyy sivusuunnassa:
+Isoilla näytöillä laatikko ja laatikon sisältö sisältö levittäytyy sivusuunnassa. Tietokantataulukoiden yhteydessä se on yhtä leveä kuin tietokantataulukoiden väliset dividerit eli se asettuu niiden kanssa samaan linjaan:
 
 ![Isolla näytöllä laatikko ja sen sisältö on levittäytynyt sivusuunnassa.](images/lyhenteidenselitykset_laatikko_desktop.png)
 
