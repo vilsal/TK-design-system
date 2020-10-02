@@ -71,6 +71,8 @@
     - [Pudotusvalikoiden saavutettavuus](#pudotusvalikoiden-saavutettavuus)
   - [Pääkohdat](#pääkohdat)
   - [Tagit](#tagit)
+    - [Aihe-tagit](#aihe-tagit)
+    - [Muut tagit](#muut-tagit)
   - [Tilastokuviot](#tilastokuviot)
     - [Kuviot pienillä näytöillä](#kuviot-pienillä-näytöillä)
     - [Kuviot isoilla näytöillä](#kuviot-isoilla-näytöillä)
@@ -110,32 +112,33 @@
 ## Typografia
 Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista on tässä ilmoitettu pikseleinä, ne tulee toteuttaa suhteellisina arvoina (em tai rem). 
 
-| Taso                                                    | Font                           | Font-size                         | Font-family                                                    | Color   | Text-align                      | Vertical-align |
-| ------------------------------------------------------- | ------------------------------ | --------------------------------- | -------------------------------------------------------------- | ------- | ------------------------------- | -------------- |
-| **Leipäteksti**                                         | Source Sans Pro, regular       | 16px/1rem                         | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |                                 |                |
-| **H1**                                                  | Barlow, regular                | 34px                              |                                                                | #000000 |                                 |                |
-| **H2**                                                  | Barlow, regular                | 28px                              |                                                                | #000000 |                                 |                |
-| **H3**                                                  | Barlow, regular                | 22px                              |                                                                | #000000 |                                 |                |
-| **H4**                                                  | Barlow, medium                 | 16px                              |                                                                | #000000 |                                 |                |
-| **H5**                                                  | Barlow, medium                 | 14px                              |                                                                | #000000 |                                 |                |
-| **Introteksti** (aiheessa/tarkan aiheessa)              | Barlow, medium                 | 14px                              |                                                                | #000000 |                                 |                |
-| **Tagit**  (tyyppitagit)                                | Barlow, semibold               | 14px                              |                                                                | #333333 |                                 |                |
-| **Päiväys ja kirjoittaja** (blokkien nostoelementeissä) | Barlow, regular                | 14px                              |                                                                | #000000 |                                 |                |
-| **Ingressi**                                            | Barlow regular                 | 17px/1.255rem                     |                                                                | #000000 |
-| **Iso leipäteksti (esim. asiantuntijan nimi)**          | Source Sans Pro, regular       | 18px                              |                                                                | #000000 |                                 |                |
-| **Label**                                               | Source Sans Pro Semibold       | 17px                              |                                                                | #000000 |                                 |                |
-| **Murupolku, linkki**                                   | Barlow medium                  | 14px                              |                                                                | #006ca5 |                                 |                |
-| **Murupolku, ei linkki**                                | Barlow, medium                 | 14px                              |                                                                | #000000 |                                 |                |
-| **Taulukon otsikko**                                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
-| **Taulukon sarake- ja riviotsikot**                     | Barlow Semi Condensed SemiBold | 1rem (16px)                       |                                                                | #000000 | ks. taulukon solujen text-align | bottom         |
-| **Taulukon solut: numero tai numeron korvaava teksti**  | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) |                                                                | #000000 | right                           | bottom         |
-| **Taulukon solut: teksti**                              | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) |                                                                | #000000 | left                            | bottom         |
-| **Taulukon alaviite**                                   | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
-| **Taulukon ja kuvion lähdemerkintä**                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
-| **Tilastokuvion otsikko**                               | Barlow Semi Condensed medium   | 1rem (16px)                       |                                                                | #000000 | center                          |                |
-| **Tilastokuvion alaotsikko**                            | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 | center                          |                |
-| **Tilastokuvion muut tekstit**                          | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
-| **Tilastokuvion tooltip**                               | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
+| Taso                                                    | Font                            | Font-size                         | Font-family                                                    | Color   | Text-align                      | Vertical-align |
+| ------------------------------------------------------- | ------------------------------- | --------------------------------- | -------------------------------------------------------------- | ------- | ------------------------------- | -------------- |
+| **Leipäteksti**                                         | Source Sans Pro, regular        | 16px/1rem                         | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |                                 |                |
+| **H1**                                                  | Barlow, regular                 | 34px                              |                                                                | #000000 |                                 |                |
+| **H2**                                                  | Barlow, regular                 | 28px                              |                                                                | #000000 |                                 |                |
+| **H3**                                                  | Barlow, regular                 | 22px                              |                                                                | #000000 |                                 |                |
+| **H4**                                                  | Barlow, medium                  | 16px                              |                                                                | #000000 |                                 |                |
+| **H5**                                                  | Barlow, medium                  | 14px                              |                                                                | #000000 |                                 |                |
+| **Introteksti** (aiheessa/tarkan aiheessa)              | Barlow, medium                  | 14px                              |                                                                | #000000 |                                 |                |
+| **Tagit**                                               | Barlow, semibold                | 14px                              |                                                                | #333333 |                                 |                |
+| **Aihe-tagit**                                          | Source Sans Pro, regular        | 14px                              |                                                                | #ffffff |                                 |                |
+| **Päiväys ja kirjoittaja** (blokkien nostoelementeissä) | Barlow, regular                 | 14px                              |                                                                | #000000 |                                 |                |
+| **Ingressi**                                            | Barlow, regular                 | 17px/1.255rem                     |                                                                | #000000 |
+| **Iso leipäteksti (esim. asiantuntijan nimi)**          | Source Sans Pro, regular        | 18px                              |                                                                | #000000 |                                 |                |
+| **Label**                                               | Source Sans Pro, semibold       | 17px                              |                                                                | #000000 |                                 |                |
+| **Murupolku, linkki**                                   | Barlow, medium                  | 14px                              |                                                                | #006ca5 |                                 |                |
+| **Murupolku, ei linkki**                                | Barlow, medium                  | 14px                              |                                                                | #000000 |                                 |                |
+| **Taulukon otsikko**                                    | Barlow Semi Condensed, regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
+| **Taulukon sarake- ja riviotsikot**                     | Barlow Semi Condensed, semibold | 1rem (16px)                       |                                                                | #000000 | ks. taulukon solujen text-align | bottom         |
+| **Taulukon solut: numero tai numeron korvaava teksti**  | Barlow Semi Condensed, regular  | 0.9rem (15px) tai 0.875rem (14px) |                                                                | #000000 | right                           | bottom         |
+| **Taulukon solut: teksti**                              | Barlow Semi Condensed, regular  | 0.9rem (15px) tai 0.875rem (14px) |                                                                | #000000 | left                            | bottom         |
+| **Taulukon alaviite**                                   | Barlow Semi Condensed, regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
+| **Taulukon ja kuvion lähdemerkintä**                    | Barlow Semi Condensed, regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
+| **Tilastokuvion otsikko**                               | Barlow Semi Condensed, medium   | 1rem (16px)                       |                                                                | #000000 | center                          |                |
+| **Tilastokuvion alaotsikko**                            | Barlow Semi Condensed, regular  | 1rem (16px)                       |                                                                | #000000 | center                          |                |
+| **Tilastokuvion muut tekstit**                          | Barlow Semi Condensed, regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
+| **Tilastokuvion tooltip**                               | Barlow Semi Condensed, regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
 
 ### Typografian saavutettavuus
 * Fonttien koot tulee toteuttaa suhteellisina arvoina (em tai rem), jolloin käyttäjät pystyvät suurentamaan niitä halutessaan. 
@@ -685,7 +688,6 @@ Painike käynnistää toiminnon. Painikkeita on neljää eri tyyliä ja niiden k
 * Painikkeet, etenkin ensisijaiset painikkeet erottuvat muusta käyttöliittymästä helposti, joten on suositeltavaa käyttää niitä vain rajattu määrä.
 * Painiketyylejä ei käytetä linkeissä linkkityylien asemasta.
 
-
 #### Painikkeiden yhteiset ominaisuudet
 
 Nämä ominaisuudet pätevät kaikille painikkeille painikkeen tyypistä tai laitteen/selainikkunan koosta riippumatta. 
@@ -923,6 +925,29 @@ Desktop-koossa elementin vasemmalla puolella on ohut elementin kanssa samankorku
 | **Vasen pystyviiva** | #000000 | elementin pituus | 1px       | ei ole mobiilissa |
 
 ### Tagit
+
+#### Aihe-tagit
+
+Aihe-tagit ovat linkkejä niiden aiheiden- ja tarkkojen aiheiden -sivuille, joihin sivu kuuluu. Niitä on tarkkojen aiheiden, tilastojen, tiedotteiden, katsausten ja Muutoksia tilastossa -tiedotteiden sivuilla. Niitä voi olla yhdellä sivulla useita, sillä sivu voi kuulua useaan eri aiheeseen ja tarkkaan aiheeseen. 
+
+![Aihe-tageja voi olla yhdellä sivulla monta.](images/aihe_tagit.png)
+
+Aihe-tagit sijaitsevat murupolun alla rinnakkain sekä pienillä että isoilla näytöillä. Aihe-tagit eivät lukkiudu sivun yläosaan kun sivua skrollataan alaspäin, toisin kuin murupolku. Ne ovat kuitenkin navigaatio-elementtejä. 
+
+Pienillä näytöillä aihe-tagit pysyvät yhdellä rivillä rinnakkain. Jos ne kaikki eivät mahdu kerralla näytölle näkyviin, ne menevät näytön oikean reunan yli. Näytön laidan yli menneet aihe-tagit saa näkyviin liikuttamalla tagien riviä vaakasuunnassa. Tageista tulee siis horisontaalisesti skrollattava elementti. Tagi-rivin oikeaan reunaan tulee näkyviin nuoli, joka vihjaa rivin liikuteltavuudesta. Kun riviä on liikutettu vasemmalle ja tageja menee näytön vasemman reunan yli piiloon, myös tagi-rivin vasempaan laitaan tulee näkyviin nuoli. 
+
+![Nuoli vihjaa, että lisää tageja saa näkyviin kun riviä liikuttaa sivusuunnassa.](images/aihe_tagit_nuoli.png)
+
+Ruudunlukijakäyttäjille tagit luetellaan listana. (Varmistettava vielä miten ruudunlukijaa käyttävät pystyvät klikkaamaan tagia.)
+
+**Aihe-tagien tyylit**
+
+| Font                    | Font-size | Color   | Background-color | Padding | Border-radius |
+| ----------------------- | --------- | ------- | ---------------- | ------- | ------------- |
+| Source Sans Pro regular | 14px      | #ffffff | #0073b0          | 2px     | 2,5em (32px)  |
+
+
+#### Muut tagit
 
 ![Tagien paikka on otsikon yläpuolella. ](images/tagin_paikka.png)
 
