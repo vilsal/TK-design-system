@@ -50,14 +50,17 @@
     - [Ulkoinen linkki](#ulkoinen-linkki)
   - [Lyhenteiden selitykset -laatikko](#lyhenteiden-selitykset--laatikko)
   - [Murupolku](#murupolku)
-  - [Painike](#painike)
-    - [Painikkeiden saavutettavuus](#painikkeiden-saavutettavuus)
+  - [Painikkeet](#painikkeet)
+    - [Yleistä painikkeiden saavutettavuudesta](#yleistä-painikkeiden-saavutettavuudesta)
     - [Painikkeiden yhteiset ominaisuudet](#painikkeiden-yhteiset-ominaisuudet)
     - [Painikkeiden koko](#painikkeiden-koko)
     - [Ensisijainen painike](#ensisijainen-painike)
     - [Toisijainen painike](#toisijainen-painike)
     - [Kolmassijainen painike](#kolmassijainen-painike)
     - [Negatiivi-painike](#negatiivi-painike)
+  - [Pilleri-painikkeet](#pilleri-painikkeet)
+    - [Pilleri-painikkeiden saavutettavuus](#pilleri-painikkeiden-saavutettavuus)
+    - [Pilleri-painikkeiden tyylit](#pilleri-painikkeiden-tyylit)
   - [Pudotusvalikko](#pudotusvalikko)
     - [Yleistä pudotusvalikoista](#yleistä-pudotusvalikoista)
       - [Pudotusvalikkojen yhteiset tyylit](#pudotusvalikkojen-yhteiset-tyylit)
@@ -120,7 +123,7 @@ Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista o
 | **Päiväys ja kirjoittaja** (blokkien nostoelementeissä) | Barlow, regular                | 14px                              |                                                                | #000000 |                                 |                |
 | **Ingressi**                                            | Barlow regular                 | 17px/1.255rem                     |                                                                | #000000 |
 | **Iso leipäteksti (esim. asiantuntijan nimi)**          | Source Sans Pro, regular       | 18px                              |                                                                | #000000 |                                 |                |
-| **Label**                                               | Source Sans Pro                | 17px                              |                                                                | #000000 |                                 |                |
+| **Label**                                               | Source Sans Pro Semibold       | 17px                              |                                                                | #000000 |                                 |                |
 | **Murupolku, linkki**                                   | Barlow medium                  | 14px                              |                                                                | #006ca5 |                                 |                |
 | **Murupolku, ei linkki**                                | Barlow, medium                 | 14px                              |                                                                | #000000 |                                 |                |
 | **Taulukon otsikko**                                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
@@ -128,10 +131,11 @@ Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista o
 | **Taulukon solut: numero tai numeron korvaava teksti**  | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) |                                                                | #000000 | right                           | bottom         |
 | **Taulukon solut: teksti**                              | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) |                                                                | #000000 | left                            | bottom         |
 | **Taulukon alaviite**                                   | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
-| **Taulukon lähdemerkintä**                              | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
+| **Taulukon ja kuvion lähdemerkintä**                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
 | **Tilastokuvion otsikko**                               | Barlow Semi Condensed medium   | 1rem (16px)                       |                                                                | #000000 | center                          |                |
 | **Tilastokuvion alaotsikko**                            | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 | center                          |                |
 | **Tilastokuvion muut tekstit**                          | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
+| **Tilastokuvion tooltip**                               | Barlow Semi Condensed regular  | 1rem (16px)                       |                                                                | #000000 |                                 |                |
 
 ### Typografian saavutettavuus
 * Fonttien koot tulee toteuttaa suhteellisina arvoina (em tai rem), jolloin käyttäjät pystyvät suurentamaan niitä halutessaan. 
@@ -382,14 +386,14 @@ Dataan pohjautuvien elementtien menuissa on tarjolla ainakin datan lataaminen ta
 
 ![Tilastokuvion menu sisältää datan lataamisen taulukkomuodon lisäksi kuvamuodossa.](images/menu_kuvio.png)
 
-|                                      | Font            | Color   | Background-color | Border  | Height                       | Width                        |
-| ------------------------------------ | --------------- | ------- | ---------------- | ------- | ---------------------------- | ---------------------------- |
-| Menu-ikoni                           |                 | #000000 |                  |         | (riippuu valitusta ikonista) | (riippuu valitusta ikonista) |
-| Ruksi-ikoni                          |                 | #000000 |                  |         | (riippuu valitusta ikonista) | (riippuu valitusta ikonista) |
-| Menun laatikko                       |                 |         | #ffffff          | #c9c9c9 |                              |                              |
-| Menun horisontaalinen divider        |                 |         |                  | #c9c9c9 |                              |                              |
-| Linkki tietokantataulukkoon          | Ulkoinen linkki |         |                  |         |                              |                              |
-| Muiden toimintojen teksti            | Leipäteksti     |         |                  |         |                              |                              |
+|                                             | Font            | Color   | Background-color | Border  | Height                       | Width                        |
+| ------------------------------------------- | --------------- | ------- | ---------------- | ------- | ---------------------------- | ---------------------------- |
+| Menu-ikoni                                  |                 | #000000 |                  |         | (riippuu valitusta ikonista) | (riippuu valitusta ikonista) |
+| Ruksi-ikoni                                 |                 | #000000 |                  |         | (riippuu valitusta ikonista) | (riippuu valitusta ikonista) |
+| Menun laatikko                              |                 |         | #ffffff          | #c9c9c9 |                              |                              |
+| Menun horisontaalinen divider               |                 |         |                  | #c9c9c9 |                              |                              |
+| Linkki tietokantataulukkoon                 | Ulkoinen linkki |         |                  |         |                              |                              |
+| Muiden toimintojen teksti                   | Leipäteksti     |         |                  |         |                              |                              |
 | Menun listan kohdan hover                   |                 |         | #f2f2f2          |         |                              |                              |
 | Menun listan kohta selected/pressed-tilassa |                 |         | #f2f2f2          |         |                              |                              |
 
@@ -670,11 +674,11 @@ Syvämmällä hierarkian tasoilla murupolussa näytetään vain linkki yhtä tas
 | **Mobiili (matalilla hierarkian tasoilla)** | Tilastotieto / Suomalaisten matkailu                               |
 | **Mobiili (syvillä hierarkian tasoilla)**   | < Tilastojulkistus                                                 |
 
-### Painike
+### Painikkeet
 
 Painike käynnistää toiminnon. Painikkeita on neljää eri tyyliä ja niiden koko vaihtelee laitteen tai selainikkunan koosta riippuen. 
 
-#### Painikkeiden saavutettavuus
+#### Yleistä painikkeiden saavutettavuudesta
 
 * Painike käynnistää jonkin toiminnon. 
 * Painikkeen tekstissä kerrotaan lyhyesti ja ytimekkäästi minkä toiminnon painike käynnistää. 
@@ -754,6 +758,36 @@ Negatiivi-painike on painike tummalla taustalla. Negatiivi-painikkeen tyylit ova
 | **Disabled**         | #7f7f7f | #ffffff          | #aaaaaa | 4px, 4px, 5px, rgba(85,85,85,0.35)          |                   |
 | **Hover**            | #0073b0 | #f2f2f2          | #0073b0 | 4px, 4px, 5px, rgba(85,85,85,0.35)          |                   |
 | **Focus**            | #0073b0 | #f2f2f2          | #0073b0 | 2px, 2px, 5px, rgba(102,102,102,0.35)       | #ffffff           |
+
+### Pilleri-painikkeet
+
+Pilleri-painikkeet on painikkeita, joilla on aktiivinen ja epäaktiivinen tila. Painikkeet vaikuttavat sivuston käyttöliittymään tai osaan siitä. Sivuston käyttöliittymä muuttuu sen mukaan mikä painikkeista on aktiivisena. 
+
+![Sivuston kielen valinnassa käytetään pilleri-painikkeita. Vain yksi kieli voi kerrallaan olla valittuna.](images/kielivalinta.png)
+
+Pilleri-painikkeet esiintyvät vähintään kahden painikkeen ryhmissä. Ryhmän painikkeista vain yksi voi olla kerrallaan aktiivinen. Kun toinen painike aktivoidaan, aikaisemmin aktiivisena ollut painike menee epäaktiiviseen tilaan. Toiminnaltaan pilleri-painikkeet muistuttavat siis radio buttoneita ja välilehtiä. 
+
+Pilleri-painikkeet eroavat visuaalisesti muista painikkeista pyöreämmällä ulkomuodollaan. Pilleri-painikkeissa voi olla ikoni mukana havainnollistamassa painikkeet toimintoa. Esim. Julkaisut-listaussivulla pilleri-painikkeilla voi muuttaa listan kuvien kanssa näytettäväksi tai pelkäksi tekstiksi. Pilleri-painikkeissa on mukana näitä toimintoja kuvaavat ikonit: 
+
+![Julkaisut-listaussivulla ikoneilla havainnollistetaan pilleri-painikkeiden toimintoja.](images/listanakyma_painikkeet.png) 
+
+#### Pilleri-painikkeiden saavutettavuus
+* Käyttäjille kerrotaan kunkin pilleri-painikkeen kohdalla kumpi painikkeen tiloista on päällä. Painikkeen visuaalinen ilme vaihtuu selkeästi painikkeen tilan mukaan. Aktiivisen painikkeen alt-tekstissä kerrotaan "Valittu" ja epäaktiivisen kohdalla "Ei valittu", jotta ruudunlukijaa käyttävät saavat myös tiedon painikkeen tilasta. 
+* Pilleri-painikkeet voi rinnastaa toiminnaltaan ja teknisesti radio buttoneihin tai välilehtiin. Radio buttonien ja välilehtien tapaan niiden tulee kuulua html:ssä samaan ryhmään. 
+
+#### Pilleri-painikkeiden tyylit
+
+Pilleri-painikkeiden tilojen yhteiset tyylit:
+
+| Font                    | Font-size   | Padding | Border-radius |
+| ----------------------- | ----------- | ------- | ------------- |
+| Source Sans Pro regular | 1rem (16px) | 2px     | 2,5em (32px)  |
+
+Pilleri-painikkeiden tilojen omat tyylit:
+| Tila              | Color   | Background-color          | Ikonin color | Ikonin width       | Ikoninen height    |
+| ----------------- | ------- | ------------------------- | ------------ | ------------------ | ------------------ |
+| **Aktiivinen**    | #ffffff | #0073b0                   | #ffffff      | (riippuu ikonista) | (riippuu ikonista) |
+| **Epäaktiivinen** | #0073b0 | ei taustaväriä/läpinäkyvä | #0073b0      | (riippuu ikonista) | (riippuu ikonista) |
 
 ### Pudotusvalikko
 (Eng. dropdown)
@@ -1105,14 +1139,14 @@ Taulukon rivi- ja sarakeotsikoiden varjostuksen tyylit (2px varjo lukitun otsiko
 | **Sarakeotsikoiden Outer shadow** | 0px 2px | rgba (102,102,102,0.35) |
 
 ##### Taulukon fontit
-|                                                                                                          | Font                           | Font-size                         | Vertical-align | Text-align                      |
-| -------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------------------------- | -------------- | ------------------------------- |
-| **Taulukon otsikko**                                                                                     | Barlow Semi Condensed regular  | 1rem (16px)                       |                |                                 |
-| **Taulukon sarake- ja riviotsikot**                                                                      | Barlow Semi Condensed SemiBold | 1rem (16px)                       | bottom         | ks. taulukon solujen text-align |
-| **Taulukon solut: numeroksi merkitty sisältö ja numeron korvikkeena oleva teksti (esim. Puuttuva arvo)** | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | bottom         | right                           |
-| **Taulukon solut: tekstiksi merkitty sisältö**                                                           | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | bottom         | left                            |
-| **Taulukon alaviite**                                                                                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                |                                 |
-| **Taulukon lähdemerkintä**                                                                               | Barlow Semi Condensed regular  | 1rem (16px)                       |                |                                 |
+|                                                                                                          | Font                           | Font-size                         | Text-align                      | Vertical-align |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------------------------- | ------------------------------- | -------------- |
+| **Taulukon otsikko**                                                                                     | Barlow Semi Condensed regular  | 1rem (16px)                       |                                 |                |
+| **Taulukon sarake- ja riviotsikot**                                                                      | Barlow Semi Condensed SemiBold | 1rem (16px)                       | ks. taulukon solujen text-align | bottom         |
+| **Taulukon solut: numeroksi merkitty sisältö ja numeron korvikkeena oleva teksti (esim. Puuttuva arvo)** | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | right                           | bottom         |
+| **Taulukon solut: tekstiksi merkitty sisältö**                                                           | Barlow Semi Condensed regular  | 0.9rem (15px) tai 0.875rem (14px) | left                            | bottom         |
+| **Taulukon alaviite**                                                                                    | Barlow Semi Condensed regular  | 1rem (16px)                       |                                 |                |
+| **Taulukon lähdemerkintä**                                                                               | Barlow Semi Condensed regular  | 1rem (16px)                       |                                 |                |
 
 ### Tooltip
 
