@@ -317,6 +317,7 @@ Neutraalin bannerin tyylit:
 |                          | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border  | Padding                          |
 | ------------------------ | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------- | -------------------------------- |
 | **Banneri-laatikko**     |                          |                |         |                 | #ffffff          | #a40084 | top/bottom: 2rem left/righ: 1rem |
+| **Otsikko = iso leipäteksti** | Source Sans Pro, regular | 18px           | #000000 |                 |                  |     
 | **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #000000 |                 |                  |         |                                  |
 | **Linkki**               | Source Sans Pro, regular | 1rem (n. 16px) | #006ca5 | underline       |                  |         |                                  |
 
@@ -342,7 +343,8 @@ Huomio-bannerin tyylit:
 |                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border | Padding                          |
 | ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ | -------------------------------- |
 | **Banneri-laatikko**         |                          |                |         |                 | a40084           |        | top/bottom: 2rem left/righ: 1rem |
-| **Teksti = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |                                  |
+| **Otsikko = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |                                  |
+| **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff |                 |                  |  
 | **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff | underline       |                  |        |                                  |
 | **Ikoni**                    |                          |                | #ffffff |                 |                  |        |                                  |
 
@@ -366,7 +368,8 @@ Varoitus-bannerin tyylit
 |                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border | Padding                          |
 | ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ | -------------------------------- |
 | **Banneri-laatikko**         |                          |                |         |                 | #c30045          |        | top/bottom: 2rem left/righ: 1rem |
-| **Teksti = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |                                  |
+| **Otsikko = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |                                  |
+| **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff |                 |                  |  
 | **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff | underline       |                  |        |
 | **Ikoni**                    |                          |                | #ffffff |                 |                  |        |                                  |
 
