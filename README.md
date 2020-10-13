@@ -22,6 +22,8 @@
   - [Avainluvut](#avainluvut)
     - [Avainlukujen tyylit](#avainlukujen-tyylit)
   - [Bannerit](#bannerit)
+    - [Yleistä bannereista](#yleistä-bannereista)
+    - [Bannerien koko](#bannerien-koko)
     - [Neutraali banneri](#neutraali-banneri)
     - [Huomio-banneri](#huomio-banneri)
     - [Varoitus-banneri](#varoitus-banneri)
@@ -292,18 +294,23 @@ Avainluvut voivat sijaita katsauksessa tekstin seassa, jolloin ne ottavat teksti
 | Avainluvun linkki                         | tavallinen linkki nuolella  |           |         |                  |
 
 ### Bannerit
-Bannerit ovat huomiota herättäviä väliaikaisia elementtejä, joilla viestitään sivuston sisältöön liittyvistä muutoksista ja poikkeustilanteista. Bannereiden tarkoitus on vetää käyttäjien huomio puoleensa erottumalla sivuston muusta sisällöstä. Bannereita on eri tyylisiä, ja se minkä tyylinen banneri valitaan riippuu banneriin tulevasta sisällöstä. 
 
-Banneri ei ole sivuston kiinteä elementti vaan niille määritellään tietty aika, jonka ajan ne ovat verkkosivuilla näkyvissä. Verkkosivuston loppukäyttäjät eivät saa itse poistettua bannereita näkyvistä. Bannereita tulee käyttää harkitusti ja niillä viestitään vain poikkeuksellisista muutoksista ja tilanteista. 
+#### Yleistä bannereista
+Bannerit ovat huomiota herättäviä väliaikaisia elementtejä, joilla viestitään sivustoon ja sen sisältöön liittyvistä muutoksista ja poikkeustilanteista. Bannereiden tarkoitus on vetää käyttäjien huomio puoleensa erottumalla sivuston muusta sisällöstä. Bannereita on eri tyylisiä. Riippuu banneriin tulevasta sisällöstä minkä tyylinen banneri valitaan. 
 
-Bannerit sisältävät aina tekstiä ja sen lisäksi niissä voi olla linkki ja ikoni. Tekstin tulee kertoa ilmoitusasia lyhyesti ja ytimekkäästi. On suositeltavaa tarjota myös linkki sivulle, jossa asiasta kerrotaan lisää. 
+Banneri ei ole sivuston kiinteä elementti vaan niille määritellään tietty aika, jonka ajan ne ovat verkkosivuilla näkyvissä. Lähtökohtaisesti verkkosivuston loppukäyttäjät eivät saa itse poistettua bannereita näkyvistä, mutta muutamia poikkeuksia voi olla, kuten sivustouudistuksesta kertova banneri. Bannereita tulee käyttää harkitusti ja niillä viestitään vain poikkeuksellisista muutoksista ja tilanteista. 
+
+Bannerit sisältävät aina tekstiä ja sen lisäksi niissä voi olla linkki ja ikoni. Tekstin tulee kertoa ilmoitusasia lyhyesti ja ytimekkäästi. On suositeltavaa tarjota myös linkki sivulle, jossa asiasta kerrotaan lisää. Banneritekstin otsikkona käytetään ns. isoa leipätekstiä ja muun tekstin fonttina tavallista leipätekstiä. Bannereihin ei ole pakollista laittaa otsikkoa. 
+
+#### Bannerien koko
+Pienillä näytöillä bannerit ulottuvat näytön laidasta laitaan. Isoilla näytöillä yksittäistä sivua tai sen osaa koskevat bannerit ovat yhtä leveitä kuin se elementti, jonka sisällä ne ovat tai johon ne liittyvät. 
+
+Koko sivustoa koskevat bannerit näkyvät navigaatiopalkin alla ja ovat isoilla näytöillä yhtä leveitä kuin navigaatiopalkki. Esimerkiksi sivustouudistuksesta kertova banneri:
+![Neutraali banneri tilaston sivulla, desktop-versio.](images/banneri_sivustouudistus_desktop.png)
+
 
 #### Neutraali banneri
-Neutraalia banneria käytetään ilmoittamaan asiasta, joka käyttäjän on hyvä, mutta ei kriittistä huomata. Neutraali banneri erottuu sivuston muusta sisällöstä hienovaraisesti. Neutraalia banneria voidaan käyttää ilmoittamaan esimerkiksi tilastossa tapahtuneista muutoksista: 
-
-![Neutraali banneri tilaston sivulla, desktop-versio.](images/neutraali_banneri_tilaston_sivulla.png)
-
-Mobiili-näytöillä neutraali-banneri ulottuu näytön laidasta laitaan. Desktop-näytöillä banneri on yhtä leveä kuin se sivun blokki, jonka sisällä banneri on. 
+Neutraalia banneria käytetään ilmoittamaan asiasta, joka käyttäjän on hyvä, mutta ei kriittistä huomata. Neutraali banneri erottuu sivuston muusta sisällöstä hienovaraisesti. 
 
 Neutraali banneri, mobiili-versio:
 
@@ -312,6 +319,10 @@ Neutraali banneri, mobiili-versio:
 Neutraali banneri, desktop-versio:
 
 ![Neutraali banneri, desktop-versio.](images/neutraali_banneri_desktop.png)
+
+Neutraalia banneria voidaan käyttää ilmoittamaan esimerkiksi tilastossa tapahtuneista muutoksista: 
+
+![Neutraali banneri tilaston sivulla, desktop-versio.](images/neutraali_banneri_tilaston_sivulla.png)
 
 Neutraalin bannerin tyylit:
 |                          | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border  | Padding                          |
@@ -324,13 +335,7 @@ Neutraalin bannerin tyylit:
 
 #### Huomio-banneri
 
-Huomio-banneria käytetään ilmoittamaan asiasta, joka käyttäjän on tärkeää huomata. Huomio-banneri erottuu sivuston muusta sisällöstä voimakkaasti. Huomio-banneria voidaan käyttää esimerkiksi ilmoittamaan tieto, että käyttäjä ei ole uusimman tiedotteen sivulla vaan vanhalla:
-
-![Huomio-banneri vanhan tiedotteen sivulla.](images/huomio_banneri_tiedote_desktop.png)
-
-Huomio-bannerissa on voimakas taustaväri sekä vasemmassa laidassa iso huutomerkki-ikoni vetämässä käyttäjien huomiota puoleensa ja korostamassa ilmoituksen tärkeyttä. Myös teksti on hieman tavallista leipätekstiä isompaa ison leipätekstin fonttia. 
-
-Mobiili-näytöillä huomio-banneri ulottuu näytön laidasta laitaan. Desktop-näytöillä banneri on yhtä leveä kuin se sivun blokki tai osio, jonka sisällä banneri on. Esimerkiksi tiedotteen sivulla huomio-banneri on tekstipalstan levyinen. 
+Huomio-banneria käytetään ilmoittamaan asiasta, joka käyttäjän on tärkeää huomata. Se erottuu selkeästi sivuston muusta sisällöstä. Huomio-bannerissa on huomiota herättävä taustaväri sekä vasemmassa laidassa iso huutomerkki-ikoni vetämässä käyttäjien huomiota puoleensa ja korostamassa ilmoituksen tärkeyttä.
 
 Huomio-banneri, mobiili-versio:
 
@@ -339,23 +344,27 @@ Huomio-banneri, mobiili-versio:
 Huomio-banneri, desktop-versio:
 ![Huomio-banneri, desktop-versio.](images/huomio_banneri_desktop.png)
 
+ Huomio-banneria voidaan käyttää esimerkiksi ilmoittamaan tieto, että käyttäjä ei ole uusimman tiedotteen sivulla vaan vanhalla:
+
+![Huomio-banneri vanhan tiedotteen sivulla.](images/huomio_banneri_tiedote_desktop.png)
+
+ 
+
+
+
 Huomio-bannerin tyylit:
 |                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border | Padding                          |
 | ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ | -------------------------------- |
-| **Banneri-laatikko**         |                          |                |         |                 | a40084           |        | top/bottom: 2rem left/righ: 1rem |
-| **Otsikko = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |                                  |
-| **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff |                 |                  |  
-| **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff | underline       |                  |        |                                  |
-| **Ikoni**                    |                          |                | #ffffff |                 |                  |        |                                  |
+| **Banneri-laatikko**         |                          |                |         |                 | feead2          |        | top/bottom: 2rem left/righ: 1rem |
+| **Otsikko = iso leipäteksti** | Source Sans Pro, regular | 18px           | #000000 |                 |                  |        |                                  |
+| **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #000000 |                 |                  |  
+| **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #006ca5 | underline       |                  |        |                                  |
+| **Ikoni**                    |                          |                | #000000 |                 |                  |        |                                  |
 
 
 #### Varoitus-banneri
 
-Varoitus-banneria käytetään kriittisten ilmoitusten ja ongelmia yhteydessä, kuten silloin kun verkkopalvelussa on sen toimintaa haittaava tai estävä häiriö. 
-
-Varoitus-bannerissa on huomio-bannerin tapaan voimakas taustaväri sekä vasemmassa laidassa iso huutomerkki-ikoni vetämässä käyttäjien huomiota puoleensa ja korostamassa ilmoituksen tärkeyttä. Teksti on tavallista leipätekstiä isompaa ison leipätekstin fonttia. 
-
-Varoitus-banneri on desktop-näytöillä koko sisältöalueen levyinen (1200px) ja tulee navigaatiopalkin alle, murupolun yläpuolelle. 
+Varoitus-banneria käytetään kriittisten ilmoitusten ja ongelmia yhteydessä, kuten silloin kun verkkopalvelussa on sen toimintaa haittaava tai estävä häiriö. Varoitus-bannerissa on voimakas taustaväri sekä vasemmassa laidassa iso huutomerkki-ikoni vetämässä käyttäjien huomiota puoleensa ja korostamassa ilmoituksen tärkeyttä.
 
 Varoitus-banneri, mobiili-versio:
 
