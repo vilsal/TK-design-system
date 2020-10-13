@@ -342,14 +342,12 @@ Huomio-banneri, mobiili-versio:
 ![Huomio-banneri, mobiili-versio.](images/huomio_banneri_mobiili.png)
 
 Huomio-banneri, desktop-versio:
+
 ![Huomio-banneri, desktop-versio.](images/huomio_banneri_desktop.png)
 
  Huomio-banneria voidaan käyttää esimerkiksi ilmoittamaan tieto, että käyttäjä ei ole uusimman tiedotteen sivulla vaan vanhalla:
 
 ![Huomio-banneri vanhan tiedotteen sivulla.](images/huomio_banneri_tiedote_desktop.png)
-
- 
-
 
 
 Huomio-bannerin tyylit:
@@ -371,6 +369,7 @@ Varoitus-banneri, mobiili-versio:
 ![Varoitus-banneri, mobiiliversio.](images/varoitus_banneri_mobiili.png)
 
 Varoitus-banneri, desktop-versio:
+
 ![Varoitus-banneri, desktopversio.](images/varoitus_banneri_desktop_paikka.png)
 
 Varoitus-bannerin tyylit
