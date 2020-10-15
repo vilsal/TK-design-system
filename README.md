@@ -6,6 +6,11 @@
   - [Typografian saavutettavuus](#typografian-saavutettavuus)
 - [Kuvat](#kuvat)
   - [Hero-kuva](#hero-kuva)
+  - [Julkaisu-elementtien kuvat](#julkaisu-elementtien-kuvat)
+    - [Valokuvat](#valokuvat)
+    - [Place holder -kuvat](#place-holder--kuvat)
+    - [Julkaisu-elementtien kuvien koko](#julkaisu-elementtien-kuvien-koko)
+    - [Julkaisu-elementtien kuvien saavutettavuus](#julkaisu-elementtien-kuvien-saavutettavuus)
 - [Ikonit](#ikonit)
 - [Värit](#värit)
 - [Sivupohja](#sivupohja)
@@ -32,9 +37,6 @@
   - [Info-laatikko](#info-laatikko)
     - [Info-laatikon tyylit](#info-laatikon-tyylit)
   - [Jakoviiva](#jakoviiva)
-  - [Julkaisu-elementtien kuvat](#julkaisu-elementtien-kuvat)
-    - [Place holder -kuvat](#place-holder--kuvat)
-    - [Kuvien koko](#kuvien-koko)
   - [Laajennuspaneeli](#laajennuspaneeli)
     - [Yksittäinen laajennuspaneeli](#yksittäinen-laajennuspaneeli)
     - [Laajennuspaneeliryhmä](#laajennuspaneeliryhmä)
@@ -114,33 +116,33 @@
 ## Typografia
 Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista on tässä ilmoitettu pikseleinä, ne tulee toteuttaa suhteellisina arvoina (em tai rem). 
 
-| Taso                                                    | Font                            | Font-size                         | Font-family                                                    | Color   | Text-align                      | Vertical-align |
-| ------------------------------------------------------- | ------------------------------- | --------------------------------- | -------------------------------------------------------------- | ------- | ------------------------------- | -------------- |
-| **Leipäteksti**                                         | Source Sans Pro, regular        | 16px/1rem                         | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |                                 |                |
-| **H1**                                                  | Barlow, regular                 | 34px                              |Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #000000 |                                 |                |
-| **H2**                                                  | Barlow, regular                 | 28px                              |Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #000000 |                                 |                |
-| **H3**                                                  | Barlow, regular                 | 22px                              |Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #000000 |                                 |                |
-| **H4**                                                  | Barlow, medium                  | 16px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 |                                 |                |
-| **H5**                                                  | Barlow, medium                  | 14px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 |                                 |                |
-| **Introteksti** (aiheessa/tarkan aiheessa)              | Barlow, medium                  | 14px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 |                                 |                |
-| **Tagit**                                               | Barlow, semibold                | 14px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #333333 |                                 |                |
-| **Aihe-tagit**                                          | Source Sans Pro, regular        | 14px                              |Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #ffffff |                                 |                |
-| **Päiväys ja kirjoittaja** (blokkien nostoelementeissä) | Barlow, regular                 | 14px                              |Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #000000 |                                 |                |
-| **Ingressi**                                            | Barlow, regular                 | 17px/1.255rem                     |Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #000000 |
-| **Iso leipäteksti (esim. asiantuntijan nimi)**          | Source Sans Pro, regular        | 18px                              |Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #000000 |                                 |                |
-| **Label**                                               | Source Sans Pro, semibold       | 17px                              | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 |                                 |                |
-| **Murupolku, linkki**                                   | Barlow, medium                  | 14px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #006ca5 |                                 |                |
-| **Murupolku, ei linkki**                                | Barlow, medium                  | 14px                              |Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #000000 |                                 |                |
-| **Taulukon otsikko**                                    | Barlow Semi Condensed, regular  | 1rem (16px)                       |Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #000000 |                                 |                |
-| **Taulukon sarake- ja riviotsikot**                     | Barlow Semi Condensed, semibold | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 | ks. taulukon solujen text-align | bottom         |
-| **Taulukon solut: numero tai numeron korvaava teksti**  | Barlow Semi Condensed, regular  | 0.9rem (15px) tai 0.875rem (14px) |Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #000000 | right                           | bottom         |
-| **Taulukon solut: teksti**                              | Barlow Semi Condensed, regular  | 0.9rem (15px) tai 0.875rem (14px) |Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                                | #000000 | left                            | bottom         |
-| **Taulukon alaviite**                                   | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 |                                 |                |
-| **Taulukon ja kuvion lähdemerkintä**                    | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 |                                 |                |
-| **Tilastokuvion otsikko**                               | Barlow Semi Condensed, medium   | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 | center                          |                |
-| **Tilastokuvion alaotsikko**                            | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 | center                          |                |
-| **Tilastokuvion muut tekstit**                          | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 |                                 |                |
-| **Tilastokuvion tooltip**                               | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif                                                               | #000000 |                                 |                |
+| Taso                                                    | Font                            | Font-size                         | Font-family                                                          | Color   | Text-align                      | Vertical-align |
+| ------------------------------------------------------- | ------------------------------- | --------------------------------- | -------------------------------------------------------------------- | ------- | ------------------------------- | -------------- |
+| **Leipäteksti**                                         | Source Sans Pro, regular        | 16px/1rem                         | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif       | #000000 |                                 |                |
+| **H1**                                                  | Barlow, regular                 | 34px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #000000 |                                 |                |
+| **H2**                                                  | Barlow, regular                 | 28px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #000000 |                                 |                |
+| **H3**                                                  | Barlow, regular                 | 22px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #000000 |                                 |                |
+| **H4**                                                  | Barlow, medium                  | 16px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #000000 |                                 |                |
+| **H5**                                                  | Barlow, medium                  | 14px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #000000 |                                 |                |
+| **Introteksti** (aiheessa/tarkan aiheessa)              | Barlow, medium                  | 14px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #000000 |                                 |                |
+| **Tagit**                                               | Barlow, semibold                | 14px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #333333 |                                 |                |
+| **Aihe-tagit**                                          | Source Sans Pro, regular        | 14px                              | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif       | #ffffff |                                 |                |
+| **Päiväys ja kirjoittaja** (blokkien nostoelementeissä) | Barlow, regular                 | 14px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #000000 |                                 |                |
+| **Ingressi**                                            | Barlow, regular                 | 17px/1.255rem                     | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #000000 |
+| **Iso leipäteksti (esim. asiantuntijan nimi)**          | Source Sans Pro, regular        | 18px                              | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif       | #000000 |                                 |                |
+| **Label**                                               | Source Sans Pro, semibold       | 17px                              | Source Sans Pro, Arial, Verdana, Lucida, Helvetica, Sans-serif       | #000000 |                                 |                |
+| **Murupolku, linkki**                                   | Barlow, medium                  | 14px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #006ca5 |                                 |                |
+| **Murupolku, ei linkki**                                | Barlow, medium                  | 14px                              | Barlow, Arial, Verdana, Lucida, Helvetica, Sans-serif                | #000000 |                                 |                |
+| **Taulukon otsikko**                                    | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |                                 |                |
+| **Taulukon sarake- ja riviotsikot**                     | Barlow Semi Condensed, semibold | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 | ks. taulukon solujen text-align | bottom         |
+| **Taulukon solut: numero tai numeron korvaava teksti**  | Barlow Semi Condensed, regular  | 0.9rem (15px) tai 0.875rem (14px) | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 | right                           | bottom         |
+| **Taulukon solut: teksti**                              | Barlow Semi Condensed, regular  | 0.9rem (15px) tai 0.875rem (14px) | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 | left                            | bottom         |
+| **Taulukon alaviite**                                   | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |                                 |                |
+| **Taulukon ja kuvion lähdemerkintä**                    | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |                                 |                |
+| **Tilastokuvion otsikko**                               | Barlow Semi Condensed, medium   | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 | center                          |                |
+| **Tilastokuvion alaotsikko**                            | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 | center                          |                |
+| **Tilastokuvion muut tekstit**                          | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |                                 |                |
+| **Tilastokuvion tooltip**                               | Barlow Semi Condensed, regular  | 1rem (16px)                       | Barlow Semi Condenced, Arial, Verdana, Lucida, Helvetica, Sans-serif | #000000 |                                 |                |
 
 ### Typografian saavutettavuus
 * Fonttien koot tulee toteuttaa suhteellisina arvoina (em tai rem), jolloin käyttäjät pystyvät suurentamaan niitä halutessaan. 
@@ -159,6 +161,38 @@ Mobiilissa hero-kuva ulottuu näytön laidasta laitaan. Mobiilinäytöllä näky
 ![Hero-kuva aihe-sivun desktop-version yläosassa.](images/herokuva.png)
 
 Desktopissa hero-kuva ulottuu näytön laidasta laitaan kunnes kuvan koko tulee vastaan. Sen jälkeen kuvan vasemmalle ja oikealle puolelle tulee marginaalit. Kuva-alueen korkeus pysyy samana koko ajan ja kuva rajautuu korkeudesta näytön koon kasvaessa. Desktopissa sivun otsikko ja otsikon alla oleva sininen palkki tulee kuvan päälle. 
+
+### Julkaisu-elementtien kuvat
+Julkaisu-elementeissä artikkelien, blogien ja videoiden kuvina käytetään ensisijaisesti graafikoiden tekemiä ja valitsemia valokuvia. Kokoomajulkaisujen kuvina käytetään julkaisun omasta kansikuvasta muokattua (graafikoiden tekemää) webiin sopivaa kuvaa. Jos muuta kuvaa ei ole saatavissa, voidaan käyttää ns. place holder -kuvaa. Ks. Place holder -kuvat. 
+
+![Artikkelien, blogien ja videoiden julkaisu-elementeissä käytetään kuvina valokuvia.](images/julkaisu_blogi.png)
+
+| Julkaisutyyppi                      | Kuvan tyyppi       |
+| ----------------------------------- | ------------------ |
+| Artikkeli                           | Valokuva           |
+| Blogi                               | Valokuva           |
+| Muu julkaisu, esim. kokoomajulkaisu | Valokuva           |
+| Katsaus                             | Place holder -kuva |
+| Tiedote                             | Place holder -kuva |
+| Tietokantajulkistus                 | Place holder -kuva |
+| Video                               | Valokuva           |
+
+
+#### Valokuvat
+Päivittyy heti kun kuvien linjaukset saadaan sovittua. 
+
+#### Place holder -kuvat
+Place holder -kuva on graafinen kuvituskuva, jota käytetään kuvalle varatulla paikalla kun valokuvaa ei ole saatavilla. Tiedotteiden, tietokantajulkaisujen ja katsauksien julkaisu-elementeissä kuvina käytetään place holder -kuvia. Jos artikkelista, blogista, videoista tai muista julkaisuista ei ole saatavissa muuta kuvaa, voidaan niissäkin käyttää place holder -kuvia. 
+
+![Tiedotteiden, tietokantajulkistuksien ja katsauksien julkaisu-elementteihin tulevassa place holder -kuvassa on valkoinen Tilastokeskuksen logo sinisellä pohjalla.](images/place_holder_tiedote.png)
+
+#### Julkaisu-elementtien kuvien koko
+Julkaisut-elementeissä olevat kuvat käyttävät samaa kuvasuhdetta kuin video-elementti: **16:9**, esim. **resoluutio 1920x1080**. 
+
+**Huom!** Julkaisuissa tekstin seassa olevat kuvat ja tilastokuviot eivät välttämättä noudata samaa kuvasuhdetta kuin julkaisu-elementtien kuvat. Etenkin tilastokuvioiden kokoon vaikuttaa niissä oleva data eikä niitä kaikkia voida rajata kooltaan saman kokoisiksi etenkään pituudesta. 
+
+#### Julkaisu-elementtien kuvien saavutettavuus
+Julkaisuelementtien kuvat ovat kuvituskuvia eli niillä ei ole mitään informatiivista sisältöä. Ne toimivat linkkeinä julkaisuihin näkeville käyttäjille, mutta ruudunlukijalta ne piilotetaan. Ruudunlukijaa käyttävät pääsevät julkaisuun kuvan alla olevasta julkaisun otsikosta, joka on linkki julkaisun sivulle. 
 
 ## Ikonit
 
@@ -325,12 +359,12 @@ Neutraalia banneria voidaan käyttää ilmoittamaan esimerkiksi tilastossa tapah
 ![Neutraali banneri tilaston sivulla, desktop-versio.](images/neutraali_banneri_tilaston_sivulla.png)
 
 Neutraalin bannerin tyylit:
-|                          | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border  | Padding                          |
-| ------------------------ | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------- | -------------------------------- |
-| **Banneri-laatikko**     |                          |                |         |                 | #ffffff          | #a40084 | top/bottom: 2rem left/righ: 1rem |
-| **Otsikko = iso leipäteksti** | Source Sans Pro, regular | 18px           | #000000 |                 |                  |     
-| **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #000000 |                 |                  |         |                                  |
-| **Linkki**               | Source Sans Pro, regular | 1rem (n. 16px) | #006ca5 | underline       |                  |         |                                  |
+|                               | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border  | Padding                          |
+| ----------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------- | -------------------------------- |
+| **Banneri-laatikko**          |                          |                |         |                 | #ffffff          | #a40084 | top/bottom: 2rem left/righ: 1rem |
+| **Otsikko = iso leipäteksti** | Source Sans Pro, regular | 18px           | #000000 |                 |                  |
+| **Teksti = leipäteksti**      | Source Sans Pro, regular | 1rem (n. 16px) | #000000 |                 |                  |         |                                  |
+| **Linkki**                    | Source Sans Pro, regular | 1rem (n. 16px) | #006ca5 | underline       |                  |         |                                  |
 
 
 #### Huomio-banneri
@@ -351,13 +385,13 @@ Huomio-banneri, desktop-versio:
 
 
 Huomio-bannerin tyylit:
-|                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border | Padding                          |
-| ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ | -------------------------------- |
-| **Banneri-laatikko**         |                          |                |         |                 | feead2          |        | top/bottom: 2rem left/righ: 1rem |
+|                               | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border | Padding                          |
+| ----------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ | -------------------------------- |
+| **Banneri-laatikko**          |                          |                |         |                 | feead2           |        | top/bottom: 2rem left/righ: 1rem |
 | **Otsikko = iso leipäteksti** | Source Sans Pro, regular | 18px           | #000000 |                 |                  |        |                                  |
-| **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #000000 |                 |                  |  
-| **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #006ca5 | underline       |                  |        |                                  |
-| **Ikoni**                    |                          |                | #000000 |                 |                  |        |                                  |
+| **Teksti = leipäteksti**      | Source Sans Pro, regular | 1rem (n. 16px) | #000000 |                 |                  |
+| **Linkki**                    | Source Sans Pro, regular | 1rem (n. 16px) | #006ca5 | underline       |                  |        |                                  |
+| **Ikoni**                     |                          |                | #000000 |                 |                  |        |                                  |
 
 
 #### Varoitus-banneri
@@ -373,13 +407,13 @@ Varoitus-banneri, desktop-versio:
 ![Varoitus-banneri, desktopversio.](images/varoitus_banneri_desktop_paikka.png)
 
 Varoitus-bannerin tyylit
-|                              | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border | Padding                          |
-| ---------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ | -------------------------------- |
-| **Banneri-laatikko**         |                          |                |         |                 | #c30045          |        | top/bottom: 2rem left/righ: 1rem |
+|                               | Font                     | Font-size      | Color   | Text-decoration | Background-color | Border | Padding                          |
+| ----------------------------- | ------------------------ | -------------- | ------- | --------------- | ---------------- | ------ | -------------------------------- |
+| **Banneri-laatikko**          |                          |                |         |                 | #c30045          |        | top/bottom: 2rem left/righ: 1rem |
 | **Otsikko = iso leipäteksti** | Source Sans Pro, regular | 18px           | #ffffff |                 |                  |        |                                  |
-| **Teksti = leipäteksti** | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff |                 |                  |  
-| **Linkki**                   | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff | underline       |                  |        |
-| **Ikoni**                    |                          |                | #ffffff |                 |                  |        |                                  |
+| **Teksti = leipäteksti**      | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff |                 |                  |
+| **Linkki**                    | Source Sans Pro, regular | 1rem (n. 16px) | #ffffff | underline       |                  |        |
+| **Ikoni**                     |                          |                | #ffffff |                 |                  |        |                                  |
 
 
 #### Bannerien saavutettavuus
@@ -410,7 +444,6 @@ Dataan pohjautuvien elementtien menuissa on tarjolla ainakin datan lataaminen ta
 | Muiden toimintojen teksti                   | Leipäteksti     |         |                  |         |                              |                              |
 | Menun listan kohdan hover                   |                 |         | #f2f2f2          |         |                              |                              |
 | Menun listan kohta selected/pressed-tilassa |                 |         | #f2f2f2          |         |                              |                              |
-
 
 
 ### Info-laatikko
@@ -449,30 +482,6 @@ Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää ti
 ![Jakoviiva erottamassa toisiinsa julkaisu-elementtejä.](images/divider_example1.png)
 
 Jakoviivoilla voidaan myös erottaa saman kokonaisuuden tai toisiinsa liittyviä elementtejä toisistaan. 
-
-### Julkaisu-elementtien kuvat
-Julkaisu-elementeissä artikkelien, blogien ja videoiden kuvina käytetään graafikoiden tekemiä ja valitsemia valokuvia. Kokoomajulkaisujen kuvina käytetään julkaisun omasta kansikuvasta muokattua (graafikoiden tekemää) webiin sopivaa kuvaa. Tiedotteiden, tietokantajulkaisujen ja katsauksien julkaisu-elementeissä kuvina käytetään ns. place holder -kuvia.
-
-![Artikkelien, blogien ja videoiden julkaisu-elementeissä käytetään kuvina valokuvia.](images/julkaisu_blogi.png)
-
-| Julkaisutyyppi                      | Kuvan tyyppi       |
-| ----------------------------------- | ------------------ |
-| Artikkeli                           | Valokuva           |
-| Blogi                               | Valokuva           |
-| Muu julkaisu, esim. kokoomajulkaisu | Valokuva           |
-| Katsaus                             | Place holder -kuva |
-| Tiedote                             | Place holder -kuva |
-| Tietokantajulkistus                 | Place holder -kuva |
-| Video                               | Valokuva           |
-
-#### Place holder -kuvat
-
-![Tiedotteiden, tietokantajulkistuksien ja katsauksien julkaisu-elementteihin tulevassa place holder -kuvassa on valkoinen Tilastokeskuksen logo sinisellä pohjalla.](images/place_holder_tiedote.png)
-
-#### Kuvien koko
-Julkaisut-elementeissä olevat kuvat käyttävät samaa kuvasuhdetta kuin video-elementti. Katso video-elementin kuvasuhde kohdasta Video. 
-
-**Huom!** Julkaisuissa tekstin seassa olevat kuvat ja tilastokuviot eivät välttämättä noudata samaa kuvasuhdetta kuin julkaisu-elementtien kuvat. Etenkin tilastokuvioiden kokoon vaikuttaa niissä oleva data eikä niitä kaikkia voida rajata kooltaan saman kokoisiksi etekään pituudesta. 
 
 
 ### Laajennuspaneeli 
@@ -545,9 +554,9 @@ Linkkejä käytetään navigaatiossa sivuston sisällä sekä navigoinnissa ulko
 | Tila           | Font        | Text-decoration | Color   | Muuta                                 |
 | -------------- | ----------- | --------------- | ------- | ------------------------------------- |
 | **Tavallinen** | Leipäteksti | none            | #006ca5 |                                       |
-| **Hover**      |             | underline       | #0039a6 | Kursori muuttuu kädeksi linkin päällä |
-| **Focus**      |             | underline       | #0039a6 | Reunus: 2px, #0073b0                  |
-| **Vierailtu**  |             | none            | #551a8b |                                       |
+| **Hover**      | Leipäteksti | underline       | #0039a6 | Kursori muuttuu kädeksi linkin päällä |
+| **Focus**      | Leipäteksti | underline       | #0039a6 | Reunus: 2px, #0073b0                  |
+| **Vierailtu**  | Leipäteksti | none            | #551a8b |                                       |
 
 Tavallinen-tila:
 ![Tavallinen linkki.](images/link.png)
@@ -568,9 +577,9 @@ Negatiivi-linkki on linkki tummalla taustalla. Tumman taustan vuoksi sen tyylit 
 | Tila           | Font        | Text-decoration | Color   | Muuta                                 |
 | -------------- | ----------- | --------------- | ------- | ------------------------------------- |
 | **Tavallinen** | Leipäteksti | none            | #ffffff |                                       |
-| **Hover**      |             | underline       | #ffffff | Kursori muuttuu kädeksi linkin päällä |
-| **Focus**      |             | underline       | #ffffff | Reunus: 2px, #ffffff                  |
-| **Vierailtu**  |             | none            | #ffffff |                                       |
+| **Hover**      | Leipäteksti | underline       | #ffffff | Kursori muuttuu kädeksi linkin päällä |
+| **Focus**      | Leipäteksti | underline       | #ffffff | Reunus: 2px, #ffffff                  |
+| **Vierailtu**  | Leipäteksti | none            | #ffffff |                                       |
 
 Tavallinen-tila:
 ![Tavallinen negatiivinen linkki.](images/negative_link.png)
@@ -593,9 +602,9 @@ Tekstin seassa, eli p-elementin sisällä, olevat linkit alleviivataan aina. Mui
 | Tila           | Font        | Text-decoration | Color   | Muuta                                 |
 | -------------- | ----------- | --------------- | ------- | ------------------------------------- |
 | **Tavallinen** | Leipäteksti | underline       | #006ca5 |                                       |
-| **Hover**      |             | underline       | #0039a6 | Kursori muuttuu kädeksi linkin päällä |
-| **Focus**      |             | underline       | #0039a6 | Reunus: 2px, #0073b0                  |
-| **Vierailtu**  |             | underline       | #551a8b |                                       |
+| **Hover**      | Leipäteksti | underline       | #0039a6 | Kursori muuttuu kädeksi linkin päällä |
+| **Focus**      | Leipäteksti | underline       | #0039a6 | Reunus: 2px, #0073b0                  |
+| **Vierailtu**  | Leipäteksti | underline       | #551a8b |                                       |
 
 
 ##### Linkki ikonilla
@@ -943,20 +952,38 @@ Aihe-tagit ovat linkkejä niiden aiheiden- ja tarkkojen aiheiden -sivuille, joih
 
 ![Aihe-tageja voi olla yhdellä sivulla monta.](images/aihe_tagit.png)
 
-Aihe-tagit sijaitsevat murupolun alla rinnakkain sekä pienillä että isoilla näytöillä. Aihe-tagit eivät lukkiudu sivun yläosaan kun sivua skrollataan alaspäin, toisin kuin murupolku. Ne ovat kuitenkin navigaatio-elementtejä. 
+Aihe-tagit sijaitsevat murupolun ja sivun otsikon välissä. Aihe-tagit ovat navigaatio-elementtejä. Ne eivät kuitenkaan lukkiudu sivun yläosaan kuten murupolku kun sivua skrollataan alaspäin. 
 
-Pienillä näytöillä aihe-tagit pysyvät yhdellä rivillä rinnakkain. Jos ne kaikki eivät mahdu kerralla näytölle näkyviin, ne menevät näytön oikean reunan yli. Näytön laidan yli menneet aihe-tagit saa näkyviin liikuttamalla tagien riviä vaakasuunnassa. Tageista tulee siis horisontaalisesti skrollattava elementti. Tagi-rivin oikeaan reunaan tulee näkyviin nuoli, joka vihjaa rivin liikuteltavuudesta. Kun riviä on liikutettu vasemmalle ja tageja menee näytön vasemman reunan yli piiloon, myös tagi-rivin vasempaan laitaan tulee näkyviin nuoli. 
+Isoilla näytöillä aihe-tagit asettuvat rinnakkain sivun otsikon yläpuolelle: 
 
-![Nuoli vihjaa, että lisää tageja saa näkyviin kun riviä liikuttaa sivusuunnassa.](images/aihe_tagit_nuoli.png)
+![Aihe-tagit asettuvat isoilla näytöillä rinnakkain.](images/aihe_tagit_desktop.png)
 
-Ruudunlukijakäyttäjille tagit luetellaan listana. (Varmistettava vielä miten ruudunlukijaa käyttävät pystyvät klikkaamaan tagia.)
+Pienillä näytöillä aihe-tagit menevät tarvittaessa allekkain, mutta pysyvät silti sivun otsikon yläpuolella: 
+
+![Aihe-tagit asettuvat mobiilinäytöillä allekkain.](images/aihe_tagit_mobiili.png)
 
 **Aihe-tagien tyylit**
 
-| Font                    | Font-size | Color   | Background-color | Padding | Border-radius |
-| ----------------------- | --------- | ------- | ---------------- | ------- | ------------- |
-| Source Sans Pro regular | 14px      | #ffffff | #0073b0          | 2px     | 2,5em (32px)  |
+Aihe-tagien eri tilat: 
 
+| Tila           | Font                    | Font-size | Text-decoration | Color   | Background-color | Padding      | Muuta                                                               |
+| -------------- | ----------------------- | --------- | --------------- | ------- | ---------------- | ------------ | ------------------------------------------------------------------- |
+| **Tavallinen** | Source Sans Pro regular | 14px      | none            | #ffffff | #0073b0          | 0.2em, 0.6em |                                                                     |
+| **Hover**      | Source Sans Pro regular | 14px      | underline       | #ffffff | #0073b0          | 0.2em, 0.6em | Kursori muuttuu kädeksi linkin päällä                               |
+| **Focus**      | Source Sans Pro regular | 14px      | underline       | #ffffff | #0073b0          | 0.2em, 0.6em | Reunus: 2px, #0073b0 (sama focus-tyyli kuin muissakin elementeissä) |
+| **Vierailtu**  | Source Sans Pro regular | 14px      | none            | #ffffff | #0073b0          | 0.2em, 0.6em | Vierailtu-tila ei eroa tavallinen-tilasta                           |
+
+Tavallinen-tila:
+![Normaalitilassa oleva aihe-tagi.](images/aihe_tagi.png)
+
+Hover-tila:
+![Aihe-tagi hover-tilassa.](images/aihe_tagi_hover.png)
+
+Focus-tila:
+![Aihe-tagi focus-tilassa.](images/aihe_tagi_focus.png)
+
+Vierailtu-tila, ei eroa tavallinen-tilasta:
+![Vierailtu-tilassa oleva aihe-tagi.](images/aihe_tagi.png)
 
 #### Muut tagit
 
