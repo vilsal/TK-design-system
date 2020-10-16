@@ -22,7 +22,7 @@
   - [Sivuston tausta](#sivuston-tausta)
   - [Tekstipalsta](#tekstipalsta)
   - [Blokit](#blokit)
-  - [Footer](#footer)
+  - [Alatunniste](#alatunniste)
 - [Komponentit](#komponentit)
   - [Avainluvut](#avainluvut)
     - [Avainlukujen tyylit](#avainlukujen-tyylit)
@@ -205,34 +205,36 @@ Väreinä käytetään Tilastokeskuksen väripalettia. Värit täydennetään t�
 
 ### Navigaatio-palkki mobiili
 
-Kuvaus lisätään ui-designin valmistuttua. 
+Kuvaus lisätään ui-designin ja tyylimääritysten valmistuttua. 
 
 #### Menu mobiili
+
+Kuvaus lisätään ui-designin ja tyylimääritysten valmistuttua. 
 	
 ### Navigaatio-palkki desktop
 
 ![Navigaatio-palkki](images/navipalkki.png)
 
-| Max-width | Background-color | Sisältöalueen leveys | Sisällön tasaus |
-| --------- | ---------------- | -------------------- | --------------- |
-| 2500px    | #0073b0          | 1200px               | left            |
-
-Navigaatio-palkin taustan leveys on näytön/selainikkunan laidasta laitaan 2500px asti. Siitä ylöspäin navipalkin oikealle ja vasemmalle puolelle tulee marginaalit. 
+Navigaatio-palkin taustan leveys on näytön/selainikkunan laidasta laitaan 2500px asti. Siitä isompikokoisilla näytöillä navipalkin oikealle ja vasemmalle puolelle tulee marginaalit. 
 *Poikkeus:* 
 Jos ollaan sivulla, jossa on bannerikuva (aiheen ja tarkennetun aiheen sivuilla): navipalkin tausta on näytön laidasta laitaan kunnes bannerikuvan rajat tulevat vastaan: navipalkki loppuu siinä missä bannerikuvakin. 
 
 Navipalkin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Navipalkin sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Navipalkin sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. Navipalkin sisältö on tasattu vasempaan laitaan eikä siis levity tasaisesti koko navipalkin alueelle. 
 
-| Font          | Font-size | Color   | Font-variant | Text-decoration | Padding                                                                      |
-| ------------- | --------- | ------- | ------------ | --------------- | ---------------------------------------------------------------------------- |
-| Barlow medium | 1.1rem    | #ffffff | normal       | none            | padding-left ja padding-right: 1.5rem, padding-top ja padding-bottom: 1.2rem |
-			
-Navigaatiopalkin linkkien välissä on ohuet pystyviivat. Viivojen korkeus sama kuin navipalkin korkeus: 
-| Width | Color   |
-| ----- | ------- |
-| 1px   | #338fc0 |
+Se sivuston osio, jossa kulloinkin ollaan, näkyy navigaatiopalkissa korostettuna.
 
-Se sivuston osio, jossa kulloinkin ollaan, näkyy navigaatiopalkissa korostettuna. Korostuksen tyyli määritellään myöhemmin tarkemmin. 
+Navipalkin tyylit:
+
+| Max-width | Background-color | Sisältöalueen leveys | Sisällön tasaus |
+| --------- | ---------------- | -------------------- | --------------- |
+| 2500px    | #0073b0          | 1200px               | left            |
+
+Navigaatiopalkin linkkien tyylit:
+
+| Tila           | Background-color | Border left/right | Font           | Font-size | Font color | Padding       | Font variant | Text-decoration |
+| -------------- | ---------------- | ----------------- | -------------- | --------- | ---------- | ------------- | ------------ | --------------- |
+| **Tavallinen** | #0073b0          | 1px, #338FC0      | Barlow, medium | 1.1rem    | #ffffff    | 1.2rem 1.5rem | normal       | none            |
+| **Korostettu/sijainti**    | #ffffff          | 1px, #0073b0      | Barlow, medium | 1.1rem    | #0073b0    | 1.2rem 1.5rem | normal       | none            |
 
 #### Menut desktop
 Navigaatiopalkista avautuvien menujen sisältö on tasattu vasempaan laitaan. Kuvat ja kuvaus lisätään ui-designin valmistuttua. 
@@ -267,20 +269,33 @@ Saavutettavuuden parantamiseksi sivuston tausta ei ole puhtaan valkoinen vaan 2%
 |             | Background-color    | Margin        | Padding                                                                                                                                |
 | ----------- | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | **Desktop** | valkoinen, 2% musta | 2.5rem (40px) | 2.5rem (40px)                                                                                                                          |
-| **Mobiili** | valkoinen, 2% musta | 2.5rem (40px) | **Padding-top** ja **padding-bottom**: puolet desktopin paddingista. **Padding-left** ja **padding-right**: 1/4 desktopin paddingista. |
+| **Mobiili** | valkoinen, 2% musta | 2.5rem (40px) | **Padding-top/bottom**: puolet desktopin paddingista. **Padding-left/right**: 1/4 desktopin paddingista. |
 
-### Footer 
+### Alatunniste
 
-| Max-width | Sisältöalueen leveys | Background-color | Palstoja max |
-| --------- | -------------------- | ---------------- | ------------ |
-| 2500px    | 1200px               | #0073b0          | 4            |
-		
-Footerin tausta ulottuu aina laidasta laitaan, sekä isoissa että pienissä näytöissä/selainikkunoissa. 
-Isoissa desktop-näytöissä 2500px leveyteen asti koko näytön levyinen, siitä ylöspäin tulee marginaalit. Eli footerin tausta käyttäytyy deskarissa kuten yläpalkin ja navipalkin tausta. 
-	
-Footerin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue.
+Alatunniste koostuu kahdesta osasta. Osat eroavat toisistaan asettelultaan ja taustaväriltään. 
 
-Footerissa on neljä palstaa: ensimmäisessä Tilastokeskuksen logo, kolmessa muussa on linkkejä. Palstat käyttäytyvät responsiivisesti eli näytön/selainikkunan pienentyessä palstat hyppäävät allekkain: ensin kahteen riviin siten että kaksi ensimmäistä palstaa on samalla rivillä ja loput toisella, sitten neljään riviin eli jokainen palsta omalle rivilleen. 
+Alatunnisteen molempien osien tausta käyttäytyy isoilla näytöillä kuten yläpalkin ja navigaatiopalkin tausta. Tausta ulottuu näytön laidasta laitaan pienillä näytöillä. Isoilla näytöillä alatunnisteen tausta on 2500px leveyteen asti koko näytön levyinen, sen jälkeen vasemmalla ja oikealla puolella alkavat marginaalit. 
+
+Alatunnisteen sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Alatunnisteen sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Alatunnisteen ylemmän osan sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. Alemman osan sisältö on keskitetty. 
+
+Alatunnisteen ylemmässä ja isommassa osassa on neljä palstaa. Ensimmäisen palstan alussa on Tilastokeskuksen logo. Palstat käyttäytyvät responsiivisesti eli näytön pienentyessä palstat menevät allekkain ensin kaksi palstaa per rivi ja pienimmillä näytöillä kaikki palstat ovat allekkain yksi palsta per rivi. 
+
+Alatunnisteen alemmassa osassa on linkkejä, jotka sijoittuvat rinnakkain isoilla näytöillä ja pienillä allekkain. 
+
+Alatunnisten pienillä näytöillä:
+
+![Alatunniste pienillä näytöillä.](images/footer_mobiili.png)
+
+Alatunniste isoilla näytöillä: 
+
+![Alatunniste isoilla näytöillä.](images/footer_desktop.png)
+
+Alatunnisteen tyylit: 
+|        | Max-width | Sisältöalueen leveys | Background-color | Palstoja max | Palstan tekstit    | Fontit                                 | Fontin color | Ikonien color |
+| ------ | --------- | -------------------- | ---------------- | ------------ | ------------------ | -------------------------------------- | ------------ | ------------- |
+| Yläosa | 2500px    | 1200px               | #0073b0          | 4            | Tasattu vasemmalle | Otsikot: H3, Linkit: negatiivilinkkejä | #ffffff      | #ffffff       |
+| Alaosa | 2500px    | 1200px               | #0073b0          | 1            | Tasattu keskelle   | Linkit: negatiivilinkkejä              | #ffffff      | #ffffff       |
 
 ## Komponentit
 
