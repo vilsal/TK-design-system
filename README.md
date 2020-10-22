@@ -163,31 +163,53 @@ Mobiilissa hero-kuva ulottuu näytön laidasta laitaan. Mobiilinäytöllä näky
 Desktopissa hero-kuva ulottuu näytön laidasta laitaan kunnes kuvan koko tulee vastaan. Sen jälkeen kuvan vasemmalle ja oikealle puolelle tulee marginaalit. Kuva-alueen korkeus pysyy samana koko ajan ja kuva rajautuu korkeudesta näytön koon kasvaessa. Desktopissa sivun otsikko ja otsikon alla oleva sininen palkki tulee kuvan päälle. 
 
 ### Julkaisu-elementtien kuvat
-Julkaisu-elementeissä artikkelien, blogien ja videoiden kuvina käytetään ensisijaisesti graafikoiden tekemiä ja valitsemia valokuvia. Kokoomajulkaisujen kuvina käytetään julkaisun omasta kansikuvasta muokattua (graafikoiden tekemää) webiin sopivaa kuvaa. Jos muuta kuvaa ei ole saatavissa, voidaan käyttää ns. place holder -kuvaa. Ks. Place holder -kuvat. 
 
-![Artikkelien, blogien ja videoiden julkaisu-elementeissä käytetään kuvina valokuvia.](images/julkaisu_blogi.png)
+Julkaisu-elementeissä kuvina käytetään joko graafikoiden tekemiä ja valitsemia valokuvia tai place holder -kuvia. Place holder -kuvia käytetään siinä tapauksessa, että julkaisusta ei ole saatavissa valokuvaa.  
 
-| Julkaisutyyppi                      | Kuvan tyyppi       |
-| ----------------------------------- | ------------------ |
-| Artikkeli                           | Valokuva           |
-| Blogi                               | Valokuva           |
-| Muu julkaisu, esim. kokoomajulkaisu | Valokuva           |
-| Katsaus                             | Place holder -kuva |
-| Tiedote                             | Place holder -kuva |
-| Tietokantajulkistus                 | Place holder -kuva |
-| Video                               | Valokuva           |
+![Artikkelien, blogien, videoiden ja muiden julkaisuiden julkaisu-elementeissä käytetään kuvina valokuvia.](images/julkaisu_blogi.png)
+
+Eri sisältötyyppien julkaisu-elementeissä käytetyt kuvat: 
+
+| Julkaisutyyppi      | Ensisijainen kuva                     | Toissijainen kuva                      |
+| ------------------- | ------------------------------------- | -------------------------------------- |
+| Aikakausjulkaisu    | Valokuva                              | Muiden julkaisuiden place holder -kuva |
+| Artikkeli           | Valokuva                              | Muiden julkaisuiden place holder -kuva |
+| Blogi               | Valokuva                              | Muiden julkaisuiden place holder -kuva |
+| Katsaus             | Perusjulkaisemisen place holder -kuva | -                                      |
+| Kokoomajulkaisu     | Valokuva                              | Muiden julkaisuiden place holder -kuva |
+| Käsikirjat          | Valokuva                              | Muiden julkaisuiden place holder -kuva |
+| Tiedote             | Perusjulkaisemisen place holder -kuva | -                                      |
+| Tietokantajulkistus | Perusjulkaisemisen place holder -kuva | -                                      |
+| Tutkimus            | Valokuva                              | Muiden julkaisuiden place holder -kuva |
+| Video               | Valokuva                              | Muiden julkaisuiden place holder -kuva |
+| Working paper       | Valokuva                              | Muiden julkaisuiden place holder -kuva |
+| Muut julkaisut      | Valokuva                              | Muiden julkaisuiden place holder -kuva |
 
 
 #### Valokuvat
-Päivittyy heti kun kuvien linjaukset saadaan sovittua. 
+
+Osio päivittyy kun valokuvien linjaukset saadaan sovittua. 
+
+Valokuvia käytetään artikkelien, blogien, videoiden, kokoomajulkaisujen, käsikirjojen, aikakausjulkaisujen, tutkimuksien ja working papers -julkaisujen julkaisu-elementeissä. Ts. valokuvia käytetään kun kyseessä on muu kuin perusjulkaisemisen (tiedotteet, tietokantajulkistukset ja katsaukset) sisältötyyppi. Valokuvat ovat graafikoiden tekemiä ja valitsemia. Jos valokuvia ei ole saatavissa, käytetään näille sisältötyypeille tehtyä omaa place holder -kuvaa. Ks. Place holder -kuvat. 
+
+Verkkouudistuksen jälkeen ilmestyvien kansikuvallisten julkaisujen kansikuvana käytetystä kuvasta tai valokuvasta graafikot muotoilevat verkkoon sopivankokoisen kuvan. Vanhoista ennen verkkouudistusta julkaistuista julkaisuista ei tuoda kansikuvia julkaisu-elementteihin, vaan näiden kohdalla käytetään julkaisuille muotoiltua omaa place holder -kuvaa. 
 
 #### Place holder -kuvat
-Place holder -kuva on graafinen kuvituskuva, jota käytetään kuvalle varatulla paikalla kun valokuvaa ei ole saatavilla. Tiedotteiden, tietokantajulkaisujen ja katsauksien julkaisu-elementeissä kuvina käytetään place holder -kuvia. Jos artikkelista, blogista, videoista tai muista julkaisuista ei ole saatavissa muuta kuvaa, voidaan niissäkin käyttää place holder -kuvia. 
 
+Place holder -kuva on graafinen kuvituskuva, jota käytetään julkaisu-elementeissä kun valokuvaa ei ole saatavilla. 
+
+Place holder -kuvia on kolmenlaisia: 
+1. Ns. perusjulkaisemiselle eli tiedotteille, tietokantajulkistuksille ja katsauksille on oma place holder -kuvansa, joka viestii tilastodatasta ja tilastograafeista. Tiedotteiden, tietokantajulkaisujen ja katsauksien julkaisu-elementeissä kuvina käytetään aina näille sisältötyypeille tehtyä place holder -kuvaa.
+2. Muille julkaisuille kuten artikkeleille, blogeille, videoille, kokoomajulkaisuille, käsikirjoille, aikakausjulkaisuille, tutkimuksille ja working papers -julkaisuille on oma place holder -kuvansa, joka viestii tekstisisällöstä. Näiden sisältötyyppien julkaisu-elementeissä käytetään ensisijaisesti valokuvia, mutta jos valokuvaa ei ole saatavissa, käytetään näille sisältötyypeille tehtyä place holder -kuvaa. 
+3. Tieto&trendit-sivustolla on oma place holder -kuvansa. Tätä käytetään myös pääsivustolla, jos Tieto&trendit-sivustolta pääsivustolle tuodulla julkaisulla ei ole valokuvaa. 
+
+Näiden kahden erilaisen place holder -kuvan suunnittelu on työn alla. Toistaiseksi julkaisu-elementeissä käytetään kaikkien sisältötyyppien kohdalla tarvittaessa samaa aiemmin tehtyä place holder -kuvaa: 
 ![Tiedotteiden, tietokantajulkistuksien ja katsauksien julkaisu-elementteihin tulevassa place holder -kuvassa on valkoinen Tilastokeskuksen logo sinisellä pohjalla.](images/place_holder_tiedote.png)
 
 #### Julkaisu-elementtien kuvien koko
 Julkaisut-elementeissä olevat kuvat käyttävät samaa kuvasuhdetta kuin video-elementti: **16:9**, esim. **resoluutio 1920x1080**. 
+
+Tieto&trendit-sivustolta tuotavat valokuvat rajataan kuvasuhteeseen 16:9. Valokuvia rajataan alareunasta. Tieto&trendit-sivuston place holder -kuvaa rajataan sekä ylä -että alareunasta. 
 
 **Huom!** Julkaisuissa tekstin seassa olevat kuvat ja tilastokuviot eivät välttämättä noudata samaa kuvasuhdetta kuin julkaisu-elementtien kuvat. Etenkin tilastokuvioiden kokoon vaikuttaa niissä oleva data eikä niitä kaikkia voida rajata kooltaan saman kokoisiksi etenkään pituudesta. 
 
@@ -231,10 +253,10 @@ Navipalkin tyylit:
 
 Navigaatiopalkin linkkien tyylit:
 
-| Tila           | Background-color | Border left/right | Font           | Font-size | Font color | Padding       | Font variant | Text-decoration |
-| -------------- | ---------------- | ----------------- | -------------- | --------- | ---------- | ------------- | ------------ | --------------- |
-| **Tavallinen** | #0073b0          | 1px, #338FC0      | Barlow, medium | 1.1rem    | #ffffff    | 1.2rem 1.5rem | normal       | none            |
-| **Korostettu/sijainti**    | #ffffff          | 1px, #0073b0      | Barlow, medium | 1.1rem    | #0073b0    | 1.2rem 1.5rem | normal       | none            |
+| Tila                    | Background-color | Border left/right | Font           | Font-size | Font color | Padding       | Font variant | Text-decoration |
+| ----------------------- | ---------------- | ----------------- | -------------- | --------- | ---------- | ------------- | ------------ | --------------- |
+| **Tavallinen**          | #0073b0          | 1px, #338FC0      | Barlow, medium | 1.1rem    | #ffffff    | 1.2rem 1.5rem | normal       | none            |
+| **Korostettu/sijainti** | #ffffff          | 1px, #0073b0      | Barlow, medium | 1.1rem    | #0073b0    | 1.2rem 1.5rem | normal       | none            |
 
 #### Menut desktop
 Navigaatiopalkista avautuvien menujen sisältö on tasattu vasempaan laitaan. Kuvat ja kuvaus lisätään ui-designin valmistuttua. 
@@ -266,9 +288,9 @@ Saavutettavuuden parantamiseksi sivuston tausta ei ole puhtaan valkoinen vaan 2%
 
 ### Blokit
 
-|             | Background-color    | Margin        | Padding                                                                                                                                |
-| ----------- | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **Desktop** | valkoinen, 2% musta | 2.5rem (40px) | 2.5rem (40px)                                                                                                                          |
+|             | Background-color    | Margin        | Padding                                                                                                  |
+| ----------- | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------- |
+| **Desktop** | valkoinen, 2% musta | 2.5rem (40px) | 2.5rem (40px)                                                                                            |
 | **Mobiili** | valkoinen, 2% musta | 2.5rem (40px) | **Padding-top/bottom**: puolet desktopin paddingista. **Padding-left/right**: 1/4 desktopin paddingista. |
 
 ### Alatunniste
