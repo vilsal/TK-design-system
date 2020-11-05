@@ -54,6 +54,8 @@
     - [Ulkoinen linkki](#ulkoinen-linkki)
   - [Lyhenteiden selitykset -laatikko](#lyhenteiden-selitykset--laatikko)
   - [Murupolku](#murupolku)
+    - [Murupolku pienillä näytöillä](#murupolku-pienillä-näytöillä)
+    - [Murupolku isoilla näytöillä](#murupolku-isoilla-näytöillä)
   - [Painikkeet](#painikkeet)
     - [Yleistä painikkeiden saavutettavuudesta](#yleistä-painikkeiden-saavutettavuudesta)
     - [Painikkeiden yhteiset ominaisuudet](#painikkeiden-yhteiset-ominaisuudet)
@@ -699,40 +701,46 @@ Isoilla näytöillä laatikko ja laatikon sisältö sisältö levittäytyy sivus
 
 ### Murupolku
 
- Viimeistä osaa lukuunottamatta murupolun osat ovat linkkejä. Murupolkun linkkiosat käyttäytyvät kuten tavalliset linkit kaikkine eri tiloineen. Murupolun fonttina on H5-otsikkotason fontti. Vaikka murupolku noudattaa H5-tason fonttia, se ei ole semanttisesti H5-tason otsikko vaan navigaatio-elementti. 
+Murupolku on navigaatioelementti, josta pääsee siirtymään sivuhierarkiassa ylöspäin. Murupolku tulee merkitä semanttisesti navigaatioelementiksi.
 
- Osiot erotetaan toisistaan /-merkillä. 
+Murupolun fonttina on H5-otsikkotason fontti. Murupolkun linkkiosat käyttäytyvät kuten tavalliset linkit kaikkine eri tiloineen.
+
+Murupolku käyttäytyy pienillä ja isoilla näytöillä hieman eri tavoin. 
+
+
+#### Murupolku pienillä näytöillä
+
+Pienillä näytöillä, jos murupolku koostuu vain kahdesta osasta (linkkiosa ja kyseinen sivu), näytetään koko murupolku. Jos murupolku on siis lyhyt ja mahtuu todennäköisesti yhdelle tai kahdelle riville pienellä näytöllä, näytetään koko murupolku. Murupolun osat erotetaan toisistaan /-merkillä. **Murupolun viimeinen kohta ei ole linkki.** 
+
+Esim. murupolku tilaston sivulla pienellä näytöllä: 
+
+![Pienillä näytöillä näytettävä kahden kohdan murupolku, joka mahtuu yhdelle riville.](images/murupolku_mobiili1.png)
+
+Jos murupolussa on enemmän kohtia kuin kaksi, murupolun sijaan on vain yksi linkki ylemmälle hierarkian tasolle. Näin estetään murupolun rivittyminen usealle riville ja liika tilan vieminen pienillä näytöillä. 
+
+Esim. pienellä näytöllä tiedotteen sivulla murupolkuna näkyy linkki tilaston sivulle:
+
+![Pienellä näytöllä pitkä murupolku lyhenee vain yhdeksi linkiksi ylemmälle hierarkian tasolle.](images/murupolku_mobiili2.png)
+
+|                                             | Murupolun muoto                                                    |
+| ------------------------------------------- | ------------------------------------------------------------------ |
+| **Desktop**                                 | Linkki ylemmälle tasolle / Sivun nimi    |
+| **Mobiili (max. kaksi kohtaa murupolussa)** | Linkki ylemmälle tasolle / Sivun nimi                               |
+| **Mobiili (yli kaksi kohtaa murupolussa)**   | < Linkki ylemmälle tasolle                                                 |
+
+
+#### Murupolku isoilla näytöillä
+
+Isoilla näytöillä näytetään murupolku kokonaan. **Huom!** Murupolun viimeinen kohta ei ole linkki. Murupolun osat erotetaan toisistaan /-merkillä. Esim. murupolku tiedotteen sivulla: 
+
+![Isolla näytöllä murupolusta näytetään kaikki tasot.](images/murupolku.png)
+
 
 | Murupolun osa | Font           | Font-size | Color   | Muuta                                  |
 | ------------- | -------------- | --------- | ------- | -------------------------------------- |
 | **Linkki**    | Barlow, medium | 14px      | #006ca5 | samat tilat kuin tavallisella linkillä |
 | **Viimeinen** | Barlow, medium | 14px      | #000000 | ei linkki                              |
 
-Murupolku käyttäytyy desktopissa ja mobiilissa hieman eri tavoin. 
-
-**Murupolku desktopissa**
-
-Desktopissa näytetään murupolussa kaikki tasot: 
-
-![Murupolku desktopissa.](images/murupolku.png)
-
-Murupolun viimeinen kohta ei ole linkki. 
-	
-**Murupolku mobiilissa**
-
-Mobiilissa matalilla sivuston hierarkian tasoilla (n. kaksi ensimmäistä tasoa) näytetään normaali murupolku: 
-
-![Murupolku mobiilissa ylemmillä hierarkian tasoilla.](images/murupolku_mobiili1.png)
-
-Syvämmällä hierarkian tasoilla murupolussa näytetään vain linkki yhtä tasoa hierarkiassa ylemmäs. Näin estetään murupolun rivittyminen mobiilissa. Esim. tilastojulkistus-sivun murupolussa näkyy vain linkki tilaston sivulle:
-
-![Murupolku mobiilissa syvemmillä hierarkian tasoilla.](images/murupolku_mobiili2.png)
-
-|                                             | Murupolun muoto                                                    |
-| ------------------------------------------- | ------------------------------------------------------------------ |
-| **Desktop**                                 | Tilastotieto / Suomalaisten matkailu / Tilastojulkistus / Taulukko |
-| **Mobiili (matalilla hierarkian tasoilla)** | Tilastotieto / Suomalaisten matkailu                               |
-| **Mobiili (syvillä hierarkian tasoilla)**   | < Tilastojulkistus                                                 |
 
 ### Painikkeet
 
@@ -840,7 +848,7 @@ Pilleri-painikkeiden tilojen yhteiset tyylit:
 
 | Font                    | Font-size   | Padding | Border-radius |
 | ----------------------- | ----------- | ------- | ------------- |
-| Source Sans Pro regular | 1rem (16px) | 2px     | 2,5em (32px)  |
+| Source Sans Pro regular | 1rem (16px) | 2px     | 32px          |
 
 Pilleri-painikkeiden tilojen omat tyylit:
 | Tila              | Color   | Background-color          | Ikonin color | Ikonin width       | Ikoninen height    |
@@ -970,7 +978,7 @@ Pääkohdat-elementissä kerrotaan tiiviisti tilastojulkistuksen tärkeimmät as
 |                                        | Font            | Font-size     | Color   |
 | -------------------------------------- | --------------- | ------------- | ------- |
 | **Pääkohdat-otsikko (H2-fontti)**      | Barlow, regular | 28px          | #000000 |
-| **Pääkohtien lista (Ingressi-fontti)** | Barlow, regular | 17px/1.255rem | #000000 |
+| **Pääkohtien lista (Ingressi-fontti)** | Barlow, regular | 17px | #000000 |
 
 Tekstissä on riippuva sisennys eli kaikki tekstirivit ovat samassa linjassa pallo-listamerkkien oikealla puolella. Tekstit eivät siis mene pallo-listamerkkien alle ts. pääkohdat-listassa käytetään css-listan normaalia toiminnallisuutta. (Yllä oleva kuva ei vastaa tältä osin visuaalisesti haluttua toteutusta.)
 
