@@ -17,7 +17,6 @@
   - [Navigaatio-palkki mobiili](#navigaatio-palkki-mobiili)
     - [Menu mobiili](#menu-mobiili)
   - [Navigaatio-palkki desktop](#navigaatio-palkki-desktop)
-    - [Menut desktop](#menut-desktop)
   - [Sisältöalue](#sisältöalue)
   - [Sivuston tausta](#sivuston-tausta)
   - [Tekstipalsta](#tekstipalsta)
@@ -36,7 +35,6 @@
   - [Elementtien menut](#elementtien-menut)
   - [Info-laatikko](#info-laatikko)
     - [Info-laatikon tyylit](#info-laatikon-tyylit)
-  - [Jakoviiva](#jakoviiva)
   - [Laajennuspaneeli](#laajennuspaneeli)
     - [Yksittäinen laajennuspaneeli](#yksittäinen-laajennuspaneeli)
     - [Laajennuspaneeliryhmä](#laajennuspaneeliryhmä)
@@ -114,6 +112,7 @@
   - [Vierityspalkki](#vierityspalkki)
     - [Pystysuuntainen vierityspalkki](#pystysuuntainen-vierityspalkki)
     - [Vaakasuuntainen vierityspalkki](#vaakasuuntainen-vierityspalkki)
+  - [Viiva](#viiva)
 
 ## Typografia
 Fontteina käytetään Googlen ilmaisia fontteja. Vaikka osa fonttien ko'oista on tässä ilmoitettu pikseleinä, ne tulee toteuttaa suhteellisina arvoina (em tai rem). 
@@ -231,31 +230,45 @@ Kuvaus lisätään ui-designin ja tyylimääritysten valmistuttua.
 	
 ### Navigaatio-palkki desktop
 
-![Navigaatio-palkki](images/navipalkki.png)
+![Navigaatio-palkki, Tilastotieto-osio korostettuna.](images/navipalkki.png)
 
-Navigaatio-palkin taustan leveys on näytön/selainikkunan laidasta laitaan 2500px asti. Siitä isompikokoisilla näytöillä navipalkin oikealle ja vasemmalle puolelle tulee marginaalit. 
+Navigaatiopalkin osiot ovat linkkejä laskeutumissivuille. Linkit erotetaan toisistaan pystyviivalla. 
+
+Se sivuston osio, jossa kulloinkin ollaan, näkyy navigaatiopalkissa korostettuna. Korostuksena käytetään paksua alleviivausta linkin kohdalla. Alleviivaus ulottuu pystyviivasta toiseen pystyviivaan navigaatiopalkin alareunassa. Alleviivaus ei ole ihan kiinni navipalkin alareunassa. Navipalkin alareunasta jää näkyviin 1px-korkuinen sininen osa. Näin valkoinen alleviivaus ei sulaudu sisältöalueen valkoiseen taustaan. 
+
+Samaa alleviivausta käytetään navigaatiopalkin linkeissä hover-tilassa. Jos kaksi vierekkäistä linkkiä ovat alleviivatussa tilassa, niiden väliin jää näkyviin linkkien välissä oleva pystyviiva: 
+
+![Navigaatio-palkki, Tilastotieto- ja Tiedonkeruut-osiot korostettuna.](images/navipalkki_hover.png)
+
+Navipalkin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Navipalkin sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Navipalkin sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. Navipalkin sisältö haku-linkkiä lukuunottamatta on tasattu vasempaan laitaan eikä siis levity tasaisesti koko navipalkin alueelle. Haku-linkki on erotettu muusta sisällöstä ja tasattu navipalkin oikeaan laitaan. 
+
+![Navigaatio-palkki sisältöaluetta leveämmällä näytöllä.](images/navipalkki_levea.png)
+
+Navigaatio-palkin tausta ulottuu näytön/selainikkunan laidasta laitaan 2500px asti. Siitä isompikokoisilla näytöillä navipalkin oikealle ja vasemmalle puolelle tulee marginaalit. 
 *Poikkeus:* 
-Jos ollaan sivulla, jossa on bannerikuva (aiheen ja tarkennetun aiheen sivuilla): navipalkin tausta on näytön laidasta laitaan kunnes bannerikuvan rajat tulevat vastaan: navipalkki loppuu siinä missä bannerikuvakin. 
+Jos ollaan sivulla, jossa on bannerikuva (eli aiheen ja tarkennetun aiheen sivuilla), navipalkin tausta loppuu siinä missä bannerikuvakin. 
 
-Navipalkin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Navipalkin sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Navipalkin sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. Navipalkin sisältö on tasattu vasempaan laitaan eikä siis levity tasaisesti koko navipalkin alueelle. 
-
-Se sivuston osio, jossa kulloinkin ollaan, näkyy navigaatiopalkissa korostettuna.
 
 Navipalkin tyylit:
 
-| Max-width | Background-color | Sisältöalueen leveys | Sisällön tasaus |
-| --------- | ---------------- | -------------------- | --------------- |
-| 2500px    | #0073b0          | 1200px               | left            |
+| Max-width | Background-color | Sisältöalueen leveys | Sisällön tasaus                       |
+| --------- | ---------------- | -------------------- | ------------------------------------- |
+| 2500px    | #0073b0          | 1200px               | haku-linkki: right, muut linkit: left |
 
 Navigaatiopalkin linkkien tyylit:
 
-| Tila                    | Background-color | Border left/right | Font           | Font-size | Font color | Padding       | Font variant | Text-decoration |
-| ----------------------- | ---------------- | ----------------- | -------------- | --------- | ---------- | ------------- | ------------ | --------------- |
-| **Tavallinen**          | #0073b0          | 1px, #338FC0      | Barlow, medium | 1.1rem    | #ffffff    | 1.2rem 1.5rem | normal       | none            |
-| **Korostettu/sijainti** | #ffffff          | 1px, #0073b0      | Barlow, medium | 1.1rem    | #0073b0    | 1.2rem 1.5rem | normal       | none            |
+| Background-color | Border left/right | Font           | Font-size | Font color | Padding       | Font variant | Text-decoration |
+| ---------------- | ----------------- | -------------- | --------- | ---------- | ------------- | ------------ | --------------- |
+| #0073b0          | 1px, #338FC0      | Barlow, medium | 1.1rem    | #ffffff    | 1.2rem 1.5rem | normal       | none            |
 
-#### Menut desktop
-Navigaatiopalkista avautuvien menujen sisältö on tasattu vasempaan laitaan. Kuvat ja kuvaus lisätään ui-designin valmistuttua. 
+Alleviivauksen tyylit (sijainti ja navipalkin linkin hover-tila): 
+
+| Height | Color   |
+| ------ | ------- |
+| 8px    | #ffffff |
+
+**Huom!** Alleviivaus ei tule ihan kiinni navipalkin alareunaan. Navipalkkia näkyvissä valkoisen alleviivauksen alla 1px. 
+
 
 ### Sisältöalue
 
@@ -291,9 +304,9 @@ Saavutettavuuden parantamiseksi sivuston tausta ei ole puhtaan valkoinen vaan 2%
 
 ### Alatunniste
 
-Alatunniste koostuu kahdesta osasta. Osat eroavat toisistaan asettelultaan ja taustaväriltään. 
+Alatunniste koostuu kahdesta osasta. Osat eroavat toisistaan asettelultaan ja ne erotetaan toisistaan viivalla. 
 
-Alatunnisteen molempien osien tausta käyttäytyy isoilla näytöillä kuten yläpalkin ja navigaatiopalkin tausta. Tausta ulottuu näytön laidasta laitaan pienillä näytöillä. Isoilla näytöillä alatunnisteen tausta on 2500px leveyteen asti koko näytön levyinen, sen jälkeen vasemmalla ja oikealla puolella alkavat marginaalit. 
+Alatunnisteen tausta ulottuu näytön laidasta laitaan pienillä näytöillä. Isoilla näytöillä alatunnisteen tausta on 2500px leveyteen asti koko näytön levyinen, sen jälkeen vasemmalla ja oikealla puolella alkavat marginaalit. 
 
 Alatunnisteen sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Alatunnisteen sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Alatunnisteen ylemmän osan sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. Alemman osan sisältö on keskitetty. 
 
@@ -314,6 +327,10 @@ Alatunnisteen tyylit:
 | ------ | --------- | -------------------- | ---------------- | ------------ | ------------------ | -------------------------------------- | ------------ | ------------- |
 | Yläosa | 2500px    | 1200px               | #0073b0          | 4            | Tasattu vasemmalle | Otsikot: H3, Linkit: negatiivilinkkejä | #ffffff      | #ffffff       |
 | Alaosa | 2500px    | 1200px               | #0073b0          | 1            | Tasattu keskelle   | Linkit: negatiivilinkkejä              | #ffffff      | #ffffff       |
+
+|       | Max-width | Height | Color   |
+| ----- | --------- | ------ | ------- |
+| Viiva | 1200px    | 1px    | #ffffff |
 
 ## Komponentit
 
@@ -499,22 +516,6 @@ Taustaväriltään info-laatikko on joko vaaleansininen tai valkoinen. Tarkemmat
 | ---------- | ------- | ------------------- | ------------------------------------ |
 | Tausta     |         | #f2f8fb tai #ffffff | mobiili: 100%, desktop: 100% tai 50% |
 | Reunaviiva | #0073b0 |                     | 3px                                  |
-
-### Jakoviiva
-
-Jakoviiva on kapea harmaa vaakaviiva, joka erottaa sisältöjä toisistaan. Jakoviivoja voidaan käyttää myös asioiden ryhmittelyyn asettamalla niitä eri ryhmien väliin, esim. menuissa. 
-
-![Jakoviiva](images/divider.png)
-
-| Height | Color   |
-| ------ | ------- |
-| 1px    | #aaaaaa |
-
-Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää tilaa. Niissä tilasteissa, joissa tyhjää tilaa ei voida käyttää tai se ei ole riittävä tapa, käytetään jakoviivoja.  
-
-![Jakoviiva erottamassa toisiinsa julkaisu-elementtejä.](images/divider_example1.png)
-
-Jakoviivoilla voidaan myös erottaa saman kokonaisuuden tai toisiinsa liittyviä elementtejä toisistaan. 
 
 
 ### Laajennuspaneeli 
@@ -716,11 +717,11 @@ Esim. pienellä näytöllä tiedotteen sivulla murupolkuna näkyy linkki tilasto
 
 ![Pienellä näytöllä pitkä murupolku lyhenee vain yhdeksi linkiksi ylemmälle hierarkian tasolle.](images/murupolku_mobiili2.png)
 
-|                                             | Murupolun muoto                                                    |
-| ------------------------------------------- | ------------------------------------------------------------------ |
-| **Desktop**                                 | Linkki ylemmälle tasolle / Sivun nimi    |
-| **Mobiili (max. kaksi kohtaa murupolussa)** | Linkki ylemmälle tasolle / Sivun nimi                               |
-| **Mobiili (yli kaksi kohtaa murupolussa)**   | < Linkki ylemmälle tasolle                                                 |
+|                                             | Murupolun muoto                       |
+| ------------------------------------------- | ------------------------------------- |
+| **Desktop**                                 | Linkki ylemmälle tasolle / Sivun nimi |
+| **Mobiili (max. kaksi kohtaa murupolussa)** | Linkki ylemmälle tasolle / Sivun nimi |
+| **Mobiili (yli kaksi kohtaa murupolussa)**  | < Linkki ylemmälle tasolle            |
 
 
 #### Murupolku isoilla näytöillä
@@ -969,10 +970,10 @@ Pääkohdat-elementissä kerrotaan tiiviisti tilastojulkistuksen tärkeimmät as
 
 ![Pääkohdat kertovat tiiviisti tilastojulkistuksen tärkeimmät asiat.](images/paakohdat.png)
 
-|                                        | Font            | Font-size     | Color   |
-| -------------------------------------- | --------------- | ------------- | ------- |
-| **Pääkohdat-otsikko (H2-fontti)**      | Barlow, regular | 28px          | #000000 |
-| **Pääkohtien lista (Ingressi-fontti)** | Barlow, regular | 17px | #000000 |
+|                                        | Font            | Font-size | Color   |
+| -------------------------------------- | --------------- | --------- | ------- |
+| **Pääkohdat-otsikko (H2-fontti)**      | Barlow, regular | 28px      | #000000 |
+| **Pääkohtien lista (Ingressi-fontti)** | Barlow, regular | 17px      | #000000 |
 
 Tekstissä on riippuva sisennys eli kaikki tekstirivit ovat samassa linjassa pallo-listamerkkien oikealla puolella. Tekstit eivät siis mene pallo-listamerkkien alle ts. pääkohdat-listassa käytetään css-listan normaalia toiminnallisuutta. (Yllä oleva kuva ei vastaa tältä osin visuaalisesti haluttua toteutusta.)
 
@@ -1321,6 +1322,21 @@ Vierityspalkki vihjaa elementissä olevasta vieritys-ominaisuudesta silloin kun 
 | **Vieritettävä palkki** | #0073b0 | 10px          | 10px   | määräytyy elementin mukaan |
 | **Tausta**              | #e6e6e6 |               | 10px   | määräytyy elementin mukaan |
 
+### Viiva
+
+Viiva on kapea harmaa vaakaviiva, joka erottaa sisältöjä toisistaan. Viivoja voidaan käyttää myös asioiden ryhmittelyyn asettamalla niitä eri ryhmien väliin, esim. menuissa. 
+
+![Viiva](images/divider.png)
+
+| Height | Color   |
+| ------ | ------- |
+| 1px    | #aaaaaa |
+
+Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää tilaa. Niissä tilasteissa, joissa tyhjää tilaa ei voida käyttää tai se ei ole riittävä tapa, käytetään viivoja.  
+
+![Viiva erottamassa toisiinsa julkaisu-elementtejä.](images/divider_example1.png)
+
+Viivoilla voidaan myös erottaa saman kokonaisuuden tai toisiinsa liittyviä elementtejä toisistaan. 
 
 	
 
