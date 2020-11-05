@@ -192,7 +192,7 @@ Eri sisältötyyppien julkaisu-elementeissä käytetyt kuvat:
 
 Osio päivittyy kun valokuvien linjaukset saadaan sovittua. 
 
-Valokuvia käytetään artikkelien, blogien, videoiden, kokoomajulkaisujen, käsikirjojen, aikakausjulkaisujen, tutkimuksien ja working papers -julkaisujen julkaisu-elementeissä. Ts. valokuvia käytetään kun kyseessä on muu kuin perusjulkaisemisen (tiedotteet, tietokantajulkistukset ja katsaukset) sisältötyyppi. Valokuvat ovat graafikoiden tekemiä ja valitsemia. Jos valokuvia ei ole saatavissa, käytetään näille sisältötyypeille tehtyä omaa place holder -kuvaa. Ks. Place holder -kuvat. 
+Valokuvia käytetään artikkelien, blogien, videoiden, kokoomajulkaisujen, käsikirjojen, aikakausjulkaisujen, tutkimuksien ja working papers -julkaisujen julkaisu-elementeissä. Ts. valokuvia käytetään kun kyseessä on muu kuin perusjulkaisemisen (tiedotteet, tietokantajulkistukset ja katsaukset) sisältötyyppi. Valokuvat ovat graafikoiden tekemiä ja valitsemia. Jos valokuvia ei ole saatavissa, käytetään näille sisältötyypeille tehtyjä omia place holder -kuviaan. Ks. Place holder -kuvat. 
 
 Verkkouudistuksen jälkeen ilmestyvien kansikuvallisten julkaisujen kansikuvana käytetystä kuvasta tai valokuvasta graafikot muotoilevat verkkoon sopivankokoisen kuvan. Vanhoista ennen verkkouudistusta julkaistuista julkaisuista ei tuoda kansikuvia julkaisu-elementteihin, vaan näiden kohdalla käytetään julkaisuille muotoiltua omaa place holder -kuvaa. 
 
@@ -200,13 +200,7 @@ Verkkouudistuksen jälkeen ilmestyvien kansikuvallisten julkaisujen kansikuvana 
 
 Place holder -kuva on graafinen kuvituskuva, jota käytetään julkaisu-elementeissä kun valokuvaa ei ole saatavilla. 
 
-Place holder -kuvia on kolmenlaisia: 
-1. Ns. perusjulkaisemiselle eli tiedotteille, tietokantajulkistuksille ja katsauksille on oma place holder -kuvansa, joka viestii tilastodatasta ja tilastograafeista. Tiedotteiden, tietokantajulkaisujen ja katsauksien julkaisu-elementeissä kuvina käytetään aina näille sisältötyypeille tehtyä place holder -kuvaa.
-2. Muille julkaisuille kuten artikkeleille, blogeille, videoille, kokoomajulkaisuille, käsikirjoille, aikakausjulkaisuille, tutkimuksille ja working papers -julkaisuille on oma place holder -kuvansa, joka viestii tekstisisällöstä. Näiden sisältötyyppien julkaisu-elementeissä käytetään ensisijaisesti valokuvia, mutta jos valokuvaa ei ole saatavissa, käytetään näille sisältötyypeille tehtyä place holder -kuvaa. 
-3. Tieto&trendit-sivustolla on oma place holder -kuvansa. Tätä käytetään myös pääsivustolla, jos Tieto&trendit-sivustolta pääsivustolle tuodulla julkaisulla ei ole valokuvaa. 
-
-Näiden kahden erilaisen place holder -kuvan suunnittelu on työn alla. Toistaiseksi julkaisu-elementeissä käytetään kaikkien sisältötyyppien kohdalla tarvittaessa samaa aiemmin tehtyä place holder -kuvaa: 
-![Tiedotteiden, tietokantajulkistuksien ja katsauksien julkaisu-elementteihin tulevassa place holder -kuvassa on valkoinen Tilastokeskuksen logo sinisellä pohjalla.](images/place_holder_tiedote.png)
+Osio päivittyy kun place holder -kuvien linjaukset saadaan sovittua. 
 
 #### Julkaisu-elementtien kuvien koko
 Julkaisut-elementeissä olevat kuvat käyttävät samaa kuvasuhdetta kuin video-elementti: **16:9**, esim. **resoluutio 1920x1080**. 
