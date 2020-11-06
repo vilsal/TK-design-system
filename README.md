@@ -18,12 +18,13 @@
     - [Navigaatiopalkki pienellä näytöllä](#navigaatiopalkki-pienellä-näytöllä)
     - [Navigaatiopalkki isolla näytöllä](#navigaatiopalkki-isolla-näytöllä)
     - [Mobiilimenu](#mobiilimenu)
-    - [Kielivalinnat](#kielivalinnat)
   - [Sisältöalue](#sisältöalue)
   - [Sivuston tausta](#sivuston-tausta)
   - [Tekstipalsta](#tekstipalsta)
   - [Blokit](#blokit)
   - [Alatunniste](#alatunniste)
+  - [Yläpalkki](#yläpalkki)
+    - [Kielivalinnat](#kielivalinnat)
 - [Komponentit](#komponentit)
   - [Avainluvut](#avainluvut)
     - [Avainlukujen tyylit](#avainlukujen-tyylit)
@@ -65,8 +66,9 @@
     - [Kolmassijainen painike](#kolmassijainen-painike)
     - [Negatiivi-painike](#negatiivi-painike)
   - [Pilleri-painikkeet](#pilleri-painikkeet)
-    - [Pilleri-painikkeiden saavutettavuus](#pilleri-painikkeiden-saavutettavuus)
+    - [Pilleri-painikkeet pienillä näytöillä](#pilleri-painikkeet-pienillä-näytöillä)
     - [Pilleri-painikkeiden tyylit](#pilleri-painikkeiden-tyylit)
+    - [Pilleri-painikkeiden saavutettavuus](#pilleri-painikkeiden-saavutettavuus)
   - [Pudotusvalikko](#pudotusvalikko)
     - [Yleistä pudotusvalikoista](#yleistä-pudotusvalikoista)
       - [Pudotusvalikkojen yhteiset tyylit](#pudotusvalikkojen-yhteiset-tyylit)
@@ -306,7 +308,6 @@ Mobiilimenun muut tyylit:
 | viiva               | d7d7d7  | 1px    | 100%  |
 | korostus-pystyviiva | #0073b0 | 55px   | 10px  |
 
-#### Kielivalinnat
 
 ### Sisältöalue
 
@@ -369,6 +370,32 @@ Alatunnisteen tyylit:
 |       | Max-width | Height | Color   |
 | ----- | --------- | ------ | ------- |
 | Viiva | 1200px    | 1px    | #ffffff |
+
+### Yläpalkki
+
+![Yläpalkki isolla näytöllä.](images/ylapalkki_desktop.png)
+
+Yläpalkki sijaitsee sivustolla kaikkein ylinpänä. Navigaatiopalkki sijaitsee yläpalkin alapuolella. 
+
+Yläpalkin vasemmassa laidassa on Tilastokeskuksen logo. Oikeassa laidassa on vasemmalta oikealle Kirjaudu-painike ja kielivalinnat, ks. Kielivalinnat. Yläpalkin sisältö noudattaa sivuston sisältöalueen leveyttä eli on 1200px leveä. 
+
+#### Kielivalinnat
+
+Mobiilimenussa kielivalinnat sijaitsevat alareunassa sivuston pääosioiden linkkien jälkeen. Isoilla näytöillä ne sijaitsevat yläpalkin oikeassa reunassa navigaatiopalkin yläpuolella. Kielivalinnat noudattavat pilleri-painikkeiden tyylejä ja toiminnallisuutta. Ks. Pilleri-painikkeet. 
+
+Kielivalinnat pienillä näytöillä: 
+
+![Kielivalinnat mobiilimenussa.](images/kielivalinnat_mobiili.png)
+
+Kielivalinnat isoilla näytöillä: 
+
+![Kielivalinnat yläpalkissa.](images/kielivalinnat_desktop.png)
+
+Käyttäjä pystyy vaihtamaan koko sivuston kielen valitsemalla kielivalinnoista haluamansa kielen. Käyttäjä voi vaihtaa sivuston kielen millä sivulla tahansa. Käyttäjä pidetään samalla sivulla kielen vaihdoksen jälkeen. Kielivalinta-painikeryhmästä se kieli, joka sivustolla on käytössä/aktiivisena, näkyy korostettuna, ks. Pilleri-painikkeiden tyylit. 
+
+Aivan koko sivustoa ei ole saatavissa kaikilla kolmella kielellä. Joillakin kielillä on tarjolla vain osa sivuista tai sivujen sisällöstä. Jos sivusta ei ole saatavissa haluttua kieliversiota, käyttäjän klikattua kielivalinta-painiketta sen alapuolelle ponnahtaa näkyviin tooltip-laatikko, joka kertoo kyseisellä kielellä, ettei sivua ole tällä kielellä saatavissa. Tooltip-laatikossa on linkki etusivulle. Tooltipin saa kiinni valitsemalla kyseisen kielivalinta-painikkeen uudestaan tai tooltipin oikeassa ylänurkassa olevasta ruksista. 
+
+![Mobiilimenun kielivalinnan alle avautunut tooltip, joka kertoo ettei sivua ole saatavissa englanniksi.](images/kielta_ei_saatavilla_mobiili.png)
 
 ## Komponentit
 
@@ -871,23 +898,25 @@ Pilleri-painikkeet eroavat visuaalisesti muista painikkeista pyöreämmällä ul
 
 ![Julkaisut-listaussivulla ikoneilla havainnollistetaan pilleri-painikkeiden toimintoja.](images/listanakyma_painikkeet.png) 
 
-#### Pilleri-painikkeiden saavutettavuus
-* Käyttäjille kerrotaan kunkin pilleri-painikkeen kohdalla kumpi painikkeen tiloista on päällä. Painikkeen visuaalinen ilme vaihtuu selkeästi painikkeen tilan mukaan. Aktiivisen painikkeen alt-tekstissä kerrotaan "Valittu" ja epäaktiivisen kohdalla "Ei valittu", jotta ruudunlukijaa käyttävät saavat myös tiedon painikkeen tilasta. 
-* Pilleri-painikkeet voi rinnastaa toiminnaltaan ja teknisesti radio buttoneihin tai välilehtiin. Radio buttonien ja välilehtien tapaan niiden tulee kuulua html:ssä samaan ryhmään. 
+#### Pilleri-painikkeet pienillä näytöillä
+
+Pienillä näytöillä pilleri-painikkeiden fontti on isompi ja ei-aktiivisissa pilleri-painikkeissa on reunus. Esim. mobiilimenun kielivalinnat: 
+
+![Kielivalinnat mobiilimenussa.](images/kielivalinnat_mobiili.png)
 
 #### Pilleri-painikkeiden tyylit
 
-Pilleri-painikkeiden tilojen yhteiset tyylit:
+| Tila                      | Font                    | Font-size   | Padding | Color   | Background-color | Border       | Border-radius | Ikonin color |
+| ------------------------- | ----------------------- | ----------- | ------- | ------- | ---------------- | ------------ | ------------- | ------------ |
+| **Mobiili aktiivinen**    | Source Sans Pro regular | 18px        | 2px     | #ffffff | #0073b0          | -            | 32px          | #ffffff      |
+| **Mobiili epäaktiivinen** | Source Sans Pro regular | 18px        | 2px     | #0073b0 | #ffffff          | 1px, #0073b0 | 32px          | #0073b0      |
+| **Desktop aktiivinen**    | Source Sans Pro regular | 1rem (16px) | 2px     | #ffffff | #0073b0          | -            | 32px          | #ffffff      |
+| **Desktop epäaktiivinen** | Source Sans Pro regular | 1rem (16px) | 2px     | #0073b0 | #ffffff          | -            | 32px          | #0073b0      |
 
-| Font                    | Font-size   | Padding | Border-radius |
-| ----------------------- | ----------- | ------- | ------------- |
-| Source Sans Pro regular | 1rem (16px) | 2px     | 32px          |
 
-Pilleri-painikkeiden tilojen omat tyylit:
-| Tila              | Color   | Background-color          | Ikonin color | Ikonin width       | Ikoninen height    |
-| ----------------- | ------- | ------------------------- | ------------ | ------------------ | ------------------ |
-| **Aktiivinen**    | #ffffff | #0073b0                   | #ffffff      | (riippuu ikonista) | (riippuu ikonista) |
-| **Epäaktiivinen** | #0073b0 | ei taustaväriä/läpinäkyvä | #0073b0      | (riippuu ikonista) | (riippuu ikonista) |
+#### Pilleri-painikkeiden saavutettavuus
+* Käyttäjille kerrotaan kunkin pilleri-painikkeen kohdalla kumpi painikkeen tiloista on päällä. Painikkeen visuaalinen ilme vaihtuu selkeästi painikkeen tilan mukaan. Aktiivisen painikkeen alt-tekstissä kerrotaan "Valittu" ja epäaktiivisen kohdalla "Ei valittu", jotta ruudunlukijaa käyttävät saavat myös tiedon painikkeen tilasta. 
+* Pilleri-painikkeet voi rinnastaa toiminnaltaan ja teknisesti radio buttoneihin tai välilehtiin. Radio buttonien ja välilehtien tapaan niiden tulee kuulua html:ssä samaan ryhmään. 
 
 ### Pudotusvalikko
 (Eng. dropdown)
