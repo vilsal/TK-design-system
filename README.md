@@ -14,9 +14,11 @@
 - [Ikonit](#ikonit)
 - [Värit](#värit)
 - [Sivupohja](#sivupohja)
-  - [Navigaatio-palkki mobiili](#navigaatio-palkki-mobiili)
-    - [Menu mobiili](#menu-mobiili)
-  - [Navigaatio-palkki desktop](#navigaatio-palkki-desktop)
+  - [Navigaatiopalkki](#navigaatiopalkki)
+    - [Navigaatiopalkki pienellä näytöllä](#navigaatiopalkki-pienellä-näytöllä)
+    - [Navigaatiopalkki isolla näytöllä](#navigaatiopalkki-isolla-näytöllä)
+    - [Mobiilimenu](#mobiilimenu)
+    - [Kielivalinnat](#kielivalinnat)
   - [Sisältöalue](#sisältöalue)
   - [Sivuston tausta](#sivuston-tausta)
   - [Tekstipalsta](#tekstipalsta)
@@ -220,17 +222,28 @@ Väreinä käytetään Tilastokeskuksen väripalettia. Värit täydennetään t�
 
 ## Sivupohja
 
-### Navigaatio-palkki mobiili
+### Navigaatiopalkki
 
-Kuvaus lisätään ui-designin ja tyylimääritysten valmistuttua. 
+#### Navigaatiopalkki pienellä näytöllä
 
-#### Menu mobiili
+![Navigaatiopalkki pienellä näytöllä.](images/navipalkki_mobiili.png)
 
-Kuvaus lisätään ui-designin ja tyylimääritysten valmistuttua. 
+Pienillä näytöillä navigaatiopalkki sisältää oikealta vasemmalle Tilastokeskuksen logon negatiivina, haku-linkin ja menu-painikkeen. Hae-linkin ja menu-painikkeen ikoni ja teksti ovat allekkain, ikoni yllä, teksti alla. 
+
+Pienillä näytöillä navigaatiopalkki ulottuu näytön laidasta laitaan. Tilastokeskuksen logo on tasattu vasempaan laitaan, haku-linkki ja menu-painike oikeaan laitaan. 
+
+Navigaatiopalkki ei ole sticky eli se ei liimaudu näytön ylälaitaan kun sivuja selataan alaspäin. Se on näkyvissä vain sivun yläosassa. 
+
+Navigaatiopalkin tyylit pienillä näytöillä:
+
+| Background-color | Font            | Font-size | Color   | Height | Ikonien color |
+| ---------------- | --------------- | --------- | ------- | ------ | ------------- |
+| #0073b0          | Barlow, regular | 17px      | #ffffff | 60px   | #ffffff       |
+
 	
-### Navigaatio-palkki desktop
+#### Navigaatiopalkki isolla näytöllä
 
-![Navigaatio-palkki, Tilastotieto-osio korostettuna.](images/navipalkki.png)
+![Navigaatiopalkki, Tilastotieto-osio korostettuna.](images/navipalkki.png)
 
 Navigaatiopalkin osiot ovat linkkejä laskeutumissivuille. Linkit erotetaan toisistaan pystyviivalla. 
 
@@ -238,30 +251,31 @@ Se sivuston osio, jossa kulloinkin ollaan, näkyy navigaatiopalkissa korostettun
 
 Samaa alleviivausta käytetään navigaatiopalkin linkeissä hover-tilassa. Jos kaksi vierekkäistä linkkiä ovat alleviivatussa tilassa, niiden väliin jää näkyviin linkkien välissä oleva pystyviiva: 
 
-![Navigaatio-palkki, Tilastotieto- ja Tiedonkeruut-osiot korostettuna.](images/navipalkki_hover.png)
+![Navigaatiopalkki, Tilastotieto- ja Tiedonkeruut-osiot korostettuna.](images/navipalkki_hover.png)
 
 Navipalkin sisältöalue on leveydeltään 1200px eli sama kuin muukin sisältöalue. Navipalkin sisältö pysyy sisältöalueen sisällä, se ei leviä taustan mukana näytön koon kasvaessa. Navipalkin sisältö on samassa linjassa sivun muun sisällön kanssa eli alkaa vasemmassa laidassa samasta kohdasta kuin sivuston muukin sisältö. Navipalkin sisältö haku-linkkiä lukuunottamatta on tasattu vasempaan laitaan eikä siis levity tasaisesti koko navipalkin alueelle. Haku-linkki on erotettu muusta sisällöstä ja tasattu navipalkin oikeaan laitaan. 
 
-![Navigaatio-palkki sisältöaluetta leveämmällä näytöllä.](images/navipalkki_levea.png)
+![Navigaatiopalkki sisältöaluetta leveämmällä näytöllä.](images/navipalkki_levea.png)
 
 Navigaatio-palkin tausta ulottuu näytön/selainikkunan laidasta laitaan 2500px asti. Siitä isompikokoisilla näytöillä navipalkin oikealle ja vasemmalle puolelle tulee marginaalit. 
 *Poikkeus:* 
 Jos ollaan sivulla, jossa on bannerikuva (eli aiheen ja tarkennetun aiheen sivuilla), navipalkin tausta loppuu siinä missä bannerikuvakin. 
 
+Navigaatiopalkki ei ole sticky eli se ei liimaudu näytön ylälaitaan kun sivuja selataan alaspäin. Se on näkyvissä vain sivun yläosassa. 
 
-Navipalkin tyylit:
+Navigaatiopalkin tyylit isoilla näytöillä:
 
 | Max-width | Background-color | Sisältöalueen leveys | Sisällön tasaus                       |
 | --------- | ---------------- | -------------------- | ------------------------------------- |
 | 2500px    | #0073b0          | 1200px               | haku-linkki: right, muut linkit: left |
 
-Navigaatiopalkin linkkien tyylit:
+Navigaatiopalkin linkkien tyylit isoilla näytöillä:
 
 | Background-color | Border left/right | Font           | Font-size | Font color | Padding       | Font variant | Text-decoration |
 | ---------------- | ----------------- | -------------- | --------- | ---------- | ------------- | ------------ | --------------- |
 | #0073b0          | 1px, #338FC0      | Barlow, medium | 1.1rem    | #ffffff    | 1.2rem 1.5rem | normal       | none            |
 
-Alleviivauksen tyylit (sijainti ja navipalkin linkin hover-tila): 
+Alleviivauksen tyylit (sijainti ja navipalkin linkin hover-tila) isoilla näytöillä: 
 
 | Height | Color   |
 | ------ | ------- |
@@ -269,6 +283,30 @@ Alleviivauksen tyylit (sijainti ja navipalkin linkin hover-tila):
 
 **Huom!** Alleviivaus ei tule ihan kiinni navipalkin alareunaan. Navipalkkia näkyvissä valkoisen alleviivauksen alla 1px. 
 
+#### Mobiilimenu
+
+![Mobiilimenu avattuna.](images/mobiilimenu.png)
+
+Mobiilimenu aukeaa pienen näytön navigaatiopalkin menu-painikkeesta. Mobiilimenu aukeaa navigaatiopalkin alle. Menu sisältää kaikki samat sivuston pääosioiden linkit kuin navigaatiopalkki isoilla näytöillä. 
+
+Se osio, jossa käyttäjä on, korostetaan paksulla sinisellä pystyviivalla linkin vasemmalla puolella. Linkit erotetaan navipalkista ja toisistaan viivalla. 
+
+Kun mobiilimenu avataan menu-painikkeesta, menu-painike muuttuu sulje-painikkeeksi. Menun ikoni muuttuu ruksiksi ja menu-teksti sulje-tekstiksi. Menun saa suljettua sulje-painikkeesta. 
+
+Sivuston pääosioiden linkkien alla on kielivalinnat ja Kirjaudu-painike. Kirjaudu-painikkeen kuvaus ja kuva päivitetään myöhemmin sen designin valmistuttua. 
+
+Mobiilimenun tekstien tyylit:
+|        | font            | font-size | color   |
+| ------ | --------------- | --------- | ------- |
+| linkki | Barlow, regular | 22px      | #0073b0 |
+
+Mobiilimenun muut tyylit:
+|                     | color   | height | width |
+| ------------------- | ------- | ------ | ----- |
+| viiva               | d7d7d7  | 1px    | 100%  |
+| korostus-pystyviiva | #0073b0 | 55px   | 10px  |
+
+#### Kielivalinnat
 
 ### Sisältöalue
 
@@ -1330,7 +1368,7 @@ Viiva on kapea harmaa vaakaviiva, joka erottaa sisältöjä toisistaan. Viivoja 
 
 | Height | Color   |
 | ------ | ------- |
-| 1px    | #aaaaaa |
+| 1px    | #d7d7d7 |
 
 Ensisijaisesti eri osioiden erottamiseen toisistaan tulee käyttää tyhjää tilaa. Niissä tilasteissa, joissa tyhjää tilaa ei voida käyttää tai se ei ole riittävä tapa, käytetään viivoja.  
 
